@@ -54,11 +54,21 @@ get_header(); ?>
 
 <div class="container text-center middle-container">
 
-<h1 class="mt-5">Overview</h1>
+<h1 class="mt-5 mb-3">Overview</h1>
 
 <div>
 From March 15 to March 17, 2026, the conference will explore the theme "Navigating Business Innovation in a Dynamic World." This hybrid event aims to unite scholars, practitioners, and thought leaders to discuss emerging trends and innovative strategies in business. Participants can join either in person at The Chinese University of Hong Kong or virtually, fostering a global dialogue on critical issues affecting the business landscape. Attendees will enjoy keynote speeches, panel discussions, and networking opportunities, enhancing their insights into contemporary challenges and solutions within the ever-evolving business environment
 </div>
+
+<h3 class="mt-5 mb-3">Key Dates</h3>
+
+<div>
+
+Registration Deadline: February 15, 2026 <br><br>
+Conference Dates: March 15 - March 17, 2026
+Attendees are encouraged to register early to secure their participation in this hybrid event.
+</div>
+
 
 
 </div>
