@@ -49,6 +49,10 @@
         font-weight: normal;
     }
 
+    .middle-container{
+        max-width: 700px;
+    }
+
     #home-banner-carousel {
         width: 100vw;
         margin-left: calc(50% - 50vw);
@@ -69,3 +73,4 @@
           max-height: 800px;
         }
       }
+      

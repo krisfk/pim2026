@@ -52,7 +52,7 @@ get_header(); ?>
 
 
 
-<div class="container text-center">
+<div class="container text-center middle-container">
 
 <h1 class="mt-5">Overview</h1>
 
