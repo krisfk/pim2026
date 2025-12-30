@@ -4,16 +4,16 @@ width: auto;
 }
 .site-logo{
     display: inline-block;
-    float: left;
+    /* float: left; */
 }
 .site-title{
     display: inline-block;
-    float: left;
+    /* float: left; */
 
 }
 .header-menu{
     display: inline-block;
-    float: left;
+    /* float: left; */
 }
 
 .header-menu li{
