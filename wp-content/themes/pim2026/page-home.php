@@ -171,7 +171,7 @@ get_header(); ?>
   }
   .home-btn-schedule:hover span,
   .home-btn-schedule:focus span {
-    transform: translateX(7px);
+    transform: translateX(4px);
   }
 </style>
 <div class="d-flex gap-3 justify-content-center mt-4">
