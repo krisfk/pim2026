@@ -33,7 +33,17 @@
 	</a>
 
 	<?php //get_template_part( 'template-parts/header/site-header' ); ?>
-
+	<div class="header-submenu-container" style="display:none; position:absolute; left:0; top:100%; width:100vw; margin-left:calc(50% - 50vw); background:#fff; z-index:1000; border-top:1px solid #eee; box-shadow:0 6px 25px rgba(0,0,0,0.09);">
+								<div class="container py-4">
+									<ul class="header-submenu list-unstyled mb-0 d-flex flex-wrap gap-4">
+										<li><a href="#">Call for Papers</a></li>
+										<li><a href="#">Keynote Speakers</a></li>
+										<li><a href="#">Venue Info</a></li>
+										<li><a href="#">Contact Us</a></li>
+										<!-- Add more submenu items as needed -->
+									</ul>
+								</div>
+							</div>
 
 	<div class="header-container mt-3 mb-3">
 				<div class="container">
@@ -62,17 +72,7 @@
 						<li class="header-menu-more position-static" style="position:static;">
 							<a href="#">More</a>
 							<!-- Submenu -->
-							<div class="header-submenu-container" style="display:none; position:absolute; left:0; top:100%; width:100vw; margin-left:calc(50% - 50vw); background:#fff; z-index:1000; border-top:1px solid #eee; box-shadow:0 6px 25px rgba(0,0,0,0.09);">
-								<div class="container py-4">
-									<ul class="header-submenu list-unstyled mb-0 d-flex flex-wrap gap-4">
-										<li><a href="#">Call for Papers</a></li>
-										<li><a href="#">Keynote Speakers</a></li>
-										<li><a href="#">Venue Info</a></li>
-										<li><a href="#">Contact Us</a></li>
-										<!-- Add more submenu items as needed -->
-									</ul>
-								</div>
-							</div>
+							
 						</li>
 					</ul>
 				</div>
