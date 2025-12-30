@@ -50,7 +50,7 @@
 	<h6>Getting there</h6>
 	<table><tr>
 		<td>
-<img src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 
 		</td><td>
 		<span class="fw-bold">Register now</span> <br>
