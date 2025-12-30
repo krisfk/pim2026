@@ -64,8 +64,8 @@ From March 15 to March 17, 2026, the conference will explore the theme "Navigati
 
 <div>
 
-Registration Deadline: February 15, 2026 <br><br>
-Conference Dates: March 15 - March 17, 2026
+Registration Deadline: February 15, 2026 <br>
+Conference Dates: March 15 - March 17, 2026 <br><br>
 Attendees are encouraged to register early to secure their participation in this hybrid event.
 </div>
 
