@@ -66,6 +66,11 @@
         background-position: center center;
         background-repeat: no-repeat;
       }
+
+      .profile-pic{
+        width: 30px;
+        height: 30px;
+      }
       @media (max-width: 900px) {
         #home-banner-carousel .carousel-item {
           height: 50vw;
