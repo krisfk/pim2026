@@ -52,7 +52,7 @@ get_header(); ?>
 
 
 
-<div class="container">
+<div class="container text-center">
 
 <h1>Overview</h1>
 
