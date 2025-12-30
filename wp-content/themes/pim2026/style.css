@@ -112,3 +112,7 @@
       .cube{
         width: 18px;
       }
+
+      .header-submenu-container td{
+        padding: 0 0 1rem 0;
+      }
