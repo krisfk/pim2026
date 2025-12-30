@@ -94,6 +94,50 @@
 									<div class="col-md-4 col-lg-4 ">
 <h6>Resources</h6>
 
+
+<table>
+		
+	<tr>
+		<td class="align-top pe-2">
+		<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+
+		</td><td>
+		<span class="fw-bold">Contact us</span> <br>
+		Reach out with questions or concerns</td>
+	</tr>
+	<tr>
+		<td class="align-top pe-2">
+		<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+
+		</td><td>
+		<span class="fw-bold">Home</span> <br>
+		Return to the main page</td>
+	</tr>
+
+	<tr>
+		<td class="align-top pe-2">
+		<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+
+		</td><td>
+		<span class="fw-bold">About</span> <br>
+		Discover our conference mission</td>
+	</tr>
+
+
+	<tr>
+		<td class="align-top pe-2">
+		<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+
+		</td><td>
+		<span class="fw-bold">The gathering</span> <br>
+		Where scholars meet and ideas take shape</td>
+	</tr>
+
+
+
+</table>
+
+
 									</div>
 									<div class="col-md-4 col-lg-4 ">
 
