@@ -79,7 +79,7 @@
 				<script>
 				document.addEventListener('DOMContentLoaded', function() {
 					var moreLi = document.querySelector('.header-menu-more');
-					var submenu = moreLi.querySelector('.header-submenu-container');
+					var submenu = document.querySelector('.header-submenu-container');
 					moreLi.addEventListener('mouseenter', function() {
 						submenu.style.display = 'block';
 					});
