@@ -48,9 +48,21 @@
 		
 
 		</div>
-		<!-- <div class="site-title">
-			<h1>PIM2026</h1>
-		</div> -->
+	
+		
+
+ 
+
+	
+		<ul class="header-menu">
+			<li><a href="#">conference overview</a></li>
+			<li><a href="#">CUHK highlights</a></li>
+			<li><a href="#">Schedule</a></li>
+			<li><a href="#">Registration</a></li>
+			<li><a href="#">More</a></li>
+		</ul>
+
+
 	</div>
 
 
