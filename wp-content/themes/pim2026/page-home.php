@@ -164,15 +164,14 @@ get_header(); ?>
     box-shadow: none;
     transform: none;
   }
+  .home-btn-schedule span {
+    transition: transform 0.2s cubic-bezier(.4,0,.2,1);
+    color: #300353;
+    display: inline-block;
+  }
   .home-btn-schedule:hover span,
   .home-btn-schedule:focus span {
-    color: #300353;
-    transform: none;
-    transition: none;
-  }
-  .home-btn-schedule span {
-    transition: none;
-    color: #300353;
+    transform: translateX(7px);
   }
 </style>
 <div class="d-flex gap-3 justify-content-center mt-4">
