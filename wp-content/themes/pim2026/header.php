@@ -53,15 +53,54 @@
 				 <br>
 				CUHK school of business </div>
 				
-				<div class="header-menu-container">
+				<div class="header-menu-container position-relative">
 					<ul class="header-menu mb-0">
 						<li><a href="#">Conference Overview</a></li>
 						<li><a href="#">CUHK Highlights</a></li>
 						<li><a href="#">Schedule</a></li>
 						<li><a href="#">Registration</a></li>
-						<li><a href="#">More</a></li>
+						<li class="header-menu-more position-static" style="position:static;">
+							<a href="#">More</a>
+							<!-- Submenu -->
+							<div class="header-submenu-container" style="display:none; position:absolute; left:0; top:100%; width:100vw; margin-left:calc(50% - 50vw); background:#fff; z-index:1000; border-top:1px solid #eee; box-shadow:0 6px 25px rgba(0,0,0,0.09);">
+								<div class="container py-4">
+									<ul class="header-submenu list-unstyled mb-0 d-flex flex-wrap gap-4">
+										<li><a href="#">Call for Papers</a></li>
+										<li><a href="#">Keynote Speakers</a></li>
+										<li><a href="#">Venue Info</a></li>
+										<li><a href="#">Contact Us</a></li>
+										<!-- Add more submenu items as needed -->
+									</ul>
+								</div>
+							</div>
+						</li>
 					</ul>
 				</div>
+				<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					var moreLi = document.querySelector('.header-menu-more');
+					var submenu = moreLi.querySelector('.header-submenu-container');
+					moreLi.addEventListener('mouseenter', function() {
+						submenu.style.display = 'block';
+					});
+					moreLi.addEventListener('mouseleave', function() {
+						submenu.style.display = 'none';
+					});
+				});
+				</script>
+				<style>
+				.header-menu-more { position: relative; }
+				.header-submenu-container {
+					transition: all 0.23s;
+				}
+				.header-menu .header-menu-more > a::after {
+					content: " ▼";
+					font-size:10px;
+				}
+				@media (max-width: 900px) {
+					.header-submenu-container { position: static !important; width:100% !important; margin-left:0 !important; }
+				}
+				</style>
 
 				</div>
 
