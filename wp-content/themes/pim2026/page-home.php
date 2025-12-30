@@ -75,6 +75,24 @@ get_header(); ?>
   <h3 class="text-center  mb-4 fw-bold" style="">Messages</h3>
 
   <!-- Carousel indicators for dots control -->
+  <style>
+    #testimonial-carousel .carousel-indicators button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #bbb;
+      border: none;
+      margin: 0 6px;
+      transition: background-color 0.3s;
+      opacity: 1;
+    }
+    #testimonial-carousel .carousel-indicators button.active,
+    #testimonial-carousel .carousel-indicators button:focus,
+    #testimonial-carousel .carousel-indicators .active {
+      background-color: #000;
+      box-shadow: 0 0 0 2px #fff;
+    }
+  </style>
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
