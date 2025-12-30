@@ -22,29 +22,6 @@ get_header(); ?>
 	</header><!-- .page-header -->
 <?php endif; ?>
 
-<style>
-#home-banner-carousel {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  max-height: 800px;
-  overflow: hidden;
-}
-#home-banner-carousel .carousel-item {
-  height: 800px;
-  max-height: 800px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-@media (max-width: 900px) {
-  #home-banner-carousel .carousel-item {
-    height: 50vw;
-    min-height: 300px;
-    max-height: 800px;
-  }
-}
-</style>
-
 <div id="home-banner-carousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
