@@ -48,6 +48,14 @@
 
 									<div class="col-md-4 col-lg-4 ">
 	<h6>Getting there</h6>
+	<table><tr>
+		<td></td><td>
+		<span class="fw-bold">Register now</span> <br>
+		Secure your place at the conference
+
+
+		</td>
+	</tr></table>
 									
 									</div>
 									<div class="col-md-4 col-lg-4 ">
