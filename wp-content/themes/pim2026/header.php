@@ -80,11 +80,28 @@
 				document.addEventListener('DOMContentLoaded', function() {
 					var moreLi = document.querySelector('.header-menu-more');
 					var submenu = document.querySelector('.header-submenu-container');
+					var menuItems = document.querySelectorAll('.header-menu > li:not(.header-menu-more)');
+					
+					// Show submenu when hovering over "More"
 					moreLi.addEventListener('mouseenter', function() {
 						submenu.style.display = 'block';
 					});
-					moreLi.addEventListener('mouseleave', function() {
+
+					// Hide submenu when mouse leaves submenu itself
+					submenu.addEventListener('mouseleave', function() {
 						submenu.style.display = 'none';
+					});
+
+					// To allow hover from "More" to submenu without flicker
+					moreLi.addEventListener('mouseleave', function(e) {
+						// Do nothing, submenu stays open, as hide is handled only when leaving submenu itself
+					});
+					
+					// Hide submenu when mouse enters any other menu item
+					menuItems.forEach(function(item){
+						item.addEventListener('mouseenter', function() {
+							submenu.style.display = 'none';
+						});
 					});
 				});
 				</script>
