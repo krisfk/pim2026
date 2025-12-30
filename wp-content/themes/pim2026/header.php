@@ -49,7 +49,10 @@
 									<div class="col-md-4 col-lg-4 ">
 	<h6>Getting there</h6>
 	<table><tr>
-		<td></td><td>
+		<td>
+<img src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+
+		</td><td>
 		<span class="fw-bold">Register now</span> <br>
 		Secure your place at the conference
 
