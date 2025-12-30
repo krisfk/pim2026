@@ -75,19 +75,19 @@ get_header(); ?>
   <h1 class="text-center mt-5 mb-4 fw-bold" style="color:#300353;">Welcome Message</h1>
   <div class="carousel-inner" style="max-width: 1000px; margin:0 auto;">
     <div class="carousel-item active">
-      <div class="d-flex flex-column align-items-center justify-content-center" style="min-height:320px;">
+      <div class="d-flex flex-column align-items-center justify-content-center" style="">
         <p class="mb-3 fs-4 fst-italic" style="max-width:700px;">"The PIM Conference 2026 was a transformative experience. The sessions were insightful and the networking opportunities unrivaled."</p>
         <div class="fw-bold">— Prof. Alex Wong, HKU</div>
       </div>
     </div>
     <div class="carousel-item">
-      <div class="d-flex flex-column align-items-center justify-content-center" style="min-height:320px;">
+      <div class="d-flex flex-column align-items-center justify-content-center" style="">
         <p class="mb-3 fs-4 fst-italic" style="max-width:700px;">"Connecting with peers worldwide at CUHK truly broadened my perspectives on business and innovation."</p>
         <div class="fw-bold">— Maria Chen, Entrepreneur</div>
       </div>
     </div>
     <div class="carousel-item">
-      <div class="d-flex flex-column align-items-center justify-content-center" style="min-height:320px;">
+      <div class="d-flex flex-column align-items-center justify-content-center" style="">
         <p class="mb-3 fs-4 fst-italic" style="max-width:700px;">"Superbly organized and very forward-thinking. I’m already looking forward to the next edition!"</p>
         <div class="fw-bold">— Dr. Samuel Lee, Industry Leader</div>
       </div>
