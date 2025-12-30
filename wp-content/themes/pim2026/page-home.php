@@ -77,7 +77,8 @@ get_header(); ?>
     <div class="carousel-item active">
       <div class="d-flex flex-column align-items-center justify-content-center" style="">
         <p class="mb-3 fs-4 fst-italic" style="max-width:700px;">"The PIM Conference 2026 was a transformative experience. The sessions were insightful and the networking opportunities unrivaled."</p>
-        <div class="fw-bold">— Prof. Alex Wong, HKU</div>
+        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/profile-pic.png" alt=""></div>
+		<div class="fw-bold">— Prof. Alex Wong, HKU</div>
       </div>
     </div>
     <div class="carousel-item">
