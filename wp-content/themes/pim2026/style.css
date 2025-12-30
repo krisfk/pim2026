@@ -68,8 +68,8 @@
       }
 
       .profile-pic{
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        /* height: 30px; */
       }
       @media (max-width: 900px) {
         #home-banner-carousel .carousel-item {
