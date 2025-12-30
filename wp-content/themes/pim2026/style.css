@@ -72,7 +72,7 @@
         /* height: 30px; */
       }
 
-      .carousel-indicators{
+     .testimonial-carousel  .carousel-indicators{
         bottom: -60px;
       }
       @media (max-width: 900px) {
