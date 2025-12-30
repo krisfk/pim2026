@@ -35,10 +35,17 @@
 
 	<div class="header-container">
 		<div class="container">
-			
+
 		<div class="site-logo">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
+			
+		
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
+		
 		</div>
+
+		<div>2026 PIM Conference <br>
+		CUHK school of business </div>
+		
 
 		</div>
 		<!-- <div class="site-title">
