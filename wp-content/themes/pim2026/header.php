@@ -43,7 +43,7 @@
 		
 		</div>
 
-		<div>2026 PIM Conference <br>
+		<div class="site-title">2026 PIM Conference <br>
 		CUHK school of business </div>
 		
 

@@ -5,3 +5,6 @@ width: auto;
 .site-logo{
     display: inline-block;
 }
+.site-title{
+    display: inline-block;
+}
