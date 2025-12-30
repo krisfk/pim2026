@@ -9,13 +9,15 @@ width: auto;
     display: inline-block;
 
 }
-.header-menu{
-    display: inline-block;
-} */
+ */
 
-/* .header-menu li{
+ .header-menu{
     display: inline-block;
-} */
+}
+
+.header-menu li{
+    display: inline-block;
+}
 
 .header-menu li a{
     text-decoration: none;
