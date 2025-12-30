@@ -48,7 +48,9 @@
 				
 				</div>
 
-				<div class="site-title ps-3">2026 PIM Conference <br>
+				<div class="site-title ps-3">
+				<span class="line-1">2026 PIM Conference</span>	
+				 <br>
 				CUHK school of business </div>
 				
 				<div class="header-menu-container">
