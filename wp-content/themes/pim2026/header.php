@@ -35,6 +35,9 @@
 
 	<div class="header-container">
 				<div class="container">
+				
+
+				<div class="header-left">
 
 				<div class="site-logo">
 					
@@ -53,6 +56,8 @@
 					<li><a href="#">Registration</a></li>
 					<li><a href="#">More</a></li>
 				</ul>
+
+				</div>
 
 			</div><!-- .container -->	
 	</div><!-- .header-container -->
