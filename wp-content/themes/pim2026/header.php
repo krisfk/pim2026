@@ -47,8 +47,8 @@
 				CUHK school of business </div>
 				
 				<ul class="header-menu">
-					<li><a href="#">conference overview</a></li>
-					<li><a href="#">CUHK highlights</a></li>
+					<li><a href="#">Conference Overview</a></li>
+					<li><a href="#">CUHK Highlights</a></li>
 					<li><a href="#">Schedule</a></li>
 					<li><a href="#">Registration</a></li>
 					<li><a href="#">More</a></li>
