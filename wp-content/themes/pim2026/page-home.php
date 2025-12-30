@@ -72,7 +72,15 @@ get_header(); ?>
 </div>	
 
 <div id="testimonial-carousel" class="carousel slide w-100 mt-5" data-bs-ride="carousel" style="width:100vw; margin-left:calc(50% - 50vw);">
-  <h3 class="text-center  mb-4 fw-bold" style="">Messages</h1>
+  <h3 class="text-center  mb-4 fw-bold" style="">Messages</h3>
+
+  <!-- Carousel indicators for dots control -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
   <div class="carousel-inner" style="max-width: 1000px; margin:0 auto;">
     <div class="carousel-item active">
       <div class="d-flex flex-column align-items-center justify-content-center" style="">
@@ -107,6 +115,7 @@ get_header(); ?>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
 
 
 <?php
