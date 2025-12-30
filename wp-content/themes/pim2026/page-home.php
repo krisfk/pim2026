@@ -50,30 +50,21 @@ get_header(); ?>
   </button>
 </div>
 
-<!-- Bootstrap 5 carousel requires Bootstrap's JS, which should be loaded in your theme header/footer. -->
 
-<!-- You may want to place your banner.jpg file in your theme's assets/images/ directory -->
 
+<div class="container">
+
+<h1>Overview</h1>
+
+<div>
+From March 15 to March 17, 2026, the conference will explore the theme "Navigating Business Innovation in a Dynamic World." This hybrid event aims to unite scholars, practitioners, and thought leaders to discuss emerging trends and innovative strategies in business. Participants can join either in person at The Chinese University of Hong Kong or virtually, fostering a global dialogue on critical issues affecting the business landscape. Attendees will enjoy keynote speeches, panel discussions, and networking opportunities, enhancing their insights into contemporary challenges and solutions within the ever-evolving business environment
+</div>
+
+
+</div>
 
 
 <?php
-// if ( have_posts() ) {
 
-// 	// Load posts loop.
-// 	while ( have_posts() ) {
-// 		the_post();
-
-// 		get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) );
-// 	}
-
-// 	// Previous/next page navigation.
-// 	twenty_twenty_one_the_posts_navigation();
-
-// } else {
-
-// 	// If no content, include the "No posts found" template.
-// 	get_template_part( 'template-parts/content/content-none' );
-
-// }
 
 get_footer();
