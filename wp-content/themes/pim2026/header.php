@@ -150,7 +150,7 @@
 		
 		<tr>
 			<td class="align-top pe-2">
-			<img class="" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt="">
+			<img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt="">
 	
 			</td><td>
 			<span class="fw-bold">Conference dates announced</span> <br>
@@ -158,7 +158,7 @@
 		</tr>
 		<tr>
 			<td class="align-top pe-2">
-			<img class="" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt="">
+			<img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt="">
 	
 			</td><td>
 			<span class="fw-bold">Early bird registration open</span> <br>
