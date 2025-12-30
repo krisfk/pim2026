@@ -48,17 +48,37 @@
 
 									<div class="col-md-4 col-lg-4 ">
 	<h6>Getting there</h6>
-	<table><tr>
+	<table>
+		
+	<tr>
 		<td class="align-top pe-2">
-<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+		<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 
 		</td><td>
 		<span class="fw-bold">Register now</span> <br>
-		Secure your place at the conference
+		Secure your place at the conference</td>
+	</tr>
+	<tr>
+		<td class="align-top pe-2">
+		<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+
+		</td><td>
+		<span class="fw-bold">Travel to HK</span> <br>
+		Plan your journey to Hong Kong</td>
+	</tr>
+
+	<tr>
+		<td class="align-top pe-2">
+		<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+
+		</td><td>
+		<span class="fw-bold">Accommodation & tours</span> <br>
+		Find lodging and explore the city</td>
+	</tr>
 
 
-		</td>
-	</tr></table>
+
+</table>
 									
 									</div>
 									<div class="col-md-4 col-lg-4 ">
