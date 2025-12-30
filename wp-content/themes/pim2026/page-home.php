@@ -22,6 +22,7 @@ get_header(); ?>
 	</header><!-- .page-header -->
 <?php endif; ?>
 
+test
 <?php
 // if ( have_posts() ) {
 
