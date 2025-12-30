@@ -2,23 +2,20 @@
 height: 70px;
 width: auto;
 }
-.site-logo{
+/* .site-logo{
     display: inline-block;
-    /* float: left; */
 }
 .site-title{
     display: inline-block;
-    /* float: left; */
 
 }
 .header-menu{
     display: inline-block;
-    /* float: left; */
-}
+} */
 
-.header-menu li{
+/* .header-menu li{
     display: inline-block;
-}
+} */
 
 .header-menu li a{
     text-decoration: none;
@@ -37,4 +34,9 @@ width: auto;
 }
 .header-left{
     display: table;
+}
+
+.header-left div{
+    display: table-cell;
+    vertical-align: middle;
 }
