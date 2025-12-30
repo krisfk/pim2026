@@ -71,8 +71,8 @@ get_header(); ?>
 
 </div>	
 
-<div id="testimonial-carousel" class="carousel slide w-100" data-bs-ride="carousel" style="width:100vw; margin-left:calc(50% - 50vw);">
-  <h3 class="text-center mt-5 mb-4 fw-bold" style="">Messages</h1>
+<div id="testimonial-carousel" class="carousel slide w-100 mt-5" data-bs-ride="carousel" style="width:100vw; margin-left:calc(50% - 50vw);">
+  <h3 class="text-center  mb-4 fw-bold" style="">Messages</h1>
   <div class="carousel-inner" style="max-width: 1000px; margin:0 auto;">
     <div class="carousel-item active">
       <div class="d-flex flex-column align-items-center justify-content-center" style="">
