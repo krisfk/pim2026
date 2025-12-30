@@ -22,6 +22,7 @@ get_header(); ?>
 	</header><!-- .page-header -->
 <?php endif; ?>
 
+
 <div id="home-banner-carousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
