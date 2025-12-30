@@ -8,3 +8,10 @@ width: auto;
 .site-title{
     display: inline-block;
 }
+.header-menu{
+    display: inline-block;
+}
+
+.header-menu li{
+    display: inline-block;
+}
