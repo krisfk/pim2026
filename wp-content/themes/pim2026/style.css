@@ -1,47 +1,50 @@
 .site-logo img{
-height: 70px;
-width: auto;
-}
-/* .site-logo{
-    display: inline-block;
-}
-.site-title{
-    display: inline-block;
-
-}
- */
-
- .header-menu{
-    display: inline-block;
-}
-
-.header-menu li{
-    display: inline-block;
-}
-
-.header-menu li a{
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    transition: all 0.3s ease;
-}
-
-.header-menu li a:hover{
-    background-color: #000;
-    color: #fff;
-}
-.header-left{
-    display: table;
-}
-
-.header-left div{
-    display: table-cell;
-    vertical-align: middle;
-}
-.site-title .line-1{
+    height: 70px;
+    width: auto;
+    }
+    /* .site-logo{
+        display: inline-block;
+    }
+    .site-title{
+        display: inline-block;
     
-}
+    }
+     */
+    
+     .header-menu{
+        display: inline-block;
+    }
+    
+    .header-menu li{
+        display: inline-block;
+    }
+    
+    .header-menu li a{
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+        transition: all 0.3s ease;
+    }
+    
+    .header-menu li a:hover{
+        background-color: #000;
+        color: #fff;
+    }
+    .header-left{
+        display: table;
+    }
+    
+    .header-left div{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .site-title .line-1{
+        font-size: 23px;
+        font-style: italic;
+        color: #300353;
+        font-weight: normal;
+    }
