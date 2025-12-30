@@ -71,6 +71,10 @@
         width: 60px;
         /* height: 30px; */
       }
+
+      .carousel-indicators{
+        bottom: -60px;
+      }
       @media (max-width: 900px) {
         #home-banner-carousel .carousel-item {
           height: 50vw;
