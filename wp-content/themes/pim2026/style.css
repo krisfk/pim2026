@@ -2,3 +2,6 @@
 height: 70px;
 width: auto;
 }
+.site-logo{
+    display: inline-block
+}
