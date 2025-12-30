@@ -47,16 +47,16 @@
 									<div class="row">
 
 									<div class="col-md-4 col-lg-4 ">
-	<h5>Getting there</h5>
+	<h6>Getting there</h6>
 									
 									</div>
 									<div class="col-md-4 col-lg-4 ">
-<h5>Resources</h5>
+<h6>Resources</h6>
 
 									</div>
 									<div class="col-md-4 col-lg-4 ">
 
-			<h5>Recent updates</h5>
+			<h6>Recent updates</h6>
 									</div>
 
 
