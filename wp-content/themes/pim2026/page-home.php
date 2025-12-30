@@ -134,16 +134,55 @@ get_header(); ?>
   </div>
 </div>
 
+<style>
+  .home-btn-register {
+    background-color: #300353 !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  }
+  .home-btn-register:hover, .home-btn-register:focus {
+    background-color: #511380 !important;
+    box-shadow: 0 2px 16px rgba(48,3,83, 0.17);
+    transform: translateY(-2px) scale(1.04);
+  }
+  .home-btn-schedule {
+    background: transparent;
+    border: 2px solid #300353;
+    color: #300353;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+  }
+  .home-btn-schedule:hover, .home-btn-schedule:focus {
+    color: #fff;
+    background: #300353;
+    box-shadow: 0 2px 16px rgba(48,3,83, 0.11);
+    transform: translateY(-2px) scale(1.04);
+  }
+  .home-btn-schedule:hover span,
+  .home-btn-schedule:focus span {
+    color: #fff;
+    transform: translateX(4px);
+    transition: color 0.2s, transform 0.2s;
+  }
+  .home-btn-schedule span {
+    transition: color 0.2s, transform 0.2s;
+    color: #300353;
+  }
+</style>
 <div class="d-flex gap-3 justify-content-center mt-4">
-  <a href="#" class="btn btn-primary px-4 py-2" style="background-color:#300353; border:none; font-weight:600;">
+  <a href="#" class="btn btn-primary px-4 py-2 home-btn-register">
     Register
   </a>
-  <a href="#" class="d-flex align-items-center px-4 py-2" style="background:transparent; border:2px solid #300353; color:#300353; font-weight:600; border-radius:5px; text-decoration:none;">
+  <a href="#" class="px-4 py-2 home-btn-schedule">
     Schedule
     <span class="ms-2" style="font-size:1.3em; line-height:1; display:inline-block;">&#8594;</span>
   </a>
 </div>
-
 
 </div>
 
