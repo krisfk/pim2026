@@ -134,6 +134,16 @@ get_header(); ?>
   </div>
 </div>
 
+<div class="d-flex gap-3 justify-content-center mt-4">
+  <a href="#" class="btn btn-primary px-4 py-2" style="background-color:#300353; border:none; font-weight:600;">
+    Register
+  </a>
+  <a href="#" class="d-flex align-items-center px-4 py-2" style="background:transparent; border:2px solid #300353; color:#300353; font-weight:600; border-radius:5px; text-decoration:none;">
+    Schedule
+    <span class="ms-2" style="font-size:1.3em; line-height:1; display:inline-block;">&#8594;</span>
+  </a>
+</div>
+
 
 </div>
 
