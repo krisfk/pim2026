@@ -117,6 +117,25 @@ get_header(); ?>
 </div>
 
 
+<div class="container">
+
+<div class="row justify-content-center my-5">
+  <div class="col-12 col-md-10 col-lg-8">
+    <div class="ratio ratio-16x9">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
 
 <?php
 
