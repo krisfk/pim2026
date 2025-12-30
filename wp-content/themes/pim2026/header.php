@@ -33,7 +33,14 @@
 	<?php //get_template_part( 'template-parts/header/site-header' ); ?>
 
 
-	<div class=""></div>
+	<div class="header-container">
+		<div class="site-logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
+		</div>
+		<div class="site-title">
+			<h1>PIM2026</h1>
+		</div>
+	</div>
 
 
 	<div id="content" class="site-content">

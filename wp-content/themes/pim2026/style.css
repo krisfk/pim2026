@@ -2,28 +2,3 @@
 height: 70px;
 width: auto;
 }
-
-/* Horizontal menu styles */
-#primary-menu-list.menu-wrapper,
-.primary-menu-container .menu-wrapper {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-#primary-menu-list.menu-wrapper li,
-.primary-menu-container .menu-wrapper li {
-	display: inline-block;
-	width: auto;
-	margin: 0;
-}
-
-#primary-menu-list.menu-wrapper li a,
-.primary-menu-container .menu-wrapper li a {
-	display: block;
-	padding: 0.5em 1em;
-	white-space: nowrap;
-}
