@@ -22,7 +22,13 @@ get_header(); ?>
 	</header><!-- .page-header -->
 <?php endif; ?>
 
-test
+<div class="home-banner" style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; overflow: hidden;">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner.jpg" alt="Home Banner" style="width: 100%; display: block; max-height: 450px; object-fit: cover;">
+</div>
+<!-- You may want to place your banner.jpg file in your theme's assets/images/ directory -->
+
+
+
 <?php
 // if ( have_posts() ) {
 
