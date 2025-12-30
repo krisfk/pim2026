@@ -397,15 +397,21 @@ add_action( 'after_setup_theme', 'twenty_twenty_one_content_width', 0 );
  * @return void
  */
 function twenty_twenty_one_scripts() {
+	// Enqueue Bootstrap CSS
+	wp_enqueue_style( 'bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css', array(), '5.3.3' );
+	
+	// Enqueue Bootstrap JS Bundle (includes Popper)
+	wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array(), '5.3.3', true );
+	
 	// Note, the is_IE global variable is defined by WordPress and is used
 	// to detect if the current browser is internet explorer.
 	global $is_IE, $wp_scripts;
 	if ( $is_IE ) {
 		// If IE 11 or below, use a flattened stylesheet with static values replacing CSS Variables.
-		wp_enqueue_style( 'twenty-twenty-one-style', get_template_directory_uri() . '/assets/css/ie.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'twenty-twenty-one-style', get_template_directory_uri() . '/assets/css/ie.css', array( 'bootstrap-css' ), wp_get_theme()->get( 'Version' ) );
 	} else {
 		// If not IE, use the standard stylesheet.
-		wp_enqueue_style( 'twenty-twenty-one-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'twenty-twenty-one-style', get_template_directory_uri() . '/style.css', array( 'bootstrap-css' ), wp_get_theme()->get( 'Version' ) );
 	}
 
 	// RTL styles.
