@@ -148,29 +148,30 @@ get_header(); ?>
   }
   .home-btn-schedule {
     background: transparent;
-    border: 2px solid #300353;
+    border: none;
     color: #300353;
     font-weight: 600;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    transition: none;
     display: flex;
     align-items: center;
   }
-  .home-btn-schedule:hover, .home-btn-schedule:focus {
-    color: #fff;
-    background: #300353;
-    box-shadow: 0 2px 16px rgba(48,3,83, 0.11);
-    transform: translateY(-2px) scale(1.04);
+  .home-btn-schedule:hover,
+  .home-btn-schedule:focus {
+    color: #300353;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
   }
   .home-btn-schedule:hover span,
   .home-btn-schedule:focus span {
-    color: #fff;
-    transform: translateX(4px);
-    transition: color 0.2s, transform 0.2s;
+    color: #300353;
+    transform: none;
+    transition: none;
   }
   .home-btn-schedule span {
-    transition: color 0.2s, transform 0.2s;
+    transition: none;
     color: #300353;
   }
 </style>
