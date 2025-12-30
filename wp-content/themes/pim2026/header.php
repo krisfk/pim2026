@@ -34,12 +34,16 @@
 
 
 	<div class="header-container">
+		<div class="container">
+			
 		<div class="site-logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
 		</div>
-		<div class="site-title">
-			<h1>PIM2026</h1>
+
 		</div>
+		<!-- <div class="site-title">
+			<h1>PIM2026</h1>
+		</div> -->
 	</div>
 
 
