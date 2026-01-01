@@ -352,26 +352,37 @@
 						});
 					}
 
-					// Hamburger logic: menu appears on click AND ensures .header-submenu-container is position:absolute
+					// Hamburger logic: toggle submenu display
 					var hamburger = document.querySelector('.header-hamburger');
 					var mobileMenu = document.getElementById('mobile-header-menu');
 
 					if (hamburger && submenu) {
 						hamburger.addEventListener('click', function(e) {
 							e.stopPropagation();
-							// Set the submenu position to absolute style
-							submenu.style.position = 'absolute';
-							submenu.style.left = "0";
-							submenu.style.top = "100px";
-							submenu.style.width = "100vw";
-							submenu.style.marginLeft = "calc(50% - 50vw)";
-							submenu.style.display = 'block';
-							// Optionally show mobile menu as well, as before
-							if (mobileMenu) {
-								mobileMenu.style.display = 'block';
-								mobileMenu.setAttribute('aria-hidden', 'false');
-								document.body.style.overflow = 'hidden';
-								hamburger.setAttribute('aria-expanded', 'true');
+							// If submenu is currently shown, hide it; else show it with absolute position
+							if (submenu.style.display === 'block') {
+								submenu.style.display = 'none';
+								// Optionally, also hide mobile menu and reset aria attrs if needed
+								if (mobileMenu) {
+									mobileMenu.style.display = 'none';
+									mobileMenu.setAttribute('aria-hidden', 'true');
+									document.body.style.overflow = '';
+									hamburger.setAttribute('aria-expanded', 'false');
+								}
+							} else {
+								submenu.style.position = 'absolute';
+								submenu.style.left = "0";
+								submenu.style.top = "100px";
+								submenu.style.width = "100vw";
+								submenu.style.marginLeft = "calc(50% - 50vw)";
+								submenu.style.display = 'block';
+								// Optionally show mobile menu as well, as before
+								if (mobileMenu) {
+									mobileMenu.style.display = 'block';
+									mobileMenu.setAttribute('aria-hidden', 'false');
+									document.body.style.overflow = 'hidden';
+									hamburger.setAttribute('aria-expanded', 'true');
+								}
 							}
 						});
 					}
