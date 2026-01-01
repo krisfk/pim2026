@@ -36,6 +36,7 @@
 			top: 16px;
 			right: 16px;
 			z-index: 2201;
+			transition: transform 0.25s cubic-bezier(.4,2,.6,1);
 		}
 		.header-hamburger span,
 		.header-hamburger span::before,
@@ -46,7 +47,7 @@
 			height: 3px;
 			background: #300353;
 			border-radius: 2px;
-			transition: 0.3s;
+			transition: all 0.32s cubic-bezier(.4,2,.6,1);
 			content: '';
 		}
 		.header-hamburger span {
@@ -62,6 +63,21 @@
 			position: absolute;
 			top: 8px;
 		}
+		/* Hamburger open/close animation */
+		.header-hamburger.active span {
+			background: transparent;
+		}
+		.header-hamburger.active span::before {
+			transform: translateY(8px) rotate(45deg);
+		}
+		.header-hamburger.active span::after {
+			transform: translateY(-8px) rotate(-45deg);
+		}
+		.header-hamburger span::before,
+		.header-hamburger span::after {
+			transform: none;
+		}
+
 		@media (max-width: 900px) {
 			.header-hamburger {
 				display: flex;
@@ -383,23 +399,23 @@
 						});
 					}
 
-					// Hamburger logic: toggle submenu display
+					// Hamburger logic: toggle submenu display and animate hamburger
 					var hamburger = document.querySelector('.header-hamburger');
 					var mobileMenu = document.getElementById('mobile-header-menu');
 
 					if (hamburger && submenu) {
 						hamburger.addEventListener('click', function(e) {
 							e.stopPropagation();
-							// If submenu is currently shown, hide it; else show it with fixed position
-							if (submenu.style.display === 'block') {
+							var isOpen = submenu.style.display === 'block';
+							if (isOpen) {
 								submenu.style.display = 'none';
-								// Optionally, also hide mobile menu and reset aria attrs if needed
 								if (mobileMenu) {
 									mobileMenu.style.display = 'none';
 									mobileMenu.setAttribute('aria-hidden', 'true');
 									document.body.style.overflow = '';
 									hamburger.setAttribute('aria-expanded', 'false');
 								}
+								hamburger.classList.remove('active');
 							} else {
 								submenu.style.position = 'fixed';
 								submenu.style.left = "0";
@@ -407,13 +423,13 @@
 								submenu.style.width = "100vw";
 								submenu.style.marginLeft = "calc(50% - 50vw)";
 								submenu.style.display = 'block';
-								// Optionally show mobile menu as well, as before
 								if (mobileMenu) {
 									mobileMenu.style.display = 'block';
 									mobileMenu.setAttribute('aria-hidden', 'false');
 									document.body.style.overflow = 'hidden';
 									hamburger.setAttribute('aria-expanded', 'true');
 								}
+								hamburger.classList.add('active');
 							}
 						});
 					}
