@@ -174,7 +174,7 @@
 				padding-left: 1rem;
 				padding-right: 1rem;
 			}
-			.testimonial-carousel > p {
+			.carousel-item > p {
 				padding-left: 1rem;
 				padding-right: 1rem;
 			}
