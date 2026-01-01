@@ -18,8 +18,27 @@
 	<div class="container">
 
 		<!-- Responsive Row: Stack on mobile, 3 cols on md+ -->
-		<div class="row">
-			<div class="col-12 col-md-4 mb-5 mb-md-0">
+		<div class="row flex-column flex-md-row">
+			<style>
+				/* Reverse order of col-a and col-b on mobile, default on md/desktop */
+				@media (max-width: 767.98px) {
+					.footer-col-a {
+						order: 2;
+					}
+					.footer-col-b {
+						order: 1;
+					}
+				}
+				@media (min-width: 768px) {
+					.footer-col-a {
+						order: 1;
+					}
+					.footer-col-b {
+						order: 2;
+					}
+				}
+			</style>
+			<div class="col-12 col-a col-md-4 mb-5 mb-md-0 footer-col-a">
 
 				<div class="site-logo">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
@@ -69,7 +88,7 @@
 				</div>
 			</div>
 
-			<div class="col-12 col-md-4 mb-5 mb-md-0">
+			<div class="col-12 col-b col-md-4 mb-5 mb-md-0 footer-col-b">
 				<b>Message Us For Enquiry</b>
 				<form class="mt-3" method="post" action="#">
 					<div class="mb-3">
