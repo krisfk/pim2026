@@ -136,7 +136,7 @@
 		<div class="text-secondary mb-2 mb-md-0">
 			© 2026 PIM. All rights reserved
 		</div>
-		<div>
+		<div class="terms-links">
 			<a href="#" class="footer-link px-2">Privacy policy</a>
 			<span class="text-muted">|</span>
 			<a href="#" class="footer-link px-2">Terms of service</a>
