@@ -167,6 +167,14 @@
 				padding-top: 0;
 			}
 		}
+
+		/* --- Testimonial carousel mobile padding --- */
+		@media (max-width: 767.98px) {
+			.testimonial-carousel {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+		}
 	</style>
 </head>
 
