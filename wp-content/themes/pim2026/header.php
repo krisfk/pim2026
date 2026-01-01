@@ -235,7 +235,7 @@
 		</div>
 	</div>
 
-	<!-- MOBILE MENU DRAWER (now always hidden on mobile, even if triggered by hamburger) -->
+	<!-- MOBILE MENU DRAWER (appears when triggered by hamburger) -->
 	<div id="mobile-header-menu" class="header-menu-mobile" tabindex="-1" aria-hidden="true" style="display:none;">
 		<button class="btn-close position-absolute close-mobile-menu" aria-label="Close menu" style="z-index:101;right:0.7rem;top:0.8rem;"></button>
 		<ul class="header-menu mb-4 mt-4" style="list-style:none; padding-left:0;">
@@ -363,33 +363,44 @@
 					var closeMobileMenuBtn = document.querySelector('.close-mobile-menu');
 
 					function openMobileMenu() {
-						// Instead of showing the mobile menu, do nothing (or optionally show an alert if you wish)
-						return;
+						if (mobileMenu) {
+							mobileMenu.style.display = 'block';
+							mobileMenu.setAttribute('aria-hidden', 'false');
+							document.body.style.overflow = 'hidden'; // prevent scrolling behind menu
+							if (hamburger) hamburger.setAttribute('aria-expanded', 'true');
+						}
 					}
 					function closeMobileMenu() {
 						if (mobileMenu) {
 							mobileMenu.style.display = 'none';
 							mobileMenu.setAttribute('aria-hidden', 'true');
 							document.body.style.overflow = '';
-							hamburger.setAttribute('aria-expanded', 'false');
+							if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
 							// close submenu as well
 							if (mobileSubmenu) mobileSubmenu.classList.remove('open');
 							if (mobileMoreLi) mobileMoreLi.classList.remove('open');
 						}
 					}
 					if (hamburger && mobileMenu) {
-						hamburger.addEventListener('click', function(){
+						hamburger.addEventListener('click', function(e){
+							e.stopPropagation();
 							openMobileMenu();
 						});
 					}
 					if (closeMobileMenuBtn && mobileMenu) {
-						closeMobileMenuBtn.addEventListener('click', function(){
+						closeMobileMenuBtn.addEventListener('click', function(e){
+							e.stopPropagation();
 							closeMobileMenu();
 						});
 					}
-					// Prevent showing the menu on mobile via outside click
+					// Hide menu on click outside (mobile)
 					window.addEventListener('click', function(e) {
-						// nothing to do
+						if (mobileMenu && mobileMenu.style.display === 'block') {
+							// If click not inside the menu or the hamburger
+							if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
+								closeMobileMenu();
+							}
+						}
 					});
 					// Prevent propagation for inner clicks
 					if(mobileMenu) {
@@ -400,7 +411,14 @@
 					if (mobileMoreLi && mobileMoreLink && mobileSubmenu) {
 						mobileMoreLink.addEventListener('click', function(e) {
 							e.preventDefault();
-							// Do nothing since menu never shows
+							var isOpen = mobileSubmenu.classList.contains('open');
+							if (isOpen) {
+								mobileSubmenu.classList.remove('open');
+								mobileMoreLi.classList.remove('open');
+							} else {
+								mobileSubmenu.classList.add('open');
+								mobileMoreLi.classList.add('open');
+							}
 						});
 					}
 					// Accessibility: close on escape key
