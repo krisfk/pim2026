@@ -358,13 +358,18 @@
 					var hamburger = document.querySelector('.header-hamburger');
 					var mobileMenu = document.getElementById('mobile-header-menu');
 
-					if (hamburger && mobileMenu) {
+					// New: show .header-submenu-container on hamburger click as well
+					if (hamburger && submenu) {
 						hamburger.addEventListener('click', function(e) {
 							e.stopPropagation();
-							mobileMenu.style.display = 'block';
-							mobileMenu.setAttribute('aria-hidden', 'false');
-							document.body.style.overflow = 'hidden';
-							hamburger.setAttribute('aria-expanded', 'true');
+							submenu.style.display = 'block';
+							// Optionally: If mobile menu should open too, add below. (It was in original code)
+							if (mobileMenu) {
+								mobileMenu.style.display = 'block';
+								mobileMenu.setAttribute('aria-hidden', 'false');
+								document.body.style.overflow = 'hidden';
+								hamburger.setAttribute('aria-expanded', 'true');
+							}
 						});
 					}
 					// --- End MODIFIED ---
