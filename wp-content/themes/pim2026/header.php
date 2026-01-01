@@ -24,17 +24,17 @@
 		.header-hamburger {
 			display: none;
 			cursor: pointer;
-			width: 28px;      /* made smaller */
-			height: 28px;     /* made smaller */
+			width: 36px;
+			height: 36px;
 			align-items: center;
 			justify-content: center;
 			border: none;
 			background: transparent;
 			padding: 0;
 			margin: 0;
-			/* Inline version: remove position fixed and let it sit in flow in the flex row! */
-			position: static;
-			/* Remove top, right */
+			position: fixed;
+			top: 16px;
+			right: 16px;
 			z-index: 2201;
 			transition: transform 0.25s cubic-bezier(.4,2,.6,1);
 		}
@@ -43,10 +43,10 @@
 		.header-hamburger span::after {
 			display: block;
 			position: absolute;
-			width: 18px;   /* smaller bar width */
-			height: 2px;   /* smaller bar height */
+			width: 24px;
+			height: 3px;
 			background: #300353;
-			border-radius: 1.5px;
+			border-radius: 2px;
 			transition: all 0.32s cubic-bezier(.4,2,.6,1);
 			content: '';
 		}
@@ -56,22 +56,22 @@
 		.header-hamburger span::before {
 			content: '';
 			position: absolute;
-			top: -6px;   /* adjust gap for smaller size */
+			top: -8px;
 		}
 		.header-hamburger span::after {
 			content: '';
 			position: absolute;
-			top: 6px;    /* adjust gap for smaller size */
+			top: 8px;
 		}
 		/* Hamburger open/close animation */
 		.header-hamburger.active span {
 			background: transparent;
 		}
 		.header-hamburger.active span::before {
-			transform: translateY(6px) rotate(45deg);
+			transform: translateY(8px) rotate(45deg);
 		}
 		.header-hamburger.active span::after {
-			transform: translateY(-6px) rotate(-45deg);
+			transform: translateY(-8px) rotate(-45deg);
 		}
 		.header-hamburger span::before,
 		.header-hamburger span::after {
@@ -81,9 +81,6 @@
 		@media (max-width: 900px) {
 			.header-hamburger {
 				display: flex;
-				/* Ensure it stays in-line with header content */
-				position: static;
-				margin-left: 12px;
 			}
 			.header-menu-container {
 				display: none !important;
@@ -91,6 +88,7 @@
 			.header-menu-mobile {
 				display: none !important;
 			}
+			/* Remove top:auto on .header-submenu-container so JS can set absolute */
 			.header-search-desktop {
 				display: none !important;
 			}
@@ -144,6 +142,7 @@
 			color: #511380;
 			text-decoration: underline;
 		}
+		/* ---- Sticky header for mobile ---- */
 		@media (max-width: 900px) {
 			.header-container {
 				position: fixed;
@@ -160,7 +159,7 @@
 				padding-bottom: 0.5rem !important;
 			}
 			body {
-				padding-top: 74px;
+				padding-top: 74px; /* adjust to match the header height on mobile */
 			}
 		}
 		@media (min-width: 901px) {
@@ -174,6 +173,8 @@
 				padding-top: 0;
 			}
 		}
+
+		/* --- Testimonial carousel mobile padding --- */
 		@media (max-width: 767.98px) {
 			.testimonial-carousel {
 				padding-left: 1rem;
@@ -184,6 +185,7 @@
 				padding-right: 1rem;
 			}
 		}
+
 		.header-search-desktop {
 			margin-left: 2rem;
 			min-width: 200px;
@@ -206,20 +208,185 @@
 
 	<?php //get_template_part( 'template-parts/header/site-header' ); ?>
 
-	<!-- Hamburger icon (mobile, now inline in the header) -->
-	<!-- Move hamburger into .header-left so it's inline -->
-	
+	<!-- Hamburger icon (mobile, fixed top right) -->
+	<button class="header-hamburger" aria-label="Open navigation" aria-controls="mobile-header-menu" aria-expanded="false">
+		<span></span>
+	</button>
+
+	<!-- Desktop submenu (absolute, hidden in mobile) -->
+	<div class="header-submenu-container" style="display:none; position:absolute; left:0; top:100px; width:100vw; margin-left:calc(50% - 50vw); background:#fff; z-index:1000; border-top:1px solid #eee; box-shadow:0 6px 25px rgba(0,0,0,0.09);">
+		<div class="container py-4">
+			<div class="row">
+				<div class="col-md-4 col-lg-4 ">
+					<h6>Getting there</h6>
+					<table>
+						<tr>
+							<td class="align-top pe-2">
+							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+							</td><td>
+							<span class="fw-bold">Register now</span> <br>
+							Secure your place at the conference</td>
+						</tr>
+						<tr>
+							<td class="align-top pe-2">
+							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+							</td><td>
+							<span class="fw-bold">Travel to HK</span> <br>
+							Plan your journey to Hong Kong</td>
+						</tr>
+						<tr>
+							<td class="align-top pe-2">
+							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+							</td><td>
+							<span class="fw-bold">Accommodation & tours</span> <br>
+							Find lodging and explore the city</td>
+						</tr>
+						<tr>
+							<td class="align-top pe-2">
+							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+							</td><td>
+							<span class="fw-bold">About HK</span> <br>
+							Learn what makes Hong Kong special</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-md-4 col-lg-4 ">
+					<h6>Resources</h6>
+					<table>
+						<tr>
+							<td class="align-top pe-2">
+							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+							</td><td>
+							<span class="fw-bold">Contact us</span> <br>
+							Reach out with questions or concerns</td>
+						</tr>
+						<tr>
+							<td class="align-top pe-2">
+							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+							</td><td>
+							<span class="fw-bold">Home</span> <br>
+							Return to the main page</td>
+						</tr>
+						<tr>
+							<td class="align-top pe-2">
+							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+							</td><td>
+							<span class="fw-bold">About</span> <br>
+							Discover our conference mission</td>
+						</tr>
+						<tr>
+							<td class="align-top pe-2">
+							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+							</td><td>
+							<span class="fw-bold">The gathering</span> <br>
+							Where scholars meet and ideas take shape</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-md-4 col-lg-4 ">
+					<h6>Recent updates</h6>
+					<table>
+						<tr>
+							<td class="align-top pe-2">
+							<img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt="">
+							</td><td>
+							<span class="fw-bold">Conference dates announced</span> <br>
+							Mark your calendar for this year's event</td>
+						</tr>
+						<tr>
+							<td class="align-top pe-2">
+							<img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt="">
+							</td><td>
+							<span class="fw-bold">Early bird registration open</span> <br>
+							Register early and save on conference fees</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MOBILE MENU DRAWER (appears when triggered by hamburger) -->
+	<div id="mobile-header-menu" class="header-menu-mobile" tabindex="-1" aria-hidden="true" style="display:none;">
+		<button class="btn-close position-absolute close-mobile-menu" aria-label="Close menu" style="z-index:101;right:0.7rem;top:0.8rem;"></button>
+		<ul class="header-menu mb-4 mt-4" style="list-style:none; padding-left:0;">
+			<li><a href="#" class="d-block py-1">Conference Overview</a></li>
+			<li><a href="#" class="d-block py-1">CUHK Highlights</a></li>
+			<li><a href="#" class="d-block py-1">Schedule</a></li>
+			<li><a href="#" class="d-block py-1">Registration</a></li>
+			<li class="header-menu-more-mobile position-static" style="position:static;">
+				<a href="#" class="d-block py-1 menu-more-link">More <span style="font-size:12px;">&#9660;</span></a>
+				<!-- Custom mobile submenu (copied from .header-submenu-container content) -->
+				<div class="header-submenu-container" style="display:none;">
+					<div>
+						<div class="py-2">
+						<h6>Getting there</h6>
+						<table>
+							<tr>
+								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
+								<td><span class="fw-bold">Register now</span> <br>Secure your place at the conference</td>
+							</tr>
+							<tr>
+								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
+								<td><span class="fw-bold">Travel to HK</span> <br>Plan your journey to Hong Kong</td>
+							</tr>
+							<tr>
+								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
+								<td><span class="fw-bold">Accommodation & tours</span> <br>Find lodging and explore the city</td>
+							</tr>
+							<tr>
+								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
+								<td><span class="fw-bold">About HK</span> <br>Learn what makes Hong Kong special</td>
+							</tr>
+						</table>
+						</div>
+						<div class="py-2">
+						<h6>Resources</h6>
+						<table>
+							<tr>
+								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
+								<td><span class="fw-bold">Contact us</span> <br>Reach out with questions or concerns</td>
+							</tr>
+							<tr>
+								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
+								<td><span class="fw-bold">Home</span> <br>Return to the main page</td>
+							</tr>
+							<tr>
+								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
+								<td><span class="fw-bold">About</span> <br>Discover our conference mission</td>
+							</tr>
+							<tr>
+								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
+								<td><span class="fw-bold">The gathering</span> <br>Where scholars meet and ideas take shape</td>
+							</tr>
+						</table>
+						</div>
+						<div class="py-2">
+						<h6>Recent updates</h6>
+						<table>
+							<tr>
+								<td class="align-top pe-2"><img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt=""></td>
+								<td><span class="fw-bold">Conference dates announced</span> <br>Mark your calendar for this year's event</td>
+							</tr>
+							<tr>
+								<td class="align-top pe-2"><img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt=""></td>
+								<td><span class="fw-bold">Early bird registration open</span> <br>Register early and save on conference fees</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
 	<div class="header-container mt-3 mb-3">
 		<div class="container">
 			<div class="d-flex flex-wrap align-items-center justify-content-between">
-				<!-- FLEX: put header-left, hamburger, and search together in a row -->
+				<!-- FLEX: put header-left and search together in a row -->
 				<div class="d-flex align-items-center flex-grow-1" style="min-width:0;">
 					<div class="d-flex align-items-center header-left" style="min-width:0;">
-						<!-- Hamburger is here, inline with logo, title, and menu -->
-						<button class="header-hamburger ms-2" aria-label="Open navigation" aria-controls="mobile-header-menu" aria-expanded="false">
-							<span></span>
-						</button>
-						<div class="site-logo ms-2">
+						<div class="site-logo">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
 						</div>
 						<div class="site-title ps-3">
@@ -335,174 +502,11 @@
 					}
 					@media (max-width: 900px) {
 						.header-menu-container { display: none !important; }
+						/* Remove forcing .header-submenu-container to static, so we can override position via JS on hamburger click */
+						/* .header-submenu-container { position: static !important; width:100% !important; margin-left:0 !important; } */
 					}
 				</style>
-				<!-- Desktop submenu (absolute, hidden in mobile) -->
-				<div class="header-submenu-container" style="display:none; position:absolute; left:0; top:100px; width:100vw; margin-left:calc(50% - 50vw); background:#fff; z-index:1000; border-top:1px solid #eee; box-shadow:0 6px 25px rgba(0,0,0,0.09);">
-					<div class="container py-4">
-						<div class="row">
-							<div class="col-md-4 col-lg-4 ">
-								<h6>Getting there</h6>
-								<table>
-									<tr>
-										<td class="align-top pe-2">
-										<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
-										</td><td>
-										<span class="fw-bold">Register now</span> <br>
-										Secure your place at the conference</td>
-									</tr>
-									<tr>
-										<td class="align-top pe-2">
-										<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
-										</td><td>
-										<span class="fw-bold">Travel to HK</span> <br>
-										Plan your journey to Hong Kong</td>
-									</tr>
-									<tr>
-										<td class="align-top pe-2">
-										<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
-										</td><td>
-										<span class="fw-bold">Accommodation & tours</span> <br>
-										Find lodging and explore the city</td>
-									</tr>
-									<tr>
-										<td class="align-top pe-2">
-										<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
-										</td><td>
-										<span class="fw-bold">About HK</span> <br>
-										Learn what makes Hong Kong special</td>
-									</tr>
-								</table>
-							</div>
-							<div class="col-md-4 col-lg-4 ">
-								<h6>Resources</h6>
-								<table>
-									<tr>
-										<td class="align-top pe-2">
-										<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
-										</td><td>
-										<span class="fw-bold">Contact us</span> <br>
-										Reach out with questions or concerns</td>
-									</tr>
-									<tr>
-										<td class="align-top pe-2">
-										<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
-										</td><td>
-										<span class="fw-bold">Home</span> <br>
-										Return to the main page</td>
-									</tr>
-									<tr>
-										<td class="align-top pe-2">
-										<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
-										</td><td>
-										<span class="fw-bold">About</span> <br>
-										Discover our conference mission</td>
-									</tr>
-									<tr>
-										<td class="align-top pe-2">
-										<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
-										</td><td>
-										<span class="fw-bold">The gathering</span> <br>
-										Where scholars meet and ideas take shape</td>
-									</tr>
-								</table>
-							</div>
-							<div class="col-md-4 col-lg-4 ">
-								<h6>Recent updates</h6>
-								<table>
-									<tr>
-										<td class="align-top pe-2">
-										<img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt="">
-										</td><td>
-										<span class="fw-bold">Conference dates announced</span> <br>
-										Mark your calendar for this year's event</td>
-									</tr>
-									<tr>
-										<td class="align-top pe-2">
-										<img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt="">
-										</td><td>
-										<span class="fw-bold">Early bird registration open</span> <br>
-										Register early and save on conference fees</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- MOBILE MENU DRAWER (appears when triggered by hamburger) -->
-				<div id="mobile-header-menu" class="header-menu-mobile" tabindex="-1" aria-hidden="true" style="display:none;">
-					<button class="btn-close position-absolute close-mobile-menu" aria-label="Close menu" style="z-index:101;right:0.7rem;top:0.8rem;"></button>
-					<ul class="header-menu mb-4 mt-4" style="list-style:none; padding-left:0;">
-						<li><a href="#" class="d-block py-1">Conference Overview</a></li>
-						<li><a href="#" class="d-block py-1">CUHK Highlights</a></li>
-						<li><a href="#" class="d-block py-1">Schedule</a></li>
-						<li><a href="#" class="d-block py-1">Registration</a></li>
-						<li class="header-menu-more-mobile position-static" style="position:static;">
-							<a href="#" class="d-block py-1 menu-more-link">More <span style="font-size:12px;">&#9660;</span></a>
-							<!-- Custom mobile submenu (copied from .header-submenu-container content) -->
-							<div class="header-submenu-container" style="display:none;">
-								<div>
-									<div class="py-2">
-									<h6>Getting there</h6>
-									<table>
-										<tr>
-											<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-											<td><span class="fw-bold">Register now</span> <br>Secure your place at the conference</td>
-										</tr>
-										<tr>
-											<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-											<td><span class="fw-bold">Travel to HK</span> <br>Plan your journey to Hong Kong</td>
-										</tr>
-										<tr>
-											<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-											<td><span class="fw-bold">Accommodation & tours</span> <br>Find lodging and explore the city</td>
-										</tr>
-										<tr>
-											<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-											<td><span class="fw-bold">About HK</span> <br>Learn what makes Hong Kong special</td>
-										</tr>
-									</table>
-									</div>
-									<div class="py-2">
-									<h6>Resources</h6>
-									<table>
-										<tr>
-											<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-											<td><span class="fw-bold">Contact us</span> <br>Reach out with questions or concerns</td>
-										</tr>
-										<tr>
-											<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-											<td><span class="fw-bold">Home</span> <br>Return to the main page</td>
-										</tr>
-										<tr>
-											<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-											<td><span class="fw-bold">About</span> <br>Discover our conference mission</td>
-										</tr>
-										<tr>
-											<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-											<td><span class="fw-bold">The gathering</span> <br>Where scholars meet and ideas take shape</td>
-										</tr>
-									</table>
-									</div>
-									<div class="py-2">
-									<h6>Recent updates</h6>
-									<table>
-										<tr>
-											<td class="align-top pe-2"><img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt=""></td>
-											<td><span class="fw-bold">Conference dates announced</span> <br>Mark your calendar for this year's event</td>
-										</tr>
-										<tr>
-											<td class="align-top pe-2"><img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt=""></td>
-											<td><span class="fw-bold">Early bird registration open</span> <br>Register early and save on conference fees</td>
-										</tr>
-									</table>
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
+			</div>
 		</div><!-- .container -->	
 	</div><!-- .header-container -->
 
