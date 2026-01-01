@@ -132,6 +132,20 @@
 
 	<hr style="margin-top: 2rem; margin-bottom: 2rem; border-top: 2px solid #300353; opacity: 0.15;">
 
+	<div class="d-flex justify-content-between align-items-center flex-column flex-md-row pb-3 px-2" style="font-size: 1rem;">
+		<div class="text-secondary mb-2 mb-md-0">
+			© 2026 PIM. All rights reserved
+		</div>
+		<div>
+			<a href="#" class="footer-link px-2">Privacy policy</a>
+			<span class="text-muted">|</span>
+			<a href="#" class="footer-link px-2">Terms of service</a>
+			<span class="text-muted">|</span>
+			<a href="#" class="footer-link px-2">Cookies settings</a>
+		</div>
+	</div>
+
+	
 	</div>
 	
 		
