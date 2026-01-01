@@ -97,7 +97,47 @@
 			</form>
 
 			</div>
-			<div class="col-4"></div>
+			<div class="col-4">
+
+
+			<div class="footer-menu">
+				<div class="row">
+					<div class="col-6">
+						<ul class="list-unstyled">
+							<li><a href="#" class="footer-link">Conference overview</a></li>
+							<li><a href="#" class="footer-link">Schedule</a></li>
+							<li><a href="#" class="footer-link">Register now</a></li>
+							<li><a href="#" class="footer-link">Travel to HK</a></li>
+							<li><a href="#" class="footer-link">Accommodation</a></li>
+						</ul>
+					</div>
+					<div class="col-6">
+						<ul class="list-unstyled">
+							<li><a href="#" class="footer-link">Tours</a></li>
+							<li><a href="#" class="footer-link">About HK</a></li>
+							<li><a href="#" class="footer-link">CUHK highlights</a></li>
+							<li><a href="#" class="footer-link">Contact</a></li>
+							<li><a href="#" class="footer-link">Logistics</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<style>
+				.footer-menu .footer-link {
+					color: #300353;
+					text-decoration: none;
+					display: block;
+					padding: 6px 0;
+					font-weight: 500;
+					transition: color 0.18s;
+				}
+				.footer-menu .footer-link:hover,
+				.footer-menu .footer-link:focus {
+					color: #511380;
+					text-decoration: underline;
+				}
+			</style>
+			</div>
 
 	</div>
 
