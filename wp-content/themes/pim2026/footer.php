@@ -77,7 +77,29 @@
 							</div>
 
 			</div>
-			<div class="col-4"></div>
+			<div class="col-4">
+
+
+
+			<b>Message Us For Enquiry</b>
+
+			<form class="mt-3" method="post" action="#">
+				<div class="mb-3">
+					<label for="footer-contact-name" class="form-label">Name</label>
+					<input type="text" class="form-control" id="footer-contact-name" name="footer_contact_name" required>
+				</div>
+				<div class="mb-3">
+					<label for="footer-contact-email" class="form-label">Email</label>
+					<input type="email" class="form-control" id="footer-contact-email" name="footer_contact_email" required>
+				</div>
+				<div class="mb-3">
+					<label for="footer-contact-content" class="form-label">Message</label>
+					<textarea class="form-control" id="footer-contact-content" name="footer_contact_content" rows="4" placeholder="Write your message here" required></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary w-100" style="background-color: #300353; border: none;">Send Message</button>
+			</form>
+
+			</div>
 			<div class="col-4"></div>
 
 	</div>
