@@ -174,6 +174,10 @@
 				padding-left: 1rem;
 				padding-right: 1rem;
 			}
+			.testimonial-carousel > p {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
 		}
 	</style>
 </head>
