@@ -425,15 +425,7 @@
 				</div>
 				<!-- (No search on the far right for desktop anymore) -->
 			</div>
-			<!-- Responsive search field for mobile (hidden on mobile per instructions) -->
-			<div class="header-search mt-3 d-block d-md-none">
-				<form role="search" method="get" class="d-flex" action="<?php echo esc_url(home_url('/')); ?>">
-					<input type="search" class="form-control" placeholder="Search…" value="<?php echo get_search_query(); ?>" name="s" aria-label="Search">
-					<button class="btn btn-outline-secondary ms-2" type="submit" aria-label="Submit search">
-						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-					</button>
-				</form>
-			</div>
+		
 			<!-- JS for responsive menu -->
 			<script>
 			document.addEventListener('DOMContentLoaded', function() {
