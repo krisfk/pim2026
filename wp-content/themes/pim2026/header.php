@@ -133,6 +133,8 @@
 				box-shadow: 0 2px 12px rgba(0,0,0,0.07);
 				margin-top: 0 !important;
 				margin-bottom: 0 !important;
+				padding-top: 0.5rem !important;
+				padding-bottom: 0.5rem !important;
 			}
 			body {
 				padding-top: 74px; /* adjust to match the header height on mobile */
@@ -142,6 +144,8 @@
 			.header-container {
 				position: static;
 				box-shadow: none;
+				padding-top: 0 !important;
+				padding-bottom: 0 !important;
 			}
 			body {
 				padding-top: 0;
