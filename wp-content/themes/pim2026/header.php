@@ -89,6 +89,9 @@
 				display: none !important;
 			}
 			/* Remove top:auto on .header-submenu-container so JS can set absolute */
+			.header-search-desktop {
+				display: none !important;
+			}
 		}
 		@media (min-width: 901px) {
 			.header-menu-mobile {
@@ -96,6 +99,9 @@
 			}
 			.header-hamburger {
 				display: none !important;
+			}
+			.header-search-desktop {
+				display: flex !important;
 			}
 		}
 		.header-menu-mobile {
@@ -178,6 +184,14 @@
 				padding-left: 1rem;
 				padding-right: 1rem;
 			}
+		}
+
+		.header-search-desktop {
+			margin-left: 2rem;
+			min-width: 200px;
+			flex: 0 0 auto;
+			align-items: center;
+			display: flex;
 		}
 	</style>
 </head>
@@ -369,39 +383,43 @@
 	<div class="header-container mt-3 mb-3">
 		<div class="container">
 			<div class="d-flex flex-wrap align-items-center justify-content-between">
-				<div class="d-flex align-items-center header-left">
-					<div class="site-logo">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
+				<!-- FLEX: put header-left and search together in a row -->
+				<div class="d-flex align-items-center flex-grow-1" style="min-width:0;">
+					<div class="d-flex align-items-center header-left" style="min-width:0;">
+						<div class="site-logo">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
+						</div>
+						<div class="site-title ps-3">
+							<span class="line-1">2026 PIM Conference</span><br>
+							CUHK school of business
+						</div>
+						<!-- DESKTOP MENU -->
+						<div class="header-menu-container position-relative ms-4">
+							<ul class="header-menu mb-0">
+								<li><a href="#">Conference Overview</a></li>
+								<li><a href="#">CUHK Highlights</a></li>
+								<li><a href="#">Schedule</a></li>
+								<li><a href="#">Registration</a></li>
+								<li class="header-menu-more position-static" style="position:static;">
+									<a href="#">More</a>
+									<!-- Submenu -->
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="site-title ps-3">
-						<span class="line-1">2026 PIM Conference</span><br>
-						CUHK school of business
-					</div>
-					<!-- DESKTOP MENU -->
-					<div class="header-menu-container position-relative ms-4">
-						<ul class="header-menu mb-0">
-							<li><a href="#">Conference Overview</a></li>
-							<li><a href="#">CUHK Highlights</a></li>
-							<li><a href="#">Schedule</a></li>
-							<li><a href="#">Registration</a></li>
-							<li class="header-menu-more position-static" style="position:static;">
-								<a href="#">More</a>
-								<!-- Submenu -->
-							</li>
-						</ul>
+					<!-- Search bar beside the header-left (desktop only)-->
+					<div class="header-search-desktop ms-3 d-none d-md-flex">
+						<form role="search" method="get" class="d-flex" action="<?php echo esc_url(home_url('/')); ?>">
+							<input type="search" class="form-control form-control-sm" placeholder="Search…" value="<?php echo get_search_query(); ?>" name="s" aria-label="Search">
+							<button class="btn btn-outline-secondary btn-sm ms-2" type="submit" aria-label="Submit search">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+							</button>
+						</form>
 					</div>
 				</div>
-				<!-- Search form on the right side (hidden on mobile) -->
-				<div class="header-search ms-auto d-none d-md-block" style="min-width:200px;">
-					<form role="search" method="get" class="d-flex" action="<?php echo esc_url(home_url('/')); ?>">
-						<input type="search" class="form-control form-control-sm" placeholder="Search…" value="<?php echo get_search_query(); ?>" name="s" aria-label="Search">
-						<button class="btn btn-outline-secondary btn-sm ms-2" type="submit" aria-label="Submit search">
-							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-						</button>
-					</form>
-				</div>
+				<!-- (No search on the far right for desktop anymore) -->
 			</div>
-			<!-- Responsive search field for mobile (optional, can be toggled with CSS/JS as needed) -->
+			<!-- Responsive search field for mobile (shown under header in mobile) -->
 			<div class="header-search mt-3 d-block d-md-none">
 				<form role="search" method="get" class="d-flex" action="<?php echo esc_url(home_url('/')); ?>">
 					<input type="search" class="form-control" placeholder="Search…" value="<?php echo get_search_query(); ?>" name="s" aria-label="Search">
@@ -436,69 +454,59 @@
 				var hamburger = document.querySelector('.header-hamburger');
 				var mobileMenu = document.getElementById('mobile-header-menu');
 
-				if (hamburger && submenu) {
-					hamburger.addEventListener('click', function(e) {
-						e.stopPropagation();
-						var isOpen = submenu.style.display === 'block';
-						if (isOpen) {
-							submenu.style.display = 'none';
-							if (mobileMenu) {
-								mobileMenu.style.display = 'none';
-								mobileMenu.setAttribute('aria-hidden', 'true');
-								document.body.style.overflow = '';
-								hamburger.setAttribute('aria-expanded', 'false');
+					if (hamburger && submenu) {
+						hamburger.addEventListener('click', function(e) {
+							e.stopPropagation();
+							var isOpen = submenu.style.display === 'block';
+							if (isOpen) {
+								submenu.style.display = 'none';
+								if (mobileMenu) {
+									mobileMenu.style.display = 'none';
+									mobileMenu.setAttribute('aria-hidden', 'true');
+									document.body.style.overflow = '';
+									hamburger.setAttribute('aria-expanded', 'false');
+								}
+								hamburger.classList.remove('active');
+							} else {
+								submenu.style.position = 'fixed';
+								submenu.style.left = "0";
+								submenu.style.top = "85px";
+								submenu.style.width = "100vw";
+								submenu.style.marginLeft = "calc(50% - 50vw)";
+								submenu.style.display = 'block';
+								if (mobileMenu) {
+									mobileMenu.style.display = 'block';
+									mobileMenu.setAttribute('aria-hidden', 'false');
+									document.body.style.overflow = 'hidden';
+									hamburger.setAttribute('aria-expanded', 'true');
+								}
+								hamburger.classList.add('active');
 							}
-							hamburger.classList.remove('active');
-						} else {
-							submenu.style.position = 'fixed';
-							submenu.style.left = "0";
-							submenu.style.top = "85px";
-							submenu.style.width = "100vw";
-							submenu.style.marginLeft = "calc(50% - 50vw)";
-							submenu.style.display = 'block';
-							if (mobileMenu) {
-								mobileMenu.style.display = 'block';
-								mobileMenu.setAttribute('aria-hidden', 'false');
-								document.body.style.overflow = 'hidden';
-								hamburger.setAttribute('aria-expanded', 'true');
-							}
-							hamburger.classList.add('active');
-						}
-					});
-				}
-				// --- End Hamburger logic ---
+						});
+					}
+					// --- End Hamburger logic ---
 
-				// Mobile menu close and other controls are intentionally omitted for this minimal requirement
+					// Mobile menu close and other controls are intentionally omitted for this minimal requirement
 
-				// Desktop: leave the rest as-is for submenu (no changes)
-			});
-			</script>
-			<style>
-				.header-menu-more { position: relative; }
-				.header-submenu-container {
-					transition: all 0.23s;
-				}
-				.header-menu .header-menu-more > a::after {
-					content: " ▼";
-					font-size:10px;
-				}
-				.header-search input[type="search"] {
-					max-width: 180px;
-				}
-				.header-search .btn {
-					padding: 0.25rem 0.55rem;
-					font-size: 1rem;
-					line-height: 1;
-				}
-				@media (max-width: 900px) {
-					.header-menu-container { display: none !important; }
-					.header-search.d-md-block { display: none !important; }
-					.header-search.d-md-none { display: block; }
-				}
-				@media (min-width: 901px) {
-					.header-search.d-block.d-md-none { display: none !important; }
-				}
-			</style>
+					// Desktop: leave the rest as-is for submenu (no changes)
+				});
+				</script>
+				<style>
+					.header-menu-more { position: relative; }
+					.header-submenu-container {
+						transition: all 0.23s;
+					}
+					.header-menu .header-menu-more > a::after {
+						content: " ▼";
+						font-size:10px;
+					}
+					@media (max-width: 900px) {
+						.header-menu-container { display: none !important; }
+						/* Remove forcing .header-submenu-container to static, so we can override position via JS on hamburger click */
+						/* .header-submenu-container { position: static !important; width:100% !important; margin-left:0 !important; } */
+					}
+				</style>
+			</div>
 		</div><!-- .container -->	
 	</div><!-- .header-container -->
 
