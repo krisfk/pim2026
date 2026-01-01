@@ -37,12 +37,6 @@
 								<div class="container py-4">
 									
 								
-									<!-- <ul class="header-submenu list-unstyled mb-0 d-flex flex-wrap gap-4">
-										<li><a href="#">Call for Papers</a></li>
-										<li><a href="#">Keynote Speakers</a></li>
-										<li><a href="#">Venue Info</a></li>
-										<li><a href="#">Contact Us</a></li>
-									</ul> -->
 
 									<div class="row">
 
