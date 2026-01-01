@@ -139,6 +139,8 @@
         margin-top: 10rem;
     }
 
-    .terms-links a{
+    .terms-links a,
+    .site-footer a
+    {
 color: #300353;
     }
