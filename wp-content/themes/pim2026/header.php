@@ -359,7 +359,7 @@
 					if (hamburger && submenu) {
 						hamburger.addEventListener('click', function(e) {
 							e.stopPropagation();
-							// If submenu is currently shown, hide it; else show it with absolute position
+							// If submenu is currently shown, hide it; else show it with fixed position
 							if (submenu.style.display === 'block') {
 								submenu.style.display = 'none';
 								// Optionally, also hide mobile menu and reset aria attrs if needed
@@ -370,7 +370,7 @@
 									hamburger.setAttribute('aria-expanded', 'false');
 								}
 							} else {
-								submenu.style.position = 'absolute';
+								submenu.style.position = 'fixed';
 								submenu.style.left = "0";
 								submenu.style.top = "100px";
 								submenu.style.width = "100vw";
