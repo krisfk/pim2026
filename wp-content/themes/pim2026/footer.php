@@ -34,7 +34,7 @@
 				<b>Location</b> <br>
 				Chinese University of Hong Kong, Shatin <br><br>
 							<b>Reach</b> <br>
-							+852 (3943) 8888
+							+852 (3943) 8888 <br>
 							<a href="mailto:into@pim2026.com" target="_blank">into@pim2026.com</a>
 
 							</div>
