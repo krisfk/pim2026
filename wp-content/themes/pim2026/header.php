@@ -92,6 +92,9 @@
 			.header-search-desktop {
 				display: none !important;
 			}
+			.header-search {
+				display: none !important;
+			}
 		}
 		@media (min-width: 901px) {
 			.header-menu-mobile {
@@ -102,6 +105,9 @@
 			}
 			.header-search-desktop {
 				display: flex !important;
+			}
+			.header-search {
+				display: block !important;
 			}
 		}
 		.header-menu-mobile {
@@ -419,7 +425,7 @@
 				</div>
 				<!-- (No search on the far right for desktop anymore) -->
 			</div>
-			<!-- Responsive search field for mobile (shown under header in mobile) -->
+			<!-- Responsive search field for mobile (hidden on mobile per instructions) -->
 			<div class="header-search mt-3 d-block d-md-none">
 				<form role="search" method="get" class="d-flex" action="<?php echo esc_url(home_url('/')); ?>">
 					<input type="search" class="form-control" placeholder="Search…" value="<?php echo get_search_query(); ?>" name="s" aria-label="Search">
