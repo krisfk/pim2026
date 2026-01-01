@@ -91,7 +91,7 @@
 					<input type="email" class="form-control" id="footer-contact-email" name="footer_contact_email" placeholder="Email" required>
 				</div>
 				<div class="mb-3">
-					<textarea class="form-control" id="footer-contact-content" name="footer_contact_content" rows="4" placeholder="Message" required></textarea>
+					<textarea class="form-control" id="footer-contact-content" name="footer_contact_content" rows="4" placeholder="Write your message here" required></textarea>
 				</div>
 				<button type="submit" class="btn btn-primary w-100" style="background-color: #300353; border: none;">Send Message</button>
 			</form>
