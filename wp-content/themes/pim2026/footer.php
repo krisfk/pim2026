@@ -123,19 +123,7 @@
 				</div>
 			</div>
 			<style>
-				.footer-menu .footer-link {
-					color: #300353;
-					text-decoration: none;
-					display: block;
-					padding: 6px 0;
-					font-weight: 500;
-					transition: color 0.18s;
-				}
-				.footer-menu .footer-link:hover,
-				.footer-menu .footer-link:focus {
-					color: #511380;
-					text-decoration: underline;
-				}
+			
 			</style>
 			</div>
 
