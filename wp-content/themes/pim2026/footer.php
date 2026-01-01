@@ -20,13 +20,16 @@
 		<!-- Responsive Row: Stack on mobile, 3 cols on md+ -->
 		<div class="row flex-column flex-md-row">
 			<style>
-				/* Reverse order of col-a and col-b on mobile, default on md/desktop */
+				/* Reverse order of col-a and col-b on mobile, col-c always last on mobile. Default order on md/desktop */
 				@media (max-width: 767.98px) {
 					.footer-col-a {
 						order: 2;
 					}
 					.footer-col-b {
 						order: 1;
+					}
+					.footer-col-c {
+						order: 3;
 					}
 				}
 				@media (min-width: 768px) {
@@ -35,6 +38,9 @@
 					}
 					.footer-col-b {
 						order: 2;
+					}
+					.footer-col-c {
+						order: 3;
 					}
 				}
 			</style>
@@ -104,7 +110,7 @@
 				</form>
 			</div>
 
-			<div class="col-12 col-md-4">
+			<div class="col-12 col-c col-md-4 footer-col-c">
 				<div class="footer-menu">
 					<div class="row">
 						<div class="col-6">
