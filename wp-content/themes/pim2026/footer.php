@@ -40,7 +40,7 @@
 							</div>
 
 							<div class="mt-4">
-							<div class="d-flex gap-3 align-items-center">
+							<div class="d-flex gap-1 align-items-center">
 								<a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
 									<svg width="24" height="24" viewBox="0 0 24 24" fill="#1877F3" xmlns="http://www.w3.org/2000/svg">
 										<rect width="24" height="24" rx="6" fill="#fff"/>
