@@ -19,24 +19,7 @@
 
 		<!-- Responsive Row: Stack on mobile, 3 cols on md+ -->
 		<div class="row">
-			<!-- Contact Form: Now displayed first on mobile, second on md+ -->
-			<div class="col-12 col-md-4 mb-5 mb-md-0 order-1 order-md-2">
-				<b>Message Us For Enquiry</b>
-				<form class="mt-3" method="post" action="#">
-					<div class="mb-3">
-						<input type="text" class="form-control" id="footer-contact-name" name="footer_contact_name" placeholder="Name" required>
-					</div>
-					<div class="mb-3">
-						<input type="email" class="form-control" id="footer-contact-email" name="footer_contact_email" placeholder="Email" required>
-					</div>
-					<div class="mb-3">
-						<textarea class="form-control" id="footer-contact-content" name="footer_contact_content" rows="4" placeholder="Write your message here" required></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary w-100" style="background-color: #300353; border: none;">Send Message</button>
-				</form>
-			</div>
-			<!-- Logo, Location, Social: Now displayed second on mobile, first on md+ -->
-			<div class="col-12 col-md-4 mb-5 mb-md-0 order-2 order-md-1">
+			<div class="col-12 col-md-4 mb-5 mb-md-0">
 
 				<div class="site-logo">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
@@ -84,6 +67,22 @@
 						</a>
 					</div>
 				</div>
+			</div>
+
+			<div class="col-12 col-md-4 mb-5 mb-md-0">
+				<b>Message Us For Enquiry</b>
+				<form class="mt-3" method="post" action="#">
+					<div class="mb-3">
+						<input type="text" class="form-control" id="footer-contact-name" name="footer_contact_name" placeholder="Name" required>
+					</div>
+					<div class="mb-3">
+						<input type="email" class="form-control" id="footer-contact-email" name="footer_contact_email" placeholder="Email" required>
+					</div>
+					<div class="mb-3">
+						<textarea class="form-control" id="footer-contact-content" name="footer_contact_content" rows="4" placeholder="Write your message here" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary w-100" style="background-color: #300353; border: none;">Send Message</button>
+				</form>
 			</div>
 
 			<div class="col-12 col-md-4">
