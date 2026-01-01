@@ -72,9 +72,7 @@
 			.header-menu-mobile {
 				display: none !important;
 			}
-			.header-submenu-container {
-				top: auto !important;
-			}
+			/* Remove top:auto on .header-submenu-container so JS can set absolute */
 		}
 		@media (min-width: 901px) {
 			.header-menu-mobile {
@@ -354,16 +352,21 @@
 						});
 					}
 
-					// --- MODIFIED Hamburger logic: menu appears on click ---
+					// Hamburger logic: menu appears on click AND ensures .header-submenu-container is position:absolute
 					var hamburger = document.querySelector('.header-hamburger');
 					var mobileMenu = document.getElementById('mobile-header-menu');
 
-					// New: show .header-submenu-container on hamburger click as well
 					if (hamburger && submenu) {
 						hamburger.addEventListener('click', function(e) {
 							e.stopPropagation();
+							// Set the submenu position to absolute style
+							submenu.style.position = 'absolute';
+							submenu.style.left = "0";
+							submenu.style.top = "100px";
+							submenu.style.width = "100vw";
+							submenu.style.marginLeft = "calc(50% - 50vw)";
 							submenu.style.display = 'block';
-							// Optionally: If mobile menu should open too, add below. (It was in original code)
+							// Optionally show mobile menu as well, as before
 							if (mobileMenu) {
 								mobileMenu.style.display = 'block';
 								mobileMenu.setAttribute('aria-hidden', 'false');
@@ -372,7 +375,7 @@
 							}
 						});
 					}
-					// --- End MODIFIED ---
+					// --- End Hamburger logic ---
 
 					// Mobile menu close and other controls are intentionally omitted for this minimal requirement
 
@@ -390,7 +393,8 @@
 					}
 					@media (max-width: 900px) {
 						.header-menu-container { display: none !important; }
-						.header-submenu-container { position: static !important; width:100% !important; margin-left:0 !important; }
+						/* Remove forcing .header-submenu-container to static, so we can override position via JS on hamburger click */
+						/* .header-submenu-container { position: static !important; width:100% !important; margin-left:0 !important; } */
 					}
 				</style>
 			</div>
