@@ -31,8 +31,11 @@
 			border: none;
 			background: transparent;
 			padding: 0;
-			margin-left: 1rem;
-			z-index: 1200;
+			margin: 0;
+			position: fixed;
+			top: 16px;
+			right: 16px;
+			z-index: 2201;
 		}
 		.header-hamburger span,
 		.header-hamburger span::before,
@@ -60,12 +63,14 @@
 			top: 8px;
 		}
 		@media (max-width: 900px) {
-			.header-hamburger { display: flex; position: relative; }
+			.header-hamburger {
+				display: flex;
+			}
 			.header-menu-container {
 				display: none !important;
 			}
 			.header-menu-mobile {
-				display: block !important;
+				display: none !important;
 			}
 			.header-submenu-container {
 				top: auto !important;
@@ -73,6 +78,9 @@
 		}
 		@media (min-width: 901px) {
 			.header-menu-mobile {
+				display: none !important;
+			}
+			.header-hamburger {
 				display: none !important;
 			}
 		}
@@ -129,8 +137,8 @@
 
 	<?php //get_template_part( 'template-parts/header/site-header' ); ?>
 
-	<!-- Hamburger icon (mobile) -->
-	<button class="header-hamburger d-lg-none d-md-block" aria-label="Open navigation" aria-controls="mobile-header-menu" aria-expanded="false">
+	<!-- Hamburger icon (mobile, fixed top right) -->
+	<button class="header-hamburger" aria-label="Open navigation" aria-controls="mobile-header-menu" aria-expanded="false">
 		<span></span>
 	</button>
 
@@ -227,7 +235,7 @@
 		</div>
 	</div>
 
-	<!-- MOBILE MENU DRAWER -->
+	<!-- MOBILE MENU DRAWER (now always hidden on mobile, even if triggered by hamburger) -->
 	<div id="mobile-header-menu" class="header-menu-mobile" tabindex="-1" aria-hidden="true" style="display:none;">
 		<button class="btn-close position-absolute close-mobile-menu" aria-label="Close menu" style="z-index:101;right:0.7rem;top:0.8rem;"></button>
 		<ul class="header-menu mb-4 mt-4" style="list-style:none; padding-left:0;">
@@ -355,12 +363,8 @@
 					var closeMobileMenuBtn = document.querySelector('.close-mobile-menu');
 
 					function openMobileMenu() {
-						if (mobileMenu) {
-							mobileMenu.style.display = 'block';
-							mobileMenu.setAttribute('aria-hidden', 'false');
-							document.body.style.overflow = 'hidden'; // prevent scroll
-							hamburger.setAttribute('aria-expanded', 'true');
-						}
+						// Instead of showing the mobile menu, do nothing (or optionally show an alert if you wish)
+						return;
 					}
 					function closeMobileMenu() {
 						if (mobileMenu) {
@@ -383,11 +387,9 @@
 							closeMobileMenu();
 						});
 					}
-					// Also close when tapping outside drawer
+					// Prevent showing the menu on mobile via outside click
 					window.addEventListener('click', function(e) {
-						if (mobileMenu && mobileMenu.style.display === 'block' && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
-							closeMobileMenu();
-						}
+						// nothing to do
 					});
 					// Prevent propagation for inner clicks
 					if(mobileMenu) {
@@ -398,19 +400,7 @@
 					if (mobileMoreLi && mobileMoreLink && mobileSubmenu) {
 						mobileMoreLink.addEventListener('click', function(e) {
 							e.preventDefault();
-							var open = mobileSubmenu.classList.contains('open');
-							// Toggle submenu
-							if (open) {
-								mobileSubmenu.classList.remove('open');
-								mobileMoreLi.classList.remove('open');
-							} else {
-								mobileSubmenu.classList.add('open');
-								mobileMoreLi.classList.add('open');
-								// scroll if needed
-								setTimeout(function(){
-									mobileSubmenu.scrollIntoView({ behavior: "smooth", block: "nearest" });
-								}, 100);
-							}
+							// Do nothing since menu never shows
 						});
 					}
 					// Accessibility: close on escape key
