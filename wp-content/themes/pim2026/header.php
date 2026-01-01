@@ -120,6 +120,33 @@
 			color: #511380;
 			text-decoration: underline;
 		}
+		/* ---- Sticky header for mobile ---- */
+		@media (max-width: 900px) {
+			.header-container {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				width: 100vw;
+				z-index: 2100;
+				background: #fff;
+				box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+				margin-top: 0 !important;
+				margin-bottom: 0 !important;
+			}
+			body {
+				padding-top: 74px; /* adjust to match the header height on mobile */
+			}
+		}
+		@media (min-width: 901px) {
+			.header-container {
+				position: static;
+				box-shadow: none;
+			}
+			body {
+				padding-top: 0;
+			}
+		}
 	</style>
 </head>
 
