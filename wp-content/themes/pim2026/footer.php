@@ -13,7 +13,7 @@
 
 ?>
 	
-	<footer id="colophon" class="site-footer mt-5">
+	<footer id="colophon" class="site-footer">
 
 	<div class="container">
 
