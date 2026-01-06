@@ -38,11 +38,30 @@ get_header(); ?>
 
 	<h1 class="mt-5 mb-3 fw-bold">CUHK highlights</h1>
 
-<div class="d-flex justify-content-center my-4">
-  <a href="#accreditations" class="submenu-btn mx-2">Accreditations &amp; Reputation</a>
+<div class="d-flex justify-content-center my-4" id="submenu-btn-group">
+  <a href="#accreditations" class="submenu-btn mx-2 active">Accreditations &amp; Reputation</a>
   <a href="#rankings" class="submenu-btn mx-2">Rankings</a>
   <a href="#internationalization" class="submenu-btn mx-2">Internationalization</a>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const btnGroup = document.getElementById('submenu-btn-group');
+    if (!btnGroup) return;
+    btnGroup.querySelectorAll('.submenu-btn').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        btnGroup.querySelectorAll('.submenu-btn').forEach(function(b){b.classList.remove('active')});
+        this.classList.add('active');
+      });
+    });
+  });
+</script>
+<style>
+  .submenu-btn.active {
+    background-color: #300353 !important;
+    color: #fff !important;
+  }
+</style>
 <style>
   .submenu-btn {
     display: inline-block;
