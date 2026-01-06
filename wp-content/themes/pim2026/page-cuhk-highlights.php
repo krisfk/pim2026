@@ -23,33 +23,14 @@ get_header(); ?>
 <?php endif; ?>
 
 
-<div id="home-banner-carousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-1.jpg');">
-      <!-- Optionally add content here (caption, etc.) -->
-    </div>
-    <div class="carousel-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-2.jpg');">
-      <!-- Optionally add content here -->
-    </div>
-    <div class="carousel-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-3.jpg');">
-      <!-- Optionally add content here -->
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#home-banner-carousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#home-banner-carousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div style="width:100vw; margin-left:calc(50% - 50vw);">
+  <img 
+    src="<?php echo get_template_directory_uri(); ?>/assets/images/subpage-banner.jpg" 
+    alt="CUHK Highlights Banner" 
+    style="width:100%; height:auto; display:block; object-fit:cover; max-height:420px;"
+  >
 </div>
-test
+
 
 
 
