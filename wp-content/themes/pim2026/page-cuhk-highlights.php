@@ -45,6 +45,26 @@ get_header(); ?>
 </div>
 <style>
   @media (max-width: 576px) {
+    #submenu-btn-group {
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+    #submenu-btn-group .submenu-btn {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center;
+      height: 40px;
+      font-size: 0.93rem !important;
+      padding: 0.35rem 0.5rem !important;
+      margin: 0.25rem 0 !important;
+      /* full width for easy tapping on mobile if desired */
+      width: 90vw;
+      max-width: 330px;
+    }
+  }
+</style>
+<style>
+  @media (max-width: 576px) {
     #submenu-btn-group .submenu-btn {
       font-size: 0.93rem !important;
       padding: 0.35rem 0.5rem !important;
