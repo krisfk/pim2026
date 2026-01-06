@@ -71,67 +71,68 @@ get_header(); ?>
     }
   }
 </style>
-
-<div id="accreditations" class="my-5">
-  <div class="row align-items-center">
-    <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
-      <img 
-        src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-1.png" 
-        alt="Accreditations Icon" 
-        style="max-width:110px; height:auto;"
-      >
-    </div>
-    <div class="col-12 col-md-9 text-md-start text-center">
-      <h4 class="fw-bold mb-3">Accreditations &amp; Reputation</h4>
-      <ul class="list-unstyled fs-5 mb-2">
-        <li class="mb-1">• AACSB and AMBA accredited</li>
-        <li class="mb-1">• 1<sup>st</sup> in Hong Kong to offer BBA, MBA, and EMBA programs</li>
-        <li class="mb-1">• Renowned for research excellence</li>
-      </ul>
-      <div class="fst-italic text-muted">
-        (No. 1 in Asia, No. 13 globally per UT Dallas 2024)
+<div style="max-width:850px; margin-left:auto; margin-right:auto;">
+  <div id="accreditations" class="my-5">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
+        <img 
+          src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-1.png" 
+          alt="Accreditations Icon" 
+          style="max-width:110px; height:auto;"
+        >
+      </div>
+      <div class="col-12 col-md-9 text-md-start text-center">
+        <h4 class="fw-bold mb-3">Accreditations &amp; Reputation</h4>
+        <ul class="list-unstyled fs-5 mb-2">
+          <li class="mb-1">• AACSB and AMBA accredited</li>
+          <li class="mb-1">• 1<sup>st</sup> in Hong Kong to offer BBA, MBA, and EMBA programs</li>
+          <li class="mb-1">• Renowned for research excellence</li>
+        </ul>
+        <div class="fst-italic text-muted">
+          (No. 1 in Asia, No. 13 globally per UT Dallas 2024)
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div id="rankings" class="my-5">
-  <div class="row align-items-center">
-    <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
-      <img
-        src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-2.png"
-        alt="Rankings Icon"
-        style="max-width:110px; height:auto;"
-      >
-    </div>
-    <div class="col-12 col-md-9 text-md-start text-center">
-      <h4 class="fw-bold mb-3">Rankings</h4>
-      <ul class="list-unstyled fs-5 mb-2">
-        <li class="mb-1">• MBA No. 65 (FT 2025)</li>
-        <li class="mb-1">• MSc Finance No. 21 (FT 2025)</li>
-        <li class="mb-1">• Accounting &amp; Finance No. 37 (QS 2025)</li>
-        <li class="mb-1">• Top 50 globally in Business &amp; Management (QS 2025)</li>
-      </ul>
+  <div id="rankings" class="my-5">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
+        <img
+          src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-2.png"
+          alt="Rankings Icon"
+          style="max-width:110px; height:auto;"
+        >
+      </div>
+      <div class="col-12 col-md-9 text-md-start text-center">
+        <h4 class="fw-bold mb-3">Rankings</h4>
+        <ul class="list-unstyled fs-5 mb-2">
+          <li class="mb-1">• MBA No. 65 (FT 2025)</li>
+          <li class="mb-1">• MSc Finance No. 21 (FT 2025)</li>
+          <li class="mb-1">• Accounting &amp; Finance No. 37 (QS 2025)</li>
+          <li class="mb-1">• Top 50 globally in Business &amp; Management (QS 2025)</li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="internationalization" class="my-5">
-  <div class="row align-items-center">
-    <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
-      <img
-        src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-3.png"
-        alt="Internationalization Icon"
-        style="max-width:110px; height:auto;"
-      >
-    </div>
-    <div class="col-12 col-md-9 text-md-start text-center">
-      <h4 class="fw-bold mb-3">Internationalization</h4>
-      <ul class="list-unstyled fs-5 mb-2">
-        <li class="mb-1">• 5,000+ students from 20+ countries</li>
-        <li class="mb-1">• 280+ global exchange programs with 80+ partners in 30+ countries</li>
-        <li class="mb-1">• 45,000+ alumni across 50 locations for worldwide network</li>
-      </ul>
+  <div id="internationalization" class="my-5">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
+        <img
+          src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-3.png"
+          alt="Internationalization Icon"
+          style="max-width:110px; height:auto;"
+        >
+      </div>
+      <div class="col-12 col-md-9 text-md-start text-center">
+        <h4 class="fw-bold mb-3">Internationalization</h4>
+        <ul class="list-unstyled fs-5 mb-2">
+          <li class="mb-1">• 5,000+ students from 20+ countries</li>
+          <li class="mb-1">• 280+ global exchange programs with 80+ partners in 30+ countries</li>
+          <li class="mb-1">• 45,000+ alumni across 50 locations for worldwide network</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
