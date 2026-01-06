@@ -45,7 +45,7 @@ get_header(); ?>
 </div>
 
 <div id="accreditations" class="my-5">
-  <h2 class="fw-bold mb-3">Accreditations &amp; Reputation</h2>
+  <h4 class="fw-bold mb-3">Accreditations &amp; Reputation</h4>
   <ul class="list-unstyled fs-5 mb-2">
     <li class="mb-1">• AACSB and AMBA accredited</li>
     <li class="mb-1">• 1<sup>st</sup> in Hong Kong to offer BBA, MBA, and EMBA programs</li>
@@ -57,7 +57,7 @@ get_header(); ?>
 </div>
 
 <div id="rankings" class="my-5">
-  <h2 class="fw-bold mb-3">Rankings</h2>
+  <h4 class="fw-bold mb-3">Rankings</h4>
   <ul class="list-unstyled fs-5 mb-2">
     <li class="mb-1">• MBA No. 65 (FT 2025)</li>
     <li class="mb-1">• MSc Finance No. 21 (FT 2025)</li>
@@ -67,7 +67,7 @@ get_header(); ?>
 </div>
 
 <div id="internationalization" class="my-5">
-  <h2 class="fw-bold mb-3">Internationalization</h2>
+  <h4 class="fw-bold mb-3">Internationalization</h4>
   <ul class="list-unstyled fs-5 mb-2">
     <li class="mb-1">• 5,000+ students from 20+ countries</li>
     <li class="mb-1">• 280+ global exchange programs with 80+ partners in 30+ countries</li>
