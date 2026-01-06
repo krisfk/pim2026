@@ -43,6 +43,14 @@ get_header(); ?>
   <a href="#rankings" class="submenu-btn mx-2">Rankings</a>
   <a href="#internationalization" class="submenu-btn mx-2">Internationalization</a>
 </div>
+<style>
+  @media (max-width: 576px) {
+    #submenu-btn-group .submenu-btn {
+      font-size: 0.93rem !important;
+      padding: 0.35rem 0.5rem !important;
+    }
+  }
+</style>
 
 <div id="accreditations" class="my-5">
   <div class="row align-items-center">
