@@ -22,14 +22,14 @@ get_header(); ?>
 	</header><!-- .page-header -->
 <?php endif; ?>
 
-
-<div style="width:100vw; margin-left:calc(50% - 50vw);">
-  <img 
-    src="<?php echo get_template_directory_uri(); ?>/assets/images/subpage-banner.jpg" 
-    alt="CUHK Highlights Banner" 
-    style="width:100%; height:auto; display:block; object-fit:cover; max-height:420px;"
+<div class="subpage-banner-full">
+  <img
+    src="<?php echo get_template_directory_uri(); ?>/assets/images/subpage-banner.jpg"
+    alt="CUHK Highlights Banner"
+    class="subpage-banner-img"
   >
 </div>
+
 
 
 
@@ -43,42 +43,15 @@ get_header(); ?>
   <a href="#rankings" class="submenu-btn mx-2">Rankings</a>
   <a href="#internationalization" class="submenu-btn mx-2">Internationalization</a>
 </div>
-<style>
-  @media (max-width: 576px) {
-    #submenu-btn-group {
-      flex-direction: column !important;
-      align-items: center !important;
-    }
-    #submenu-btn-group .submenu-btn {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center;
-      height: 40px;
-      font-size: 0.93rem !important;
-      padding: 0.35rem 0.5rem !important;
-      margin: 0.25rem 0 !important;
-      /* full width for easy tapping on mobile if desired */
-      width: 90vw;
-      max-width: 330px;
-    }
-  }
-</style>
-<style>
-  @media (max-width: 576px) {
-    #submenu-btn-group .submenu-btn {
-      font-size: 0.93rem !important;
-      padding: 0.35rem 0.5rem !important;
-    }
-  }
-</style>
-<div style="max-width:850px; margin-left:auto; margin-right:auto;">
+
+<div class="cuhk-highlight-content">
   <div id="accreditations" class="my-5">
     <div class="row align-items-center">
       <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
         <img 
           src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-1.png" 
           alt="Accreditations Icon" 
-          style="max-width:110px; height:auto;"
+          class="cuhk-highlight-icon"
         >
       </div>
       <div class="col-12 col-md-9 text-md-start text-center">
@@ -101,7 +74,7 @@ get_header(); ?>
         <img
           src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-2.png"
           alt="Rankings Icon"
-          style="max-width:110px; height:auto;"
+          class="cuhk-highlight-icon"
         >
       </div>
       <div class="col-12 col-md-9 text-md-start text-center">
@@ -122,7 +95,7 @@ get_header(); ?>
         <img
           src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-3.png"
           alt="Internationalization Icon"
-          style="max-width:110px; height:auto;"
+          class="cuhk-highlight-icon"
         >
       </div>
       <div class="col-12 col-md-9 text-md-start text-center">
@@ -150,35 +123,6 @@ get_header(); ?>
     });
   });
 </script>
-<style>
-  .submenu-btn.active {
-    background-color: #300353 !important;
-    color: #fff !important;
-  }
-</style>
-<style>
-  .submenu-btn {
-    display: inline-block;
-    padding: 0.7em 1.7em;
-    background-color: #f5f5fa;
-    color: #300353;
-    border: none;
-    border-radius: 24px;
-    font-weight: 600;
-    font-size: 1.08em;
-    transition: background 0.18s, color 0.18s, box-shadow 0.18s;
-    text-decoration: none;
-    box-shadow: 0 1px 6px rgba(48,3,83,0.09);
-  }
-  .submenu-btn:hover, .submenu-btn:focus {
-    background: #ece1fa;
-    color: #511380;
-    text-decoration: none;
-    box-shadow: 0 3px 14px rgba(48,3,83,0.13);
-  }
-</style>
-
-
 </div>	
 
 

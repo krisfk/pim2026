@@ -144,3 +144,73 @@
     {
 color: #300353;
     }
+
+/* CUHK Highlights page */
+.subpage-banner-full{
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.subpage-banner-img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 420px;
+}
+
+.cuhk-highlight-content{
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cuhk-highlight-icon{
+    max-width: 110px;
+    height: auto;
+}
+
+.submenu-btn{
+    display: inline-block;
+    padding: 0.7em 1.7em;
+    background-color: #f5f5fa;
+    color: #300353;
+    border: none;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 1.08em;
+    transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+    text-decoration: none;
+    box-shadow: 0 1px 6px rgba(48,3,83,0.09);
+}
+
+.submenu-btn:hover,
+.submenu-btn:focus{
+    background: #ece1fa;
+    color: #511380;
+    text-decoration: none;
+    box-shadow: 0 3px 14px rgba(48,3,83,0.13);
+}
+
+.submenu-btn.active{
+    background-color: #300353 !important;
+    color: #fff !important;
+}
+
+@media (max-width: 576px) {
+    #submenu-btn-group{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    #submenu-btn-group .submenu-btn{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center;
+        height: 40px;
+        font-size: 0.93rem !important;
+        padding: 0.35rem 0.5rem !important;
+        margin: 0.25rem 0 !important;
+        width: 90vw;
+        max-width: 330px;
+    }
+}
