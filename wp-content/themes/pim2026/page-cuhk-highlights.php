@@ -44,6 +44,38 @@ get_header(); ?>
   <a href="#internationalization" class="submenu-btn mx-2">Internationalization</a>
 </div>
 
+<div id="accreditations" class="my-5">
+  <h2 class="fw-bold mb-3">Accreditations &amp; Reputation</h2>
+  <ul class="list-unstyled fs-5 mb-2">
+    <li class="mb-1">• AACSB and AMBA accredited</li>
+    <li class="mb-1">• 1<sup>st</sup> in Hong Kong to offer BBA, MBA, and EMBA programs</li>
+    <li class="mb-1">• Renowned for research excellence</li>
+  </ul>
+  <div class="fst-italic text-muted">
+    (No. 1 in Asia, No. 13 globally per UT Dallas 2024)
+  </div>
+</div>
+
+<div id="rankings" class="my-5">
+  <h2 class="fw-bold mb-3">Rankings</h2>
+  <ul class="list-unstyled fs-5 mb-2">
+    <li class="mb-1">• MBA No. 65 (FT 2025)</li>
+    <li class="mb-1">• MSc Finance No. 21 (FT 2025)</li>
+    <li class="mb-1">• Accounting &amp; Finance No. 37 (QS 2025)</li>
+    <li class="mb-1">• Top 50 globally in Business &amp; Management (QS 2025)</li>
+  </ul>
+</div>
+
+<div id="internationalization" class="my-5">
+  <h2 class="fw-bold mb-3">Internationalization</h2>
+  <ul class="list-unstyled fs-5 mb-2">
+    <li class="mb-1">• 5,000+ students from 20+ countries</li>
+    <li class="mb-1">• 280+ global exchange programs with 80+ partners in 30+ countries</li>
+    <li class="mb-1">• 45,000+ alumni across 50 locations for worldwide network</li>
+  </ul>
+</div>
+
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const btnGroup = document.getElementById('submenu-btn-group');
