@@ -89,12 +89,23 @@ get_header(); ?>
 </div>
 
 <div id="internationalization" class="my-5">
-  <h4 class="fw-bold mb-3">Internationalization</h4>
-  <ul class="list-unstyled fs-5 mb-2">
-    <li class="mb-1">• 5,000+ students from 20+ countries</li>
-    <li class="mb-1">• 280+ global exchange programs with 80+ partners in 30+ countries</li>
-    <li class="mb-1">• 45,000+ alumni across 50 locations for worldwide network</li>
-  </ul>
+  <div class="row align-items-center">
+    <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
+      <img
+        src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-3.png"
+        alt="Internationalization Icon"
+        style="max-width:110px; height:auto;"
+      >
+    </div>
+    <div class="col-12 col-md-9 text-md-start text-center">
+      <h4 class="fw-bold mb-3">Internationalization</h4>
+      <ul class="list-unstyled fs-5 mb-2">
+        <li class="mb-1">• 5,000+ students from 20+ countries</li>
+        <li class="mb-1">• 280+ global exchange programs with 80+ partners in 30+ countries</li>
+        <li class="mb-1">• 45,000+ alumni across 50 locations for worldwide network</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 
