@@ -71,8 +71,8 @@ get_header(); ?>
 
 </div>	
 
-<div id="testimonial-carousel" class="carousel slide w-100 mt-5" data-bs-ride="carousel" style="width:100vw; margin-left:calc(50% - 50vw);">
-  <h3 class="text-center  mb-4 fw-bold" style="">Messages</h3>
+<div id="testimonial-carousel" class="carousel slide w-100 mt-5" data-bs-ride="carousel">
+  <h3 class="text-center  mb-4 fw-bold">Messages</h3>
 
  
   <div class="carousel-indicators">
@@ -81,25 +81,25 @@ get_header(); ?>
     <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
 
-  <div class="carousel-inner" style="max-width: 1000px; margin:0 auto;">
+  <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="d-flex flex-column align-items-center justify-content-center" style="">
-        <p class="mb-3 fs-4 fst-italic pe-3 ps-3" style="max-width:700px;">"The PIM Conference 2026 was a transformative experience. The sessions were insightful and the networking opportunities unrivaled."</p>
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <p class="mb-3 fs-4 fst-italic pe-3 ps-3">"The PIM Conference 2026 was a transformative experience. The sessions were insightful and the networking opportunities unrivaled."</p>
         <div><img class="profile-pic" src="<?php echo get_template_directory_uri(); ?>/assets/images/profile-pic.png" alt=""></div>
 		<div class="fw-bold mt-2">— Prof. Alex Wong, HKU</div>
       </div>
     </div>
     <div class="carousel-item">
-      <div class="d-flex flex-column align-items-center justify-content-center" style="">
-        <p class="mb-3 fs-4 fst-italic pe-3 ps-3" style="max-width:700px;">"Connecting with peers worldwide at CUHK truly broadened my perspectives on business and innovation."</p>
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <p class="mb-3 fs-4 fst-italic pe-3 ps-3">"Connecting with peers worldwide at CUHK truly broadened my perspectives on business and innovation."</p>
 		<div><img class="profile-pic" src="<?php echo get_template_directory_uri(); ?>/assets/images/profile-pic.png" alt=""></div>
 
 		<div class="fw-bold mt-2">— Maria Chen, Entrepreneur</div>
       </div>
     </div>
     <div class="carousel-item">
-      <div class="d-flex flex-column align-items-center justify-content-center" style="">
-        <p class="mb-3 fs-4 fst-italic pe-3 ps-3" style="max-width:700px;">"Superbly organized and very forward-thinking. I’m already looking forward to the next edition!"</p>
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <p class="mb-3 fs-4 fst-italic pe-3 ps-3">"Superbly organized and very forward-thinking. I'm already looking forward to the next edition!"</p>
         <div><img class="profile-pic" src="<?php echo get_template_directory_uri(); ?>/assets/images/profile-pic.png" alt=""></div>
 
 		<div class="fw-bold mt-2">— Dr. Samuel Lee, Industry Leader</div>
@@ -107,11 +107,11 @@ get_header(); ?>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter:invert(1);"></span>
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true" style="filter:invert(1);"></span>
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
@@ -134,53 +134,13 @@ get_header(); ?>
   </div>
 </div>
 
-<style>
-  .home-btn-register {
-    background-color: #300353 !important;
-    border: none;
-    font-weight: 600;
-    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
-  }
-  .home-btn-register:hover, .home-btn-register:focus {
-    background-color: #511380 !important;
-    box-shadow: 0 2px 16px rgba(48,3,83, 0.17);
-    transform: translateY(-2px) scale(1.04);
-  }
-  .home-btn-schedule {
-    background: transparent;
-    border: none;
-    color: #300353;
-    font-weight: 600;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: none;
-    display: flex;
-    align-items: center;
-  }
-  .home-btn-schedule:hover,
-  .home-btn-schedule:focus {
-    color: #300353;
-    background: transparent;
-    box-shadow: none;
-    transform: none;
-  }
-  .home-btn-schedule span {
-    transition: transform 0.2s cubic-bezier(.4,0,.2,1);
-    color: #300353;
-    display: inline-block;
-  }
-  .home-btn-schedule:hover span,
-  .home-btn-schedule:focus span {
-    transform: translateX(4px);
-  }
-</style>
 <div class="d-flex gap-3 justify-content-center mt-4">
   <a href="#" class="btn btn-primary px-4 py-2 home-btn-register">
     Register
   </a>
   <a href="#" class="px-4 py-2 home-btn-schedule">
     Schedule
-    <span class="ms-2" style="font-size:1.3em; line-height:1; display:inline-block;">&#8594;</span>
+    <span class="ms-2">&#8594;</span>
   </a>
 </div>
 

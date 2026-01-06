@@ -214,3 +214,74 @@ color: #300353;
         max-width: 330px;
     }
 }
+
+/* Home page styles */
+#testimonial-carousel {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+#testimonial-carousel .carousel-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#testimonial-carousel .carousel-item p {
+    max-width: 700px;
+}
+
+#testimonial-carousel .carousel-control-prev-icon,
+#testimonial-carousel .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.home-btn-schedule .ms-2 {
+    font-size: 1.3em;
+    line-height: 1;
+    display: inline-block;
+}
+
+.home-btn-register {
+    background-color: #300353 !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.home-btn-register:hover,
+.home-btn-register:focus {
+    background-color: #511380 !important;
+    box-shadow: 0 2px 16px rgba(48,3,83, 0.17);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.home-btn-schedule {
+    background: transparent;
+    border: none;
+    color: #300353;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: none;
+    display: flex;
+    align-items: center;
+}
+
+.home-btn-schedule:hover,
+.home-btn-schedule:focus {
+    color: #300353;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+}
+
+.home-btn-schedule span {
+    transition: transform 0.2s cubic-bezier(.4,0,.2,1);
+    color: #300353;
+    display: inline-block;
+}
+
+.home-btn-schedule:hover span,
+.home-btn-schedule:focus span {
+    transform: translateX(4px);
+}
