@@ -68,13 +68,24 @@ get_header(); ?>
 </div>
 
 <div id="rankings" class="my-5">
-  <h4 class="fw-bold mb-3">Rankings</h4>
-  <ul class="list-unstyled fs-5 mb-2">
-    <li class="mb-1">• MBA No. 65 (FT 2025)</li>
-    <li class="mb-1">• MSc Finance No. 21 (FT 2025)</li>
-    <li class="mb-1">• Accounting &amp; Finance No. 37 (QS 2025)</li>
-    <li class="mb-1">• Top 50 globally in Business &amp; Management (QS 2025)</li>
-  </ul>
+  <div class="row align-items-center">
+    <div class="col-12 col-md-9 text-md-start text-center">
+      <h4 class="fw-bold mb-3">Rankings</h4>
+      <ul class="list-unstyled fs-5 mb-2">
+        <li class="mb-1">• MBA No. 65 (FT 2025)</li>
+        <li class="mb-1">• MSc Finance No. 21 (FT 2025)</li>
+        <li class="mb-1">• Accounting &amp; Finance No. 37 (QS 2025)</li>
+        <li class="mb-1">• Top 50 globally in Business &amp; Management (QS 2025)</li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
+      <img
+        src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-2.png"
+        alt="Rankings Icon"
+        style="max-width:110px; height:auto;"
+      >
+    </div>
+  </div>
 </div>
 
 <div id="internationalization" class="my-5">
