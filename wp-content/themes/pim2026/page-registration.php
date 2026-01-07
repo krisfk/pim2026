@@ -41,12 +41,12 @@ get_header(); ?>
 
     <div class="text-start mx-auto mb-4" style="max-width:600px; font-size:1.1rem;">
         <p>
-        <strong>How to Register</strong>
-
+        <strong>How to Register:</strong>
+        <br>
 
             Complete your registration securely via CUHK’s platform.
             <br>
-            <strong>Payment options (choose one only):</strong>
+            <i>Payment options (choose one only):</i>
         </p>
         <ul class="mb-3">
             <li>Credit card</li>
