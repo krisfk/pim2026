@@ -123,6 +123,35 @@ get_header(); ?>
     </ul>
 </div>
 
+<h3 class="mt-5 mb-3 fw-bold">Overview of Hong Kong</h3>
+<div class="text-start mx-auto mb-4" style="max-width:700px; font-size:1.13rem;">
+    A dynamic city blending East and West – modern skyscrapers, historic temples, and scenic trails. Perfect for business and leisure.
+</div>
+
+<h3 class="mt-5 mb-3 fw-bold">Must-Do Experiences</h3>
+<ul class="list-unstyled mb-4" style="font-size:1.1rem; max-width:700px; margin-left:auto; margin-right:auto;">
+    <li class="mb-3">
+        <span class="fw-bold">Panoramic Night Tour:</span>
+        <br>
+        Ride the Star Ferry or head to Victoria Peak for breathtaking city night views.
+    </li>
+    <li class="mb-3">
+        <span class="fw-bold">Old Town Central:</span>
+        <br>
+        Explore Hong Kong’s heritage, street art, and vibrant cafés in this lively district.
+    </li>
+    <li class="mb-3">
+        <span class="fw-bold">Temple Street Market:</span>
+        <br>
+        Experience the buzzing night market with street food, local wares, and fortune-tellers.
+    </li>
+    <li class="mb-3">
+        <span class="fw-bold">Island Hopping:</span>
+        <br>
+        Take a ferry to nearby islands—like Lantau or Cheung Chau—for beaches, hikes, and unique culture.
+    </li>
+</ul>
+
 
 
 
