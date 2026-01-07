@@ -39,87 +39,90 @@ get_header(); ?>
 	<h1 class="mt-5 mb-3 fw-bold">Travel to Hong Kong</h1>
 
 
-  <h2 class="mb-4 mt-5">Visa &amp; Entry</h2>
-  <ul class="text-start mx-auto" style="max-width:650px; font-size:1.08rem;">
+  <h2 class="mb-4 fw-semibold">Visa &amp; Entry</h2>
+  <ul class="text-start mb-4" style="max-width:670px; margin:auto; font-size:1.1rem; line-height:1.7;">
     <li>
-      Visitors must hold a passport valid for at least six months beyond their stay.
+      Visitors must hold a passport valid for at least six months beyond their stay. Most nationalities do not require a visa for short visits (7–180 days).
     </li>
     <li>
-      Most nationalities do <strong>not</strong> require a visa for short visits (7–180 days).
-    </li>
-    <li>
-      <span>Check requirements: </span>
-      <a href="https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html" target="_blank" rel="noopener">Hong Kong Immigration Department</a>
-    </li>
-  </ul>
-
-  <h2 class="mb-4 mt-5">Visa Invitation Letter</h2>
-  <ul class="text-start mx-auto" style="max-width:650px; font-size:1.08rem;">
-    <li>
-      If you need an invitation letter for visa purposes, email <a href="mailto:iro@baf.cuhk.edu.hk">iro@baf.cuhk.edu.hk</a> with:
-      <ul>
-        <li>Full name (as in passport)</li>
-        <li>Passport number (optional)</li>
-        <li>Job title</li>
-        <li>Institution name &amp; address</li>
-        <li>Email for receiving the letter</li>
-      </ul>
-    </li>
-    <li>
-      Processing time: <strong>7 business days</strong>.
-    </li>
-    <li>
-      Letters are issued only to registered attendees with payment completed or invoiced.
+      <strong>Check requirements:</strong> 
+      <a href="https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html" target="_blank" rel="noopener">
+        Hong Kong Immigration Department
+      </a>
     </li>
   </ul>
 
-  <h2 class="mb-4 mt-5">Airport Logistics</h2>
-  <ul class="text-start mx-auto" style="max-width:650px; font-size:1.08rem;">
-    <li>
-      <strong>By MTR (~65 mins):</strong> Airport Express &rarr; Hong Kong Station &rarr; Central &rarr; Admiralty &rarr; East Rail Line &rarr; University Station (exit B to Cheng Yu Tung Building)
-      <br>
-      <a href="https://www.mtr.com.hk/en/customer/services/timetable_index.html" target="_blank" rel="noopener">Airport Express timetable</a>
-    </li>
-    <li>
-      <strong>By Taxi (~35 mins):</strong> Red urban taxi from Arrivals Hall; approx. HKD 300. Cash preferred.
-    </li>
+  <h2 class="mb-4 fw-semibold">Visa Invitation Letter</h2>
+  <div class="text-start mb-4" style="max-width:670px; margin:auto; font-size:1.1rem;">
+    If you need an invitation letter for visa purposes, email 
+    <a href="mailto:iro@baf.cuhk.edu.hk">iro@baf.cuhk.edu.hk</a> with:
+    <ul class="mb-2 mt-2">
+      <li>- Full name (as in passport)</li>
+      <li>- Passport number (optional)</li>
+      <li>- Job title</li>
+      <li>- Institution name &amp; address</li>
+      <li>- Email for receiving the letter</li>
+    </ul>
+    Processing time: <strong>7 business days</strong>.<br>
+    Letters are issued only to registered attendees with payment completed or invoiced.
+  </div>
+
+  <h2 class="mb-4 fw-semibold">Airport Logistics</h2>
+  <div class="text-start mb-4" style="max-width:670px; margin:auto; font-size:1.1rem;">
+    <ul class="mb-3 mt-2">
+      <li>
+        - <strong>By MTR (~65 mins):</strong> Airport Express &rarr; Hong Kong Station &rarr; Central &rarr; Admiralty &rarr; East Rail Line &rarr; University Station (exit B to Cheng Yu Tung Building)
+        <br>
+        <a href="https://www.mtr.com.hk/en/customer/services/timetable_index.html" target="_blank" rel="noopener">
+          Airport Express timetable
+        </a>
+      </li>
+      <li class="mt-2">
+        - <strong>By Taxi (~35 mins):</strong> Red urban taxi from Arrivals Hall; approx. HKD 300.<br>
+        Cash preferred.
+      </li>
+    </ul>
+  </div>
+
+  <h2 class="mb-4 fw-semibold">Local Transport &amp; Essentials</h2>
+  <div class="text-start mb-4" style="max-width:670px; margin:auto; font-size:1.1rem;">
+    <ul class="mb-2">
+      <li>
+        - <a href="https://www.google.com/maps/dir//Cheng+Yu+Tung+Building+12+Chak+Cheung+St+Ma+Liu+Shui/@22.4121683,114.2105302,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x34040620c2f0273b:0x908bdf177aa469b3" target="_blank" rel="noopener">View Map</a>
+      </li>
+      <li>
+        - Weather in October: 23&ndash;28&deg;C, mild and pleasant. 
+        Check latest updates at the 
+        <a href="https://www.hko.gov.hk/en/index.html" target="_blank" rel="noopener">Hong Kong Observatory</a>
+      </li>
+      <li>
+        - <a href="https://www.mtr.com.hk/en/customer/services/system_map.html" target="_blank" rel="noopener">MTR map</a>
+      </li>
+      <li>
+        - Currency: HKD; carry some cash for local shops and taxi
+      </li>
+      <li>
+        - Payment: Credit cards widely accepted; Octopus card for local transport
+      </li>
+      <li>
+        - Power: UK-style plug, 220V
+      </li>
+    </ul>
+  </div>
+
+  <h2 class="mb-4 fw-semibold">Overview of Hong Kong</h2>
+  <div class="mb-4 text-start" style="max-width:670px; margin:auto; font-size:1.1rem;">
+    A dynamic city blending East and West &ndash; modern skyscrapers, historic temples, and scenic trails. Perfect for business and leisure.
+  </div>
+
+  <h2 class="mb-4 fw-semibold">Must-Do Experiences</h2>
+  <ul class="text-start mb-4" style="max-width:670px; margin:auto; font-size:1.1rem;">
+    <li>- Panoramic Night Tour</li>
+    <li>- Old Town Central</li>
+    <li>- Temple Street Market</li>
+    <li>- Island Hopping</li>
   </ul>
 
-  <h2 class="mb-4 mt-5">Local Transport &amp; Essentials</h2>
-  <ul class="text-start mx-auto" style="max-width:650px; font-size:1.08rem;">
-    <li>
-      <a href="https://www.google.com/maps/dir//Cheng+Yu+Tung+Building+12+Chak+Cheung+St+Ma+Liu+Shui/@22.4121683,114.2105302,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x34040620c2f0273b:0x908bdf177aa469b3" target="_blank" rel="noopener">View Map</a>
-    </li>
-    <li>
-      <strong>Weather in October:</strong> 23–28&#8451;, mild and pleasant.<br>
-      Before you travel, check latest updates at the <a href="https://www.hko.gov.hk/en/index.html" target="_blank" rel="noopener">Hong Kong Observatory</a>.
-    </li>
-    <li>
-      <a href="https://www.mtr.com.hk/en/customer/services/system_map.html" target="_blank" rel="noopener">MTR map</a>
-    </li>
-    <li>
-      <strong>Currency:</strong> HKD; carry some cash for local shops and taxis.
-    </li>
-    <li>
-      <strong>Payment:</strong> Credit cards widely accepted; Octopus card for local transport.
-    </li>
-    <li>
-      <strong>Power:</strong> UK-style plug, 220V.
-    </li>
-  </ul>
-
-  <h2 class="mb-4 mt-5">Overview of Hong Kong</h2>
-  <p class="text-start mx-auto" style="max-width:650px; font-size:1.08rem;">
-    A dynamic city blending East and West – modern skyscrapers, historic temples, and scenic trails. Perfect for business and leisure.
-  </p>
-
-  <h2 class="mb-4 mt-5">Must-Do Experiences</h2>
-  <ul class="text-start mx-auto" style="max-width:650px; font-size:1.08rem;">
-    <li>Panoramic Night Tour</li>
-    <li>Old Town Central</li>
-    <li>Temple Street Market</li>
-    <li>Island Hopping</li>
-  </ul>
 
 
 
