@@ -31,7 +31,12 @@ get_header(); ?>
 </div>
 
 
-
+<style>
+  .container.middle-container a,
+  .middle-container a {
+    color: #300353 !important;
+  }
+</style>
 
 <div class="container text-center middle-container">
 
