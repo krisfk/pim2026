@@ -38,8 +38,18 @@ get_header(); ?>
 
 	<h1 class="mt-5 mb-3 fw-bold">Schedule of Conference Programme</h1>
 
+<style>
+  /* Ensure all table rows have equal height (120px), can be adjusted as needed */
+  .schedule-table tbody tr {
+    height: 120px;
+  }
+  .schedule-table td,
+  .schedule-table th {
+    vertical-align: middle !important;
+  }
+</style>
 <div class="table-responsive my-5">
-  <table class="table table-bordered table-hover align-middle shadow">
+  <table class="table table-bordered table-hover align-middle shadow schedule-table">
     <thead class="table-light">
       <tr>
         <th style="width:220px;">Day</th>
