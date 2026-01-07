@@ -124,12 +124,12 @@ get_header(); ?>
 </div>
 
 <h3 class="mt-5 mb-3 fw-bold">Overview of Hong Kong</h3>
-<div class="text-start mx-auto mb-4" style="max-width:700px; font-size:1.13rem;">
+<div class="text-start mx-auto mb-4" style="">
     A dynamic city blending East and West – modern skyscrapers, historic temples, and scenic trails. Perfect for business and leisure.
 </div>
 
 <h3 class="mt-5 mb-3 fw-bold">Must-Do Experiences</h3>
-<ul class="list-unstyled mb-4" style="font-size:1.1rem; max-width:700px; margin-left:auto; margin-right:auto;">
+<ul class="list-unstyled mb-4" style="">
     <li class="mb-3">
         <span class="fw-bold">Panoramic Night Tour:</span>
         <br>
