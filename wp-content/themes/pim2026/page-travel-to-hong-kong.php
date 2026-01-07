@@ -78,6 +78,50 @@ get_header(); ?>
     </p>
 </div>
 
+<h3 class="mt-5 mb-3 fw-bold">Local Transport &amp; Essentials</h3>
+<div class="text-start mx-auto mb-4">
+    <ul class="mb-3">
+        <li>
+            <strong>View Map:</strong>
+            <br>
+            <a href="https://www.google.com/maps/dir//Cheng+Yu+Tung+Building+12+Chak+Cheung+St+Ma+Liu+Shui/@22.4121683,114.2105302,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x34040620c2f0273b:0x908bdf177aa469b3" target="_blank">
+                Directions to Cheng Yu Tung Building
+            </a>
+        </li>
+        <li class="mt-3">
+            <strong>Weather in October:</strong>
+            <br>
+            23–28&#8451;, mild and pleasant.
+            <br>
+            Check Hong Kong Observatory for updates:
+            <a href="https://www.hko.gov.hk/en/index.html" target="_blank">hko.gov.hk</a>
+        </li>
+        <li class="mt-3">
+            <strong>MTR Map:</strong>
+            <br>
+            <a href="https://www.mtr.com.hk/en/customer/services/system_map.html" target="_blank">
+                Hong Kong MTR System Map
+            </a>
+        </li>
+        <li class="mt-3">
+            <strong>Currency:</strong>
+            <br>
+            Hong Kong Dollar (HKD); carry some cash for local shops and taxis.
+        </li>
+        <li class="mt-3">
+            <strong>Payment:</strong>
+            <br>
+            Credit cards are widely accepted. Consider getting an <a href="https://www.octopus.com.hk/en/consumer/octopus-cards/index.html" target="_blank">Octopus card</a> for convenient payment on public transport and at many retailers.
+        </li>
+        <li class="mt-3">
+            <strong>Power:</strong>
+            <br>
+            UK-style plug (Type G), 220V.
+        </li>
+    </ul>
+</div>
+
+
 
 
 <script>
