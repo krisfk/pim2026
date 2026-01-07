@@ -36,7 +36,7 @@ get_header(); ?>
 
 <div class="container text-center middle-container">
 
-	<h1 class="mt-5 mb-3 fw-bold">CUHK highlights</h1>
+	<h1 class="mt-5 mb-3 fw-bold">Schedule of Conference Programme</h1>
 
 <div class="d-flex justify-content-center my-4" id="submenu-btn-group">
   <a href="#accreditations" class="submenu-btn mx-2 active">Accreditations &amp; Reputation</a>
