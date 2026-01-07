@@ -45,7 +45,7 @@ get_header(); ?>
  </div>
 
 <h3 class="mt-5 mb-3 fw-bold">Visa Invitation Letter</h3>  
-<div class="text-start mx-auto mb-4" style="max-width:600px; font-size:1.08rem;">
+<div class="text-start mx-auto mb-4" >
     <p>
         If you need an invitation letter for visa purposes, please email 
         <a href="mailto:iro@baf.cuhk.edu.hk">iro@baf.cuhk.edu.hk</a>
