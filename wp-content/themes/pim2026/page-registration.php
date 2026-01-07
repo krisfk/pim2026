@@ -39,9 +39,11 @@ get_header(); ?>
 	<h1 class="mt-5 mb-3 fw-bold">Registration & Payment</h1>
 
 
-	<h3 class="mt-4 mb-3 fw-bold">How to Register</h3>
     <div class="text-start mx-auto mb-4" style="max-width:600px; font-size:1.1rem;">
         <p>
+        <strong>How to Register</strong>
+
+
             Complete your registration securely via CUHK’s platform.
             <br>
             <strong>Payment options (choose one only):</strong>
