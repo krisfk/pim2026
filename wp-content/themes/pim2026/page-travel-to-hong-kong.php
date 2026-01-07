@@ -64,6 +64,21 @@ get_header(); ?>
     </p>
 </div>
 
+<h3 class="mt-5 mb-3 fw-bold">Airport Logistics</h3>
+<div class="text-start mx-auto mb-4">
+    <p>
+        <strong>By MTR (~65 mins):</strong><br>
+        Take the Airport Express → Hong Kong Station → transfer to Central → Admiralty → East Rail Line → University Station (exit B to Cheng Yu Tung Building).<br>
+        <a href="https://www.mtr.com.hk/en/customer/services/timetable_index.html" target="_blank">Airport Express timetable</a>
+    </p>
+    <p>
+        <strong>By Taxi (~35 mins):</strong><br>
+        Take a red urban taxi from the Arrivals Hall; fare approx. HKD 300.<br>
+        <span class="fst-italic">Cash preferred.</span>
+    </p>
+</div>
+
+
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
