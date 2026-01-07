@@ -126,7 +126,7 @@ get_header(); ?>
     </div>
 
     <h3 class="mt-5 mb-3 fw-bold text-start">Must-Do Experiences</h3>
-    <ul class="list-unstyled mb-4" style="">
+    <ul class="mb-4" style="text-align:left;">
         <li class="mb-3">
             <span class="fw-bold">Panoramic Night Tour</span>
         </li>
