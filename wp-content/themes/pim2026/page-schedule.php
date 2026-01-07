@@ -38,6 +38,65 @@ get_header(); ?>
 
 	<h1 class="mt-5 mb-3 fw-bold">Schedule of Conference Programme</h1>
 
+<div class="table-responsive my-5">
+  <table class="table table-bordered table-hover align-middle shadow">
+    <thead class="table-light">
+      <tr>
+        <th style="width:220px;">Day</th>
+        <th>Programme</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="fw-bold">Wednesday, October 21</td>
+        <td>
+          <ul class="list-unstyled mb-0">
+            <li>Opening Remarks</li>
+            <li>Keynote Address</li>
+            <li>Panel Discussion</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="fw-bold">Thursday, October 22</td>
+        <td>
+          <ul class="list-unstyled mb-0">
+            <li>Workshops</li>
+            <li>Breakout Sessions</li>
+            <li>Networking Events</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="fw-bold">Friday, October 23</td>
+        <td>
+          <ul class="list-unstyled mb-0">
+            <li>Final Session</li>
+            <li>Closing Ceremony</li>
+            <li>Farewell Reception</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="fw-bold">Saturday, October 24 <span class="badge bg-secondary ms-2">Optional Tour</span></td>
+        <td>
+          <ul class="list-unstyled mb-0">
+            <li>Final Session</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="my-4">
+  <a href="#" class="btn btn-primary px-4 py-2 fw-bold" style="background-color:#300353; border:none;">
+    View Full Programme
+  </a>
+</div>
+
+
+
 
 
 <script>
