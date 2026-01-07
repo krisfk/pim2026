@@ -38,6 +38,36 @@ get_header(); ?>
 
 	<h1 class="mt-5 mb-3 fw-bold">Registration & Payment</h1>
 
+
+	<h3 class="mt-4 mb-3 fw-bold">How to Register</h3>
+    <div class="text-start mx-auto mb-4" style="max-width:600px; font-size:1.1rem;">
+        <p>
+            Complete your registration securely via CUHK’s platform.
+            <br>
+            <strong>Payment options (choose one only):</strong>
+        </p>
+        <ul class="mb-3">
+            <li>Credit card</li>
+            <li>FPS</li>
+            <li>Alipay</li>
+            <li>Telegraphic transfer (TT)/Bank Transfer</li>
+        </ul>
+        <p>
+            <strong>Confirmation:</strong>
+            <br>
+            You’ll receive a confirmation email once payment is processed.
+        </p>
+        <p class="mt-4">
+            <strong>Accessibility:</strong>
+            <br>
+            We strive to make the conference accessible to all. Contact us for assistance.
+        </p>
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-primary px-4 py-2 fw-bold" style="background-color:#300353; border:none;">
+                Register Now
+            </a>
+        </div>
+    </div>
   
 
 
