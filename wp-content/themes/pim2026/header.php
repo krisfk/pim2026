@@ -436,11 +436,16 @@
 				<div class="d-flex align-items-center flex-grow-1" style="min-width:0;">
 					<div class="d-flex align-items-center header-left" style="min-width:0;">
 						<div class="site-logo">
+							<a href="<?php echo home_url(); ?>">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
+							</a>
 						</div>
 						<div class="site-title ps-3">
-							<span class="line-1">2026 PIM Conference</span><br>
-							CUHK school of business
+							<a href="<?php echo home_url(); ?>">
+								<span class="line-1">2026 PIM Conference</span><br>
+								CUHK school of business
+								</a>
+							</a>
 						</div>
 						<!-- DESKTOP MENU -->
 						<div class="header-menu-container position-relative ms-4">
