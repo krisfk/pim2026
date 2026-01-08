@@ -402,10 +402,10 @@
 						<!-- DESKTOP MENU -->
 						<div class="header-menu-container position-relative ms-4">
 							<ul class="header-menu mb-0">
-								<li><a href="#">Conference Overview</a></li>
-								<li><a href="#">CUHK Highlights</a></li>
-								<li><a href="#">Schedule</a></li>
-								<li><a href="#">Registration</a></li>
+								<li><a href="<?php echo home_url('/conference-overview'); ?>">Conference Overview</a></li>
+								<li><a href="<?php echo home_url('/cuhk-highlights'); ?>">CUHK Highlights</a></li>
+								<li><a href="<?php echo home_url('/schedule'); ?>">Schedule</a></li>
+								<li><a href="<?php echo home_url('/registration'); ?>">Registration</a></li>
 								<li class="header-menu-more position-static" style="position:static;">
 									<a href="#">More</a>
 									<!-- Submenu -->
