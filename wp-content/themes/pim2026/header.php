@@ -241,22 +241,31 @@
 							<td class="align-top pe-2">
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
-							<span class="fw-bold">Travel to HK</span> <br>
-							Plan your journey to Hong Kong</td>
+							<a href="<?php echo home_url('/travel-to-hk'); ?>">
+								<span class="fw-bold">Travel to HK</span> <br>
+								Plan your journey to Hong Kong
+							</a>
+							</td>
 						</tr>
 						<tr>
 							<td class="align-top pe-2">
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
-							<span class="fw-bold">Accommodation & tours</span> <br>
-							Find lodging and explore the city</td>
+							<a href="<?php echo home_url('/accommodation-tours'); ?>">
+								<span class="fw-bold">Accommodation & tours</span> <br>
+								Find lodging and explore the city
+							</a>
+							</td>
 						</tr>
 						<tr>
 							<td class="align-top pe-2">
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
-							<span class="fw-bold">About HK</span> <br>
-							Learn what makes Hong Kong special</td>
+							<a href="<?php echo home_url('/about-hk'); ?>">
+								<span class="fw-bold">About HK</span> <br>
+								Learn what makes Hong Kong special
+							</a>
+							</td>
 						</tr>
 					</table>
 				</div>
