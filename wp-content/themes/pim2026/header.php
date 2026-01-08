@@ -222,11 +222,11 @@
 	<!-- Desktop submenu (absolute, hidden in mobile) -->
 	<style>
 	.header-submenu-container a {
-		color: #808080 !important;
+		color: #212529 !important;
 		text-decoration: none !important;
 		transition: color 0.2s;
 	}
-	.header-submenu-container a:hover,
+	.header-submenu-container a:hover, 
 	.header-submenu-container a:focus {
 		color: #300353 !important;
 		text-decoration: none !important;
