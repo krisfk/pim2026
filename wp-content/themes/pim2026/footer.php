@@ -115,20 +115,20 @@
 					<div class="row">
 						<div class="col-6">
 							<ul class="list-unstyled">
-								<li><a href="#" class="footer-link">Conference overview</a></li>
-								<li><a href="#" class="footer-link">Schedule</a></li>
-								<li><a href="#" class="footer-link">Register now</a></li>
-								<li><a href="#" class="footer-link">Travel to HK</a></li>
-								<li><a href="#" class="footer-link">Accommodation</a></li>
+								<li><a href="<?php echo home_url(); ?>" class="footer-link">Conference overview</a></li>
+								<li><a href="<?php echo home_url('/schedule'); ?>" class="footer-link">Schedule</a></li>
+								<li><a href="<?php echo home_url('/registration'); ?>" class="footer-link">Register now</a></li>
+								<li><a href="<?php echo home_url('/travel-to-hong-kong'); ?>" class="footer-link">Travel to HK</a></li>
+								<li><a href="<?php echo home_url('/travel-to-hong-kong'); ?>" class="footer-link">Accommodation</a></li>
 							</ul>
 						</div>
 						<div class="col-6">
 							<ul class="list-unstyled">
-								<li><a href="#" class="footer-link">Tours</a></li>
-								<li><a href="#" class="footer-link">About HK</a></li>
-								<li><a href="#" class="footer-link">CUHK highlights</a></li>
-								<li><a href="#" class="footer-link">Contact</a></li>
-								<li><a href="#" class="footer-link">Logistics</a></li>
+								<li><a href="<?php echo home_url('/travel-to-hong-kong'); ?>" class="footer-link">Tours</a></li>
+								<li><a href="<?php echo home_url('/travel-to-hong-kong'); ?>" class="footer-link">About HK</a></li>
+								<li><a href="<?php echo home_url('/cuhk-highlights'); ?>" class="footer-link">CUHK highlights</a></li>
+								<li><a href="#" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); return false;" class="footer-link">Contact</a></li>
+								<li><a href="<?php echo home_url('/travel-to-hong-kong'); ?>" class="footer-link">Logistics</a></li>
 							</ul>
 						</div>
 					</div>
