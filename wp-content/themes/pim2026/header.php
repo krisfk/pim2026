@@ -333,15 +333,21 @@
 							<td class="align-top pe-2">
 							<img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt="">
 							</td><td>
-							<span class="fw-bold">Conference dates announced</span> <br>
-							Mark your calendar for this year's event</td>
+							<a href="<?php echo home_url(); ?>">
+								<span class="fw-bold">Conference dates announced</span> <br>
+								Mark your calendar for this year's event
+							</a>
+							</td>
 						</tr>
 						<tr>
 							<td class="align-top pe-2">
 							<img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt="">
 							</td><td>
+							<a href="<?php echo home_url(); ?>">
 							<span class="fw-bold">Early bird registration open</span> <br>
-							Register early and save on conference fees</td>
+							Register early and save on conference fees
+							</a>
+							</td>
 						</tr>
 					</table>
 				</div>
