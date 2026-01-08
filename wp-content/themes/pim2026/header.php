@@ -241,7 +241,7 @@
 							<td class="align-top pe-2">
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
-							<a href="<?php echo home_url('/travel-to-hk'); ?>">
+							<a href="<?php echo home_url('/travel-to-hong-kong'); ?>">
 								<span class="fw-bold">Travel to HK</span> <br>
 								Plan your journey to Hong Kong
 							</a>
@@ -251,7 +251,7 @@
 							<td class="align-top pe-2">
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
-							<a href="<?php echo home_url('/accommodation-tours'); ?>">
+							<a href="<?php echo home_url('/travel-to-hong-kong'); ?>">
 								<span class="fw-bold">Accommodation & tours</span> <br>
 								Find lodging and explore the city
 							</a>
@@ -261,7 +261,7 @@
 							<td class="align-top pe-2">
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
-							<a href="<?php echo home_url('/about-hk'); ?>">
+							<a href="<?php echo home_url('/travel-to-hong-kong'); ?>">
 								<span class="fw-bold">About HK</span> <br>
 								Learn what makes Hong Kong special
 							</a>
