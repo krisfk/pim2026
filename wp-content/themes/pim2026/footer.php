@@ -47,7 +47,9 @@
 			<div class="col-12 col-a col-md-4 mb-5 mb-md-0 footer-col-a">
 
 				<div class="site-logo">
+					<a href="<?php echo home_url(); ?>">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
+					</a>
 				</div>
 
 				<div class="mt-4">
