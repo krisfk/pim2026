@@ -288,8 +288,11 @@
 							<td class="align-top pe-2">
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
-							<span class="fw-bold">Contact us</span> <br>
-							Reach out with questions or concerns</td>
+							<a href="#" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); return false;">
+								<span class="fw-bold">Contact us</span> <br>
+								Reach out with questions or concerns
+							</a>
+							</td>
 						</tr>
 						<tr>
 							<td class="align-top pe-2">
