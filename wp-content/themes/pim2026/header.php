@@ -139,14 +139,7 @@
 			box-shadow: none !important;
 			width: 100vw !important;
 			margin-left: 0 !important;
-			max-height: 0;
-			overflow: hidden;
-			opacity: 0;
-			transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-		}
-		.header-menu-mobile .header-submenu-container.is-open {
-			max-height: 500px; /* Adjust as needed, ensure it\'s larger than the submenu\'s actual height */
-			opacity: 1;
+			display: none;
 		}
 		.header-menu-mobile .header-submenu-container.open {
 			display: block !important;
@@ -505,30 +498,37 @@
 				// Hamburger logic: toggle submenu display and animate hamburger
 				var hamburger = document.querySelector('.header-hamburger');
 				var mobileMenu = document.getElementById('mobile-header-menu');
-				var mobileSubmenu = document.querySelector('.header-menu-mobile .header-submenu-container');
 
-				if (hamburger && mobileMenu && mobileSubmenu) {
-					hamburger.addEventListener('click', function(e) {
-						e.stopPropagation();
-						var isOpen = mobileMenu.classList.contains('is-open');
-
-						if (isOpen) {
-							mobileMenu.classList.remove('is-open');
-							mobileSubmenu.classList.remove('is-open');
-							mobileMenu.setAttribute('aria-hidden', 'true');
-							document.body.style.overflow = '';
-							hamburger.setAttribute('aria-expanded', 'false');
-							hamburger.classList.remove('active');
-						} else {
-							mobileMenu.classList.add('is-open');
-							mobileSubmenu.classList.add('is-open');
-							mobileMenu.setAttribute('aria-hidden', 'false');
-							document.body.style.overflow = 'hidden';
-							hamburger.setAttribute('aria-expanded', 'true');
-							hamburger.classList.add('active');
-						}
-					});
-				}
+					if (hamburger && submenu) {
+						hamburger.addEventListener('click', function(e) {
+							e.stopPropagation();
+							var isOpen = submenu.style.display === 'block';
+							if (isOpen) {
+								submenu.style.display = 'none';
+								if (mobileMenu) {
+									mobileMenu.style.display = 'none';
+									mobileMenu.setAttribute('aria-hidden', 'true');
+									document.body.style.overflow = '';
+									hamburger.setAttribute('aria-expanded', 'false');
+								}
+								hamburger.classList.remove('active');
+							} else {
+								submenu.style.position = 'fixed';
+								submenu.style.left = "0";
+								submenu.style.top = "49px";
+								submenu.style.width = "100vw";
+								submenu.style.marginLeft = "calc(50% - 50vw)";
+								submenu.style.display = 'block';
+								if (mobileMenu) {
+									mobileMenu.style.display = 'block';
+									mobileMenu.setAttribute('aria-hidden', 'false');
+									document.body.style.overflow = 'hidden';
+									hamburger.setAttribute('aria-expanded', 'true');
+								}
+								hamburger.classList.add('active');
+							}
+						});
+					}
 					// --- End Hamburger logic ---
 
 					// Mobile menu close and other controls are intentionally omitted for this minimal requirement
