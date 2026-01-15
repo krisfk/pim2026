@@ -62,10 +62,10 @@ get_header(); ?>
 	<h3 class="mt-5 mb-3 fw-bold">Key Dates</h3>
 
 	<div>
-
-		Registration Deadline: February 15, 2026 <br>
+  October 21–23, 2026 | The Chinese University of Hong Kong
+		<!-- Registration Deadline: February 15, 2026 <br>
 		Conference Dates: March 15 - March 17, 2026 <br><br>
-		Attendees are encouraged to register early to secure their participation in this hybrid event.
+		Attendees are encouraged to register early to secure their participation in this hybrid event. -->
 	</div>
 
 </div>	
