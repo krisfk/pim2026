@@ -236,7 +236,7 @@
 		<div class="container py-4">
 			<div class="row">
 				<div class="col-md-4 col-lg-4 ">
-					<h6>Getting there</h6>
+					<h6>Getting there!</h6>
 					<table>
 						<tr>
 							<td class="align-top pe-2">
