@@ -33,7 +33,7 @@
 			padding: 0;
 			margin: 0;
 			position: fixed;
-			top: 16px;
+			top: 7px;
 			right: 16px;
 			z-index: 2201;
 			transition: transform 0.25s cubic-bezier(.4,2,.6,1);
