@@ -23,20 +23,26 @@ get_header(); ?>
 <?php endif; ?>
 
 
-<div id="home-banner-carousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
+<div id="home-banner-carousel" class="carousel slide position-relative" data-bs-ride="carousel" style="overflow: hidden;">
+  <!-- Centered headline overlay -->
+  <div class="position-absolute top-0 start-50 translate-middle-x w-100" style="z-index: 10; pointer-events: none;">
+    <h1 class="text-center fw-bold text-white py-4" style="background: rgba(0,0,0,0.4); margin: 0;">
+      CUHK PIM Conference 2026: Navigating Sustainable East-West Connections in Dynamic Markets
+    </h1>
+  </div>
+  <div class="carousel-indicators" style="z-index: 11;">
     <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-1.jpg');">
+    <div class="carousel-item active" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-1.jpg'); background-size: cover; background-position: center; min-height: 380px;">
       <!-- Optionally add content here (caption, etc.) -->
     </div>
-    <div class="carousel-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-2.jpg');">
+    <div class="carousel-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-2.jpg'); background-size: cover; background-position: center; min-height: 380px;">
       <!-- Optionally add content here -->
     </div>
-    <div class="carousel-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-3.jpg');">
+    <div class="carousel-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-3.jpg'); background-size: cover; background-position: center; min-height: 380px;">
       <!-- Optionally add content here -->
     </div>
   </div>
