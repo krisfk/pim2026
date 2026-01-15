@@ -83,7 +83,7 @@
         }
 
         body {
-            padding-top: 49px;
+            padding-top: 49px !important;
         }
     
       }
