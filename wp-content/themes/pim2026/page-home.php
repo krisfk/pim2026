@@ -24,9 +24,9 @@ get_header(); ?>
 
 
 <div id="home-banner-carousel" class="carousel slide position-relative" data-bs-ride="carousel" style="overflow: hidden;">
-  <!-- Headline overlay: left aligned with margin -->
+  <!-- Headline overlay: left margin, right auto -->
   <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="z-index: 10; pointer-events: none;">
-    <h1 class="fw-bold text-white py-4 px-5 ms-4" style="background: rgba(0,0,0,0.4); margin: 0; text-align: left; max-width: 800px;">
+    <h1 class="fw-bold text-white py-4 px-5 ms-4 me-auto" style="background: rgba(0,0,0,0.4); margin-left: 1.5rem; margin-right: auto; margin-top: 0; margin-bottom: 0; text-align: left; max-width: 800px;">
       CUHK PIM Conference 2026: Navigating Sustainable East-West Connections in Dynamic Markets
     </h1>
   </div>
