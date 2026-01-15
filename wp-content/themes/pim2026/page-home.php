@@ -167,7 +167,7 @@ get_header(); ?>
     Register
   </a>
   <a href="#" class="px-4 py-2 home-btn-schedule">
-    Schedule
+    View Programme
     <span class="ms-2">&#8594;</span>
   </a>
 </div>
