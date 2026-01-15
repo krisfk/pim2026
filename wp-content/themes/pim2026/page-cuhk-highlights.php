@@ -91,7 +91,7 @@ get_header(); ?>
     <div class="row align-items-center">
       <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
         <img
-          src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-2.png"
+          src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-4.png"
           alt="Programme Rankings Icon"
           class="cuhk-highlight-icon"
         >
