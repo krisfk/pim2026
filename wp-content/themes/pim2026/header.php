@@ -583,7 +583,7 @@
 				</style>
 			</div>
 		</div><!-- .container -->	
-	</div><!-- .header-container -->
+	<!-- .header-container -->
 
 
 	<div id="content" class="site-content">
