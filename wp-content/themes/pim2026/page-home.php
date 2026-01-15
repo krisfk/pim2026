@@ -26,9 +26,30 @@ get_header(); ?>
 <div id="home-banner-carousel" class="carousel slide position-relative" data-bs-ride="carousel" style="overflow: hidden;">
   <!-- Headline overlay: center horizontally -->
   <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="z-index: 10; pointer-events: none;">
-    <h1 class="fw-bold text-white py-4 px-5 mx-auto" style="background: rgb(49 4 86 / 36%);margin-left: auto;margin-right: auto;margin-top: 0;margin-bottom: 0;text-align: center;max-width: 800px;">
+    <h1 
+      class="fw-bold text-white py-4 px-3 px-md-5 mx-auto" 
+      style="
+        background: rgb(49 4 86 / 36%);
+        margin-left: 12px; 
+        margin-right: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+        max-width: 800px;
+        font-size: 2rem;
+      "
+    >
       CUHK PIM Conference 2026: Navigating Sustainable East-West Connections in Dynamic Markets
     </h1>
+    <style>
+      @media (max-width: 575.98px) {
+        #home-banner-carousel h1 {
+          font-size: 1.25rem !important;
+          margin-left: 8px !important;
+          margin-right: 8px !important;
+        }
+      }
+    </style>
   </div>
   <div class="carousel-indicators" style="z-index: 11;">
     <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
