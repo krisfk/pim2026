@@ -437,7 +437,7 @@
 					<div class="d-flex align-items-center header-left" style="min-width:0;">
 						<div class="site-logo">
 							<a href="<?php echo home_url(); ?>">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
+							<img class="header-logo-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
 							</a>
 						</div>
 						<div class="site-title ps-3">
@@ -545,10 +545,40 @@
 						content: " ▼";
 						font-size:10px;
 					}
+
+					.header-logo-img {
+						max-height: 54px;
+						height: 54px;
+						width: auto;
+						transition: max-height 0.2s;
+					}
+
+					.site-title .line-1 {
+						font-size: 1.65rem;
+						font-weight: bold;
+					}
+					.site-title {
+						font-size: 1.04rem;
+						line-height: 1.12;
+					}
+
 					@media (max-width: 900px) {
 						.header-menu-container { display: none !important; }
 						/* Remove forcing .header-submenu-container to static, so we can override position via JS on hamburger click */
 						/* .header-submenu-container { position: static !important; width:100% !important; margin-left:0 !important; } */
+					}
+
+					@media (max-width: 575.98px) {
+						.header-logo-img {
+							max-height: 33px !important;
+							height: 33px !important;
+						}
+						.site-title .line-1 {
+							font-size: 1.06rem !important;
+						}
+						.site-title {
+							font-size: 0.76rem !important;
+						}
 					}
 				</style>
 			</div>
