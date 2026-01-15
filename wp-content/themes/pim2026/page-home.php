@@ -57,8 +57,7 @@ get_header(); ?>
 	<h1 class="mt-5 mb-3 fw-bold">Overview</h1>
 
 	<div>
-		From March 15 to March 17, 2026, the conference will explore the theme "Navigating Business Innovation in a Dynamic World." This hybrid event aims to unite scholars, practitioners, and thought leaders to discuss emerging trends and innovative strategies in business. Participants can join either in person at The Chinese University of Hong Kong or virtually, fostering a global dialogue on critical issues affecting the business landscape. Attendees will enjoy keynote speeches, panel discussions, and networking opportunities, enhancing their insights into contemporary challenges and solutions within the ever-evolving business environment
-	</div>
+  Join global leaders, scholars, and innovators at CUHK for three days of insights and collaboration. Explore strategies for cross-border partnerships, business resilience, and sustainable growth in today’s evolving global landscape.	</div>
 
 	<h3 class="mt-5 mb-3 fw-bold">Key Dates</h3>
 
