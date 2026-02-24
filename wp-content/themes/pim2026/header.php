@@ -373,7 +373,8 @@
 						<table>
 							<tr>
 								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-								<td><span class="fw-bold">Register now</span> <br>Secure your place at the conference</td>
+								<td><span class="fw-bold">Register now</span> 
+								<!-- <br>Secure your place at the conference</td> -->
 							</tr>
 							<tr>
 								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
