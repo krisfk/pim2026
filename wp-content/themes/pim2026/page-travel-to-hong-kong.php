@@ -65,9 +65,29 @@ get_header(); ?>
         </p>
     </div>
 
-    <h3 class="mt-5 mb-3 fw-bold text-start">Airport Logistics</h3>
+    <h3 class="mt-5 mb-3 fw-bold text-start">Transport to the Venue</h3>
     <div class="text-start mx-auto mb-4">
-        <ul class="mb-3">
+      
+    <b>Conference Venue</b> <br>
+    Hyatt Regency Hong Kong, Sha Tin <br>
+    香港沙田凱悅酒店
+
+    <br>
+    <b>MTR</b> <br>
+    5 minutes walk from University Station exit B <br>
+    <a href="#">View on map</a>
+
+    <br><br>
+    <b>Airport <-> Conference venue (<a href="#">MTR trip planner</a> )</b><br>
+    [2 interchanges, 15 minutes walking]  <br>
+Airport Station -> Hong Kong Station -> Central Station -> Admiralty Station -> University Station  <br>
+or <br>
+[3 interchanges, 9 minutes walking] <br>
+Airport Station -> Tsing Yi Station -> Nam Cheong Station -> Hung Hom Station -> University Station 
+
+
+
+    <!-- <ul class="mb-3">
             <li>
                 <strong>By MTR (~65 mins):</strong><br>
                 Take the Airport Express → Hong Kong Station → transfer to Central → Admiralty → East Rail Line → University Station (exit B to Cheng Yu Tung Building).<br>
@@ -78,7 +98,7 @@ get_header(); ?>
                 Take a red urban taxi from the Arrivals Hall; fare approx. HKD 300.<br>
                 <span class="fst-italic">Cash preferred.</span>
             </li>
-        </ul>
+        </ul> -->
     </div>
 
     <h3 class="mt-5 mb-3 fw-bold text-start">Local Transport &amp; Essentials</h3>
