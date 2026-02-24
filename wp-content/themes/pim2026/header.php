@@ -290,7 +290,7 @@
 							</td><td>
 							<a href="#" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); return false;">
 								<span class="fw-bold">Contact us</span> <br>
-								Reach out with questions or concerns
+								<!-- Reach out with questions or concerns -->
 							</a>
 							</td>
 						</tr>
@@ -300,11 +300,11 @@
 							</td><td>
 							<a href="<?php echo home_url(); ?>">
 								<span class="fw-bold">Home</span> <br>
-								Return to the main page
+								<!-- Return to the main page -->
 							</a>
 							</td>
 						</tr>
-						<tr>
+						<!-- <tr>
 							<td class="align-top pe-2">
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
@@ -323,7 +323,7 @@
 								Where scholars meet and ideas take shape
 							</a>
 							</td>
-						</tr>
+						</tr> -->
 					</table>
 				</div>
 				<div class="col-md-4 col-lg-4 ">
