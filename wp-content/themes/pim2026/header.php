@@ -343,12 +343,17 @@
 					<h6>Recent updates</h6>
 					<table>
 						<tr>
-							<td class="align-top pe-2">
+							<!-- <td class="align-top pe-2">
 							<img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt="">
-							</td><td>
+							</td> -->
+							<td>
 							<a href="<?php echo home_url(); ?>">
-								<span class="fw-bold">Conference dates announced</span> <br>
-								Mark your calendar for this year's event
+								<span class="fw-bold">Conference dates announce: 
+								</span> <br>
+								PIM Conference- CUHK, Hong Kong:  21 – 23 October 2026 <br>
+Pre-PIM Conference- Fudan University, China: 18 – 19 October 2026
+
+
 							</a>
 							</td>
 						</tr>
