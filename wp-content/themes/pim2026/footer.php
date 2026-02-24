@@ -54,7 +54,10 @@
 
 				<div class="mt-4">
 					<b>Location</b> <br>
-					Chinese University of Hong Kong, Shatin <br><br>
+					CUHK Business School <br>
+Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
+
+					<br><br>
 					<b>Contact Us</b> <br>
 					<!-- +852 (3943) 8888 <br> -->
 					<a href="mailto:into@pim2026.com" target="_blank">PIM2026@cuhk.edu.hk</a>
