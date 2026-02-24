@@ -39,7 +39,9 @@ get_header(); ?>
         font-size: 2rem;
       "
     >
-      CUHK PIM Conference 2026:<br>Navigating Sustainable East-West Connections in Dynamic Markets
+      <!-- CUHK PIM Conference 2026:<br>Navigating Sustainable East-West Connections in Dynamic Markets -->
+      Inspiring Value in Global Education: Sustainable East-West Connections 
+
     </h1>
     <style>
       @media (max-width: 575.98px) {
