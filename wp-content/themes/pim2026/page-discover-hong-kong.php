@@ -85,7 +85,7 @@ get_header(); ?>
       </a> <br><br>
 
       <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-2a.jpg" alt="">
- <br>      
+      <br><br>      
       <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-2b.jpg" alt="">
 
 
