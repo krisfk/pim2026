@@ -490,8 +490,16 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 					</div>
 					<!-- Search bar beside the header-left (desktop only)-->
 					<div class="header-search-desktop ms-3 d-none d-md-flex">
-						<form role="search" method="get" class="d-flex" action="<?php echo esc_url(home_url('/')); ?>">
-							<input type="search" class="form-control form-control-sm" placeholder="Search…" value="<?php echo get_search_query(); ?>" name="s" aria-label="Search">
+						<form role="search" method="get" class="d-flex"
+							action="https://www.google.com/search"
+							target="_blank" rel="noopener">
+							<input type="search"
+								class="form-control form-control-sm"
+								placeholder="Search…"
+								name="q"
+								aria-label="Search"
+								>
+							<input type="hidden" name="sitesearch" value="<?php echo esc_attr( $_SERVER['HTTP_HOST'] ); ?>">
 							<button class="btn btn-outline-secondary btn-sm ms-2" type="submit" aria-label="Submit search">
 								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
 							</button>
