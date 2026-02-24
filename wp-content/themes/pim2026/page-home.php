@@ -94,12 +94,9 @@ We look forward to welcoming familiar faces and new ones to Hong Kong for a warm
 	<h3 class="mt-5 mb-3 fw-bold">Key Dates</h3>
 
 	<div>
-  <!-- Conference Dates: October 21–23, 2026 <br>
-  Place: The Chinese University of Hong Kong -->
-
-  Registration Deadline: July 3, 2026 <br>
-  Conference Dates: October 21–23, 2026 <br>
-		Attendees are encouraged to register early to secure their participation in this hybrid event.
+    
+  Registration Deadline: July 30, 2026<br>Conference Dates: October 21–23, 2026<br>
+Attendees are encouraged to register early, especially those who may require additional time to arrange travel documentation for Hong Kong. 
 	</div>
 
 </div>	
