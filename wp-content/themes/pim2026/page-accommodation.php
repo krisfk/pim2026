@@ -96,7 +96,7 @@ get_header(); ?>
         <div class="d-block d-md-none">
           <div class="card mb-4">
             <div class="card-body">
-              <h5 class="card-title mb-1">Hyatt Regency Hong Kong, Sha Tin (Conference venue)</h5>
+              <h5 class="card-title mb-1">Hyatt Regency Hong Kong, Sha Tin <span class="text-decoration-none;">(Conference venue)</span></h5>
               <p class="mb-1"><strong>Address:</strong><br>18 Chak Cheung Street, Sha Tin, New Territories, Hong Kong SAR</p>
               <p class="mb-1"><strong>Nearest MTR station:</strong><br>University Station <small>(East Rail Line)</small></p>
               <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
