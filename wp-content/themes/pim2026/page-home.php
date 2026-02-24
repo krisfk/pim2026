@@ -114,36 +114,21 @@ Attendees are encouraged to register early, especially those who may require add
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="d-flex flex-column align-items-center justify-content-center">
-        <p class="mb-3 fs-4 fst-italic pe-3 ps-3">"The PIM Conference 2026 was a transformative experience. The sessions were insightful and the networking opportunities unrivaled."</p>
+        <p class="mb-3 fs-4 fst-italic pe-3 ps-3">“Global business education is changing quickly — shaped by what students aspire to, the technologies reshaping how we learn and work, and the broader shifts we all see in the world around us. Gatherings like the PIM Conference matter because they give our community a moment to step back, think ahead together, and share what we’re learning as these changes unfold.
+        CUHK is pleased to host the 2026 PIM Conference, and we hope your time here sparks new ideas, sharpens perspectives, and brings a bit more clarity to the opportunities and challenges shaping the future of international management education.”</p>
         <div><img class="profile-pic" src="<?php echo get_template_directory_uri(); ?>/assets/images/profile-pic.png" alt=""></div>
 		<div class="fw-bold mt-2">— Prof. Alex Wong, HKU</div>
       </div>
     </div>
-    <div class="carousel-item">
-      <div class="d-flex flex-column align-items-center justify-content-center">
-        <p class="mb-3 fs-4 fst-italic pe-3 ps-3">"Connecting with peers worldwide at CUHK truly broadened my perspectives on business and innovation."</p>
-		<div><img class="profile-pic" src="<?php echo get_template_directory_uri(); ?>/assets/images/profile-pic.png" alt=""></div>
-
-		<div class="fw-bold mt-2">— Maria Chen, Entrepreneur</div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="d-flex flex-column align-items-center justify-content-center">
-        <p class="mb-3 fs-4 fst-italic pe-3 ps-3">"Superbly organized and very forward-thinking. I'm already looking forward to the next edition!"</p>
-        <div><img class="profile-pic" src="<?php echo get_template_directory_uri(); ?>/assets/images/profile-pic.png" alt=""></div>
-
-		<div class="fw-bold mt-2">— Dr. Samuel Lee, Industry Leader</div>
-      </div>
-    </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
-  </button>
+  </button> -->
 </div>
 
 
