@@ -68,7 +68,9 @@ get_header(); ?>
       </a>
       <br><br>
 
+      <div>
       <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-1.jpg" alt="">
+      </div>
     </div>
   </div>
 
@@ -84,10 +86,12 @@ get_header(); ?>
         More about Old Town Central
       </a> <br><br>
 
+      <div class="mb-3">
       <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-2a.jpg" alt="">
-      <br><br>      
+      </div>
+      <div>
       <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-2b.jpg" alt="">
-
+      </div>
 
     </div>
   </div>
