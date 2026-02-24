@@ -110,7 +110,7 @@
 			}
 		}
 		/* Hide header-search-desktop on <1400px (max-width: 1399.98px), show on >=1400px */
-		@media (max-width: 1399.98px) {
+		@media (max-width: 1400px) {
 			.header-search-desktop {
 				display: none !important;
 			}
