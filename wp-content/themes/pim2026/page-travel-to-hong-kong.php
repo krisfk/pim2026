@@ -118,9 +118,14 @@ Airport Station -> Tsing Yi Station -> Nam Cheong Station -> Hung Hom Station ->
             <li>
                 <strong>View Map:</strong>
                 <br>
+                
+                <a href="https://maps.app.goo.gl/4C13qz6Ebe8Et1Dm7" target="_blank">
+                    Directions to Hyatt Regency Hong Kong, Sha Tin
+                </a> <br>
                 <a href="https://maps.app.goo.gl/bcV3shhQa5tEK1EM6" target="_blank">
                     Directions to CUHK Business School
                 </a>
+
             </li>
             <li class="mt-3">
                 <strong>Weather in October:</strong>
