@@ -68,6 +68,15 @@ get_header(); ?>
     <div class="carousel-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-3.jpg'); background-size: cover; background-position: center; min-height: 380px;">
       <!-- Optionally add content here -->
     </div>
+    <div class="carousel-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-4.jpg'); background-size: cover; background-position: center; min-height: 380px;">
+      <!-- Optionally add content here -->
+    </div>
+    <div class="carousel-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-5.jpg'); background-size: cover; background-position: center; min-height: 380px;">
+      <!-- Optionally add content here -->
+    </div>
+    <div class="carousel-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/banner-6.jpg'); background-size: cover; background-position: center; min-height: 380px;">
+      <!-- Optionally add content here -->
+    </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#home-banner-carousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
