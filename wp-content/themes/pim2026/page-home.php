@@ -116,8 +116,8 @@ Attendees are encouraged to register early, especially those who may require add
       <div class="d-flex flex-column align-items-center justify-content-center">
         <p class="mb-3 fs-4 fst-italic pe-3 ps-3">“Global business education is changing quickly — shaped by what students aspire to, the technologies reshaping how we learn and work, and the broader shifts we all see in the world around us. Gatherings like the PIM Conference matter because they give our community a moment to step back, think ahead together, and share what we’re learning as these changes unfold.
         CUHK is pleased to host the 2026 PIM Conference, and we hope your time here sparks new ideas, sharpens perspectives, and brings a bit more clarity to the opportunities and challenges shaping the future of international management education.”</p>
-        <div><img class="profile-pic" src="<?php echo get_template_directory_uri(); ?>/assets/images/profile-pic.png" alt=""></div>
-		<div class="fw-bold mt-2">— Prof. Alex Wong, HKU</div>
+        <!-- <div><img class="profile-pic" src="<?php echo get_template_directory_uri(); ?>/assets/images/profile-pic.png" alt=""></div> -->
+		<!-- <div class="fw-bold mt-2">— Prof. Alex Wong, HKU</div> -->
       </div>
     </div>
   </div>
