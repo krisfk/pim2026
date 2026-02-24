@@ -24,7 +24,7 @@ get_header(); ?>
 
 <div class="subpage-banner-full">
   <img
-    src="<?php echo get_template_directory_uri(); ?>/assets/images/subpage-banner.jpg"
+    src="<?php echo get_template_directory_uri(); ?>/assets/images/subpage-banner-4.jpg"
     alt="CUHK Highlights Banner"
     class="subpage-banner-img"
   >
