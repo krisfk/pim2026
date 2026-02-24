@@ -99,11 +99,13 @@ get_header(); ?>
       <div class="col-12 col-md-9 text-md-start text-center">
         <h4 class="fw-bold mb-3">Business Programme & Subject Rankings        </h4>
         <ul class="list-unstyled fs-5 mb-2">
-          <li class="mb-1">• MBA: <strong>#65</strong> (Financial Times 2025)</li>
           <li class="mb-1">• MSc Finance: <strong>#21</strong> (Financial Times 2025)</li>
-          <li class="mb-1">• EMBA: <strong>Top 30</strong> globally (Financial Times 2025)</li>
-          <li class="mb-1">• Accounting &amp; Finance: <strong>#37</strong> (QS 2025)</li>
-          <li class="mb-1">• Top 50 globally in Business &amp; Management (QS 2025)</li>
+          <li class="mb-1">• EMBA Programme: <strong>#22</strong> (Financial Times 2025)</li>
+          <li class="mb-1">• MBA Programme: <strong>#65</strong> (Financial Times 2025)</li>
+          <li class="mb-1">• Accounting and Finance: <strong>#37</strong> (QS World University Rankings 2025)</li>
+          <li class="mb-1">• Marketing: <strong>#41</strong> (QS World University Rankings 2025)</li>
+          <li class="mb-1">• Business and Management Studies: <strong>#46</strong> (QS World University Rankings 2025)</li>
+          <li class="mb-1">• Hospitality and Leisure Management: <strong>#49</strong> (QS World University Rankings 2025)</li>
         </ul>
       </div>
     </div>
