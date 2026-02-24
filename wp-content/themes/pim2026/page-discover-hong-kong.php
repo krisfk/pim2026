@@ -113,6 +113,24 @@ get_header(); ?>
       </div>
     </div>
   </div>
+
+
+  <div class="mb-4">
+    <h4 class="fw-bold mb-2">4. Hong Kong UNESCO Global Geopark – Nature’s Drama near the City</h4>
+    <div>
+      Just beyond the city, the <strong>Hong Kong UNESCO Global Geopark</strong> reveals a quieter, more expansive side of Hong Kong — coastal trails, striking volcanic rock formations, and views shaped over millions of years. Centered around Sai Kung, it’s an easy half‑day escape for fresh air, open landscapes, and a slower pace.
+    </div>
+    <div class="mt-3">
+      <span class="fw-semibold">📍 Hong Kong UNESCO Global Geopark (Sai Kung area)</span><br>
+      <a href="https://www.google.com.hk/maps/place/UNESCO+Global+Geopark/@22.3645481,114.374272,18z/data=!4m6!3m5!1s0x34041a889e0f3319:0x2faaf370ad21bc1b!8m2!3d22.3645432!4d114.3755648!16s%2Fm%2F0bxzv_z?hl=en&entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+        Google Maps
+      </a>
+      <br><br>
+      <div>
+        <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-4.jpg" alt="Hong Kong UNESCO Global Geopark">
+      </div>
+    </div>
+  </div>
 </div>
 
 </div>
