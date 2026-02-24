@@ -373,19 +373,19 @@
 						<table>
 							<tr>
 								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-								<td><span class="fw-bold">Register now</span> <br>Secure your place at the conference</td>
+								<!-- <td><span class="fw-bold">Register now</span> <br>Secure your place at the conference</td> -->
 							</tr>
 							<tr>
 								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-								<td><span class="fw-bold">Travel to HK</span> <br>Plan your journey to Hong Kong</td>
+								<!-- <td><span class="fw-bold">Travel to HK</span> <br>Plan your journey to Hong Kong</td> -->
 							</tr>
 							<tr>
 								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-								<td><span class="fw-bold">Accommodation & tours</span> <br>Find lodging and explore the city</td>
+								<!-- <td><span class="fw-bold">Accommodation & tours</span> <br>Find lodging and explore the city</td> -->
 							</tr>
 							<tr>
 								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-								<td><span class="fw-bold">About HK</span> <br>Learn what makes Hong Kong special</td>
+								<!-- <td><span class="fw-bold">About HK</span> <br>Learn what makes Hong Kong special</td> -->
 							</tr>
 						</table>
 						</div>
@@ -394,19 +394,19 @@
 						<table>
 							<tr>
 								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-								<td><span class="fw-bold">Contact us</span> <br>Reach out with questions or concerns</td>
+								<!-- <td><span class="fw-bold">Contact us</span> <br>Reach out with questions or concerns</td> -->
 							</tr>
 							<tr>
 								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-								<td><span class="fw-bold">Home</span> <br>Return to the main page</td>
+								<!-- <td><span class="fw-bold">Home</span> <br>Return to the main page</td> -->
 							</tr>
 							<tr>
 								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-								<td><span class="fw-bold">About</span> <br>Discover our conference mission</td>
+								<!-- <td><span class="fw-bold">About</span> <br>Discover our conference mission</td> -->
 							</tr>
 							<tr>
 								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-								<td><span class="fw-bold">The gathering</span> <br>Where scholars meet and ideas take shape</td>
+								<!-- <td><span class="fw-bold">The gathering</span> <br>Where scholars meet and ideas take shape</td> -->
 							</tr>
 						</table>
 						</div>
