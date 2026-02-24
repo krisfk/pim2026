@@ -86,10 +86,8 @@ get_header(); ?>
 	<h1 class="mt-5 mb-3 fw-bold">Overview</h1>
 
 	<div>
+  Join global leaders, scholars, and innovators at CUHK for three days of insights and collaboration. Explore strategies for cross-border partnerships, business resilience, and sustainable growth in today’s evolving global landscape.	</div>
 
-  The 2026 CUHK PIM Conference welcomes our global PIM community to Hong Kong for three days of reconnecting, reflecting, and advancing our shared work. For many of us, this annual gathering is more than a meeting — it is a valued moment to revisit long‑standing partnerships, exchange honest insights, and support one another as we navigate the continually evolving landscape of business education.
-This year invites us to slow down, think together, and explore how we can continue strengthening the relationships and networks that sustain our institutions and the students we serve. We come with both shared and differing challenges, but always with a deep commitment to meaningful collaboration.
-We look forward to welcoming familiar faces and new ones to Hong Kong for a warm, connected, and forward‑looking gathering grounded in the spirit of partnership that defines the PIM network.
 	<h3 class="mt-5 mb-3 fw-bold">Key Dates</h3>
 
 	<div>
