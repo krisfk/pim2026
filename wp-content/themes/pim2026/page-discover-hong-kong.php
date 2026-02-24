@@ -43,9 +43,7 @@ get_header(); ?>
 	<h1 class="mt-5 mb-3 fw-bold">Discover Hong Kong
     </h1>
 
-    <h3 class="mt-5 mb-3 fw-bold text-start">Visa & Entry</h3>
-    <div class="text-start mx-auto mb-4">Visitors must hold a passport valid for at least six months beyond their stay. Most nationalities do not require a visa for short visits (7–180 days). <br> <br> Check requirements: Hong Kong Immigration Department <br> <a href="https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html" target="_blank">https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html</a>
-    </div>
+   
 
 
 
