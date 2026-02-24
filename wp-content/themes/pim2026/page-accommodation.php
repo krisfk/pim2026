@@ -44,53 +44,97 @@ get_header(); ?>
 	
     <div class="text-start mx-auto mb-4">
        
-      <div class="table-responsive">
-        <table class="table table-bordered align-middle">
-          <thead class="table-light">
-            <tr>
-              <th scope="col">Hotel</th>
-              <th scope="col">Address</th>
-              <th scope="col">Nearest MTR station</th>
-              <th scope="col">Distance to CUHK and Conference venue<br><small>(next to University Station)</small></th>
-              <th scope="col">Star rating</th>
-              <th scope="col">Room rate</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <strong>Hyatt Regency Hong Kong, Sha Tin</strong><br>
-                <span>(Conference venue)</span>
-              </td>
-              <td>18 Chak Cheung Street, Sha Tin, New Territories, Hong Kong SAR</td>
-              <td>University Station<br><small>(East Rail Line)</small></td>
-              <td>
-                <ul class="mb-0">
+      <div>
+        <!-- Desktop/Table view -->
+        <div class="table-responsive d-none d-md-block">
+          <table class="table table-bordered align-middle">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">Hotel</th>
+                <th scope="col">Address</th>
+                <th scope="col">Nearest MTR station</th>
+                <th scope="col">Distance to CUHK and Conference venue<br><small>(next to University Station)</small></th>
+                <th scope="col">Star rating</th>
+                <th scope="col">Room rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Hyatt Regency Hong Kong, Sha Tin</strong><br>
+                  <span>(Conference venue)</span>
+                </td>
+                <td>18 Chak Cheung Street, Sha Tin, New Territories, Hong Kong SAR</td>
+                <td>University Station<br><small>(East Rail Line)</small></td>
+                <td>
+                  <ul class="mb-0">
+                    <li>CUHK Main Campus (Exit A): 1–2 mins walk</li>
+                    <li>Cheng Yu Tung Building (Exit B): 5 mins walk</li>
+                  </ul>
+                </td>
+                <td>5</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td><strong>Renaissance Hong Kong Harbour View Hotel</strong></td>
+                <td>1 Harbour Road, Wan Chai, Hong Kong</td>
+                <td>Exhibition Centre<br><small>(East Rail Line)</small></td>
+                <td>
+                  <ul class="mb-0">
+                    <li>CUHK Main Campus (Exit A): ~30 mins train and 1–2 mins walk</li>
+                    <li>Cheng Yu Tung Building (Exit B): ~30 mins train and 5 mins walk</li>
+                    <li>Hyatt Regency Hong Kong, Sha Tin: ~30 mins train and 5 mins walk</li>
+                  </ul>
+                </td>
+                <td>5</td>
+                <td>See comment</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Mobile/card view -->
+        <div class="d-block d-md-none">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Hyatt Regency Hong Kong, Sha Tin <span class="badge bg-light text-dark" style="font-size:0.9em;">Conference venue</span></h5>
+              <p class="mb-1"><strong>Address:</strong><br>18 Chak Cheung Street, Sha Tin, New Territories, Hong Kong SAR</p>
+              <p class="mb-1"><strong>Nearest MTR station:</strong><br>University Station <small>(East Rail Line)</small></p>
+              <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
+                <ul class="mb-1" style="padding-left:22px;">
                   <li>CUHK Main Campus (Exit A): 1–2 mins walk</li>
                   <li>Cheng Yu Tung Building (Exit B): 5 mins walk</li>
                 </ul>
-              </td>
-              <td>5</td>
-              <td>&nbsp;</td>
-            </tr>
-            <tr>
-              <td><strong>Renaissance Hong Kong Harbour View Hotel</strong></td>
-              <td>1 Harbour Road, Wan Chai, Hong Kong</td>
-              <td>Exhibition Centre<br><small>(East Rail Line)</small></td>
-              <td>
-                <ul class="mb-0">
+              </p>
+              <p class="mb-1"><strong>Star rating:</strong> 5</p>
+              <p class="mb-1"><strong>Room rate:</strong> –</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Renaissance Hong Kong Harbour View Hotel</h5>
+              <p class="mb-1"><strong>Address:</strong><br>1 Harbour Road, Wan Chai, Hong Kong</p>
+              <p class="mb-1"><strong>Nearest MTR station:</strong><br>Exhibition Centre <small>(East Rail Line)</small></p>
+              <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
+                <ul class="mb-1" style="padding-left:22px;">
                   <li>CUHK Main Campus (Exit A): ~30 mins train and 1–2 mins walk</li>
                   <li>Cheng Yu Tung Building (Exit B): ~30 mins train and 5 mins walk</li>
                   <li>Hyatt Regency Hong Kong, Sha Tin: ~30 mins train and 5 mins walk</li>
                 </ul>
-              </td>
-              <td>5</td>
-              <td>See comment</td>
-            </tr>
-          </tbody>
-        </table>
+              </p>
+              <p class="mb-1"><strong>Star rating:</strong> 5</p>
+              <p class="mb-1"><strong>Room rate:</strong> See comment</p>
+            </div>
+          </div>
+        </div>
       </div>
-    
+      <style>
+        @media (max-width: 767.98px) {
+          /* Ensure responsive font sizes or spacing if needed */
+          .card .card-title {
+            font-size: 1.02rem;
+          }
+        }
+      </style>
     </div>
 
 </div>
