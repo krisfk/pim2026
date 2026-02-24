@@ -198,6 +198,12 @@
 			align-items: center;
 			display: flex;
 		}
+		/* Ensure header-search-desktop is hidden on mobile */
+		@media (max-width: 1199.98px) {
+			.header-search-desktop {
+				display: none !important;
+			}
+		}
 	</style>
 </head>
 
@@ -488,7 +494,7 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 						</div>
 					</div>
 					<!-- Search bar beside the header-left (desktop only)-->
-					<div class="header-search-desktop ms-3 d-none d-md-flex">
+					<div class="header-search-desktop ms-3">
 						<form role="search" method="get" class="d-flex"
 							action="https://www.google.com/search"
 							target="_blank" rel="noopener">
@@ -608,6 +614,7 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 
 					@media (max-width: 1199.98px) {
 						.header-menu-container { display: none !important; }
+						.header-search-desktop { display: none !important; }
 					}
 
 					@media (max-width: 575.98px) {
