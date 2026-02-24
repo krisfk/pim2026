@@ -82,7 +82,13 @@ get_header(); ?>
       <span class="fw-semibold">📍 Old Town Central</span><br>
       <a href="https://www.discoverhongkong.com/eng/explore/neighbourhoods/old-town-central.html" target="_blank" rel="noopener">
         More about Old Town Central
-      </a>
+      </a> <br><br>
+
+      <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-2a.jpg" alt="">
+ <br>      
+      <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-2b.jpg" alt="">
+
+
     </div>
   </div>
 </div>
