@@ -67,7 +67,7 @@ get_header(); ?>
         Google Maps
       </a>
 
-      <img src="http://161.35.238.223/wp-content/uploads/2026/02/me-1.jpg" alt="">
+      <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-1.jpg" alt="">
     </div>
   </div>
 </div>
