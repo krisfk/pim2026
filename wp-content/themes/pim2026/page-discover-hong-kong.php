@@ -47,45 +47,6 @@ get_header(); ?>
     <div class="text-start mx-auto mb-4">Visitors must hold a passport valid for at least six months beyond their stay. Most nationalities do not require a visa for short visits (7–180 days). <br> <br> Check requirements: Hong Kong Immigration Department <br> <a href="https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html" target="_blank">https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html</a>
     </div>
 
-    <h3 class="mt-5 mb-3 fw-bold text-start">Visa Invitation Letter:</h3>
-    <div class="text-start mx-auto mb-4" >
-        <p>
-            Invitation letters can be issued <b>after your online registration is completed</b>. To request one, simply email us at 
-            <a href="mailto:PIM2026@cuhk.edu.hk">PIM2026@cuhk.edu.hk</a> with your information:
-        </p>
-        <ul class="mb-3">
-            <li>Full name (as shown on passport)</li>
-            <li>Passport number (optional)</li>
-            <li>Job title</li>
-            <li>Institution name and address</li>
-            <li>Email address for receiving the letter</li>
-        </ul>
-        <p>
-            <strong>Processing time:</strong> approximately 7 business days.<br>
-            Please note that invitation letters are provided only to registered attendees whose payment has been completed or formally invoiced.
-        </p>
-    </div>
-
-    <h3 class="mt-5 mb-3 fw-bold text-start">Transport to the Venue</h3>
-    <div class="text-start mx-auto mb-4">
-      
-    <b>Conference Venue</b> <br>
-    Hyatt Regency Hong Kong, Sha Tin <br>
-    香港沙田凱悅酒店
-
-    <br>
-    <b>MTR</b> <br>
-    5 minutes walk from University Station exit B <br>
-    <a href="https://maps.app.goo.gl/T9Jffe8Xnrh6fMgZ6" target="_blank">View on map</a>
-
-    <br><br>
-    <b>Airport <-> Conference venue</b>
-
-
-
-
-
-    </div>
 
 
     <h3 class="mt-5 mb-3 fw-bold text-start">Overview of Hong Kong</h3>
