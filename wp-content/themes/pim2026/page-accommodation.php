@@ -129,9 +129,10 @@ get_header(); ?>
       </div>
       <style>
         @media (max-width: 767.98px) {
-          /* Ensure responsive font sizes or spacing if needed */
+          /* Make the card title larger and bold on mobile */
           .card .card-title {
-            font-size: 1.02rem;
+            font-size: 1.32rem;
+            font-weight: bold;
           }
         }
       </style>
