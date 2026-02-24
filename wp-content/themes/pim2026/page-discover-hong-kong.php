@@ -71,6 +71,20 @@ get_header(); ?>
       <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-1.jpg" alt="">
     </div>
   </div>
+
+
+  <div class="mb-4">
+    <h4 class="fw-bold mb-2">2. Old Town Central – Heritage Meets Style</h4>
+    <div>
+      Explore Hong Kong’s cultural heart: <strong>Man Mo Temple</strong>, the galleries of <strong>Tai Kwun</strong>, and the trendy cafés of SoHo. Expect a mix of incense, street art, historic alleys, and creative energy.
+    </div>
+    <div class="mt-3">
+      <span class="fw-semibold">📍 Old Town Central</span><br>
+      <a href="https://www.discoverhongkong.com/eng/explore/neighbourhoods/old-town-central.html" target="_blank" rel="noopener">
+        More about Old Town Central
+      </a>
+    </div>
+  </div>
 </div>
 
 </div>
