@@ -116,7 +116,7 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 							<ul class="list-unstyled">
 								<li><a href="<?php echo home_url(); ?>" class="footer-link">Overview</a></li>
 								<li><a href="<?php echo home_url('/schedule'); ?>" class="footer-link">The Programme</a></li>
-								<li><a href="<?php echo home_url('/registration'); ?>" class="footer-link">Register now</a></li>
+								<li><a href="<?php echo home_url('/registration'); ?>" class="footer-link">Registration</a></li>
 								<li><a href="<?php echo home_url('/travel-to-hong-kong'); ?>" class="footer-link">Travel to Hong Kong</a></li>
 								<li><a href="<?php echo home_url('/accommodation'); ?>" class="footer-link">Accommodation</a></li>
 							</ul>
