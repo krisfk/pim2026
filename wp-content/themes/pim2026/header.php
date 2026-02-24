@@ -78,7 +78,7 @@
 			transform: none;
 		}
 
-		@media (max-width: 900px) {
+		@media (max-width: 1199.98px) {
 			.header-hamburger {
 				display: flex;
 			}
@@ -88,7 +88,6 @@
 			.header-menu-mobile {
 				display: none !important;
 			}
-			/* Remove top:auto on .header-submenu-container so JS can set absolute */
 			.header-search-desktop {
 				display: none !important;
 			}
@@ -96,7 +95,7 @@
 				display: none !important;
 			}
 		}
-		@media (min-width: 901px) {
+		@media (min-width: 1200px) {
 			.header-menu-mobile {
 				display: none !important;
 			}
@@ -149,7 +148,7 @@
 			text-decoration: underline;
 		}
 		/* ---- Sticky header for mobile ---- */
-		@media (max-width: 900px) {
+		@media (max-width: 1199.98px) {
 			.header-container {
 				position: fixed;
 				top: 0;
@@ -168,7 +167,7 @@
 				padding-top: 74px; /* adjust to match the header height on mobile */
 			}
 		}
-		@media (min-width: 901px) {
+		@media (min-width: 1200px) {
 			.header-container {
 				position: static;
 				box-shadow: none;
@@ -518,15 +517,15 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 				var menuItems = document.querySelectorAll('.header-menu > li:not(.header-menu-more)');
 				if (moreLi && submenu) {
 					moreLi.addEventListener('mouseenter', function() {
-						if (window.innerWidth > 900) submenu.style.display = 'block';
+						if (window.innerWidth > 1199) submenu.style.display = 'block';
 					});
 					submenu.addEventListener('mouseleave', function() {
-						if (window.innerWidth > 900) submenu.style.display = 'none';
+						if (window.innerWidth > 1199) submenu.style.display = 'none';
 					});
 					moreLi.addEventListener('mouseleave', function(e) { /* only hide on submenu leave */ });
 					menuItems.forEach(function(item){
 						item.addEventListener('mouseenter', function() {
-							if (window.innerWidth > 900) submenu.style.display = 'none';
+							if (window.innerWidth > 1199) submenu.style.display = 'none';
 						});
 					});
 				}
@@ -607,10 +606,8 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 						line-height: 1.12;
 					}
 
-					@media (max-width: 900px) {
+					@media (max-width: 1199.98px) {
 						.header-menu-container { display: none !important; }
-						/* Remove forcing .header-submenu-container to static, so we can override position via JS on hamburger click */
-						/* .header-submenu-container { position: static !important; width:100% !important; margin-left:0 !important; } */
 					}
 
 					@media (max-width: 575.98px) {
