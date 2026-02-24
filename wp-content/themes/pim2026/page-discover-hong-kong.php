@@ -66,6 +66,22 @@ get_header(); ?>
         </p>
     </div>
 
+    <h3 class="mt-5 mb-3 fw-bold text-start">Transport to the Venue</h3>
+    <div class="text-start mx-auto mb-4">
+      
+    <b>Conference Venue</b> <br>
+    Hyatt Regency Hong Kong, Sha Tin <br>
+    香港沙田凱悅酒店
+
+    <br>
+    <b>MTR</b> <br>
+    5 minutes walk from University Station exit B <br>
+    <a href="https://maps.app.goo.gl/T9Jffe8Xnrh6fMgZ6" target="_blank">View on map</a>
+
+    <br><br>
+    <b>Airport <-> Conference venue</b>
+
+
 
 
 
