@@ -41,9 +41,56 @@ get_header(); ?>
 <div class="container text-center middle-container">
 
 	<h1 class="mt-5 mb-3 fw-bold">Accommodation</h1>
-
-    <h3 class="mt-5 mb-3 fw-bold text-start">Visa & Entry</h3>
-    <div class="text-start mx-auto mb-4">Visitors must hold a passport valid for at least six months beyond their stay. Most nationalities do not require a visa for short visits (7–180 days). <br> <br> Check requirements: Hong Kong Immigration Department <br> <a href="https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html" target="_blank">https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html</a>
+	
+    <div class="text-start mx-auto mb-4">
+       
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+          <thead class="table-light">
+            <tr>
+              <th scope="col">Hotel</th>
+              <th scope="col">Address</th>
+              <th scope="col">Nearest MTR station</th>
+              <th scope="col">Distance to CUHK and Conference venue<br><small>(next to University Station)</small></th>
+              <th scope="col">Star rating</th>
+              <th scope="col">Room rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Hyatt Regency Hong Kong, Sha Tin</strong><br>
+                <span>(Conference venue)</span>
+              </td>
+              <td>18 Chak Cheung Street, Sha Tin, New Territories, Hong Kong SAR</td>
+              <td>University Station<br><small>(East Rail Line)</small></td>
+              <td>
+                <ul class="mb-0">
+                  <li>CUHK Main Campus (Exit A): 1–2 mins walk</li>
+                  <li>Cheng Yu Tung Building (Exit B): 5 mins walk</li>
+                </ul>
+              </td>
+              <td>5</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td><strong>Renaissance Hong Kong Harbour View Hotel</strong></td>
+              <td>1 Harbour Road, Wan Chai, Hong Kong</td>
+              <td>Exhibition Centre<br><small>(East Rail Line)</small></td>
+              <td>
+                <ul class="mb-0">
+                  <li>CUHK Main Campus (Exit A): ~30 mins train and 1–2 mins walk</li>
+                  <li>Cheng Yu Tung Building (Exit B): ~30 mins train and 5 mins walk</li>
+                  <li>Hyatt Regency Hong Kong, Sha Tin: ~30 mins train and 5 mins walk</li>
+                </ul>
+              </td>
+              <td>5</td>
+              <td>See comment</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
     </div>
 
 </div>
