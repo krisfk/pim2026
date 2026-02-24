@@ -36,14 +36,14 @@ get_header(); ?>
 
 <div class="container text-center middle-container">
 
-	<h1 class="mt-5 mb-3 fw-bold">CUHK & CUHK Business School Highlights</h1>
+	<h1 class="mt-5 mb-3 fw-bold">Key Facts of CUHK & CUHK Business School  </h1>
 
-<div class="d-flex justify-content-center my-4" id="submenu-btn-group">
+<!-- <div class="d-flex justify-content-center my-4" id="submenu-btn-group">
   <a href="#university-rankings" class="submenu-btn mx-2 active">University Rankings</a>
   <a href="#bs-accreditations" class="submenu-btn mx-2">Business School Accreditations</a>
   <a href="#programme-rankings" class="submenu-btn mx-2">Programme Rankings</a>
   <a href="#internationalisation" class="submenu-btn mx-2">Internationalisation</a>
-</div>
+</div> -->
 
 <div class="cuhk-highlight-content">
   <div id="university-rankings" class="my-5">
@@ -97,7 +97,7 @@ get_header(); ?>
         >
       </div>
       <div class="col-12 col-md-9 text-md-start text-center">
-        <h4 class="fw-bold mb-3">Programme Rankings</h4>
+        <h4 class="fw-bold mb-3">Business Programme & Subject Rankings        </h4>
         <ul class="list-unstyled fs-5 mb-2">
           <li class="mb-1">• MBA: <strong>#65</strong> (Financial Times 2025)</li>
           <li class="mb-1">• MSc Finance: <strong>#21</strong> (Financial Times 2025)</li>
@@ -119,7 +119,7 @@ get_header(); ?>
         >
       </div>
       <div class="col-12 col-md-9 text-md-start text-center">
-        <h4 class="fw-bold mb-3">Internationalisation</h4>
+        <h4 class="fw-bold mb-3">Our International Reach</h4>
         <ul class="list-unstyled fs-5 mb-2">
           <li class="mb-1">• 5,000+ students from 20+ countries</li>
           <li class="mb-1">• 230+ exchange programmes with 60+ partners in 30+ countries</li>
