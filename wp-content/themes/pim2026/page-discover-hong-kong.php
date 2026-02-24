@@ -47,26 +47,29 @@ get_header(); ?>
 
 
 
-    <h3 class="mt-5 mb-3 fw-bold text-start">Overview of Hong Kong</h3>
+    <h3 class="mt-5 mb-3 fw-bold text-start">Explore Hong Kong </h3>
     <div class="text-start mx-auto mb-4" style="">
-        A dynamic city blending East and West – modern skyscrapers, historic temples, and scenic trails. Perfect for business and leisure.
+    A city where glass towers meet mountain trails, incense-filled temples sit beside neon markets, and every corner offers something familiar and entirely new. Whether it’s your first visit or your fifteenth, Hong Kong always has a way of surprising you.
     </div>
 
-    <h3 class="mt-5 mb-3 fw-bold text-start">Must-Do Experiences</h3>
-    <ul class="mb-4" style="text-align:left;">
-        <li class="mb-3">
-            <span class="fw-bold">Panoramic Night Tour</span>
-        </li>
-        <li class="mb-3">
-            <span class="fw-bold">Old Town Central</span>
-        </li>
-        <li class="mb-3">
-            <span class="fw-bold">Temple Street Market</span>
-        </li>
-        <li class="mb-3">
-            <span class="fw-bold">Island Hopping</span>
-        </li>
-    </ul>
+    <h3 class="mt-5 mb-3 fw-bold text-start">Must‑Do Experiences in Hong Kong
+    </h3>
+<div class="text-start mb-5">
+  <div class="mb-4">
+    <h4 class="fw-bold mb-2">1. Panoramic Night Views of Victoria Harbour</h4>
+    <div>
+      Nothing captures Hong Kong quite like its skyline — glittering, dramatic, and alive. Head to <strong>The Peak</strong> or the Tsim Sha Tsui Promenade for breathtaking nighttime views. The Peak Tram offers a scenic ride up Hong Kong’s highest point at 552m, giving you sweeping city and harbour panoramas.
+    </div>
+    <div class="mt-3">
+      <span class="fw-semibold">📍 The Peak</span>
+      <br>
+      <a href="https://maps.app.goo.gl/tN5w5cr8xRAbP2eJ8" target="_blank" rel="noopener">
+        Google Maps
+      </a>
+    </div>
+  </div>
+</div>
+
 </div>
 
 
