@@ -476,7 +476,7 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 						</div>
 						<!-- DESKTOP MENU -->
 						<div class="header-menu-container position-relative ms-4">
-							<ul class="header-menu mb-0">
+							<ul class="header-menu mb-0 ps-0 ps-md-0 ps-lg-3">
 								<li><a href="<?php echo home_url(); ?>">Overview</a></li>
 								<li><a href="<?php echo home_url('/cuhk-highlights'); ?>">CUHK Highlights</a></li>
 								<li><a href="<?php echo home_url('/schedule'); ?>">The Programme</a></li>
