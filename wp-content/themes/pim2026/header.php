@@ -440,7 +440,7 @@
 
 							<a href="<?php echo home_url(); ?>">
 
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pim-logo-new.png" alt="">
+							<img class="header-logo-img-2" src="<?php echo get_template_directory_uri(); ?>/assets/images/pim-logo-new.png" alt="">
 							<img class="header-logo-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
 							</a>
 						</div>
@@ -558,6 +558,13 @@
 						transition: max-height 0.2s;
 					}
 
+					.header-logo-img {
+						max-height: 54px;
+						height: 54px;
+						width: auto;
+						transition: max-height 0.2s;
+					}
+
 					.site-title .line-1 {
 						font-size: 1.35rem;
 						font-weight: bold;
@@ -575,6 +582,10 @@
 
 					@media (max-width: 575.98px) {
 						.header-logo-img {
+							max-height: 33px !important;
+							height: 33px !important;
+						}
+						.header-logo-img-2 {
 							max-height: 33px !important;
 							height: 33px !important;
 						}
