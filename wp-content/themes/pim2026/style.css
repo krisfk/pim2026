@@ -44,7 +44,7 @@
     }
     .site-title .line-1{
         font-size: 23px;
-        font-style: italic;
+        /* font-style: italic; */
         color: #300353;
         font-weight: normal;
     }
