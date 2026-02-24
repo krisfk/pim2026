@@ -564,12 +564,7 @@
 						transition: max-height 0.2s;
 					}
 
-					.header-logo-img {
-						max-height: 54px;
-						height: 54px;
-						width: auto;
-						transition: max-height 0.2s;
-					}
+				
 
 					.site-title .line-1 {
 						font-size: 1.35rem;
