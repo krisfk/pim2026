@@ -436,7 +436,11 @@
 				<div class="d-flex align-items-center flex-grow-1" style="min-width:0;">
 					<div class="d-flex align-items-center header-left" style="min-width:0;">
 						<div class="site-logo">
+
+
 							<a href="<?php echo home_url(); ?>">
+
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pim-logo-new.png" alt="">
 							<img class="header-logo-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
 							</a>
 						</div>
