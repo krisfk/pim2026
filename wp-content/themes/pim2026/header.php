@@ -263,7 +263,7 @@
 							<td class="align-top pe-2">
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
-							<a href="<?php echo home_url('/travel-to-hong-kong'); ?>">
+							<a href="<?php echo home_url('/accommodation'); ?>">
 								<span class="fw-bold">Accommodation</span> <br>
 								<!-- Find lodging and explore the city -->
 							</a>
