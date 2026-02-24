@@ -56,10 +56,10 @@ get_header(); ?>
         >
       </div>
       <div class="col-12 col-md-9 text-md-start text-center">
-        <h4 class="fw-bold mb-3">CUHK University Rankings</h4>
+        <h4 class="fw-bold mb-3">CUHK Rankings        </h4>
         <ul class="list-unstyled fs-5 mb-2">
-          <li class="mb-1">• QS World University Rankings: <strong>#36</strong> globally (2025)</li>
-          <li class="mb-1">• Times Higher Education: <strong>Top 50</strong> globally (2025)</li>
+          <li class="mb-1">• QS World University Rankings 2026: <strong>#32</strong> globally</li>
+          <li class="mb-1">• Times Higher Education Rankings 2026: <strong>#41</strong> globally</li>
         </ul>
       </div>
     </div>
