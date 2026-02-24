@@ -78,12 +78,23 @@ get_header(); ?>
     <a href="#">View on map</a>
 
     <br><br>
-    <b>Airport <-> Conference venue (<a href="#">MTR trip planner</a> )</b><br>
-    [2 interchanges, 15 minutes walking]  <br>
+    <b>Airport <-> Conference venue</b>
+
+
+    <ul class="mb-3">
+      <li>
+        <strong>Taxi:</strong> ~35 minutes, cash preferred
+      </li>
+      <li class="mt-2">
+        <strong>MTR:</strong> ~60–66 minutes (<a href="#">MTR trip planner</a>) <br>
+        [2 interchanges, 15 minutes walking]  <br>
 Airport Station -> Hong Kong Station -> Central Station -> Admiralty Station -> University Station  <br>
 or <br>
 [3 interchanges, 9 minutes walking] <br>
 Airport Station -> Tsing Yi Station -> Nam Cheong Station -> Hung Hom Station -> University Station 
+
+      </li>
+    </ul>
 
 
 
