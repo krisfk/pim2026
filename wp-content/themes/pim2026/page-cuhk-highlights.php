@@ -123,9 +123,9 @@ get_header(); ?>
       <div class="col-12 col-md-9 text-md-start text-center">
         <h4 class="fw-bold mb-3">Our International Reach</h4>
         <ul class="list-unstyled fs-5 mb-2">
-          <li class="mb-1">• 5,000+ students from 20+ countries</li>
-          <li class="mb-1">• 230+ exchange programmes with 60+ partners in 30+ countries</li>
-          <li class="mb-1">• 45,000+ alumni across 50 global locations</li>
+          <li class="mb-1">• 5,000+ students from 20+ countries/ regions</li>
+          <li class="mb-1">• 280+ exchange programmes with 80+ partners in 30+ countries/ regions</li>
+          <li class="mb-1">• 49,000+ alumni across 50 locations</li>
         </ul>
       </div>
     </div>
