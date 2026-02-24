@@ -222,8 +222,8 @@ color: #300353;
 
 /* Home page styles */
 #testimonial-carousel {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+    /* width: 100vw;
+    margin-left: calc(50% - 50vw); */
 }
 
 #testimonial-carousel .carousel-inner {
