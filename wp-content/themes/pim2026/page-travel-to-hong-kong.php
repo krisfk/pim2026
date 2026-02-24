@@ -150,7 +150,7 @@ Airport Station -> Tsing Yi Station -> Nam Cheong Station -> Hung Hom Station ->
             <li class="mt-3">
                 <strong>Payment:</strong>
                 <br>
-                Credit cards are widely accepted. Consider getting an <a href="https://www.octopus.com.hk/en/consumer/octopus-cards/index.html" target="_blank">Octopus card</a> for convenient payment on public transport and at many retailers.
+                Credit cards are widely accepted. Consider getting an <a href="https://www.octopus.com.hk/en/consumer/octopus-cards/products/on-loan/index.html" target="_blank">Octopus card</a> for convenient payment on public transport and at many retailers.
             </li>
             <li class="mt-3">
                 <strong>Power:</strong>
