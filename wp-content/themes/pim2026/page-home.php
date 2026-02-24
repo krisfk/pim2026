@@ -95,8 +95,8 @@ We look forward to welcoming familiar faces and new ones to Hong Kong for a warm
 
 	<div>
     
-  Registration Deadline: July 30, 2026<br>Conference Dates: October 21–23, 2026<br>
-Attendees are encouraged to register early, especially those who may require additional time to arrange travel documentation for Hong Kong. 
+  Registration Deadline: July 30, 2026<br>Conference Dates: October 21–23, 2026<br> <br>
+Attendees are encouraged to register early, especially those who may require additional time<br> to arrange travel documentation for Hong Kong. 
 	</div>
 
 </div>	
