@@ -557,6 +557,12 @@
 						width: auto;
 						transition: max-height 0.2s;
 					}
+					.header-logo-img-2 {
+						max-height: 54px;
+						height: 54px;
+						width: auto;
+						transition: max-height 0.2s;
+					}
 
 					.header-logo-img {
 						max-height: 54px;
