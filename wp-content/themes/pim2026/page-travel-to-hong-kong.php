@@ -49,7 +49,7 @@ get_header(); ?>
     <h3 class="mt-5 mb-3 fw-bold text-start">Visa Invitation Letter:</h3>
     <div class="text-start mx-auto mb-4" >
         <p>
-            Invitation letters can be issued after your online registration is completed. To request one, simply email us at 
+            Invitation letters can be issued <b>after your online registration is completed</b>. To request one, simply email us at 
             <a href="mailto:PIM2026@cuhk.edu.hk">PIM2026@cuhk.edu.hk</a> with your information:
         </p>
         <ul class="mb-3">
