@@ -562,6 +562,7 @@
 						height: 54px;
 						width: auto;
 						transition: max-height 0.2s;
+						margin:0 0.1rem 0 0;
 					}
 
 				
