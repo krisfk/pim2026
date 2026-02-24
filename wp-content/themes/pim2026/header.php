@@ -348,10 +348,11 @@
 							</td> -->
 							<td>
 							<a href="<?php echo home_url(); ?>">
-								<span class="fw-bold">Conference dates announce: 
-								</span> <br>
-								PIM Conference- CUHK, Hong Kong:  21 – 23 October 2026 <br>
-Pre-PIM Conference- Fudan University, China: 18 – 19 October 2026
+								<span class="fw-bold">Conference dates announce:  </span> 
+								<br>
+								PIM Conference- CUHK, Hong Kong:  <br> 
+								21 – 23 October 2026 <br>
+Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 
 
 							</a>
