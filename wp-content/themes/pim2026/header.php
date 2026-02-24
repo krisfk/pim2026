@@ -339,7 +339,7 @@
 							</a>
 							</td>
 						</tr>
-						<tr>
+						<!-- <tr>
 							<td class="align-top pe-2">
 							<img class="news-pic" src="<?php echo get_template_directory_uri();?>/assets/images/news-pic.png" alt="">
 							</td><td>
@@ -348,7 +348,7 @@
 							Register early and save on conference fees
 							</a>
 							</td>
-						</tr>
+						</tr> -->
 					</table>
 				</div>
 			</div>
