@@ -264,7 +264,7 @@
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
 							<a href="<?php echo home_url('/travel-to-hong-kong'); ?>">
-								<span class="fw-bold">Accommodation & tours</span> <br>
+								<span class="fw-bold">Accommodation</span> <br>
 								<!-- Find lodging and explore the city -->
 							</a>
 							</td>
@@ -274,7 +274,7 @@
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
 							<a href="<?php echo home_url('/travel-to-hong-kong'); ?>">
-								<span class="fw-bold">About HK</span> <br>
+								<span class="fw-bold">Discover Hong Kong</span> <br>
 								<!-- Learn what makes Hong Kong special -->
 							</a>
 							</td>
@@ -359,9 +359,9 @@
 	<div id="mobile-header-menu" class="header-menu-mobile" tabindex="-1" aria-hidden="true" style="display:none;">
 		<button class="btn-close position-absolute close-mobile-menu" aria-label="Close menu" style="z-index:101;right:0.7rem;top:0.8rem;"></button>
 		<ul class="header-menu mb-4 mt-4" style="list-style:none; padding-left:0;">
-			<li><a href="#" class="d-block py-1">Conference Overview</a></li>
+			<li><a href="#" class="d-block py-1">Overview</a></li>
 			<li><a href="#" class="d-block py-1">CUHK Highlights</a></li>
-			<li><a href="#" class="d-block py-1">Schedule</a></li>
+			<li><a href="#" class="d-block py-1">The Programme</a></li>
 			<li><a href="#" class="d-block py-1">Registration</a></li>
 			<li class="header-menu-more-mobile position-static" style="position:static;">
 				<a href="#" class="d-block py-1 menu-more-link">More <span style="font-size:12px;">&#9660;</span></a>
@@ -383,11 +383,13 @@
 							</tr>
 							<tr>
 								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-								<td><span class="fw-bold">Accommodation & tours</span> <br>Find lodging and explore the city</td>
+								<td><span class="fw-bold">Accommodation</span> 
+								<!-- <br>Find lodging and explore the city</td> -->
 							</tr>
 							<tr>
 								<td class="align-top pe-2"><img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt=""></td>
-								<td><span class="fw-bold">About HK</span> <br>Learn what makes Hong Kong special</td>
+								<td><span class="fw-bold">Discover Hong Kong</span> 
+								<!-- <br>Learn what makes Hong Kong special</td> -->
 							</tr>
 						</table>
 						</div>
@@ -456,9 +458,9 @@
 						<!-- DESKTOP MENU -->
 						<div class="header-menu-container position-relative ms-4">
 							<ul class="header-menu mb-0">
-								<li><a href="<?php echo home_url(); ?>">Conference Overview</a></li>
+								<li><a href="<?php echo home_url(); ?>">Overview</a></li>
 								<li><a href="<?php echo home_url('/cuhk-highlights'); ?>">CUHK Highlights</a></li>
-								<li><a href="<?php echo home_url('/schedule'); ?>">Schedule</a></li>
+								<li><a href="<?php echo home_url('/schedule'); ?>">The Programme</a></li>
 								<li><a href="<?php echo home_url('/registration'); ?>">Registration</a></li>
 								<li class="header-menu-more position-static" style="position:static;">
 									<a href="#">More</a>
