@@ -440,7 +440,7 @@
 
 							<a href="<?php echo home_url(); ?>" class="text-decoration-none">
 
-							<img class="header-logo-img-2 ps-2" src="<?php echo get_template_directory_uri(); ?>/assets/images/pim-logo-new.png" alt="">
+							<img class="header-logo-img-2 ps-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/pim-logo-new.png" alt="">
 							<img class="header-logo-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo">
 							</a>
 						</div>
