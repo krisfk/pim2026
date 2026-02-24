@@ -109,6 +109,17 @@
 				display: block !important;
 			}
 		}
+		/* Hide header-search-desktop on <1400px (max-width: 1399.98px), show on >=1400px */
+		@media (max-width: 1399.98px) {
+			.header-search-desktop {
+				display: none !important;
+			}
+		}
+		@media (min-width: 1400px) {
+			.header-search-desktop {
+				display: flex !important;
+			}
+		}
 		.header-menu-mobile {
 			position: fixed;
 			top: 0;
@@ -615,6 +626,13 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 					@media (max-width: 1199.98px) {
 						.header-menu-container { display: none !important; }
 						.header-search-desktop { display: none !important; }
+					}
+					/* Add 1400px rule for .header-search-desktop */
+					@media (max-width: 1399.98px) {
+						.header-search-desktop { display: none !important; }
+					}
+					@media (min-width: 1400px) {
+						.header-search-desktop { display: flex !important; }
 					}
 
 					@media (max-width: 575.98px) {
