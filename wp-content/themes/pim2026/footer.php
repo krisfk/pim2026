@@ -97,7 +97,7 @@
 			</div>
 
 			<div class="col-12 col-b col-md-4 mb-5 mb-md-0 footer-col-b">
-				<b>Message Us For Enquiry</b>
+				<b>Conference Enquiries</b>
 				<form class="mt-3" method="post" action="#">
 					<div class="mb-3">
 						<input type="text" class="form-control" id="footer-contact-name" name="footer_contact_name" placeholder="Name" required>
