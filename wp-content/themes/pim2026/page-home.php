@@ -102,7 +102,7 @@ Attendees are encouraged to register early, especially those who may require add
 </div>	
 
 <div id="testimonial-carousel" class="carousel slide w-100 mt-5" data-bs-ride="carousel">
-  <h3 class="text-center  mb-4 fw-bold">Messages</h3>
+  <h3 class="text-center  mb-4 fw-bold">Welcome from Dean Lin, ZHOU, CUHK Business School</h3>
 
  
   <div class="carousel-indicators">
