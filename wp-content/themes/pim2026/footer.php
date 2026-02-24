@@ -145,11 +145,11 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 				© 2026 PIM. All rights reserved
 			</div>
 			<div class="terms-links">
-				<a href="#" class="footer-link px-2">Privacy policy</a>
+				<a href="https://www.cuhk.edu.hk/english/privacy.html" class="footer-link px-2" target="_blank" rel="noopener">Privacy Policy</a>
 				<span class="text-muted">|</span>
-				<a href="#" class="footer-link px-2">Terms of service</a>
-				<span class="text-muted">|</span>
-				<a href="#" class="footer-link px-2">Cookies settings</a>
+				<a href="https://www.cuhk.edu.hk/english/disclaimer.html" class="footer-link px-2" target="_blank" rel="noopener">Disclaimer</a>
+				<!-- <span class="text-muted">|</span>
+				<a href="#" class="footer-link px-2">Cookies settings</a> -->
 			</div>
 		</div>
 
