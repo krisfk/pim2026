@@ -245,7 +245,7 @@
 						
 						<a href="<?php echo home_url('/registration'); ?>">
 								<span class="fw-bold">Register now</span> <br>
-								Secure your place at the conference
+								<!-- Secure your place at the conference -->
 							</a>
 						</td>
 						</tr>
@@ -255,7 +255,7 @@
 							</td><td>
 							<a href="<?php echo home_url('/travel-to-hong-kong'); ?>">
 								<span class="fw-bold">Travel to HK</span> <br>
-								Plan your journey to Hong Kong
+								<!-- Plan your journey to Hong Kong -->
 							</a>
 							</td>
 						</tr>
@@ -265,7 +265,7 @@
 							</td><td>
 							<a href="<?php echo home_url('/travel-to-hong-kong'); ?>">
 								<span class="fw-bold">Accommodation & tours</span> <br>
-								Find lodging and explore the city
+								<!-- Find lodging and explore the city -->
 							</a>
 							</td>
 						</tr>
@@ -275,7 +275,7 @@
 							</td><td>
 							<a href="<?php echo home_url('/travel-to-hong-kong'); ?>">
 								<span class="fw-bold">About HK</span> <br>
-								Learn what makes Hong Kong special
+								<!-- Learn what makes Hong Kong special -->
 							</a>
 							</td>
 						</tr>
