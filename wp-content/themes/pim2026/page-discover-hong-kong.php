@@ -66,6 +66,8 @@ get_header(); ?>
       <a href="https://maps.app.goo.gl/tN5w5cr8xRAbP2eJ8" target="_blank" rel="noopener">
         Google Maps
       </a>
+
+      <img src="http://161.35.238.223/wp-content/uploads/2026/02/me-1.jpg" alt="">
     </div>
   </div>
 </div>
