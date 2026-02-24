@@ -442,8 +442,9 @@
 						</div>
 						<div class="site-title ps-3">
 							<a href="<?php echo home_url(); ?>" style="text-decoration: none; color: inherit;">
-								<span class="line-1">2026 Conference</span><br>
-								CUHK school of business
+								<span class="line-1">2026 Conference</span>
+								<!-- <br>
+								CUHK school of business -->
 							</a>
 						</div>
 						<!-- DESKTOP MENU -->
