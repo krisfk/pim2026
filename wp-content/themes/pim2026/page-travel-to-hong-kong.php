@@ -46,23 +46,22 @@ get_header(); ?>
     <div class="text-start mx-auto mb-4">Visitors must hold a passport valid for at least six months beyond their stay. Most nationalities do not require a visa for short visits (7–180 days). <br> <br> Check requirements: Hong Kong Immigration Department <br> <a href="https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html" target="_blank">https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html</a>
     </div>
 
-    <h3 class="mt-5 mb-3 fw-bold text-start">Visa Invitation Letter</h3>
+    <h3 class="mt-5 mb-3 fw-bold text-start">Visa Invitation Letter:</h3>
     <div class="text-start mx-auto mb-4" >
         <p>
-            If you need an invitation letter for visa purposes, please email 
-            <a href="mailto:iro@baf.cuhk.edu.hk">iro@baf.cuhk.edu.hk</a>
-            with the following information:
+            Invitation letters can be issued after your online registration is completed. To request one, simply email us at 
+            <a href="mailto:PIM2026@cuhk.edu.hk">PIM2026@cuhk.edu.hk</a> with your information:
         </p>
         <ul class="mb-3">
-            <li>Full name (as in passport)</li>
+            <li>Full name (as shown on passport)</li>
             <li>Passport number (optional)</li>
             <li>Job title</li>
-            <li>Institution name &amp; address</li>
-            <li>Email for receiving the letter</li>
+            <li>Institution name and address</li>
+            <li>Email address for receiving the letter</li>
         </ul>
         <p>
-            <strong>Processing time:</strong> 7 business days.<br>
-            Letters are issued only to registered attendees with payment completed or invoiced.
+            <strong>Processing time:</strong> approximately 7 business days.<br>
+            Please note that invitation letters are provided only to registered attendees whose payment has been completed or formally invoiced.
         </p>
     </div>
 
