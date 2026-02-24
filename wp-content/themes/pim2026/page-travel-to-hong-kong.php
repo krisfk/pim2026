@@ -118,8 +118,8 @@ Airport Station -> Tsing Yi Station -> Nam Cheong Station -> Hung Hom Station ->
             <li>
                 <strong>View Map:</strong>
                 <br>
-                <a href="https://www.google.com/maps/dir//Cheng+Yu+Tung+Building+12+Chak+Cheung+St+Ma+Liu+Shui/@22.4121683,114.2105302,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x34040620c2f0273b:0x908bdf177aa469b3" target="_blank">
-                    Directions to Cheng Yu Tung Building
+                <a href="https://maps.app.goo.gl/bcV3shhQa5tEK1EM6" target="_blank">
+                    Directions to CUHK Business School
                 </a>
             </li>
             <li class="mt-3">
