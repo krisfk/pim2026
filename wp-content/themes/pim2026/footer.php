@@ -95,7 +95,39 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 
 			<div class="col-12 col-b col-md-4 mb-5 mb-md-0 footer-col-b">
 				<b>Conference Enquiries</b>
-				<form class="mt-3" method="post" action="#">
+				<?php
+				if ($_SERVER['REQUEST_METHOD'] === 'POST'
+					&& isset($_POST['footer_contact_name'])
+					&& isset($_POST['footer_contact_email'])
+					&& isset($_POST['footer_contact_content'])) {
+					
+					$to = 'krisfk@gmail.com';
+					$subject = '2026cuhkpim online enquiry';
+					$from = filter_var($_POST['footer_contact_email'], FILTER_VALIDATE_EMAIL) ? $_POST['footer_contact_email'] : '';
+					
+					$headers = [];
+					if ($from) {
+						$headers[] = 'From: ' . $from;
+						$headers[] = 'Reply-To: ' . $from;
+					}
+					$headers[] = 'Content-Type: text/plain; charset=UTF-8';
+					
+					$message = "";
+					$message .= "Name: " . strip_tags($_POST['footer_contact_name']) . "\n";
+					$message .= "Email: " . strip_tags($_POST['footer_contact_email']) . "\n";
+					$message .= "\n";
+					$message .= strip_tags($_POST['footer_contact_content']) . "\n";
+					
+					if ($from && mail($to, $subject, $message, implode("\r\n", $headers))) {
+						echo '<div class="alert alert-success mt-3">Thank you for your enquiry. We will get back to you soon.</div>';
+					} else if(!$from) {
+						echo '<div class="alert alert-danger mt-3">Invalid email address.</div>';
+					} else {
+						echo '<div class="alert alert-danger mt-3">Sorry, there was an error sending your message. Please try again later.</div>';
+					}
+				}
+				?>
+				<form class="mt-3" method="post" action="">
 					<div class="mb-3">
 						<input type="text" class="form-control" id="footer-contact-name" name="footer_contact_name" placeholder="Name" required>
 					</div>
