@@ -159,7 +159,7 @@ Route B: 3 interchanges, 9 minutes walkingAirport Station -> Tsing Yi Station ->
         </ul>
     </div>
 
-    <h3 class="mt-5 mb-3 fw-bold text-start">Overview of Hong Kong</h3>
+    <!-- <h3 class="mt-5 mb-3 fw-bold text-start">Overview of Hong Kong</h3>
     <div class="text-start mx-auto mb-4" style="">
         A dynamic city blending East and West – modern skyscrapers, historic temples, and scenic trails. Perfect for business and leisure.
     </div>
@@ -178,7 +178,7 @@ Route B: 3 interchanges, 9 minutes walkingAirport Station -> Tsing Yi Station ->
         <li class="mb-3">
             <span class="fw-bold">Island Hopping</span>
         </li>
-    </ul>
+    </ul> -->
 </div>
 
 
