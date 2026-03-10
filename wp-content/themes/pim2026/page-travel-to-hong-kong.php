@@ -83,16 +83,15 @@ get_header(); ?>
 
     <ul class="mb-3">
       <li>
-        <strong>Taxi:</strong> ~35 minutes, cash preferred
+        <strong>Taxi:</strong> approximately 35 minutes, cash preferred
+
       </li>
       <li class="mt-2">
-        <strong>MTR:</strong> ~60–66 minutes (<a href="https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71" target="_blank">MTR trip planner</a>) <br>
-        [2 interchanges, 15 minutes walking]  <br>
-Airport Station -> Hong Kong Station -> Central Station -> Admiralty Station -> University Station  <br>
-or <br>
-[3 interchanges, 9 minutes walking] <br>
-Airport Station -> Tsing Yi Station -> Nam Cheong Station -> Hung Hom Station -> University Station 
-
+        <strong>MTR:</strong> 
+        approximately 66 minutes (MTR trip planner) <br>
+Route A: 2 interchanges, 15 minutes walkingAirport Station -> Hong Kong Station -> Central Station -> Admiralty Station -> University Station
+<br>
+Route B: 3 interchanges, 9 minutes walkingAirport Station -> Tsing Yi Station -> Nam Cheong Station -> Hung Hom Station -> University Station
       </li>
     </ul>
 
