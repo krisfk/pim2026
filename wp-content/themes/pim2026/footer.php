@@ -118,7 +118,7 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 					$message .= "\n";
 					$message .= strip_tags($_POST['footer_contact_content']) . "\n";
 					
-					if ($from && mail($to, $subject, $message, implode("\r\n", $headers))) {
+					if ($from && wp_mail($to, $subject, $message, implode("\r\n", $headers))) {
 						echo '<div class="alert alert-success mt-3">Thank you for your enquiry. We will get back to you soon.</div>';
 					} else if(!$from) {
 						echo '<div class="alert alert-danger mt-3">Invalid email address.</div>';
