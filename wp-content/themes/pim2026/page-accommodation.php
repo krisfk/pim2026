@@ -87,7 +87,10 @@ get_header(); ?>
                   </ul>
                 </td>
                 <td>5</td>
-                <td>See comment</td>
+                <td>
+
+                <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1770175771093&key=GRP&app=resvlink&_branch_match_id=1352190193368132452&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi3OyczLtgdK2ALZZSCOWmaKraG5uYGhuam5uaGBpbFadmqlrXtQgFpdUWpaKlB3Xnp8UlF%2BeXFqka1zRlF%2BbioAJz4swmAAAAA%3D " target="_blank">reservation</a>
+                </td>
               </tr>
               <tr>
                 <td><strong>Nina Hotel</strong></td>
