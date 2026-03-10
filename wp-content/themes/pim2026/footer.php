@@ -127,7 +127,7 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 					}
 				}
 				?>
-				<form class="mt-3" method="post" action="">
+				<form class="mt-3" method="post" action="" onsubmit="return validateRecaptchaFooter();">
 					<div class="mb-3">
 						<input type="text" class="form-control" id="footer-contact-name" name="footer_contact_name" placeholder="Name" required>
 					</div>
@@ -141,8 +141,22 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 					<div class="mb-3">
 						<div class="g-recaptcha" data-sitekey="6LeXPYYsAAAAAJSCqx9CXPW3jlfug2t7mCoqxoTz"></div>
 					</div>
+					<div id="footer-contact-recaptcha-error" class="alert alert-danger mt-2 d-none" style="font-size: 0.95em;">Please verify that you are not a robot.</div>
 					<button type="submit" class="btn btn-primary w-100" style="background-color: #300353; border: none;">Send Message</button>
 				</form>
+				<script>
+					function validateRecaptchaFooter() {
+						var response = grecaptcha.getResponse();
+						var errorDiv = document.getElementById('footer-contact-recaptcha-error');
+						if (!response) {
+							errorDiv.classList.remove('d-none');
+							return false;
+						} else {
+							errorDiv.classList.add('d-none');
+							return true;
+						}
+					}
+				</script>
 				<!-- Load Google reCAPTCHA script if not already included -->
 				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 			</div>
