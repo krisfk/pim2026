@@ -96,70 +96,34 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 			<div class="col-12 col-b col-md-4 mb-5 mb-md-0 footer-col-b">
 				<b>Conference Enquiries</b>
 				<?php
-				$recaptcha_secret = '6LeXPYYsAAAAAJtV5eAnxtesU0wEukgqS0bkkCm1B'; // <-- Replace with your reCAPTCHA secret key. Update accordingly.
-
 				if ($_SERVER['REQUEST_METHOD'] === 'POST'
 					&& isset($_POST['footer_contact_name'])
 					&& isset($_POST['footer_contact_email'])
 					&& isset($_POST['footer_contact_content'])) {
-
-					// SERVER-SIDE RECAPTCHA VALIDATION
-					$recaptcha_error = false;
-					if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
-						$recaptcha_response = $_POST['g-recaptcha-response'];
-						$verify_url = 'https://www.google.com/recaptcha/api/siteverify';
-						$data = array(
-							'secret'   => $recaptcha_secret,
-							'response' => $recaptcha_response,
-							'remoteip' => $_SERVER['REMOTE_ADDR']
-						);
-
-						$options = array(
-							'http' => array (
-								'method'  => 'POST',
-								'header'  => "Content-Type: application/x-www-form-urlencoded\r\n",
-								'content' => http_build_query($data)
-							)
-						);
-
-						$context  = stream_context_create($options);
-						$verify = @file_get_contents($verify_url, false, $context);
-						$captcha_success = json_decode($verify);
-
-						if (!$captcha_success || empty($captcha_success->success)) {
-							$recaptcha_error = true;
-						}
-					} else {
-						$recaptcha_error = true;
+					
+					$to = 'krisfk@gmail.com';
+					$subject = '2026cuhkpim online enquiry';
+					$from = filter_var($_POST['footer_contact_email'], FILTER_VALIDATE_EMAIL) ? $_POST['footer_contact_email'] : '';
+					
+					$headers = [];
+					if ($from) {
+						$headers[] = 'From: ' . $from;
+						$headers[] = 'Reply-To: ' . $from;
 					}
-
-					if ($recaptcha_error) {
-						echo '<div class="alert alert-danger mt-3">reCAPTCHA verification failed. Please complete the reCAPTCHA and try again.</div>';
+					$headers[] = 'Content-Type: text/plain; charset=UTF-8';
+					
+					$message = "";
+					$message .= "Name: " . strip_tags($_POST['footer_contact_name']) . "\n";
+					$message .= "Email: " . strip_tags($_POST['footer_contact_email']) . "\n";
+					$message .= "\n";
+					$message .= strip_tags($_POST['footer_contact_content']) . "\n";
+					
+					if ($from && wp_mail($to, $subject, $message, implode("\r\n", $headers))) {
+						echo '<div class="alert alert-success mt-3">Thank you for your enquiry. We will get back to you soon.</div>';
+					} else if(!$from) {
+						echo '<div class="alert alert-danger mt-3">Invalid email address.</div>';
 					} else {
-						$to = 'krisfk@gmail.com';
-						$subject = '2026cuhkpim online enquiry';
-						$from = filter_var($_POST['footer_contact_email'], FILTER_VALIDATE_EMAIL) ? $_POST['footer_contact_email'] : '';
-
-						$headers = [];
-						if ($from) {
-							$headers[] = 'From: ' . $from;
-							$headers[] = 'Reply-To: ' . $from;
-						}
-						$headers[] = 'Content-Type: text/plain; charset=UTF-8';
-
-						$message = "";
-						$message .= "Name: " . strip_tags($_POST['footer_contact_name']) . "\n";
-						$message .= "Email: " . strip_tags($_POST['footer_contact_email']) . "\n";
-						$message .= "\n";
-						$message .= strip_tags($_POST['footer_contact_content']) . "\n";
-
-						if ($from && wp_mail($to, $subject, $message, implode("\r\n", $headers))) {
-							echo '<div class="alert alert-success mt-3">Thank you for your enquiry. We will get back to you soon.</div>';
-						} else if(!$from) {
-							echo '<div class="alert alert-danger mt-3">Invalid email address.</div>';
-						} else {
-							echo '<div class="alert alert-danger mt-3">Sorry, there was an error sending your message. Please try again later.</div>';
-						}
+						echo '<div class="alert alert-danger mt-3">Sorry, there was an error sending your message. Please try again later.</div>';
 					}
 				}
 				?>
@@ -176,8 +140,8 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 					<!-- Google reCAPTCHA widget -->
 					<div class="mb-3">
 						<div class="g-recaptcha" data-sitekey="6LeXPYYsAAAAAJSCqx9CXPW3jlfug2t7mCoqxoTz"></div>
-						<div id="footer-contact-recaptcha-error" class="alert alert-danger mt-2 d-none">Please check the reCAPTCHA box before submitting.</div>
 					</div>
+					<div id="footer-contact-recaptcha-error" class="alert alert-danger mt-2 d-none" style="font-size: 0.95em;">Please verify that you are not a robot.</div>
 					<button type="submit" class="btn btn-primary w-100" style="background-color: #300353; border: none;">Send Message</button>
 				</form>
 				<script>
