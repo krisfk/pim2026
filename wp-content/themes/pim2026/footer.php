@@ -15,7 +15,7 @@
 	
 	<footer id="colophon" class="site-footer">
 
-	<div class="container">
+	<div class="container text-start">
 
 		<!-- Responsive Row: Stack on mobile, 3 cols on md+ -->
 		<div class="row flex-column flex-md-row">
