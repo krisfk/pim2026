@@ -127,7 +127,7 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 					}
 				}
 				?>
-				<form class="mt-3" method="post" action="" onsubmit="return validateRecaptchaFooter();">
+				<form class="mt-3" method="post" action="" id="footer-contact-form">
 					<div class="mb-3">
 						<input type="text" class="form-control" id="footer-contact-name" name="footer_contact_name" placeholder="Name" required>
 					</div>
@@ -142,20 +142,48 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 						<div class="g-recaptcha" data-sitekey="6LeXPYYsAAAAAJSCqx9CXPW3jlfug2t7mCoqxoTz"></div>
 					</div>
 					<div id="footer-contact-recaptcha-error" class="alert alert-danger mt-2 d-none" style="font-size: 0.95em;">Please verify that you are not a robot.</div>
-					<button type="submit" class="btn btn-primary w-100" style="background-color: #300353; border: none;">Send Message</button>
+					<button type="submit" class="btn btn-primary w-100" id="footer-contact-submit-btn" style="background-color: #300353; border: none;">Send Message</button>
 				</form>
 				<script>
+					// Returns true if validated, false otherwise. Disables button on valid submit.
 					function validateRecaptchaFooter() {
 						var response = grecaptcha.getResponse();
 						var errorDiv = document.getElementById('footer-contact-recaptcha-error');
+						var submitBtn = document.getElementById('footer-contact-submit-btn');
 						if (!response) {
-							errorDiv.classList.remove('d-none');
+							if (errorDiv) errorDiv.classList.remove('d-none');
+							// Enable button in case it was disabled before
+							if (submitBtn) submitBtn.disabled = false;
 							return false;
 						} else {
-							errorDiv.classList.add('d-none');
+							if (errorDiv) errorDiv.classList.add('d-none');
+							// Disable submit button to prevent multiple submissions
+							if (submitBtn) submitBtn.disabled = true;
 							return true;
 						}
 					}
+
+					// Prevent multiple fast clicks before validation completes
+					document.addEventListener('DOMContentLoaded', function() {
+						var form = document.getElementById('footer-contact-form');
+						var submitBtn = document.getElementById('footer-contact-submit-btn');
+
+						if (form && submitBtn) {
+							form.addEventListener('submit', function(e) {
+								// Only proceed if not already disabled (safety for double click before validation above runs)
+								if (submitBtn.disabled) {
+									e.preventDefault();
+									return false;
+								}
+								// Let the validateRecaptchaFooter handle disabling; re-enable if form blocked by browser native validation
+								setTimeout(function() {
+									if (!form.checkValidity()) {
+										submitBtn.disabled = false;
+									}
+								}, 10);
+							});
+						}
+					});
 				</script>
 				<!-- Load Google reCAPTCHA script if not already included -->
 				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
