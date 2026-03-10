@@ -137,8 +137,14 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 					<div class="mb-3">
 						<textarea class="form-control" id="footer-contact-content" name="footer_contact_content" rows="4" placeholder="Write your message here" required></textarea>
 					</div>
+					<!-- Google reCAPTCHA widget -->
+					<div class="mb-3">
+						<div class="g-recaptcha" data-sitekey="6LeXPYYsAAAAAJSCqx9CXPW3jlfug2t7mCoqxoTz"></div>
+					</div>
 					<button type="submit" class="btn btn-primary w-100" style="background-color: #300353; border: none;">Send Message</button>
 				</form>
+				<!-- Load Google reCAPTCHA script if not already included -->
+				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 			</div>
 
 			<div class="col-12 col-c col-md-4 footer-col-c">
