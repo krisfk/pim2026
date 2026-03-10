@@ -67,7 +67,7 @@ get_header(); ?>
                 <td>18 Chak Cheung Street, Sha Tin, New Territories, Hong Kong SAR</td>
                 <td>University Station<br><small>(East Rail Line)</small></td>
                 <td>
-                  <ul class="mb-0">
+                  <ul class="mb-0" style="padding-left: 18px;">
                     <li>CUHK Main Campus (Exit A): 1–2 mins walk</li>
                     <li>Cheng Yu Tung Building (Exit B): 5 mins walk</li>
                   </ul>
@@ -80,7 +80,7 @@ get_header(); ?>
                 <td>1 Harbour Road, Wan Chai, Hong Kong</td>
                 <td>Exhibition Centre<br><small>(East Rail Line)</small></td>
                 <td>
-                  <ul class="mb-0">
+                  <ul class="mb-0" style="padding-left: 18px;">
                     <li>CUHK Main Campus (Exit A): ~30 mins train and 1–2 mins walk</li>
                     <li>Cheng Yu Tung Building (Exit B): ~30 mins train and 5 mins walk</li>
                     <li>Hyatt Regency Hong Kong, Sha Tin: ~30 mins train and 5 mins walk</li>
