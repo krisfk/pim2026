@@ -84,7 +84,7 @@ get_header(); ?>
                     <li>CUHK Main Campus (Exit A): ~30 mins train and 1–2 mins walk</li>
                     <li>Cheng Yu Tung Building (Exit B): ~30 mins train and 5 mins walk</li>
                     <li>Hyatt Regency Hong Kong, Sha Tin: ~30 mins train and 5 mins walk</li>
-                  </ul>
+                  </ul> 
                 </td>
                 <td>5</td>
                 <td>
