@@ -89,7 +89,7 @@ get_header(); ?>
                 <td>5</td>
                 <td>
 
-                <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1770175771093&key=GRP&app=resvlink&_branch_match_id=1352190193368132452&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi3OyczLtgdK2ALZZSCOWmaKraG5uYGhuam5uaGBpbFadmqlrXtQgFpdUWpaKlB3Xnp8UlF%2BeXFqka1zRlF%2BbioAJz4swmAAAAA%3D " target="_blank">reservation</a>
+                <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1770175771093&key=GRP&app=resvlink&_branch_match_id=1352190193368132452&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi3OyczLtgdK2ALZZSCOWmaKraG5uYGhuam5uaGBpbFadmqlrXtQgFpdUWpaKlB3Xnp8UlF%2BeXFqka1zRlF%2BbioAJz4swmAAAAA%3D " target="_blank">Reservation</a>
                 </td>
               </tr>
               <tr>
@@ -126,7 +126,33 @@ get_header(); ?>
                     <li>4</li>
                   </ul>
                 </td>
-                <td>See comment</td>
+                <td>
+
+                <ul class="mb-0" style="padding-left: 18px;">
+                  <li>
+                    <a href="https://be.synxis.com/?adult=1&arrive=2026-10-20&chain=10767&child=0&currency=HKD&depart=2026-10-21&hotel=64396&level=hotel&locale=en-US&productcurrency=HKD&promo=CUHK1026&rooms=1" target="_blank">
+                      Tsuen Wan West
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://be.synxis.com/?Hotel=28383&Chain=10767&locale=EN&arrive=2026-10-20&promo=CUHK1026" target="_blank">
+                      Island South
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://be.synxis.com/?Hotel=64395&Chain=10767&locale=EN&arrive=2026-10-20&promo=CUHK1026" target="_blank">
+                      Causeway Bay
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://be.synxis.com/?Hotel=56602&Chain=10767&locale=EN&arrive=2026-10-20&promo=CUHK1026" target="_blank">
+                      Kowloon East
+                    </a>
+                  </li>
+                </ul>
+
+                
+                </td>
               </tr>
             </tbody>
           </table>
