@@ -89,6 +89,42 @@ get_header(); ?>
                 <td>5</td>
                 <td>See comment</td>
               </tr>
+              <tr>
+                <td><strong>Nina Hotel</strong></td>
+                <td>
+                  <ul class="mb-0" style="padding-left: 18px;">
+                    <li>Tsuen Wan West</li>
+                    <li>Island South</li>
+                    <li>Causeway Bay</li>
+                    <li>Kowloon East</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="mb-0" style="padding-left: 18px;">
+                    <li>Tsuen Wan West Station (Tuen Ma Line)</li>
+                    <li>Wong Chuk Hang Station (South Island Line)</li>
+                    <li>Tin Hau Station (Island Line)</li>
+                    <li>Ngau Tau Kok Station (Kwun Tong Line)</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="mb-0" style="padding-left: 18px;">
+                    <li>~43 mins train</li>
+                    <li>~37 mins train</li>
+                    <li>~41 mins train</li>
+                    <li>~30 mins train</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="mb-0" style="padding-left: 18px;">
+                    <li>5</li>
+                    <li>4</li>
+                    <li>4</li>
+                    <li>4</li>
+                  </ul>
+                </td>
+                <td>See comment</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -122,6 +158,44 @@ get_header(); ?>
                 </ul>
               </p>
               <p class="mb-1"><strong>Star rating:</strong> 5</p>
+              <p class="mb-1"><strong>Room rate:</strong> See comment</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Nina Hotel</h5>
+              <p class="mb-1"><strong>Address:</strong>
+                <ul class="mb-1" style="padding-left:22px;">
+                  <li>Tsuen Wan West</li>
+                  <li>Island South</li>
+                  <li>Causeway Bay</li>
+                  <li>Kowloon East</li>
+                </ul>
+              </p>
+              <p class="mb-1"><strong>Nearest MTR station:</strong>
+                <ul class="mb-1" style="padding-left:22px;">
+                  <li>Tsuen Wan West Station (Tuen Ma Line)</li>
+                  <li>Wong Chuk Hang Station (South Island Line)</li>
+                  <li>Tin Hau Station (Island Line)</li>
+                  <li>Ngau Tau Kok Station (Kwun Tong Line)</li>
+                </ul>
+              </p>
+              <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
+                <ul class="mb-1" style="padding-left:22px;">
+                  <li>~43 mins train</li>
+                  <li>~37 mins train</li>
+                  <li>~41 mins train</li>
+                  <li>~30 mins train</li>
+                </ul>
+              </p>
+              <p class="mb-1"><strong>Star rating:</strong>
+                <ul class="mb-1" style="padding-left:22px;">
+                  <li>5</li>
+                  <li>4</li>
+                  <li>4</li>
+                  <li>4</li>
+                </ul>
+              </p>
               <p class="mb-1"><strong>Room rate:</strong> See comment</p>
             </div>
           </div>
