@@ -70,7 +70,7 @@ get_header(); ?>
       
     <b>Conference Venue</b> <br>
     Hyatt Regency Hong Kong, Sha Tin <br>
-    香港沙田凱悅酒店
+    香港沙田凱悅酒店 <br>
 
     <br>
     <b>MTR</b> <br>
