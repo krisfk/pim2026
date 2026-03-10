@@ -615,7 +615,8 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 				
 
 					.site-title .line-1 {
-						font-size: 1.35rem;
+						/* font-size: 1.35rem; */
+						font-size: 1rem;
 						font-weight: bold;
 					}
 					.site-title {
