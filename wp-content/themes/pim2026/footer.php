@@ -95,39 +95,9 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 
 			<div class="col-12 col-b col-md-4 mb-5 mb-md-0 footer-col-b">
 				<b>Conference Enquiries</b>
-				<?php
-				if ($_SERVER['REQUEST_METHOD'] === 'POST'
-					&& isset($_POST['footer_contact_name'])
-					&& isset($_POST['footer_contact_email'])
-					&& isset($_POST['footer_contact_content'])) {
-					
-					$to = 'krisfk@gmail.com';
-					$subject = '2026cuhkpim online enquiry';
-					$from = filter_var($_POST['footer_contact_email'], FILTER_VALIDATE_EMAIL) ? $_POST['footer_contact_email'] : '';
-					
-					$headers = [];
-					if ($from) {
-						$headers[] = 'From: ' . $from;
-						$headers[] = 'Reply-To: ' . $from;
-					}
-					$headers[] = 'Content-Type: text/plain; charset=UTF-8';
-					
-					$message = "";
-					$message .= "Name: " . strip_tags($_POST['footer_contact_name']) . "\n";
-					$message .= "Email: " . strip_tags($_POST['footer_contact_email']) . "\n";
-					$message .= "\n";
-					$message .= strip_tags($_POST['footer_contact_content']) . "\n";
-					
-					if ($from && wp_mail($to, $subject, $message, implode("\r\n", $headers))) {
-						echo '<div class="alert alert-success mt-3">Thank you for your enquiry. We will get back to you soon.</div>';
-					} else if(!$from) {
-						echo '<div class="alert alert-danger mt-3">Invalid email address.</div>';
-					} else {
-						echo '<div class="alert alert-danger mt-3">Sorry, there was an error sending your message. Please try again later.</div>';
-					}
-				}
-				?>
-				<form class="mt-3" method="post" action="" onsubmit="return validateRecaptchaFooter();">
+				<!-- AJAX Message Container -->
+				<div id="footer-contact-msg"></div>
+				<form id="footer-contact-form" class="mt-3" method="post" action="" autocomplete="off">
 					<div class="mb-3">
 						<input type="text" class="form-control" id="footer-contact-name" name="footer_contact_name" placeholder="Name" required>
 					</div>
@@ -140,8 +110,8 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 					<!-- Google reCAPTCHA widget -->
 					<div class="mb-3">
 						<div class="g-recaptcha" data-sitekey="6LeXPYYsAAAAAJSCqx9CXPW3jlfug2t7mCoqxoTz"></div>
+						<div id="footer-contact-recaptcha-error" class="alert alert-danger mt-2 d-none">Please verify that you are not a robot.</div>
 					</div>
-					<div id="footer-contact-recaptcha-error" class="alert alert-danger mt-2 d-none" style="font-size: 0.95em;">Please verify that you are not a robot.</div>
 					<button type="submit" class="btn btn-primary w-100" style="background-color: #300353; border: none;">Send Message</button>
 				</form>
 				<script>
@@ -156,10 +126,121 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 							return true;
 						}
 					}
+
+					document.addEventListener('DOMContentLoaded', function(){
+						const form = document.getElementById('footer-contact-form');
+						form.addEventListener('submit', function(e) {
+							e.preventDefault();
+
+							// reCAPTCHA check
+							if (!validateRecaptchaFooter()) {
+								return false;
+							}
+							
+							const msgDiv = document.getElementById('footer-contact-msg');
+							msgDiv.innerHTML = '';
+							
+							const formData = new FormData(form);
+							formData.append('action', 'footer_contact_form');
+							formData.append('footer_contact_recaptcha', grecaptcha.getResponse());
+
+							fetch('<?php echo admin_url('admin-ajax.php'); ?>', {
+								method: 'POST',
+								credentials: 'same-origin',
+								body: formData
+							})
+							.then(response => response.json())
+							.then(data => {
+								if (data.status === 'success') {
+									msgDiv.innerHTML = '<div class="alert alert-success mt-3">' + data.message + '</div>';
+									form.reset();
+									grecaptcha.reset();
+								} else {
+									msgDiv.innerHTML = '<div class="alert alert-danger mt-3">' + data.message + '</div>';
+									grecaptcha.reset();
+								}
+							})
+							.catch(error => {
+								msgDiv.innerHTML = '<div class="alert alert-danger mt-3">Sorry, there was an error sending your message. Please try again later.</div>';
+								grecaptcha.reset();
+							});
+						});
+					});
 				</script>
 				<!-- Load Google reCAPTCHA script if not already included -->
 				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 			</div>
+			<?php
+			// AJAX handler for footer contact form (place this in your functions.php)
+			add_action('wp_ajax_footer_contact_form', 'footer_contact_form_handler');
+			add_action('wp_ajax_nopriv_footer_contact_form', 'footer_contact_form_handler');
+			function footer_contact_form_handler() {
+				if (
+					isset($_POST['footer_contact_name'])
+					&& isset($_POST['footer_contact_email'])
+					&& isset($_POST['footer_contact_content'])
+				) {
+					// Verify reCAPTCHA
+					$recaptcha = isset($_POST['footer_contact_recaptcha']) ? sanitize_text_field($_POST['footer_contact_recaptcha']) : '';
+					$recaptcha_secret = '6LeXPYYsAAAAACN0jkZmJh4xOOddJt-_mZXdkJ0Q'; // <-- Replace with your Secret key
+
+					$recaptcha_response = wp_remote_post('https://www.google.com/recaptcha/api/siteverify', [
+						'body' => [
+							'secret' => $recaptcha_secret,
+							'response' => $recaptcha,
+							'remoteip' => $_SERVER['REMOTE_ADDR']
+						]
+					]);
+					$recaptcha_result = json_decode(wp_remote_retrieve_body($recaptcha_response), true);
+					if (empty($recaptcha_result['success'])) {
+						wp_send_json([
+							'status' => 'error',
+							'message' => 'reCAPTCHA validation failed. Please reload and try again.'
+						]);
+						wp_die();
+					}
+
+					$to = 'krisfk@gmail.com';
+					$subject = '2026cuhkpim online enquiry';
+					$from = filter_var($_POST['footer_contact_email'], FILTER_VALIDATE_EMAIL) ? $_POST['footer_contact_email'] : '';
+					$headers = [];
+					if ($from) {
+						$headers[] = 'From: ' . $from;
+						$headers[] = 'Reply-To: ' . $from;
+					}
+					$headers[] = 'Content-Type: text/plain; charset=UTF-8';
+
+					$message = "";
+					$message .= "Name: " . strip_tags($_POST['footer_contact_name']) . "\n";
+					$message .= "Email: " . strip_tags($_POST['footer_contact_email']) . "\n";
+					$message .= "\n";
+					$message .= strip_tags($_POST['footer_contact_content']) . "\n";
+
+					if (!$from) {
+						wp_send_json([
+							'status' => 'error',
+							'message' => 'Invalid email address.'
+						]);
+					} elseif (wp_mail($to, $subject, $message, implode("\r\n", $headers))) {
+						wp_send_json([
+							'status' => 'success',
+							'message' => 'Thank you for your enquiry. We will get back to you soon.'
+						]);
+					} else {
+						wp_send_json([
+							'status' => 'error',
+							'message' => 'Sorry, there was an error sending your message. Please try again later.'
+						]);
+					}
+				} else {
+					wp_send_json([
+						'status' => 'error',
+						'message' => 'Missing required fields.'
+					]);
+				}
+				wp_die();
+			}
+			?>
 
 			<div class="col-12 col-c col-md-4 footer-col-c">
 				<div class="footer-menu">
