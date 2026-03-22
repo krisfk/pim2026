@@ -73,7 +73,7 @@ get_header(); ?>
     香港沙田凱悅酒店 <br>
 
     <br>
-    <b>MTR</b> <br>
+    <b>MTR(metro)</b> <br>
     5 minutes walk from University Station exit B <br>
     <a href="https://maps.app.goo.gl/T9Jffe8Xnrh6fMgZ6" target="_blank">View on map</a>
 
@@ -87,11 +87,17 @@ get_header(); ?>
 
       </li>
       <li class="mt-2">
-        <strong>MTR:</strong> 
-        approximately 66 minutes <a href="https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71" target="_blank"> (MTR trip planner)</a> <br>
+        <!-- <strong>MTR:</strong>  -->
+
+
+        <strong>MTR (metro): approximately 66 minutes</strong> <br>
+	MTR trip planner <a href="https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71" target="_blank"> (https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71)</a> 
+	Tickets and Fares <a href="https://www.mtr.com.hk/en/customer/tickets/more_tickets_fares.html" target="_blank"> (https://www.mtr.com.hk/en/customer/tickets/more_tickets_fares.html)</a>
+
+        <!-- approximately 66 minutes <a href="https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71" target="_blank"> (MTR trip planner)</a> <br>
 Route A: 2 interchanges, 15 minutes walkingAirport Station -> Hong Kong Station -> Central Station -> Admiralty Station -> University Station
 <br>
-Route B: 3 interchanges, 9 minutes walkingAirport Station -> Tsing Yi Station -> Nam Cheong Station -> Hung Hom Station -> University Station
+Route B: 3 interchanges, 9 minutes walkingAirport Station -> Tsing Yi Station -> Nam Cheong Station -> Hung Hom Station -> University Station -->
       </li>
     </ul>
 
