@@ -163,7 +163,7 @@ Attendees are encouraged to register early, especially those who may require add
 </div>
 
 <div class="d-flex gap-3 justify-content-center mt-4">
-  <a href="https://cloud.itsc.cuhk.edu.hk/forms/forms/122.aspx" target="_blank" class="btn btn-primary px-4 py-2 home-btn-register">
+  <a href="<?php echo home_url('/registration'); ?>" class="btn btn-primary px-4 py-2 home-btn-register">
     Register
   </a>
   <a href="#" class="px-4 py-2 home-btn-schedule">
