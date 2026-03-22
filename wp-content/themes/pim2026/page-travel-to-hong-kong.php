@@ -90,7 +90,7 @@ get_header(); ?>
         <!-- <strong>MTR:</strong>  -->
 
 
-        <strong>MTR (metro): approximately 66 minutes</strong> <br>
+        <strong>MTR (metro):</strong> approximately 66 minutes <br>
 	MTR trip planner <a href="https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71" target="_blank"> (https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71)</a>  <br>
 	Tickets and Fares <a href="https://www.mtr.com.hk/en/customer/tickets/more_tickets_fares.html" target="_blank"> (https://www.mtr.com.hk/en/customer/tickets/more_tickets_fares.html)</a>
 
