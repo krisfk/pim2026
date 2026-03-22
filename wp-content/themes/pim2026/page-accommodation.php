@@ -72,7 +72,10 @@ get_header(); ?>
                     <li>a short walk from the hotel</li>
                   </ul>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+
+                hello
+                </td>
               </tr>
               <tr>
                 <td><strong>Renaissance Hong Kong Harbour View Hotel</strong></td>
