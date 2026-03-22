@@ -69,7 +69,7 @@ get_header(); ?>
       <br><br>
 
       <div>
-      <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-1.jpg" alt="">
+      <img class="w-75" src="https://2026cuhkpim.com//wp-content/uploads/2026/02/me-1.jpg" alt="">
       </div>
     </div>
   </div>
@@ -87,10 +87,10 @@ get_header(); ?>
       </a> <br><br>
 
       <div class="mb-3">
-      <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-2a.jpg" alt="">
+      <img class="w-75" src="https://2026cuhkpim.com/wp-content/uploads/2026/02/me-2a.jpg" alt="">
       </div>
       <div>
-      <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-2b.jpg" alt="">
+      <img class="w-75" src="https://2026cuhkpim.com//wp-content/uploads/2026/02/me-2b.jpg" alt="">
       </div>
 
     </div>
@@ -109,7 +109,7 @@ get_header(); ?>
       </a>
       <br><br>
       <div>
-        <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-3.jpg" alt="Temple Street Market">
+        <img class="w-75" src="https://2026cuhkpim.com//wp-content/uploads/2026/02/me-3.jpg" alt="Temple Street Market">
       </div>
     </div>
   </div>
@@ -127,7 +127,7 @@ get_header(); ?>
       </a>
       <br><br>
       <div>
-        <img class="w-75" src="http://161.35.238.223/wp-content/uploads/2026/02/me-4.jpg" alt="Hong Kong UNESCO Global Geopark">
+        <img class="w-75" src="https://2026cuhkpim.com//wp-content/uploads/2026/02/me-4.jpg" alt="Hong Kong UNESCO Global Geopark">
       </div>
     </div>
   </div>
