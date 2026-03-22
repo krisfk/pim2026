@@ -141,7 +141,7 @@ Route B: 3 interchanges, 9 minutes walkingAirport Station -> Tsing Yi Station ->
                 <a href="https://www.hko.gov.hk/en/index.html" target="_blank">hko.gov.hk</a>
             </li>
             <li class="mt-3">
-                <strong>MTR Map:</strong>
+                <strong>MTR Map(metro):</strong>
                 <br>
                 <a href="https://www.mtr.com.hk/en/customer/services/system_map.html" target="_blank">
                     Hong Kong MTR System Map
