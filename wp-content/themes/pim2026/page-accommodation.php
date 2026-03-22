@@ -63,7 +63,7 @@ get_header(); ?>
                   <strong>Hyatt Regency Hong Kong, Sha Tin</strong><br>
                   <span>(Conference venue)</span>
                 </td>
-                <td>18 Chak Cheung Street, Sha Tin, New Territories, Hong Kong SAR</td>
+                <td><a href="https://www.google.com/maps?q=Hyatt+Regency+Hong+Kong,+Sha+Tin">Location</a></td>
                 <td>University Station<br><small>(East Rail Line)</small></td>
                 <td>
                   <ul class="mb-0" style="padding-left: 18px;">
@@ -153,7 +153,7 @@ get_header(); ?>
           <div class="card mb-4">
             <div class="card-body">
               <h5 class="card-title mb-1">Hyatt Regency Hong Kong, Sha Tin <span class="fw-normal">(Conference venue)</span></h5>
-              <p class="mb-1"><strong>Google location:</strong><br>18 Chak Cheung Street, Sha Tin, New Territories, Hong Kong SAR</p>
+              <p class="mb-1"><strong>Google location:</strong><br><a href="https://www.google.com/maps?q=Hyatt+Regency+Hong+Kong,+Sha+Tin">Location</a></p>
               <p class="mb-1"><strong>Nearest MTR station:</strong><br>University Station <small>(East Rail Line)</small></p>
               <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
                 <ul class="mb-1" style="padding-left:22px;">
