@@ -69,6 +69,7 @@ get_header(); ?>
                   <ul class="mb-0" style="padding-left: 18px;">
                     <li>CUHK Main Campus (Exit A): 1–2 mins walk</li>
                     <li>Cheng Yu Tung Building (Exit B): 5 mins walk</li>
+                    <li>a short walk from the hotel</li>
                   </ul>
                 </td>
                 <td>&nbsp;</td>
@@ -163,6 +164,7 @@ valid till 1 September 2026
                 <ul class="mb-1" style="padding-left:22px;">
                   <li>CUHK Main Campus (Exit A): 1–2 mins walk</li>
                   <li>Cheng Yu Tung Building (Exit B): 5 mins walk</li>
+                  <li>a short walk from the hotel</li>
                 </ul>
               </p>
               <p class="mb-1"><strong>Online reservation:</strong> –</p>
