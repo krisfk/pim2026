@@ -73,8 +73,9 @@ get_header(); ?>
                   </ul>
                 </td>
                 <td>
-
-                hello
+<a href="https://www.hyatt.com/events/en-US/group-booking/SHAHR/G-PIM1" target="_blank">Booking</a> <br><br>
+                
+                valid till 30 September 2026
                 </td>
               </tr>
               <tr>
