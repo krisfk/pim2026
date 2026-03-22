@@ -172,7 +172,11 @@ valid till 1 September 2026
                   <li>a short walk from the hotel</li>
                 </ul>
               </p>
-              <p class="mb-1"><strong>Online reservation:</strong> –</p>
+              <p class="mb-1"><strong>Online reservation:</strong>
+            <br>
+            <a href="https://www.hyatt.com/events/en-US/group-booking/SHAHR/G-PIM1" target="_blank">Booking</a> <br><br>
+            valid till 30 September 2026
+            </p>
             </div>
           </div>
           <div class="card mb-4">
