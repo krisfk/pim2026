@@ -109,12 +109,12 @@ get_header(); ?>
                   </ol>
                 </td>
                 <td>
-                  <ul class="mb-0" style="padding-left: 18px;">
+                  <ol class="mb-0" style="padding-left: 18px;">
                     <li>~43 mins by metro</li>
                     <li>~37 mins by metro</li>
                     <li>~41 mins by metro</li>
                     <li>~30 mins by metro</li>
-                  </ul>
+                  </ol>
                 </td>
                 <td>
 
@@ -208,12 +208,12 @@ valid till 1 September 2026
                 </ol>
               </p>
               <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
-                <ul class="mb-1" style="padding-left:22px;">
+                <ol class="mb-1" style="padding-left:22px;">
                   <li>~43 mins by metro</li>
                   <li>~37 mins by metro</li>
                   <li>~41 mins by metro</li>
                   <li>~30 mins by metro</li>
-                </ul>
+                </ol>
               </p>
               <p class="mb-1"><strong>Online reservation:</strong>
               <b>Reservation:</b> <br>
