@@ -145,6 +145,7 @@ get_header(); ?>
 
                   </li>
                 </ol>
+<br>
 valid till 1 September 2026
 
                 
@@ -243,7 +244,8 @@ valid till 1 September 2026
 
                   </li>
                 </ol>
-                valid till 1 September 2026
+                <br>
+valid till 1 September 2026
 
             </p>
             </div>
