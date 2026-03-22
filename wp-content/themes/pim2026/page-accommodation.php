@@ -79,9 +79,9 @@ get_header(); ?>
                 <td>Exhibition Centre<br><small>(East Rail Line)</small></td>
                 <td>
                   <ul class="mb-0" style="padding-left: 18px;">
-                    <li>CUHK Main Campus (Exit A): ~30 mins train and 1–2 mins walk</li>
-                    <li>Cheng Yu Tung Building (Exit B): ~30 mins train and 5 mins walk</li>
-                    <!-- <li>Hyatt Regency Hong Kong, Sha Tin: ~30 mins train and 5 mins walk</li> -->
+                    <li>CUHK Main Campus (Exit A): ~30 mins by metro and 1–2 mins walk</li>
+                    <li>Cheng Yu Tung Building (Exit B): ~30 mins by metro and 5 mins walk</li>
+                    <!-- <li>Hyatt Regency Hong Kong, Sha Tin: ~30 mins by metro and 5 mins walk</li> -->
                      <li>A short walk from the hotel</li>
                   </ul> 
                 </td>
@@ -110,10 +110,10 @@ get_header(); ?>
                 </td>
                 <td>
                   <ul class="mb-0" style="padding-left: 18px;">
-                    <li>~43 mins train</li>
-                    <li>~37 mins train</li>
-                    <li>~41 mins train</li>
-                    <li>~30 mins train</li>
+                    <li>~43 mins by metro</li>
+                    <li>~37 mins by metro</li>
+                    <li>~41 mins by metro</li>
+                    <li>~30 mins by metro</li>
                   </ul>
                 </td>
                 <td>
@@ -172,9 +172,9 @@ get_header(); ?>
               <p class="mb-1"><strong>Nearest MTR station:</strong><br>Exhibition Centre <small>(East Rail Line)</small></p>
               <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
                 <ul class="mb-1" style="padding-left:22px;">
-                  <li>CUHK Main Campus (Exit A): ~30 mins train and 1–2 mins walk</li>
-                  <li>Cheng Yu Tung Building (Exit B): ~30 mins train and 5 mins walk</li>
-                  <!-- <li>Hyatt Regency Hong Kong, Sha Tin: ~30 mins train and 5 mins walk</li> -->
+                  <li>CUHK Main Campus (Exit A): ~30 mins by metro and 1–2 mins walk</li>
+                  <li>Cheng Yu Tung Building (Exit B): ~30 mins by metro and 5 mins walk</li>
+                  <!-- <li>Hyatt Regency Hong Kong, Sha Tin: ~30 mins by metro and 5 mins walk</li> -->
                    <li>A short walk from the hotel</li>
                 </ul>
               </p>
@@ -206,10 +206,10 @@ get_header(); ?>
               </p>
               <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
                 <ul class="mb-1" style="padding-left:22px;">
-                  <li>~43 mins train</li>
-                  <li>~37 mins train</li>
-                  <li>~41 mins train</li>
-                  <li>~30 mins train</li>
+                  <li>~43 mins by metro</li>
+                  <li>~37 mins by metro</li>
+                  <li>~41 mins by metro</li>
+                  <li>~30 mins by metro</li>
                 </ul>
               </p>
               <p class="mb-1"><strong>Online reservation:</strong>
