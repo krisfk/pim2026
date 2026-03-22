@@ -51,7 +51,7 @@ get_header(); ?>
             <thead class="table-light">
               <tr>
                 <th scope="col">Hotel</th>
-                <th scope="col">Address</th>
+                <th scope="col">Google location</th>
                 <th scope="col">Nearest MTR station</th>
                 <th scope="col">Distance to CUHK and Conference venue<br><small>(next to University Station)</small></th>
                 <th scope="col">Online reservation</th>
@@ -153,7 +153,7 @@ get_header(); ?>
           <div class="card mb-4">
             <div class="card-body">
               <h5 class="card-title mb-1">Hyatt Regency Hong Kong, Sha Tin <span class="fw-normal">(Conference venue)</span></h5>
-              <p class="mb-1"><strong>Address:</strong><br>18 Chak Cheung Street, Sha Tin, New Territories, Hong Kong SAR</p>
+              <p class="mb-1"><strong>Google location:</strong><br>18 Chak Cheung Street, Sha Tin, New Territories, Hong Kong SAR</p>
               <p class="mb-1"><strong>Nearest MTR station:</strong><br>University Station <small>(East Rail Line)</small></p>
               <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
                 <ul class="mb-1" style="padding-left:22px;">
@@ -167,7 +167,7 @@ get_header(); ?>
           <div class="card mb-4">
             <div class="card-body">
               <h5 class="card-title mb-1">Renaissance Hong Kong Harbour View Hotel</h5>
-              <p class="mb-1"><strong>Address:</strong><br>1 Harbour Road, Wan Chai, Hong Kong</p>
+              <p class="mb-1"><strong>Google location:</strong><br>1 Harbour Road, Wan Chai, Hong Kong</p>
               <p class="mb-1"><strong>Nearest MTR station:</strong><br>Exhibition Centre <small>(East Rail Line)</small></p>
               <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
                 <ul class="mb-1" style="padding-left:22px;">
@@ -186,7 +186,7 @@ get_header(); ?>
           <div class="card mb-4">
             <div class="card-body">
               <h5 class="card-title mb-1">Nina Hotel</h5>
-              <p class="mb-1"><strong>Address:</strong>
+              <p class="mb-1"><strong>Google location:</strong>
                 <ul class="mb-1" style="padding-left:22px;">
                   <li>Tsuen Wan West</li>
                   <li>Island South</li>
