@@ -88,7 +88,8 @@ get_header(); ?>
                 </td>
                 <td>
 
-                <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1770175771093&key=GRP&app=resvlink&_branch_match_id=1352190193368132452&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi3OyczLtgdK2ALZZSCOWmaKraG5uYGhuam5uaGBpbFadmqlrXtQgFpdUWpaKlB3Xnp8UlF%2BeXFqka1zRlF%2BbioAJz4swmAAAAA%3D " target="_blank">Reservation</a>
+                <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1770175771093&key=GRP&app=resvlink&_branch_match_id=1352190193368132452&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi3OyczLtgdK2ALZZSCOWmaKraG5uYGhuam5uaGBpbFadmqlrXtQgFpdUWpaKlB3Xnp8UlF%2BeXFqka1zRlF%2BbioAJz4swmAAAAA%3D" target="_blank">Booking</a> <br><br>
+                valid till 20 October 2026
                 </td>
               </tr>
               <tr>
@@ -184,7 +185,8 @@ valid till 1 September 2026
               </p>
               <p class="mb-1"><strong>Online reservation:</strong>
             <br>
-            <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1770175771093&key=GRP&app=resvlink&_branch_match_id=1352190193368132452&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi3OyczLtgdK2ALZZSCOWmaKraG5uYGhuam5uaGBpbFadmqlrXtQgFpdUWpaKlB3Xnp8UlF%2BeXFqka1zRlF%2BbioAJz4swmAAAAA%3D " target="_blank">Reservation</a>
+            <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1770175771093&key=GRP&app=resvlink&_branch_match_id=1352190193368132452&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi3OyczLtgdK2ALZZSCOWmaKraG5uYGhuam5uaGBpbFadmqlrXtQgFpdUWpaKlB3Xnp8UlF%2BeXFqka1zRlF%2BbioAJz4swmAAAAA%3D " target="_blank">Booking</a> <br><br>
+            valid till 20 October 2026
 
             </p>
             </div>
