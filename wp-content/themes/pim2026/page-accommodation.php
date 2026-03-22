@@ -193,10 +193,10 @@ valid till 1 September 2026
               <h5 class="card-title mb-1">Nina Hotel</h5>
               <p class="mb-1"><strong>Google location:</strong>
                 <ol class="mb-1" style="padding-left:22px;">
-                  <li>Tsuen Wan West</li>
-                  <li>Island South</li>
-                  <li>Causeway Bay</li>
-                  <li>Kowloon East</li>
+                <li><a href="https://www.google.com/maps/place/Nina+Hotel+Tsuen+Wan+West/@22.3685909,114.110402,17z/data=!4m9!3m8!1s0x3403f8eeb9e6e989:0xd41a294d7391bbb0!5m2!4m1!1i2!8m2!3d22.3685909!4d114.1129769!16s%2Fg%2F12214dqg5?entry=tts" target="_blank">Tsuen Wan West</a></li>
+                    <li><a href="https://www.google.com/maps/place/Nina+Hotel+Island+South/@22.2497529,114.1675671,20.25z/data=!4m9!3m8!1s0x34040022712f69bf:0x5ba2cc7319f1e86!5m2!4m1!1i2!8m2!3d22.2496433!4d114.1681462!16s%2Fg%2F155qkm4s?entry=tts" target="_blank">Island South</a></li>
+                    <li><a href="https://www.google.com.hk/maps/place/Nina+Hotel+Causeway+Bay/@22.2833345,114.192193,19.79z/data=!4m9!3m8!1s0x3404010009bf34c1:0xcb6d670af2333cf1!5m2!4m1!1i2!8m2!3d22.2832644!4d114.192838!16s%2Fg%2F155sznkt?entry=tts" target="_blank">Causeway Bay</a></li>
+                    <li><a href="https://www.google.com/maps/place/Nina+Hotel+Kowloon+East/@22.3143166,114.218221,19.5z/data=!4m10!3m9!1s0x340401097d97e145:0xa466fd0ea5ad7a14!5m3!1s2024-05-03!4m1!1i2!8m2!3d22.3141482!4d114.219058!16s%2Fg%2F11c702qc6j?entry=tts" target="_blank">Kowloon East</a></li>
                 </ol>
               </p>
               <p class="mb-1"><strong>Nearest MTR station:</strong>
