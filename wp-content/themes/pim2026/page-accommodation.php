@@ -192,12 +192,12 @@ valid till 1 September 2026
             <div class="card-body">
               <h5 class="card-title mb-1">Nina Hotel</h5>
               <p class="mb-1"><strong>Google location:</strong>
-                <ul class="mb-1" style="padding-left:22px;">
+                <ol class="mb-1" style="padding-left:22px;">
                   <li>Tsuen Wan West</li>
                   <li>Island South</li>
                   <li>Causeway Bay</li>
                   <li>Kowloon East</li>
-                </ul>
+                </ol>
               </p>
               <p class="mb-1"><strong>Nearest MTR station:</strong>
                 <ul class="mb-1" style="padding-left:22px;">
