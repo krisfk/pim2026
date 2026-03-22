@@ -54,7 +54,7 @@ get_header(); ?>
                 <th scope="col">Address</th>
                 <th scope="col">Nearest MTR station</th>
                 <th scope="col">Distance to CUHK and Conference venue<br><small>(next to University Station)</small></th>
-                <th scope="col">Room rate</th>
+                <th scope="col">Online reservation</th>
               </tr>
             </thead>
             <tbody>
@@ -161,7 +161,7 @@ get_header(); ?>
                   <li>Cheng Yu Tung Building (Exit B): 5 mins walk</li>
                 </ul>
               </p>
-              <p class="mb-1"><strong>Room rate:</strong> –</p>
+              <p class="mb-1"><strong>Online reservation:</strong> –</p>
             </div>
           </div>
           <div class="card mb-4">
@@ -176,7 +176,7 @@ get_header(); ?>
                   <li>Hyatt Regency Hong Kong, Sha Tin: ~30 mins train and 5 mins walk</li>
                 </ul>
               </p>
-              <p class="mb-1"><strong>Room rate:</strong>
+              <p class="mb-1"><strong>Online reservation:</strong>
             <br>
             <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1770175771093&key=GRP&app=resvlink&_branch_match_id=1352190193368132452&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi3OyczLtgdK2ALZZSCOWmaKraG5uYGhuam5uaGBpbFadmqlrXtQgFpdUWpaKlB3Xnp8UlF%2BeXFqka1zRlF%2BbioAJz4swmAAAAA%3D " target="_blank">Reservation</a>
 
@@ -210,7 +210,7 @@ get_header(); ?>
                   <li>~30 mins train</li>
                 </ul>
               </p>
-              <p class="mb-1"><strong>Room rate:</strong>
+              <p class="mb-1"><strong>Online reservation:</strong>
               <b>Reservation:</b> <br>
                 <ul class="mb-0" style="padding-left: 18px;">
                   <li>
