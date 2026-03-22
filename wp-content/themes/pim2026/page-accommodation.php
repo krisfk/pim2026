@@ -123,23 +123,26 @@ get_header(); ?>
                 <ul class="mb-0" style="padding-left: 18px;">
                   <li>
                     <a href="https://be.synxis.com/?adult=1&arrive=2026-10-20&chain=10767&child=0&currency=HKD&depart=2026-10-21&hotel=64396&level=hotel&locale=en-US&productcurrency=HKD&promo=CUHK1026&rooms=1" target="_blank">
-                      Tsuen Wan West
+                      Booking
                     </a>
                   </li>
                   <li>
                     <a href="https://be.synxis.com/?Hotel=28383&Chain=10767&locale=EN&arrive=2026-10-20&promo=CUHK1026" target="_blank">
-                      Island South
+                      Booking
                     </a>
                   </li>
                   <li>
                     <a href="https://be.synxis.com/?Hotel=64395&Chain=10767&locale=EN&arrive=2026-10-20&promo=CUHK1026" target="_blank">
-                      Causeway Bay
+                      Booking
                     </a>
                   </li>
                   <li>
                     <a href="https://be.synxis.com/?Hotel=56602&Chain=10767&locale=EN&arrive=2026-10-20&promo=CUHK1026" target="_blank">
-                      Kowloon East
+                      Booking
                     </a>
+<br><br>
+valid till 1 September 2026
+
                   </li>
                 </ul>
 
@@ -217,23 +220,26 @@ get_header(); ?>
                 <ul class="mb-0" style="padding-left: 18px;">
                   <li>
                     <a href="https://be.synxis.com/?adult=1&arrive=2026-10-20&chain=10767&child=0&currency=HKD&depart=2026-10-21&hotel=64396&level=hotel&locale=en-US&productcurrency=HKD&promo=CUHK1026&rooms=1" target="_blank">
-                      Tsuen Wan West
+                      Booking
                     </a>
                   </li>
                   <li>
                     <a href="https://be.synxis.com/?Hotel=28383&Chain=10767&locale=EN&arrive=2026-10-20&promo=CUHK1026" target="_blank">
-                      Island South
+                      Booking
                     </a>
                   </li>
                   <li>
                     <a href="https://be.synxis.com/?Hotel=64395&Chain=10767&locale=EN&arrive=2026-10-20&promo=CUHK1026" target="_blank">
-                      Causeway Bay
+                      Booking
                     </a>
                   </li>
                   <li>
                     <a href="https://be.synxis.com/?Hotel=56602&Chain=10767&locale=EN&arrive=2026-10-20&promo=CUHK1026" target="_blank">
-                      Kowloon East
+                      Booking
                     </a>
+<br><br>
+valid till 1 September 2026
+
                   </li>
                 </ul>
             </p>
