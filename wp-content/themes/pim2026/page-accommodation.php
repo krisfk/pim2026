@@ -75,7 +75,7 @@ get_header(); ?>
               </tr>
               <tr>
                 <td><strong>Renaissance Hong Kong Harbour View Hotel</strong></td>
-                <td>1 Harbour Road, Wan Chai, Hong Kong</td>
+                <td><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=22.2815130%2C114.1737820&hl=en-US">Location</a></td>
                 <td>Exhibition Centre<br><small>(East Rail Line)</small></td>
                 <td>
                   <ul class="mb-0" style="padding-left: 18px;">
@@ -167,7 +167,7 @@ get_header(); ?>
           <div class="card mb-4">
             <div class="card-body">
               <h5 class="card-title mb-1">Renaissance Hong Kong Harbour View Hotel</h5>
-              <p class="mb-1"><strong>Google location:</strong><br>1 Harbour Road, Wan Chai, Hong Kong</p>
+              <p class="mb-1"><strong>Google location:</strong><br><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=22.2815130%2C114.1737820&hl=en-US">Location</a></p>
               <p class="mb-1"><strong>Nearest MTR station:</strong><br>Exhibition Centre <small>(East Rail Line)</small></p>
               <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
                 <ul class="mb-1" style="padding-left:22px;">
