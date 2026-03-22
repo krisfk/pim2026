@@ -101,12 +101,12 @@ get_header(); ?>
                   </ol>
                 </td>
                 <td>
-                  <ul class="mb-0" style="padding-left: 18px;">
+                  <ol class="mb-0" style="padding-left: 18px;">
                     <li>Tsuen Wan West Station (Tuen Ma Line)</li>
                     <li>Wong Chuk Hang Station (South Island Line)</li>
                     <li>Tin Hau Station (Island Line)</li>
                     <li>Ngau Tau Kok Station (Kwun Tong Line)</li>
-                  </ul>
+                  </ol>
                 </td>
                 <td>
                   <ul class="mb-0" style="padding-left: 18px;">
@@ -200,12 +200,12 @@ valid till 1 September 2026
                 </ol>
               </p>
               <p class="mb-1"><strong>Nearest MTR station:</strong>
-                <ul class="mb-1" style="padding-left:22px;">
+                <ol class="mb-1" style="padding-left:22px;">
                   <li>Tsuen Wan West Station (Tuen Ma Line)</li>
                   <li>Wong Chuk Hang Station (South Island Line)</li>
                   <li>Tin Hau Station (Island Line)</li>
                   <li>Ngau Tau Kok Station (Kwun Tong Line)</li>
-                </ul>
+                </ol>
               </p>
               <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
                 <ul class="mb-1" style="padding-left:22px;">
