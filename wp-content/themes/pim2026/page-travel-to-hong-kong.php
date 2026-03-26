@@ -91,8 +91,16 @@ get_header(); ?>
 
 
         <strong>MTR (metro):</strong> approximately 66 minutes <br>
-	MTR trip planner <a href="https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71" target="_blank"> (https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71)</a>  <br>
-	Tickets and Fares <a href="https://www.mtr.com.hk/en/customer/tickets/more_tickets_fares.html" target="_blank"> (https://www.mtr.com.hk/en/customer/tickets/more_tickets_fares.html)</a>
+	
+    <a href="https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71" target="_blank">MTR trip planner</a> <br>
+    <a href="https://www.mtr.com.hk/en/customer/tickets/more_tickets_fares.html" target="_blank">Tickets and Fares</a> 
+    
+        <!-- MTR trip planner <a href="https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71" target="_blank"> (https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71)</a>  <br>
+	Tickets and Fares <a href="https://www.mtr.com.hk/en/customer/tickets/more_tickets_fares.html" target="_blank"> (https://www.mtr.com.hk/en/customer/tickets/more_tickets_fares.html)</a> -->
+
+
+
+
 
         <!-- approximately 66 minutes <a href="https://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Airport&oType=HRStation&oValue=47&dLabel=University&dType=HRStation&dValue=71" target="_blank"> (MTR trip planner)</a> <br>
 Route A: 2 interchanges, 15 minutes walkingAirport Station -> Hong Kong Station -> Central Station -> Admiralty Station -> University Station
