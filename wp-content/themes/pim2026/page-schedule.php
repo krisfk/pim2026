@@ -185,7 +185,7 @@ get_header(); ?>
       </tr>
       <!-- Saturday, 24 October -->
       <tr>
-        <td><strong>Saturday, 24 October (Post-Conference)</strong></td>
+        <td><strong>Saturday, 24 October <br><span class="text-muted">(Post-Conference)</span></strong></td>
         <td><strong>Optional Tour</strong></td>
         <td>Tour options TBC</td>
       </tr>
