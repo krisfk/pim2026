@@ -68,6 +68,10 @@ get_header(); ?>
     padding-left: 20px;
     margin-bottom: 0;
   }
+  /* Remove Bootstrap table-hover effect for schedule-table */
+  .schedule-table.table-hover > tbody > tr:hover > * {
+    background-color: inherit !important;
+  }
   @media (max-width: 767.98px) {
     .schedule-table th, .schedule-table td {
       padding: 8px 6px;
@@ -80,7 +84,7 @@ get_header(); ?>
 </style>
 
 <div class="table-responsive my-5">
-  <table class="table table-bordered table-hover align-middle shadow schedule-table">
+  <table class="table table-bordered align-middle shadow schedule-table">
     <thead>
       <tr>
         <th align="left" style="min-width: 170px;">Date</th>
