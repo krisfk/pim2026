@@ -191,6 +191,8 @@ get_header(); ?>
       </tr>
     </tbody>
   </table>
+
+  <div>*Programme arrangements are subject to refinement or changes by PIM Leadership and CUHK Business School. Stay tuned for updates.</div>
 </div>
 
 <div class="my-4">
