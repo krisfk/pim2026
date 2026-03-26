@@ -36,6 +36,24 @@ get_header(); ?>
   .middle-container a {
     color: #300353 !important;
   }
+
+  /* Adjust column widths for table on desktop */
+  @media (min-width: 768px) {
+    .accommodation-table th.col-google-location,
+    .accommodation-table td.col-google-location {
+      min-width: 150px;
+      width: 210px;
+      max-width: 300px;
+      word-break: break-word;
+    }
+    .accommodation-table th.col-mtr-station,
+    .accommodation-table td.col-mtr-station {
+      min-width: 140px;
+      width: 200px;
+      max-width: 280px;
+      word-break: break-word;
+    }
+  }
 </style>
 
 <div class="container text-center middle-container">
@@ -47,12 +65,12 @@ get_header(); ?>
       <div>
         <!-- Desktop/Table view -->
         <div class="table-responsive d-none d-md-block">
-          <table class="table table-bordered align-middle">
+          <table class="table table-bordered align-middle accommodation-table">
             <thead class="table-light">
               <tr>
                 <th scope="col">Hotel</th>
-                <th scope="col">Google location</th>
-                <th scope="col">Nearest MTR station</th>
+                <th scope="col" class="col-google-location">Google location</th>
+                <th scope="col" class="col-mtr-station">Nearest MTR station</th>
                 <th scope="col">Distance to CUHK and Conference venue<br><small>(next to University Station)</small></th>
                 <th scope="col">Online reservation</th>
               </tr>
@@ -63,8 +81,8 @@ get_header(); ?>
                   <strong>Hyatt Regency Hong Kong, Sha Tin</strong><br>
                   <span>(Conference venue)</span>
                 </td>
-                <td><a target="_blank" href="https://www.google.com/maps?q=Hyatt+Regency+Hong+Kong,+Sha+Tin">Location</a></td>
-                <td>University Station<br><small>(East Rail Line)</small></td>
+                <td class="col-google-location"><a target="_blank" href="https://www.google.com/maps?q=Hyatt+Regency+Hong+Kong,+Sha+Tin">Location</a></td>
+                <td class="col-mtr-station">University Station<br><small>(East Rail Line)</small></td>
                 <td>
                   <ul class="mb-0" style="padding-left: 18px;">
                     <li>CUHK Main Campus (Exit A): 1–2 mins walk</li>
@@ -80,8 +98,8 @@ get_header(); ?>
               </tr>
               <tr>
                 <td><strong>Renaissance Hong Kong Harbour View Hotel</strong></td>
-                <td><a target="_blank" href="https://www.google.com/maps/place/Renaissance+Hong+Kong+Harbour+View+Hotel/@22.2814539,114.1731935,19z/data=!4m11!3m10!1s0x340400594cbda333:0x2536585e57b72c2!5m4!1s2026-03-26!2i2!4m1!1i2!8m2!3d22.2814527!4d114.1738372!16s%2Fg%2F155qth2h?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D">Location</a></td>
-                <td>Exhibition Centre<br><small>(East Rail Line)</small></td>
+                <td class="col-google-location"><a target="_blank" href="https://www.google.com/maps/place/Renaissance+Hong+Kong+Harbour+View+Hotel/@22.2814539,114.1731935,19z/data=!4m11!3m10!1s0x340400594cbda333:0x2536585e57b72c2!5m4!1s2026-03-26!2i2!4m1!1i2!8m2!3d22.2814527!4d114.1738372!16s%2Fg%2F155qth2h?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D">Location</a></td>
+                <td class="col-mtr-station">Exhibition Centre<br><small>(East Rail Line)</small></td>
                 <td>
                   <ul class="mb-0" style="padding-left: 18px;">
                     <li>CUHK Main Campus (Exit A): ~30 mins by metro and 1–2 mins walk</li>
@@ -98,7 +116,7 @@ get_header(); ?>
               </tr>
               <tr>
                 <td><strong>Nina Hotel</strong></td>
-                <td>
+                <td class="col-google-location">
                   <ol class="mb-0" style="padding-left: 18px;">
                     <li><a href="https://www.google.com/maps/place/Nina+Hotel+Tsuen+Wan+West/@22.3685909,114.110402,17z/data=!4m9!3m8!1s0x3403f8eeb9e6e989:0xd41a294d7391bbb0!5m2!4m1!1i2!8m2!3d22.3685909!4d114.1129769!16s%2Fg%2F12214dqg5?entry=tts" target="_blank">Tsuen Wan West</a></li>
                     <li><a href="https://www.google.com/maps/place/Nina+Hotel+Island+South/@22.2497529,114.1675671,20.25z/data=!4m9!3m8!1s0x34040022712f69bf:0x5ba2cc7319f1e86!5m2!4m1!1i2!8m2!3d22.2496433!4d114.1681462!16s%2Fg%2F155qkm4s?entry=tts" target="_blank">Island South</a></li>
@@ -106,7 +124,7 @@ get_header(); ?>
                     <li><a href="https://www.google.com/maps/place/Nina+Hotel+Kowloon+East/@22.3143166,114.218221,19.5z/data=!4m10!3m9!1s0x340401097d97e145:0xa466fd0ea5ad7a14!5m3!1s2024-05-03!4m1!1i2!8m2!3d22.3141482!4d114.219058!16s%2Fg%2F11c702qc6j?entry=tts" target="_blank">Kowloon East</a></li>
                   </ol>
                 </td>
-                <td>
+                <td class="col-mtr-station">
                   <ol class="mb-0" style="padding-left: 18px;">
                     <li>Tsuen Wan West Station (Tuen Ma Line)</li>
                     <li>Wong Chuk Hang Station (South Island Line)</li>
