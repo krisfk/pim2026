@@ -58,6 +58,14 @@ get_header(); ?>
     color: #282828;
     font-size: 1.07rem;
   }
+  /* Make the Session (Est. Time) column wider */
+  .schedule-table th.session-col,
+  .schedule-table td.session-col {
+    min-width: 230px;
+    width: 250px;
+    max-width: 310px;
+    word-break: break-word;
+  }
   .schedule-table tbody tr {
     height: 120px;
   }
@@ -80,6 +88,13 @@ get_header(); ?>
     .schedule-table ul {
       padding-left: 16px;
     }
+    .schedule-table th.session-col,
+    .schedule-table td.session-col {
+      min-width: 150px;
+      width: auto;
+      max-width: 230px;
+      word-break: break-word;
+    }
   }
 </style>
 
@@ -88,7 +103,7 @@ get_header(); ?>
     <thead>
       <tr>
         <th align="left" style="min-width: 170px;">Date</th>
-        <th align="left" style="min-width: 155px;">Session (Est. Time)</th>
+        <th align="left" class="session-col">Session (Est. Time)</th>
         <th align="left">Planned Activities</th>
       </tr>
     </thead>
@@ -96,7 +111,7 @@ get_header(); ?>
       <!-- Wednesday, 21 October -->
       <tr>
         <td rowspan="3"><strong>Wednesday, 21 October</strong></td>
-        <td><strong>Morning</strong><br><span class="text-muted">(10:30–12:30)</span></td>
+        <td class="session-col"><strong>Morning</strong><br><span class="text-muted">(10:30–12:30)</span></td>
         <td>
           <ul>
             <li>Registration</li>
@@ -106,7 +121,7 @@ get_header(); ?>
         </td>
       </tr>
       <tr>
-        <td><strong>Afternoon</strong><br><span class="text-muted">(12:15–16:45)</span></td>
+        <td class="session-col"><strong>Afternoon</strong><br><span class="text-muted">(12:15–16:45)</span></td>
         <td>
           <ul>
             <li>Networking Lunch</li>
@@ -117,7 +132,7 @@ get_header(); ?>
         </td>
       </tr>
       <tr>
-        <td><strong>Evening</strong><br><span class="text-muted">(18:00–21:00)</span></td>
+        <td class="session-col"><strong>Evening</strong><br><span class="text-muted">(18:00–21:00)</span></td>
         <td>
           <ul>
             <li>Networking Dinner</li>
@@ -127,7 +142,7 @@ get_header(); ?>
       <!-- Thursday, 22 October -->
       <tr>
         <td rowspan="3"><strong>Thursday, 22 October</strong></td>
-        <td><strong>Morning</strong><br><span class="text-muted">(09:00–12:00)</span></td>
+        <td class="session-col"><strong>Morning</strong><br><span class="text-muted">(09:00–12:00)</span></td>
         <td>
           <ul>
             <li>Experiential Learning &amp; Coop Models – building global competitive graduates</li>
@@ -136,7 +151,7 @@ get_header(); ?>
         </td>
       </tr>
       <tr>
-        <td><strong>Afternoon</strong><br><span class="text-muted">(12:00–16:00)</span></td>
+        <td class="session-col"><strong>Afternoon</strong><br><span class="text-muted">(12:00–16:00)</span></td>
         <td>
           <ul>
             <li>Networking Lunch</li>
@@ -147,7 +162,7 @@ get_header(); ?>
         </td>
       </tr>
       <tr>
-        <td><strong>Evening</strong><br><span class="text-muted">(17:00–20:30)</span></td>
+        <td class="session-col"><strong>Evening</strong><br><span class="text-muted">(17:00–20:30)</span></td>
         <td>
           <ul>
             <li>Guided Museum Tour</li>
@@ -158,7 +173,7 @@ get_header(); ?>
       <!-- Friday, 23 October -->
       <tr>
         <td rowspan="3"><strong>Friday, 23 October</strong></td>
-        <td><strong>Morning</strong><br><span class="text-muted">(09:00–12:00)</span></td>
+        <td class="session-col"><strong>Morning</strong><br><span class="text-muted">(09:00–12:00)</span></td>
         <td>
           <ul>
             <li>CUHK Campus Tour &amp; Group Photo</li>
@@ -167,7 +182,7 @@ get_header(); ?>
         </td>
       </tr>
       <tr>
-        <td><strong>Afternoon</strong><br><span class="text-muted">(13:00–17:00)</span></td>
+        <td class="session-col"><strong>Afternoon</strong><br><span class="text-muted">(13:00–17:00)</span></td>
         <td>
           <ul>
             <li>PIM Business Meeting</li>
@@ -176,7 +191,7 @@ get_header(); ?>
         </td>
       </tr>
       <tr>
-        <td><strong>Evening</strong><br><span class="text-muted">(19:00–21:30)</span></td>
+        <td class="session-col"><strong>Evening</strong><br><span class="text-muted">(19:00–21:30)</span></td>
         <td>
           <ul>
             <li>Harbour Cruise Closing Dinner</li>
@@ -186,7 +201,7 @@ get_header(); ?>
       <!-- Saturday, 24 October -->
       <tr>
         <td><strong>Saturday, 24 October <br><span class="text-muted">(Post-Conference)</span></strong></td>
-        <td><strong>Optional Tour</strong></td>
+        <td class="session-col"><strong>Optional Tour</strong></td>
         <td>Tour options TBC</td>
       </tr>
     </tbody>
