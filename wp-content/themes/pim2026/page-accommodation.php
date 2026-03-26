@@ -80,7 +80,7 @@ get_header(); ?>
               </tr>
               <tr>
                 <td><strong>Renaissance Hong Kong Harbour View Hotel</strong></td>
-                <td><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=22.2815130%2C114.1737820&hl=en-US">Location</a></td>
+                <td><a target="_blank" href="https://www.google.com/maps/place/Renaissance+Hong+Kong+Harbour+View+Hotel/@22.2814539,114.1731935,19z/data=!4m11!3m10!1s0x340400594cbda333:0x2536585e57b72c2!5m4!1s2026-03-26!2i2!4m1!1i2!8m2!3d22.2814527!4d114.1738372!16s%2Fg%2F155qth2h?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D">Location</a></td>
                 <td>Exhibition Centre<br><small>(East Rail Line)</small></td>
                 <td>
                   <ul class="mb-0" style="padding-left: 18px;">
@@ -182,7 +182,7 @@ valid till 1 September 2026
           <div class="card mb-4">
             <div class="card-body">
               <h5 class="card-title mb-1">Renaissance Hong Kong Harbour View Hotel</h5>
-              <p class="mb-1"><strong>Google location:</strong><br><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=22.2815130%2C114.1737820&hl=en-US">Location</a></p>
+              <p class="mb-1"><strong>Google location:</strong><br><a target="_blank" href="https://www.google.com/maps/place/Renaissance+Hong+Kong+Harbour+View+Hotel/@22.2814539,114.1731935,19z/data=!4m11!3m10!1s0x340400594cbda333:0x2536585e57b72c2!5m4!1s2026-03-26!2i2!4m1!1i2!8m2!3d22.2814527!4d114.1738372!16s%2Fg%2F155qth2h?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D">Location</a></p>
               <p class="mb-1"><strong>Nearest MTR station:</strong><br>Exhibition Centre <small>(East Rail Line)</small></p>
               <p class="mb-1"><strong>Distance to CUHK and Conference venue:</strong>
                 <ul class="mb-1" style="padding-left:22px;">
