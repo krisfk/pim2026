@@ -194,7 +194,7 @@ get_header(); ?>
     View Full Programme
   </a>
 </div>
-
+ 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const btnGroup = document.getElementById('submenu-btn-group');
