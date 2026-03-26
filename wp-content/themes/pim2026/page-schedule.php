@@ -30,70 +30,160 @@ get_header(); ?>
   >
 </div>
 
-
-
-
-
 <div class="container text-center middle-container">
 
 	<h1 class="mt-5 mb-3 fw-bold">Schedule of Conference Programme</h1>
 
 <style>
-  /* Ensure all table rows have equal height (120px), can be adjusted as needed */
+  /* Custom schedule table styles for consistent appearance */
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .schedule-table th,
+  .schedule-table td {
+    border: 1px solid #dee2e6;
+    padding: 12px 24px;
+    text-align: left;
+    vertical-align: middle !important;
+    background: #fff;
+    font-size: 1rem;
+  }
+  .schedule-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #282828;
+    font-size: 1.07rem;
+  }
   .schedule-table tbody tr {
     height: 120px;
   }
-  .schedule-table td,
-  .schedule-table th {
-    vertical-align: middle !important;
+  .schedule-table td strong {
+    font-size: 1.13em;
+  }
+  .schedule-table ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
+  @media (max-width: 767.98px) {
+    .schedule-table th, .schedule-table td {
+      padding: 8px 6px;
+      font-size: 0.97rem;
+    }
+    .schedule-table ul {
+      padding-left: 16px;
+    }
   }
 </style>
+
 <div class="table-responsive my-5">
   <table class="table table-bordered table-hover align-middle shadow schedule-table">
-    <thead class="table-light">
+    <thead>
       <tr>
-        <th style="width:220px;">Day</th>
-        <th>Programme</th>
+        <th align="left" style="min-width: 170px;">Date</th>
+        <th align="left" style="min-width: 155px;">Session (Est. Time)</th>
+        <th align="left">Planned Activities</th>
       </tr>
     </thead>
     <tbody>
+      <!-- Wednesday, 21 October -->
       <tr>
-        <td class="fw-bold">Wednesday, October 21</td>
+        <td rowspan="3"><strong>Wednesday, 21 October</strong></td>
+        <td><strong>Morning</strong><br><span class="text-muted">(10:30–12:30)</span></td>
         <td>
-          <ul class="list-unstyled mb-0">
-            <li>Opening Remarks</li>
-            <li>Keynote Address</li>
-            <li>Panel Discussion</li>
+          <ul>
+            <li>Registration</li>
+            <li>Newcomer Welcome</li>
+            <li>Opening Session with CUHK Leadership &amp; PIM Chairs</li>
           </ul>
         </td>
       </tr>
       <tr>
-        <td class="fw-bold">Thursday, October 22</td>
+        <td><strong>Afternoon</strong><br><span class="text-muted">(12:15–16:45)</span></td>
         <td>
-          <ul class="list-unstyled mb-0">
-            <li>Workshops</li>
-            <li>Breakout Sessions</li>
-            <li>Networking Events</li>
+          <ul>
+            <li>Networking Lunch</li>
+            <li>Panel: Global Mobility in Business Education</li>
+            <li>Panel: Building FutureReady Leaders</li>
+            <li>CUHK Case Competition Showcase</li>
           </ul>
         </td>
       </tr>
       <tr>
-        <td class="fw-bold">Friday, October 23</td>
+        <td><strong>Evening</strong><br><span class="text-muted">(18:00–21:00)</span></td>
         <td>
-          <ul class="list-unstyled mb-0">
-            <li>Final Session</li>
-            <li>Closing Ceremony</li>
-            <li>Farewell Reception</li>
+          <ul>
+            <li>Networking Dinner</li>
+          </ul>
+        </td>
+      </tr>
+      <!-- Thursday, 22 October -->
+      <tr>
+        <td rowspan="3"><strong>Thursday, 22 October</strong></td>
+        <td><strong>Morning</strong><br><span class="text-muted">(09:00–12:00)</span></td>
+        <td>
+          <ul>
+            <li>Experiential Learning &amp; Coop Models – building global competitive graduates</li>
+            <li>IndustryLed Experiential Learning Panel</li>
           </ul>
         </td>
       </tr>
       <tr>
-        <td class="fw-bold">Saturday, October 24 <span class="badge bg-secondary ms-2">Optional Tour</span></td>
+        <td><strong>Afternoon</strong><br><span class="text-muted">(12:00–16:00)</span></td>
         <td>
-          <ul class="list-unstyled mb-0">
-            <li>Final Session</li>
+          <ul>
+            <li>Networking Lunch</li>
+            <li>Marketplace Networking</li>
+            <li>PIM Strategy Task Force Session</li>
+            <li>Transfer to Hong Kong Palace Museum</li>
           </ul>
         </td>
+      </tr>
+      <tr>
+        <td><strong>Evening</strong><br><span class="text-muted">(17:00–20:30)</span></td>
+        <td>
+          <ul>
+            <li>Guided Museum Tour</li>
+            <li>Welcome Dinner</li>
+          </ul>
+        </td>
+      </tr>
+      <!-- Friday, 23 October -->
+      <tr>
+        <td rowspan="3"><strong>Friday, 23 October</strong></td>
+        <td><strong>Morning</strong><br><span class="text-muted">(09:00–12:00)</span></td>
+        <td>
+          <ul>
+            <li>CUHK Campus Tour &amp; Group Photo</li>
+            <li>Reflection &amp; Closing Session</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Afternoon</strong><br><span class="text-muted">(13:00–17:00)</span></td>
+        <td>
+          <ul>
+            <li>PIM Business Meeting</li>
+            <li>Free Time</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Evening</strong><br><span class="text-muted">(19:00–21:30)</span></td>
+        <td>
+          <ul>
+            <li>Harbour Cruise Closing Dinner</li>
+          </ul>
+        </td>
+      </tr>
+      <!-- Saturday, 24 October -->
+      <tr>
+        <td><strong>Saturday, 24 October (Post-Conference)</strong></td>
+        <td><strong>Optional Tour</strong></td>
+        <td>Tour options TBC</td>
       </tr>
     </tbody>
   </table>
@@ -104,10 +194,6 @@ get_header(); ?>
     View Full Programme
   </a>
 </div>
-
-
-
-
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
@@ -121,15 +207,8 @@ get_header(); ?>
     });
   });
 </script>
-</div>	
-
-
-
-
-
-
+</div>
 
 <?php
-
 
 get_footer();
