@@ -65,7 +65,7 @@ get_header(); ?>
             We strive to make the conference accessible to all. Contact us for assistance.
         </p>
         <div class="text-center mt-4">
-            <a href="https://cloud.itsc.cuhk.edu.hk/forms/forms/122.aspx" class="btn btn-primary px-4 py-2 fw-bold" style="background-color:#300353; border:none;">
+            <a target="_blank" href="https://cloud.itsc.cuhk.edu.hk/forms/forms/122.aspx" class="btn btn-primary px-4 py-2 fw-bold" style="background-color:#300353; border:none;">
                 Register Now
             </a>
         </div>
