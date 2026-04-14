@@ -78,7 +78,7 @@
 			transform: none;
 		}
 
-		@media (max-width: 1199.98px) {
+		@media (max-width: 900px) {
 			.header-hamburger {
 				display: flex;
 			}
@@ -88,6 +88,7 @@
 			.header-menu-mobile {
 				display: none !important;
 			}
+			/* Remove top:auto on .header-submenu-container so JS can set absolute */
 			.header-search-desktop {
 				display: none !important;
 			}
@@ -95,7 +96,7 @@
 				display: none !important;
 			}
 		}
-		@media (min-width: 1200px) {
+		@media (min-width: 901px) {
 			.header-menu-mobile {
 				display: none !important;
 			}
@@ -107,17 +108,6 @@
 			}
 			.header-search {
 				display: block !important;
-			}
-		}
-		/* Hide header-search-desktop on <1400px (max-width: 1399.98px), show on >=1400px */
-		@media (max-width: 1400px) {
-			.header-search-desktop {
-				display: none !important;
-			}
-		}
-		@media (min-width: 1400px) {
-			.header-search-desktop {
-				display: flex !important;
 			}
 		}
 		.header-menu-mobile {
@@ -159,7 +149,7 @@
 			text-decoration: underline;
 		}
 		/* ---- Sticky header for mobile ---- */
-		@media (max-width: 1199.98px) {
+		@media (max-width: 900px) {
 			.header-container {
 				position: fixed;
 				top: 0;
@@ -178,7 +168,7 @@
 				padding-top: 74px; /* adjust to match the header height on mobile */
 			}
 		}
-		@media (min-width: 1200px) {
+		@media (min-width: 901px) {
 			.header-container {
 				position: static;
 				box-shadow: none;
@@ -208,12 +198,6 @@
 			flex: 0 0 auto;
 			align-items: center;
 			display: flex;
-		}
-		/* Ensure header-search-desktop is hidden on mobile */
-		@media (max-width: 1199.98px) {
-			.header-search-desktop {
-				display: none !important;
-			}
 		}
 	</style>
 </head>
@@ -279,7 +263,7 @@
 							<td class="align-top pe-2">
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
-							<a href="<?php echo home_url('/accommodation'); ?>">
+							<a href="<?php echo home_url('/travel-to-hong-kong'); ?>">
 								<span class="fw-bold">Accommodation</span> <br>
 								<!-- Find lodging and explore the city -->
 							</a>
@@ -315,7 +299,7 @@
 							<td class="align-top pe-2">
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
-							<a href="<?php echo home_url('/optional-tour'); ?>" >
+							<a href="#" onclick="javascript:void(0);">
 								<span class="fw-bold">Optional Tour</span> <br>
 								<!-- Reach out with questions or concerns -->
 							</a>
@@ -485,14 +469,14 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 						</div>
 						<div class="site-title ps-2">
 							<a href="<?php echo home_url(); ?>" style="text-decoration: none; color: inherit;">
-								<span class="line-1">2026 Annual Conference</span>
+								<span class="line-1">2026 Conference</span>
 								<!-- <br>
 								CUHK school of business -->
 							</a>
 						</div>
 						<!-- DESKTOP MENU -->
 						<div class="header-menu-container position-relative ms-4">
-							<ul class="header-menu mb-0 ps-0 ps-md-0 ps-lg-3">
+							<ul class="header-menu mb-0">
 								<li><a href="<?php echo home_url(); ?>">Overview</a></li>
 								<li><a href="<?php echo home_url('/cuhk-highlights'); ?>">CUHK Highlights</a></li>
 								<li><a href="<?php echo home_url('/schedule'); ?>">The Programme</a></li>
@@ -505,17 +489,9 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 						</div>
 					</div>
 					<!-- Search bar beside the header-left (desktop only)-->
-					<div class="header-search-desktop ms-3">
-						<form role="search" method="get" class="d-flex"
-							action="https://www.google.com/search"
-							target="_blank" rel="noopener">
-							<input type="search"
-								class="form-control form-control-sm"
-								placeholder="Search…"
-								name="q"
-								aria-label="Search"
-								>
-							<input type="hidden" name="sitesearch" value="<?php echo esc_attr( $_SERVER['HTTP_HOST'] ); ?>">
+					<div class="header-search-desktop ms-3 d-none d-md-flex">
+						<form role="search" method="get" class="d-flex" action="<?php echo esc_url(home_url('/')); ?>">
+							<input type="search" class="form-control form-control-sm" placeholder="Search…" value="<?php echo get_search_query(); ?>" name="s" aria-label="Search">
 							<button class="btn btn-outline-secondary btn-sm ms-2" type="submit" aria-label="Submit search">
 								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
 							</button>
@@ -534,15 +510,15 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 				var menuItems = document.querySelectorAll('.header-menu > li:not(.header-menu-more)');
 				if (moreLi && submenu) {
 					moreLi.addEventListener('mouseenter', function() {
-						if (window.innerWidth > 1199) submenu.style.display = 'block';
+						if (window.innerWidth > 900) submenu.style.display = 'block';
 					});
 					submenu.addEventListener('mouseleave', function() {
-						if (window.innerWidth > 1199) submenu.style.display = 'none';
+						if (window.innerWidth > 900) submenu.style.display = 'none';
 					});
 					moreLi.addEventListener('mouseleave', function(e) { /* only hide on submenu leave */ });
 					menuItems.forEach(function(item){
 						item.addEventListener('mouseenter', function() {
-							if (window.innerWidth > 1199) submenu.style.display = 'none';
+							if (window.innerWidth > 900) submenu.style.display = 'none';
 						});
 					});
 				}
@@ -615,8 +591,7 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 				
 
 					.site-title .line-1 {
-						/* font-size: 1.35rem; */
-						font-size: 1rem;
+						font-size: 1.35rem;
 						font-weight: bold;
 					}
 					.site-title {
@@ -624,16 +599,10 @@ Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
 						line-height: 1.12;
 					}
 
-					@media (max-width: 1199.98px) {
+					@media (max-width: 900px) {
 						.header-menu-container { display: none !important; }
-						.header-search-desktop { display: none !important; }
-					}
-					/* Add 1400px rule for .header-search-desktop */
-					@media (max-width: 1399.98px) {
-						.header-search-desktop { display: none !important; }
-					}
-					@media (min-width: 1400px) {
-						.header-search-desktop { display: flex !important; }
+						/* Remove forcing .header-submenu-container to static, so we can override position via JS on hamburger click */
+						/* .header-submenu-container { position: static !important; width:100% !important; margin-left:0 !important; } */
 					}
 
 					@media (max-width: 575.98px) {
