@@ -194,7 +194,7 @@ get_header(); ?>
 					<td class="schedule-col-theme">
 						<strong>Panel Discussion on Building Future-Ready Business Leaders Through Global Collaboration</strong><br>
 						<em>Moderated by Alex Markman</em><br>
-						<em>Speakers: CUHK, and <span class="schedule-highlight-yellow">2 PIM members</span></em>
+						<em>Speakers: CUHK, and <span class="">2 PIM members</span></em>
 					</td>
 				</tr>
 				<tr>
