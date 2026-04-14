@@ -35,7 +35,7 @@ get_header(); ?>
 	<h1 class="mt-5 mb-3 fw-bold">Schedule of Conference Programme</h1>
 
     <div class="mb-4">
-        <h2 class="fw-bold" style="font-size:2rem;">CUHK PIM Conference 2026 Programme</h2>
+        <!-- <h2 class="fw-bold" style="font-size:2rem;">CUHK PIM Conference 2026 Programme</h2> -->
         <div class="mt-2 mb-1" style="font-size:1.1rem;">
             <div><strong>Dates:</strong> 21–23 October 2026</div>
             <div><strong>Venue:</strong> CUHK, Hong Kong</div>
