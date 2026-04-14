@@ -253,7 +253,7 @@ get_header(); ?>
 					<td class="schedule-col-session">Session 2</td>
 					<td class="schedule-col-theme">
 						<strong>Panel discussion on Redefining business education through industry-led experiential learning</strong><br>
-						<span class="schedule-highlight-cyan">Moderated by Prof Seen-Meng Chew 3 PIM members with industrial involvement</span>
+						<span class="">Moderated by Prof Seen-Meng Chew 3 PIM members with industrial involvement</span>
 					</td>
 				</tr>
 				<tr>
