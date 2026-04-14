@@ -180,7 +180,7 @@ get_header(); ?>
 					<td class="schedule-col-session">Session 1</td>
 					<td class="schedule-col-theme">
 						<strong>Panel Discussion on Global mobility in business education: Value, Challenges and Opportunities</strong><br>
-						<span class="schedule-highlight-grey">Moderated by Prof. Yenn-Ru Chen</span>
+						<span class="">Moderated by Prof. Yenn-Ru Chen</span>
 					</td>
 				</tr>
 				<tr>
