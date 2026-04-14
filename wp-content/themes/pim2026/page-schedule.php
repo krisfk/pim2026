@@ -202,7 +202,7 @@ get_header(); ?>
 					<td class="schedule-col-session">Session 3</td>
 					<td class="schedule-col-theme">
 						<strong>CUHK Student Case Competition Group Presentation</strong><br>
-						(<span class="schedule-highlight-cyan">CUHK students and alumni</span>; facilitated by Dr. Rosette Leung)
+						(<span class="">CUHK students and alumni</span>; facilitated by Dr. Rosette Leung)
 					</td>
 				</tr>
 				<tr>
