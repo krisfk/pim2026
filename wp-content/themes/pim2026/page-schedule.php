@@ -71,7 +71,11 @@ get_header(); ?>
 		.schedule-programme-table .schedule-col-theme {
 			text-align: left;
 		}
-		.schedule-programme-table .schedule-col-venue {
+		.schedule-programme-table .schedule-col-venue,
+		.schedule-programme-table .schedule-col-logistics {
+			text-align: center;
+		}
+		.schedule-programme-table.schedule-day-thursday .schedule-col-theme {
 			text-align: center;
 		}
 		.schedule-programme-title {
@@ -203,6 +207,87 @@ get_header(); ?>
 					<td class="schedule-col-session">Dinner</td>
 					<td class="schedule-col-theme">Reunion Dinner</td>
 					<td class="schedule-col-venue">TBC</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<h2 class="schedule-programme-title">Thursday, 22 October 2026</h2>
+	<p class="schedule-programme-focus">Focus: Global Work Experience &amp; Employability Outcomes</p>
+
+	<div class="table-responsive my-4 text-start">
+		<table class="table table-bordered schedule-programme-table schedule-day-thursday mb-0">
+			<thead>
+				<tr>
+					<th class="schedule-col-time" scope="col">Time</th>
+					<th class="schedule-col-session" scope="col">Session</th>
+					<th class="schedule-col-theme" scope="col">Theme / Speaker</th>
+					<th class="schedule-col-logistics" scope="col">Logistics</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="schedule-col-time">09:00&ndash;10:15</td>
+					<td class="schedule-col-session">Session 1</td>
+					<td class="schedule-col-theme">
+						<strong>How experiential learning and co-op models build globally competitive graduates</strong><br>
+						<span class="schedule-highlight-grey">Dr. John Lai (CUHK Co-op Director) and industry partners/student representatives</span>
+					</td>
+					<td class="schedule-col-logistics" rowspan="7">Ballroom (L/F), Hyatt Regency Shatin</td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">10:15&ndash;10:45</td>
+					<td class="schedule-col-session">Coffee Break</td>
+					<td class="schedule-col-theme">&mdash;</td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">10:45&ndash;12:00</td>
+					<td class="schedule-col-session">Session 2</td>
+					<td class="schedule-col-theme">
+						<strong>Panel discussion on Redefining business education through industry-led experiential learning</strong><br>
+						<span class="schedule-highlight-cyan">Moderated by Prof Seen-Meng Chew 3 PIM members with industrial involvement</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">12:00&ndash;13:00</td>
+					<td class="schedule-col-session">Lunch</td>
+					<td class="schedule-col-theme">&mdash;</td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">13:00&ndash;14:00</td>
+					<td class="schedule-col-session">Session 3</td>
+					<td class="schedule-col-theme"><strong>Marketplace Networking</strong></td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">14:00&ndash;14:15</td>
+					<td class="schedule-col-session">Coffee Break</td>
+					<td class="schedule-col-theme">&mdash;</td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">14:15&ndash;15:30</td>
+					<td class="schedule-col-session">Session 4</td>
+					<td class="schedule-col-theme">
+						<strong>Strategy Task Force Report / Activity</strong><br>
+						<em>Moderated by Peter Feher</em>
+					</td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">16:00&ndash;16:45</td>
+					<td class="schedule-col-session">Transfer to HK Palace Museum</td>
+					<td class="schedule-col-theme"></td>
+					<td class="schedule-col-logistics">Coach departs from Hyatt</td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">17:00&ndash;18:00</td>
+					<td class="schedule-col-session">Museum Tour</td>
+					<td class="schedule-col-theme">Guided tour</td>
+					<td class="schedule-col-logistics">HK Palace Museum</td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">18:20&ndash;20:30</td>
+					<td class="schedule-col-session">Welcome Dinner</td>
+					<td class="schedule-col-theme">Connecting with broader CUHK guests. Hosted by Dean Zhou Lin: Institutional welcome and peer-level networking.</td>
+					<td class="schedule-col-logistics">TBC</td>
 				</tr>
 			</tbody>
 		</table>
