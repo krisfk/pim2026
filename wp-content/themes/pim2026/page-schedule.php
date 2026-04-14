@@ -75,8 +75,16 @@ get_header(); ?>
 		.schedule-programme-table .schedule-col-logistics {
 			text-align: center;
 		}
-		.schedule-programme-table.schedule-day-thursday .schedule-col-theme {
+		.schedule-programme-table.schedule-day-thursday .schedule-col-theme,
+		.schedule-programme-table.schedule-day-friday .schedule-col-theme {
 			text-align: center;
+		}
+		.schedule-friday-merged-title {
+			text-align: center;
+			vertical-align: middle;
+		}
+		.schedule-cell-cyan {
+			background-color: #cff4fc !important;
 		}
 		.schedule-programme-title {
 			color: #0d47a1;
@@ -288,6 +296,67 @@ get_header(); ?>
 					<td class="schedule-col-session">Welcome Dinner</td>
 					<td class="schedule-col-theme">Connecting with broader CUHK guests. Hosted by Dean Zhou Lin: Institutional welcome and peer-level networking.</td>
 					<td class="schedule-col-logistics">TBC</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<h2 class="schedule-programme-title">Friday, 23 October 2026</h2>
+	<p class="schedule-programme-focus">Focus: Partnerships, Governance &amp; the Way Forward</p>
+
+	<div class="table-responsive my-4 text-start">
+		<table class="table table-bordered schedule-programme-table schedule-day-friday mb-0">
+			<thead>
+				<tr>
+					<th class="schedule-col-time" scope="col">Time</th>
+					<th class="schedule-col-session" scope="col">Session</th>
+					<th class="schedule-col-theme" scope="col">Theme / Speaker</th>
+					<th class="schedule-col-logistics" scope="col">Logistics</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="schedule-col-time">09:00&ndash;10:15</td>
+					<td class="schedule-friday-merged-title" colspan="2"><strong>Campus Tour &amp; Group Photo</strong></td>
+					<td class="schedule-col-logistics">Coaches will depart at Hyatt</td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">10:20&ndash;10:30</td>
+					<td class="schedule-col-session">Brief Closing</td>
+					<td class="schedule-col-theme"></td>
+					<td class="schedule-col-logistics" rowspan="5">Ballroom (L/F), Hyatt Regency Shatin</td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">10:30&ndash;12:00</td>
+					<td class="schedule-col-session">Closing Session</td>
+					<td class="schedule-col-theme"><strong>AI, Best Practices, Strategy wrap-up</strong></td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">12:00&ndash;13:00</td>
+					<td class="schedule-col-session">Lunch</td>
+					<td class="schedule-col-theme">&mdash;</td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">13:00&ndash;14:30</td>
+					<td class="schedule-col-session">PIM Business Meeting</td>
+					<td class="schedule-col-theme"><strong>Annual updates, announcements</strong></td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time"></td>
+					<td class="schedule-col-session">Free Time</td>
+					<td class="schedule-col-theme"></td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time schedule-cell-cyan">17:30</td>
+					<td class="schedule-col-session schedule-cell-cyan"></td>
+					<td class="schedule-col-theme schedule-cell-cyan">Assemble and depart from Harbour Cruise Terminal</td>
+					<td class="schedule-col-logistics schedule-cell-cyan">Individual arrangement to departure location</td>
+				</tr>
+				<tr>
+					<td class="schedule-col-time">19:00&ndash;21:30</td>
+					<td class="schedule-col-session">Closing Dinner</td>
+					<td class="schedule-col-theme">&ldquo;Sea&rdquo; Hong Kong Cruise Dinner</td>
+					<td class="schedule-col-logistics">Harbour Cruise</td>
 				</tr>
 			</tbody>
 		</table>
