@@ -239,7 +239,7 @@ get_header(); ?>
 					<td class="schedule-col-session">Session 1</td>
 					<td class="schedule-col-theme">
 						<strong>How experiential learning and co-op models build globally competitive graduates</strong><br>
-						<span class="schedule-highlight-grey">Dr. John Lai (CUHK Co-op Director) and industry partners/student representatives</span>
+						<span class="">Dr. John Lai (CUHK Co-op Director) and industry partners/student representatives</span>
 					</td>
 					<td class="schedule-col-logistics" rowspan="7">Ballroom (L/F), Hyatt Regency Shatin</td>
 				</tr>
