@@ -32,7 +32,7 @@ get_header(); ?>
 
 <div class="container text-center middle-container">
 
-	<h1 class="mt-5 mb-3 fw-bold">Schedule of Conference Programme</h1>
+	<h1 class="mt-5 mb-3 fw-bold">CUHK PIM Conference 2026 Programme   </h1>
 
     <div class="mb-4">
         <!-- <h2 class="fw-bold" style="font-size:2rem;">CUHK PIM Conference 2026 Programme</h2> -->
