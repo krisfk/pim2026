@@ -101,8 +101,8 @@ Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N.T., Hong Kong
 					&& isset($_POST['footer_contact_email'])
 					&& isset($_POST['footer_contact_content'])) {
 					
-					// $to = 'PIM2026@cuhk.edu.hk';
-					$to = 'krisfk@gmail.com';
+					$to = 'PIM2026@cuhk.edu.hk';
+					// $to = 'krisfk@gmail.com';
 					$subject = '2026cuhkpim online enquiry from ' . strip_tags($_POST['footer_contact_name']);
 					$from = filter_var($_POST['footer_contact_email'], FILTER_VALIDATE_EMAIL) ? $_POST['footer_contact_email'] : '';
 					
