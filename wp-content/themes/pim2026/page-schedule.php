@@ -355,8 +355,10 @@ get_header(); ?>
 				<tr>
 					<td class="schedule-col-time">19:00&ndash;21:30</td>
 					<td class="schedule-col-session">Closing Dinner</td>
-					<td class="schedule-col-theme">&ldquo;Sea&rdquo; Hong Kong Cruise Dinner</td>
-					<td class="schedule-col-logistics">Harbour Cruise</td>
+					<!-- <td class="schedule-col-theme">&ldquo;Sea&rdquo; Hong Kong Cruise Dinner</td>
+					<td class="schedule-col-logistics">Harbour Cruise</td> -->
+					<td class="schedule-col-theme" colspan="2">To be announced</td>
+
 				</tr>
 			</tbody>
 		</table>
