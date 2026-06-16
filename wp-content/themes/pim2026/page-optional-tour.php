@@ -32,6 +32,9 @@ get_header(); ?>
 
 
 <style>
+  .card-title{
+font-weight:bold;
+  }
   .container.middle-container a,
   .middle-container a {
     color: #300353 !important;
