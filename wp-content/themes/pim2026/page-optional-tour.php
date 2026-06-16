@@ -151,6 +151,7 @@ get_header(); ?>
 </script>
 </div>	
 
+</div>
 
 
 
