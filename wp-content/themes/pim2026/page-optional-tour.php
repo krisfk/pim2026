@@ -415,7 +415,7 @@ Tour duration excludes participants’ travel time to and from the assembly/dism
 
 <!-- Lightbox Modal HTML - appears once per page -->
 <div id="tour-image-lightbox" class="lightbox-overlay">
-  <div style="text-align:center; width:100%">
+  <div class="lightbox-inner" style="text-align:center; width:100%">
     <img src="" alt="Tour Photo" class="lightbox-img" />
     <div class="lightbox-caption"></div>
   </div>
@@ -428,6 +428,7 @@ Tour duration excludes participants’ travel time to and from the assembly/dism
     var lightbox = document.getElementById('tour-image-lightbox');
     var lightboxImg = lightbox.querySelector('.lightbox-img');
     var lightboxCaption = lightbox.querySelector('.lightbox-caption');
+    var lightboxInner = lightbox.querySelector('.lightbox-inner');
 
     lightboxLinks.forEach(function(link) {
       link.addEventListener('click', function(e) {
@@ -450,13 +451,13 @@ Tour duration excludes participants’ travel time to and from the assembly/dism
       });
     });
 
-    // Clicking overlay or ESC closes
+    // Clicking overlay (but not the image/caption/inner) or ESC closes
     lightbox.addEventListener('click', function(e) {
-      // If clicking outside the image, close
-      if (e.target === lightbox || e.target === lightboxCaption) {
+      // Only close if clicked directly on the overlay (not on inner content/image/caption)
+      // Prevent closing when clicking .lightbox-inner or its children
+      if (e.target === lightbox) {
         lightbox.classList.remove('active');
         document.body.style.overflow = '';
-        // Unset img src for performance
         setTimeout(function(){lightboxImg.src = "";}, 300);
       }
     });
