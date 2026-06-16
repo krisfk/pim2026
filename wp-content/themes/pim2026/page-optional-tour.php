@@ -36,7 +36,7 @@ get_header(); ?>
   .middle-container a {
     color: #300353 !important;
   }
-  .tour-title{
+  .tour-title,.tour-duration{
     font-weight:bold;
   }
 </style>
