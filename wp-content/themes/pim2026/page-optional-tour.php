@@ -55,11 +55,11 @@ get_header(); ?>
     <table class="table table-bordered schedule-programme-table mb-0">
         <thead>
             <tr>
-                <th class="schedule-col-time" scope="col" style="width: 18%;">Tour option</th>
+                <th class="schedule-col-time" scope="col" style="width: 28%;">Tour option</th>
                 <th class="schedule-col-session" scope="col" style="width: 8%;">Capacity</th>
                 <th class="schedule-col-theme" scope="col" style="width: 12%;">Estimated Cost</th>
-                <th class="schedule-col-venue" scope="col" style="width: 37%;">Overview</th>
-                <th class="schedule-col-venue" scope="col" style="width: 25%;">Remarks</th>
+                <th class="schedule-col-venue" scope="col" style="width: 32%;">Overview</th>
+                <th class="schedule-col-venue" scope="col" style="width: 20%;">Remarks</th>
             </tr>
         </thead>
         <tbody>
