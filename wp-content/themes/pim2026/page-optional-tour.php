@@ -153,7 +153,7 @@ get_header(); ?>
         <tbody>
             <tr>
                 <td class="schedule-col-time">
-                    <div class="tour-title">1. Old Town Central Walking Tour</div> <br><br>
+                    <div class="tour-title">1. Old Town Central Walking Tour</div> <br>
                     <div class="tour-tagline">“Best for first-time visitors & cultural immersion”</div>
                     <div class="tour-duration">Duration: 2 hours</div>
                 </td>
