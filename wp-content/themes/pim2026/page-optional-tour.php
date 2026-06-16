@@ -154,7 +154,7 @@ get_header(); ?>
             <tr>
                 <td class="schedule-col-time">
                     <div class="tour-title">1. Old Town Central Walking Tour</div> <br>
-                    <div class="tour-tagline">“Best for first-time visitors & cultural immersion”</div>
+                    <div class="tour-tagline">“Best for first-time visitors & cultural immersion”</div> <br>
                     <div class="tour-duration">Duration: 2 hours</div>
                 </td>
                 <td class="schedule-col-session">
@@ -189,8 +189,8 @@ get_header(); ?>
             
             <tr>
                 <td class="schedule-col-time">
-                    <div class="tour-title">2. Lantau Monastery & Tai O Tour</div>
-                    <div class="tour-tagline">“Best for scenic + iconic Hong Kong landmarks”</div>
+                    <div class="tour-title">2. Lantau Monastery & Tai O Tour</div> <br>
+                    <div class="tour-tagline">“Best for scenic + iconic Hong Kong landmarks”</div> <br>
                     <div class="tour-duration">Duration: 5 hours</div>
                 </td>
                 <td class="schedule-col-session">
