@@ -58,8 +58,8 @@ get_header(); ?>
                 <th class="schedule-col-time" scope="col" style="width: 28%;">Tour option</th>
                 <th class="schedule-col-session" scope="col" style="width: 8%;">Capacity</th>
                 <th class="schedule-col-theme" scope="col" style="width: 12%;">Estimated Cost</th>
-                <th class="schedule-col-venue" scope="col" style="width: 32%;">Overview</th>
-                <th class="schedule-col-venue" scope="col" style="width: 20%;">Remarks</th>
+                <th class="schedule-col-venue" scope="col" style="width: 40%;">Overview</th>
+                <th class="schedule-col-venue" scope="col" style="width: 12%;">Remarks</th>
             </tr>
         </thead>
         <tbody>
