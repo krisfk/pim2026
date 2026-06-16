@@ -46,9 +46,9 @@ get_header(); ?>
 
   We are offering two optional tour experiences for participants. Each tour is subject to a minimum number of participants. If the minimum is not met or no preference is indicated, the tour may not proceed.
 <br>
- 
-
-Please indicate your preference via the tour selection form: PIM Conference 2026 - Optional Tour Selection Survey – Fill out form
+  <br>
+https://forms.cloud.microsoft/r/HFhLiyk8Rp
+Please indicate your preference via the tour selection form: <a href="https://forms.cloud.microsoft/r/HFhLiyk8Rp" target="_blank">PIM Conference 2026 - Optional Tour Selection Survey – Fill out form</a>
 
   </div>
     <!-- <h3 class="mt-5 mb-3 fw-bold text-start"></h3>
