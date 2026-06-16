@@ -215,8 +215,7 @@ font-weight:bold;
                     <th class="schedule-col-time" scope="col" style="width: 28%;">Tour option</th>
                     <th class="schedule-col-session" scope="col" style="width: 8%;">Capacity</th>
                     <th class="schedule-col-theme" scope="col" style="width: 12%;">Estimated Cost</th>
-                    <th class="schedule-col-venue" scope="col" style="width: 30%;">Overview</th>
-                    <th class="schedule-col-venue" scope="col" style="width: 12%;">Tour Photos</th>
+                    <th class="schedule-col-venue" scope="col" style="width: 42%;">Overview</th>
                     <th class="schedule-col-venue" scope="col" style="width: 10%;">Remarks</th>
                 </tr>
             </thead>
@@ -226,6 +225,22 @@ font-weight:bold;
                         <div class="tour-title">1. Old Town Central Walking Tour</div> <br>
                         <div class="tour-tagline">“Best for first-time visitors & cultural immersion”</div> <br>
                         <div class="tour-duration">Duration: 2 hours</div>
+
+
+                        <div class="tour-photos">
+
+                        <ul class="list-unstyled">
+                        <li class="mt-3">
+                          <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/o1.png" class="tour-lightbox" data-caption="Old Town Central Walking Tour Photo 1"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o1.png" alt=""></a>
+                        </li>
+                        <li class="mt-3">
+                          <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/o2.png" class="tour-lightbox" data-caption="Old Town Central Walking Tour Photo 2"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o2.png" alt=""></a>
+                        </li>
+                        <li class="mt-3">
+                          <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/o3.jpg" class="tour-lightbox" data-caption="Old Town Central Walking Tour Photo 3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o3.jpg" alt=""></a>
+                        </li>
+                        </ul>
+                        </div>
                     </td>
                     <td class="schedule-col-session">
                         Min. 17<br>
@@ -248,21 +263,6 @@ font-weight:bold;
                         </ul>
                     </td>
                     <td class="schedule-col-venue">
-                        <div class="tour-photos">
-                          <div class="row gx-1">
-                            <div class="col-4 px-1 pb-2">
-                              <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/o1.png" class="tour-lightbox" data-caption="Old Town Central Walking Tour Photo 1"><img class="img-fluid" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o1.png" alt=""></a>
-                            </div>
-                            <div class="col-4 px-1 pb-2">
-                              <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/o2.png" class="tour-lightbox" data-caption="Old Town Central Walking Tour Photo 2"><img class="img-fluid" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o2.png" alt=""></a>
-                            </div>
-                            <div class="col-4 px-1 pb-2">
-                              <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/o3.jpg" class="tour-lightbox" data-caption="Old Town Central Walking Tour Photo 3"><img class="img-fluid" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o3.jpg" alt=""></a>
-                            </div>
-                          </div>
-                        </div>
-                    </td>
-                    <td class="schedule-col-venue">
                         <ul>
                             <li><strong>Assembly Time:</strong> 10:00am (TBC)</li>
                             <li><strong>Assembly Point:</strong> Central Market</li>
@@ -277,6 +277,18 @@ font-weight:bold;
                         <div class="tour-title">2. Lantau Monastery & Tai O Tour</div> <br>
                         <div class="tour-tagline">“Best for scenic + iconic Hong Kong landmarks”</div> <br>
                         <div class="tour-duration">Duration: 5 hours</div>
+
+                        <ul class="list-unstyled">
+                        <li class="mt-3">
+                          <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/l1.png" class="tour-lightbox" data-caption="Lantau Monastery & Tai O Tour Photo 1"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l1.png" alt=""></a>
+                        </li>
+                        <li class="mt-3">
+                          <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/l2.png" class="tour-lightbox" data-caption="Lantau Monastery & Tai O Tour Photo 2"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l2.png" alt=""></a>
+                        </li>
+                        <li class="mt-3">
+                          <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/l3.png" class="tour-lightbox" data-caption="Lantau Monastery & Tai O Tour Photo 3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l3.png" alt=""></a>
+                        </li>
+                        </ul>
                     </td>
                     <td class="schedule-col-session">
                         Min. 12<br>
@@ -295,21 +307,6 @@ font-weight:bold;
                             <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-the-big-buddha.html" target="_blank">Tian Tan Buddha</a></li>
                             <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-tai-o-village.html" target="_blank">Tai O Village</a></li>
                         </ul>
-                    </td>
-                    <td class="schedule-col-venue">
-                        <div class="tour-photos">
-                          <div class="row gx-1">
-                            <div class="col-4 px-1 pb-2">
-                              <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/l1.png" class="tour-lightbox" data-caption="Lantau Monastery & Tai O Tour Photo 1"><img class="img-fluid" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l1.png" alt=""></a>
-                            </div>
-                            <div class="col-4 px-1 pb-2">
-                              <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/l2.png" class="tour-lightbox" data-caption="Lantau Monastery & Tai O Tour Photo 2"><img class="img-fluid" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l2.png" alt=""></a>
-                            </div>
-                            <div class="col-4 px-1 pb-2">
-                              <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/l3.png" class="tour-lightbox" data-caption="Lantau Monastery & Tai O Tour Photo 3"><img class="img-fluid" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l3.png" alt=""></a>
-                            </div>
-                          </div>
-                        </div>
                     </td>
                     <td class="schedule-col-venue">
                         <ul>
