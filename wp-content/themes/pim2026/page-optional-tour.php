@@ -144,35 +144,112 @@ get_header(); ?>
 
     
     <div class="table-responsive my-4 text-start">
-    <table class="table table-bordered schedule-programme-table mb-0">
-        <thead>
-            <tr>
-                <th class="schedule-col-time" scope="col" style="width: 28%;">Tour option</th>
-                <th class="schedule-col-session" scope="col" style="width: 8%;">Capacity</th>
-                <th class="schedule-col-theme" scope="col" style="width: 12%;">Estimated Cost</th>
-                <th class="schedule-col-venue" scope="col" style="width: 42%;">Overview</th>
-                <th class="schedule-col-venue" scope="col" style="width: 10%;">Remarks</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="schedule-col-time">
-                    <div class="tour-title">1. Old Town Central Walking Tour</div> <br>
-                    <div class="tour-tagline">“Best for first-time visitors & cultural immersion”</div> <br>
-                    <div class="tour-duration">Duration: 2 hours</div>
-                </td>
-                <td class="schedule-col-session">
-                    Min. 17<br>
-                    Max. 40
-                </td>
-                <td class="schedule-col-theme">
-                    HKD470<br>
-                    (~USD60)
-                </td>
-                <td class="schedule-col-venue">
-                    <p style="margin-top: 0;">Explore the rich contrasts of Hong Kong through this guided walking tour of Central and Sheung Wan. This experience takes you through a dynamic urban landscape where heritage buildings, traditional trades, and historic temples coexist with contemporary architecture and modern city life. Discover stories and local perspectives beyond typical guidebooks, offering an authentic introduction to Hong Kong’s cultural and social fabric.</p>
-                    <div class="highlights-title">Highlights:</div>
-                    <ul>
+    <!-- Desktop/table view -->
+    <div class="d-none d-md-block">
+        <table class="table table-bordered schedule-programme-table mb-0">
+            <thead>
+                <tr>
+                    <th class="schedule-col-time" scope="col" style="width: 28%;">Tour option</th>
+                    <th class="schedule-col-session" scope="col" style="width: 8%;">Capacity</th>
+                    <th class="schedule-col-theme" scope="col" style="width: 12%;">Estimated Cost</th>
+                    <th class="schedule-col-venue" scope="col" style="width: 42%;">Overview</th>
+                    <th class="schedule-col-venue" scope="col" style="width: 10%;">Remarks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="schedule-col-time">
+                        <div class="tour-title">1. Old Town Central Walking Tour</div> <br>
+                        <div class="tour-tagline">“Best for first-time visitors & cultural immersion”</div> <br>
+                        <div class="tour-duration">Duration: 2 hours</div>
+                    </td>
+                    <td class="schedule-col-session">
+                        Min. 17<br>
+                        Max. 40
+                    </td>
+                    <td class="schedule-col-theme">
+                        HKD470<br>
+                        (~USD60)
+                    </td>
+                    <td class="schedule-col-venue">
+                        <p style="margin-top: 0;">Explore the rich contrasts of Hong Kong through this guided walking tour of Central and Sheung Wan. This experience takes you through a dynamic urban landscape where heritage buildings, traditional trades, and historic temples coexist with contemporary architecture and modern city life. Discover stories and local perspectives beyond typical guidebooks, offering an authentic introduction to Hong Kong’s cultural and social fabric.</p>
+                        <div class="highlights-title">Highlights:</div>
+                        <ul>
+                            <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-central-market.html" target="_blank">Central Market</a></li>
+                            <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-central-mid-levels-escalator.html" target="_blank">Central to Mid-Levels Escalator</a></li>
+                            <li><a href="https://www.taikwun.hk/en/programme/detail/a-vibrant-summer-awaits-encore-hkjc-celebrates-tai-kwun-8th-anniversary/1794?gad_source=1&gad_campaignid=21483967175&gbraid=0AAAAA99b5E1EZBQWFxnA94XQcD4nDTiMc&gclid=CjwKCAjwxb7RBhA5EiwAQ-AAdGBdwDGmtIvVIIv8cHxcfAelvc5WGKJ-b6-4e0zBeHbSsUSSMZiiwRoCdnUQAvD_BwE" target="_blank">Tai Kwun</a></li>
+                            <li><a href="https://www.discoverhongkong.com/eng/neighbourhoods/hollywood-road.html" target="_blank">Hollywood Road</a></li>
+                            <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-man-mo-temple.html" target="_blank">Man Mo Temple</a></li>
+                            <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-kwong-wah-printing-company.html" target="_blank">Kwong Wah Printing Company</a> (1-hour Letterpress Workshop)</li>
+                        </ul>
+                    </td>
+                    <td class="schedule-col-venue">
+                        <ul>
+                            <li><strong>Assembly Time:</strong> 10:00am (TBC)</li>
+                            <li><strong>Assembly Point:</strong> Central Market</li>
+                            <li><strong>Dismissal Point:</strong> Man Mo Temple</li>
+                            <li>Participants are required to arrange their own transportation</li>
+                        </ul>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="schedule-col-time">
+                        <div class="tour-title">2. Lantau Monastery & Tai O Tour</div> <br>
+                        <div class="tour-tagline">“Best for scenic + iconic Hong Kong landmarks”</div> <br>
+                        <div class="tour-duration">Duration: 5 hours</div>
+                    </td>
+                    <td class="schedule-col-session">
+                        Min. 12<br>
+                        Max. 22
+                    </td>
+                    <td class="schedule-col-theme">
+                        HKD980<br>
+                        (~USD126)
+                    </td>
+                    <td class="schedule-col-venue">
+                        <p style="margin-top: 0;">Take in the natural scenery and cultural heritage of Lantau Island on this half-day tour. Begin with a scenic 5.7 km Ngong Ping Cable Car ride offering panoramic views of mountains and coastline. Visit the tranquil Po Lin Monastery and the iconic Tian Tan Buddha. The tour concludes at Tai O Fishing Village, known for its stilt houses, local shops, and traditional way of life.</p>
+                        <div class="highlights-title">Highlights:</div>
+                        <ul>
+                            <li><a href="https://www.np360.com.hk/en/" target="_blank">Ngong Ping Cable Car</a> (include 1 way standard cabin cable car ticket)</li>
+                            <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-po-lin-monastery.html" target="_blank">Po Lin Monastery</a></li>
+                            <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-the-big-buddha.html" target="_blank">Tian Tan Buddha</a></li>
+                            <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-tai-o-village.html" target="_blank">Tai O Village</a></li>
+                        </ul>
+                    </td>
+                    <td class="schedule-col-venue">
+                        <ul>
+                            <li><strong>Assembly Time:</strong> 09:00am (TBC)</li>
+                            <li><strong>Assembly & Dismissal Point:</strong> Sheraton Hong Kong Hotel & Towers Lobby (<a href="https://maps.app.goo.gl/y2MMW92n6YBArvsu7" target="_blank">Location</a>)</li>
+                            <li>Air-conditioned coach transport throughout the tour</li>
+                            <li><strong>Participants are required to arrange their own transportation to the assembly point</strong></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Mobile/card view -->
+    <div class="d-block d-md-none">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title mb-1">1. Old Town Central Walking Tour</h5>
+                <div class="mb-2 text-muted">Best for first-time visitors & cultural immersion</div>
+                <div class="mb-2"><strong>Duration:</strong> 2 hours</div>
+                <div class="mb-2">
+                    <strong>Capacity:</strong> Min. 17, Max. 40
+                </div>
+                <div class="mb-2">
+                    <strong>Estimated Cost:</strong> HKD470 (~USD60)
+                </div>
+                <div class="mb-2">
+                    <strong>Overview:</strong><br>
+                    Explore the rich contrasts of Hong Kong through this guided walking tour of Central and Sheung Wan. This experience takes you through a dynamic urban landscape where heritage buildings, traditional trades, and historic temples coexist with contemporary architecture and modern city life. Discover stories and local perspectives beyond typical guidebooks, offering an authentic introduction to Hong Kong’s cultural and social fabric.
+                </div>
+                <div class="mb-2">
+                    <strong>Highlights:</strong>
+                    <ul class="mb-2">
                         <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-central-market.html" target="_blank">Central Market</a></li>
                         <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-central-mid-levels-escalator.html" target="_blank">Central to Mid-Levels Escalator</a></li>
                         <li><a href="https://www.taikwun.hk/en/programme/detail/a-vibrant-summer-awaits-encore-hkjc-celebrates-tai-kwun-8th-anniversary/1794?gad_source=1&gad_campaignid=21483967175&gbraid=0AAAAA99b5E1EZBQWFxnA94XQcD4nDTiMc&gclid=CjwKCAjwxb7RBhA5EiwAQ-AAdGBdwDGmtIvVIIv8cHxcfAelvc5WGKJ-b6-4e0zBeHbSsUSSMZiiwRoCdnUQAvD_BwE" target="_blank">Tai Kwun</a></li>
@@ -180,52 +257,54 @@ get_header(); ?>
                         <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-man-mo-temple.html" target="_blank">Man Mo Temple</a></li>
                         <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-kwong-wah-printing-company.html" target="_blank">Kwong Wah Printing Company</a> (1-hour Letterpress Workshop)</li>
                     </ul>
-                </td>
-                <td class="schedule-col-venue">
-                    <ul>
+                </div>
+                <div>
+                    <strong>Remarks:</strong>
+                    <ul class="mb-2">
                         <li><strong>Assembly Time:</strong> 10:00am (TBC)</li>
                         <li><strong>Assembly Point:</strong> Central Market</li>
                         <li><strong>Dismissal Point:</strong> Man Mo Temple</li>
                         <li>Participants are required to arrange their own transportation</li>
                     </ul>
-                </td>
-            </tr>
-            
-            <tr>
-                <td class="schedule-col-time">
-                    <div class="tour-title">2. Lantau Monastery & Tai O Tour</div> <br>
-                    <div class="tour-tagline">“Best for scenic + iconic Hong Kong landmarks”</div> <br>
-                    <div class="tour-duration">Duration: 5 hours</div>
-                </td>
-                <td class="schedule-col-session">
-                    Min. 12<br>
-                    Max. 22
-                </td>
-                <td class="schedule-col-theme">
-                    HKD980<br>
-                    (~USD126)
-                </td>
-                <td class="schedule-col-venue">
-                    <p style="margin-top: 0;">Take in the natural scenery and cultural heritage of Lantau Island on this half-day tour. Begin with a scenic 5.7 km Ngong Ping Cable Car ride offering panoramic views of mountains and coastline. Visit the tranquil Po Lin Monastery and the iconic Tian Tan Buddha. The tour concludes at Tai O Fishing Village, known for its stilt houses, local shops, and traditional way of life.</p>
-                    <div class="highlights-title">Highlights:</div>
-                    <ul>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title mb-1">2. Lantau Monastery & Tai O Tour</h5>
+                <div class="mb-2 text-muted">Best for scenic + iconic Hong Kong landmarks</div>
+                <div class="mb-2"><strong>Duration:</strong> 5 hours</div>
+                <div class="mb-2">
+                    <strong>Capacity:</strong> Min. 12, Max. 22
+                </div>
+                <div class="mb-2">
+                    <strong>Estimated Cost:</strong> HKD980 (~USD126)
+                </div>
+                <div class="mb-2">
+                    <strong>Overview:</strong><br>
+                    Take in the natural scenery and cultural heritage of Lantau Island on this half-day tour. Begin with a scenic 5.7 km Ngong Ping Cable Car ride offering panoramic views of mountains and coastline. Visit the tranquil Po Lin Monastery and the iconic Tian Tan Buddha. The tour concludes at Tai O Fishing Village, known for its stilt houses, local shops, and traditional way of life.
+                </div>
+                <div class="mb-2">
+                    <strong>Highlights:</strong>
+                    <ul class="mb-2">
                         <li><a href="https://www.np360.com.hk/en/" target="_blank">Ngong Ping Cable Car</a> (include 1 way standard cabin cable car ticket)</li>
                         <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-po-lin-monastery.html" target="_blank">Po Lin Monastery</a></li>
                         <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-the-big-buddha.html" target="_blank">Tian Tan Buddha</a></li>
                         <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-tai-o-village.html" target="_blank">Tai O Village</a></li>
                     </ul>
-                </td>
-                <td class="schedule-col-venue">
-                    <ul>
+                </div>
+                <div>
+                    <strong>Remarks:</strong>
+                    <ul class="mb-2">
                         <li><strong>Assembly Time:</strong> 09:00am (TBC)</li>
                         <li><strong>Assembly & Dismissal Point:</strong> Sheraton Hong Kong Hotel & Towers Lobby (<a href="https://maps.app.goo.gl/y2MMW92n6YBArvsu7" target="_blank">Location</a>)</li>
                         <li>Air-conditioned coach transport throughout the tour</li>
                         <li><strong>Participants are required to arrange their own transportation to the assembly point</strong></li>
                     </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 	</div>
 
 
