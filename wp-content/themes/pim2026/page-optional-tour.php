@@ -210,6 +210,12 @@ font-weight:bold;
                         <div class="tour-title">2. Lantau Monastery & Tai O Tour</div> <br>
                         <div class="tour-tagline">“Best for scenic + iconic Hong Kong landmarks”</div> <br>
                         <div class="tour-duration">Duration: 5 hours</div>
+
+                        <ul class="list-unstyled">
+                        <li class="mt-3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l1.png" alt=""></li>
+                        <li class="mt-3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l2.png" alt=""></li>
+                        <li class="mt-3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l3.png" alt=""></li>
+                        </ul>
                     </td>
                     <td class="schedule-col-session">
                         Min. 12<br>
