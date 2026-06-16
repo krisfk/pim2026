@@ -60,6 +60,10 @@ get_header(); ?>
 			font-weight: 700;
 			color: #282828;
 		}
+
+    .schedule-programme-table thead th td{
+      align-items: center;
+    }
 		.schedule-programme-table .schedule-col-time,
 		.schedule-programme-table .schedule-col-session {
 			/* text-align: center; */
