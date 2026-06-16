@@ -61,7 +61,7 @@ get_header(); ?>
 			color: #282828;
 		}
 
-    .schedule-programme-table thead th td{
+    .schedule-programme-table thead th {
       vertical-align: middle;
     }
 		.schedule-programme-table .schedule-col-time,
