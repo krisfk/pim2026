@@ -42,6 +42,41 @@ font-weight:bold;
   .tour-title,.tour-duration{
     font-weight:bold;
   }
+  /* Lightbox styles */
+  .lightbox-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center; justify-content: center;
+      z-index: 10500;
+      cursor: zoom-out;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.24s;
+  }
+  .lightbox-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+  }
+  .lightbox-img {
+      max-width: 92vw;
+      max-height: 92vh;
+      border-radius: 10px;
+      box-shadow: 0 6px 24px rgba(0,0,0,.7);
+      background: #fff;
+      padding: 10px;
+  }
+  .lightbox-caption {
+      color: #fff;
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 1.07em;
+      text-shadow: 0 1px 6px #000, 0 2px 24px #000;
+  }
+  @media (max-width: 767.98px) {
+    .lightbox-img { max-width: 98vw; max-height: 98vh; }
+  }
 </style>
 
 <style>
@@ -170,10 +205,15 @@ font-weight:bold;
                         <div class="tour-photos">
 
                         <ul class="list-unstyled">
-                        <li class="mt-3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o1.png" alt=""></li>
-                          <li class="mt-3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o2.png" alt=""></li>
-                          <li class="mt-3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o3.jpg" alt=""></li>
-
+                        <li class="mt-3">
+                          <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/o1.png" class="tour-lightbox" data-caption="Old Town Central Walking Tour Photo 1"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o1.png" alt=""></a>
+                        </li>
+                        <li class="mt-3">
+                          <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/o2.png" class="tour-lightbox" data-caption="Old Town Central Walking Tour Photo 2"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o2.png" alt=""></a>
+                        </li>
+                        <li class="mt-3">
+                          <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/o3.jpg" class="tour-lightbox" data-caption="Old Town Central Walking Tour Photo 3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o3.jpg" alt=""></a>
+                        </li>
                         </ul>
                         </div>
                     </td>
@@ -214,9 +254,15 @@ font-weight:bold;
                         <div class="tour-duration">Duration: 5 hours</div>
 
                         <ul class="list-unstyled">
-                        <li class="mt-3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l1.png" alt=""></li>
-                        <li class="mt-3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l2.png" alt=""></li>
-                        <li class="mt-3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l3.png" alt=""></li>
+                        <li class="mt-3">
+                          <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/l1.png" class="tour-lightbox" data-caption="Lantau Monastery & Tai O Tour Photo 1"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l1.png" alt=""></a>
+                        </li>
+                        <li class="mt-3">
+                          <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/l2.png" class="tour-lightbox" data-caption="Lantau Monastery & Tai O Tour Photo 2"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l2.png" alt=""></a>
+                        </li>
+                        <li class="mt-3">
+                          <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/l3.png" class="tour-lightbox" data-caption="Lantau Monastery & Tai O Tour Photo 3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l3.png" alt=""></a>
+                        </li>
                         </ul>
                     </td>
                     <td class="schedule-col-session">
@@ -278,6 +324,20 @@ font-weight:bold;
                         <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-kwong-wah-printing-company.html" target="_blank">Kwong Wah Printing Company</a> (1-hour Letterpress Workshop)</li>
                     </ul>
                 </div>
+                <div class="mb-2">
+                  <strong>Tour Photos:</strong>
+                  <div class="row">
+                    <div class="col-4 px-1 pb-2">
+                      <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/o1.png" class="tour-lightbox" data-caption="Old Town Central Walking Tour Photo 1"><img class="img-fluid" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o1.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 pb-2">
+                      <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/o2.png" class="tour-lightbox" data-caption="Old Town Central Walking Tour Photo 2"><img class="img-fluid" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o2.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 pb-2">
+                      <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/o3.jpg" class="tour-lightbox" data-caption="Old Town Central Walking Tour Photo 3"><img class="img-fluid" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o3.jpg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
                 <div>
                     <strong>Remarks:</strong>
                     <ul class="mb-2">
@@ -313,6 +373,20 @@ font-weight:bold;
                         <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-tai-o-village.html" target="_blank">Tai O Village</a></li>
                     </ul>
                 </div>
+                <div class="mb-2">
+                  <strong>Tour Photos:</strong>
+                  <div class="row">
+                    <div class="col-4 px-1 pb-2">
+                      <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/l1.png" class="tour-lightbox" data-caption="Lantau Monastery & Tai O Tour Photo 1"><img class="img-fluid" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l1.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 pb-2">
+                      <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/l2.png" class="tour-lightbox" data-caption="Lantau Monastery & Tai O Tour Photo 2"><img class="img-fluid" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l2.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 pb-2">
+                      <a href="https://2026cuhkpim.com/wp-content/uploads/2026/06/l3.png" class="tour-lightbox" data-caption="Lantau Monastery & Tai O Tour Photo 3"><img class="img-fluid" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/l3.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
                 <div>
                     <strong>Remarks:</strong>
                     <ul class="mb-2">
@@ -339,8 +413,62 @@ Tour duration excludes participants’ travel time to and from the assembly/dism
 </ul>
 
 
+<!-- Lightbox Modal HTML - appears once per page -->
+<div id="tour-image-lightbox" class="lightbox-overlay">
+  <div style="text-align:center; width:100%">
+    <img src="" alt="Tour Photo" class="lightbox-img" />
+    <div class="lightbox-caption"></div>
+  </div>
+</div>
+
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  // Lightbox logic for Tour Photos
+  document.addEventListener("DOMContentLoaded", function() {
+    var lightboxLinks = document.querySelectorAll('.tour-lightbox');
+    var lightbox = document.getElementById('tour-image-lightbox');
+    var lightboxImg = lightbox.querySelector('.lightbox-img');
+    var lightboxCaption = lightbox.querySelector('.lightbox-caption');
+
+    lightboxLinks.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var imgUrl = link.getAttribute('href');
+        var altText = '';
+        var imgTag = link.querySelector('img');
+        var caption = link.dataset.caption || '';
+        if(imgTag && imgTag.getAttribute('alt')) { altText = imgTag.getAttribute('alt'); }
+        lightboxImg.src = imgUrl;
+        lightboxImg.alt = altText;
+        if (caption) {
+          lightboxCaption.innerHTML = caption;
+          lightboxCaption.style.display = 'block';
+        } else {
+          lightboxCaption.style.display = 'none';
+        }
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    // Clicking overlay or ESC closes
+    lightbox.addEventListener('click', function(e) {
+      // If clicking outside the image, close
+      if (e.target === lightbox || e.target === lightboxCaption) {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+        // Unset img src for performance
+        setTimeout(function(){lightboxImg.src = "";}, 300);
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === "Escape" && lightbox.classList.contains('active')) {
+          lightbox.classList.remove('active');
+          document.body.style.overflow = '';
+          setTimeout(function(){lightboxImg.src = "";}, 300);
+        }
+    });
+
+    // submenu btn code unchanged
     const btnGroup = document.getElementById('submenu-btn-group');
     if (!btnGroup) return;
     btnGroup.querySelectorAll('.submenu-btn').forEach(function(btn) {
