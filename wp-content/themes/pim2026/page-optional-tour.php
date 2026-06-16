@@ -170,8 +170,8 @@ font-weight:bold;
                         <div class="tour-photos">
 
                         <ul class="list-unstyled">
-                        <li><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o1.png" alt=""></li>
-                          <li><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o2.png" alt=""></li>
+                        <li class="mt-3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o1.png" alt=""></li>
+                          <li class="mt-3"><img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o2.png" alt=""></li>
                         </ul>
                         </div>
                     </td>
