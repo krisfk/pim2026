@@ -74,8 +74,33 @@ font-weight:bold;
       font-size: 1.07em;
       text-shadow: 0 1px 6px #000, 0 2px 24px #000;
   }
+  .lightbox-close-btn {
+      position: absolute;
+      top: 22px;
+      right: 30px;
+      z-index: 10600;
+      background: rgba(0,0,0,0.65);
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      line-height: 1;
+      padding: 0.13em 0.45em 0.15em 0.45em;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.17s;
+      opacity: 0.9;
+      box-shadow: 0 1px 8px #000;
+      pointer-events: auto;
+  }
+  .lightbox-close-btn:hover, .lightbox-close-btn:focus {
+      background: rgba(70,0,70,0.88);
+      color: #fff;
+      outline: none;
+      opacity: 1.0;
+  }
   @media (max-width: 767.98px) {
     .lightbox-img { max-width: 98vw; max-height: 98vh; }
+    .lightbox-close-btn { top: 12px; right: 10px; font-size: 1.7rem; }
   }
 </style>
 
@@ -415,6 +440,7 @@ Tour duration excludes participants’ travel time to and from the assembly/dism
 
 <!-- Lightbox Modal HTML - appears once per page -->
 <div id="tour-image-lightbox" class="lightbox-overlay">
+  <button type="button" aria-label="Close" class="lightbox-close-btn" id="lightbox-close-btn">&times;</button>
   <div class="lightbox-inner" style="text-align:center; width:100%">
     <img src="" alt="Tour Photo" class="lightbox-img" />
     <div class="lightbox-caption"></div>
@@ -429,6 +455,13 @@ Tour duration excludes participants’ travel time to and from the assembly/dism
     var lightboxImg = lightbox.querySelector('.lightbox-img');
     var lightboxCaption = lightbox.querySelector('.lightbox-caption');
     var lightboxInner = lightbox.querySelector('.lightbox-inner');
+    var lightboxCloseBtn = document.getElementById('lightbox-close-btn');
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+      setTimeout(function(){lightboxImg.src = "";}, 300);
+    }
 
     lightboxLinks.forEach(function(link) {
       link.addEventListener('click', function(e) {
@@ -448,24 +481,31 @@ Tour duration excludes participants’ travel time to and from the assembly/dism
         }
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
+        // Move focus to close button for accessibility
+        setTimeout(function(){ lightboxCloseBtn && lightboxCloseBtn.focus(); }, 100);
       });
     });
 
-    // Clicking overlay (but not the image/caption/inner) or ESC closes
+    // Close on overlay click (but not on inner content/image/caption)
     lightbox.addEventListener('click', function(e) {
-      // Only close if clicked directly on the overlay (not on inner content/image/caption)
-      // Prevent closing when clicking .lightbox-inner or its children
+      // Only close if clicked directly on the overlay (not on inner content/image/caption or button)
       if (e.target === lightbox) {
-        lightbox.classList.remove('active');
-        document.body.style.overflow = '';
-        setTimeout(function(){lightboxImg.src = "";}, 300);
+        closeLightbox();
       }
     });
+
+    // Close with close button
+    if (lightboxCloseBtn) {
+      lightboxCloseBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        closeLightbox();
+      });
+    }
+
+    // Close on ESC key
     document.addEventListener('keydown', function(e) {
         if (e.key === "Escape" && lightbox.classList.contains('active')) {
-          lightbox.classList.remove('active');
-          document.body.style.overflow = '';
-          setTimeout(function(){lightboxImg.src = "";}, 300);
+          closeLightbox();
         }
     });
 
