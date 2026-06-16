@@ -173,12 +173,12 @@ get_header(); ?>
                     <p style="margin-top: 0;">Explore the rich contrasts of Hong Kong through this guided walking tour of Central and Sheung Wan. This experience takes you through a dynamic urban landscape where heritage buildings, traditional trades, and historic temples coexist with contemporary architecture and modern city life. Discover stories and local perspectives beyond typical guidebooks, offering an authentic introduction to Hong Kong’s cultural and social fabric.</p>
                     <div class="highlights-title">Highlights:</div>
                     <ul>
-                        <li><a href="#">Central Market</a></li>
-                        <li><a href="#">Central to Mid-Levels Escalator</a></li>
-                        <li><a href="#">Tai Kwun</a></li>
-                        <li><a href="#">Hollywood Road</a></li>
-                        <li><a href="#">Man Mo Temple</a></li>
-                        <li><a href="#">Kwong Wah Printing Company</a> (1-hour Letterpress Workshop)</li>
+                        <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-central-market.html" target="_blank">Central Market</a></li>
+                        <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-central-mid-levels-escalator.html" target="_blank">Central to Mid-Levels Escalator</a></li>
+                        <li><a href="https://www.taikwun.hk/en/programme/detail/a-vibrant-summer-awaits-encore-hkjc-celebrates-tai-kwun-8th-anniversary/1794?gad_source=1&gad_campaignid=21483967175&gbraid=0AAAAA99b5E1EZBQWFxnA94XQcD4nDTiMc&gclid=CjwKCAjwxb7RBhA5EiwAQ-AAdGBdwDGmtIvVIIv8cHxcfAelvc5WGKJ-b6-4e0zBeHbSsUSSMZiiwRoCdnUQAvD_BwE" target="_blank">Tai Kwun</a></li>
+                        <li><a href="https://www.discoverhongkong.com/eng/neighbourhoods/hollywood-road.html" target="_blank">Hollywood Road</a></li>
+                        <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-man-mo-temple.html" target="_blank">Man Mo Temple</a></li>
+                        <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-kwong-wah-printing-company.html" target="_blank">Kwong Wah Printing Company</a> (1-hour Letterpress Workshop)</li>
                     </ul>
                 </td>
                 <td class="schedule-col-venue">
@@ -209,16 +209,16 @@ get_header(); ?>
                     <p style="margin-top: 0;">Take in the natural scenery and cultural heritage of Lantau Island on this half-day tour. Begin with a scenic 5.7 km Ngong Ping Cable Car ride offering panoramic views of mountains and coastline. Visit the tranquil Po Lin Monastery and the iconic Tian Tan Buddha. The tour concludes at Tai O Fishing Village, known for its stilt houses, local shops, and traditional way of life.</p>
                     <div class="highlights-title">Highlights:</div>
                     <ul>
-                        <li><a href="#">Ngong Ping Cable Car</a> (include 1 way standard cabin cable car ticket)</li>
-                        <li><a href="#">Po Lin Monastery</a></li>
-                        <li><a href="#">Tian Tan Buddha</a></li>
-                        <li><a href="#">Tai O Village</a></li>
+                        <li><a href="https://www.np360.com.hk/en/" target="_blank">Ngong Ping Cable Car</a> (include 1 way standard cabin cable car ticket)</li>
+                        <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-po-lin-monastery.html" target="_blank">Po Lin Monastery</a></li>
+                        <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-the-big-buddha.html" target="_blank">Tian Tan Buddha</a></li>
+                        <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-tai-o-village.html" target="_blank">Tai O Village</a></li>
                     </ul>
                 </td>
                 <td class="schedule-col-venue">
                     <ul>
                         <li><strong>Assembly Time:</strong> 09:00am (TBC)</li>
-                        <li><strong>Assembly & Dismissal Point:</strong> Sheraton Hong Kong Hotel & Towers Lobby (Location>> <a href="https://maps.app.goo.gl/y2MMW92n6YBARvsu7" target="_blank">https://maps.app.goo.gl/y2MMW92n6YBARvsu7</a>)</li>
+                        <li><strong>Assembly & Dismissal Point:</strong> Sheraton Hong Kong Hotel & Towers Lobby (<a href="https://maps.app.goo.gl/y2MMW92n6YBArvsu7" target="_blank">Location</a>)</li>
                         <li>Air-conditioned coach transport throughout the tour</li>
                         <li><strong>Participants are required to arrange their own transportation to the assembly point</strong></li>
                     </ul>
