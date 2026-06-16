@@ -140,7 +140,7 @@ get_header(); ?>
 <br>
   <br>
 
-  Please indicate your preference via the tour selection form: <a href="https://forms.cloud.microsoft/r/HFhLiyk8Rp" target="_blank">PIM Conference 2026 - Optional Tour Selection Survey – Fill out form</a>
+  Please indicate your preference via the tour selection form: <br> <a href="https://forms.cloud.microsoft/r/HFhLiyk8Rp" target="_blank">PIM Conference 2026 - Optional Tour Selection Survey – Fill out form</a>
 
     
     <div class="table-responsive my-4 text-start">
