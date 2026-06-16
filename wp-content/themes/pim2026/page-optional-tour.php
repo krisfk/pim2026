@@ -42,7 +42,15 @@ get_header(); ?>
 
 	<h1 class="mt-5 mb-3 fw-bold">Optional Tour</h1>
 
-    <br> coming soon
+  <div>
+
+  We are offering two optional tour experiences for participants. Each tour is subject to a minimum number of participants. If the minimum is not met or no preference is indicated, the tour may not proceed.
+<br>
+ 
+
+Please indicate your preference via the tour selection form: PIM Conference 2026 - Optional Tour Selection Survey – Fill out form
+
+  </div>
     <!-- <h3 class="mt-5 mb-3 fw-bold text-start"></h3>
     <div class="text-start mx-auto mb-4">Visitors must hold a passport valid for at least six months beyond their stay. Most nationalities do not require a visa for short visits (7–180 days). <br> <br> Check requirements: Hong Kong Immigration Department <br> <a href="https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html" target="_blank">https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html</a>
     </div> -->
