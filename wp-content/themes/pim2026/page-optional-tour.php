@@ -62,7 +62,7 @@ get_header(); ?>
 		}
 
     .schedule-programme-table thead th td{
-      align-items: center;
+      vertical-align: middle;
     }
 		.schedule-programme-table .schedule-col-time,
 		.schedule-programme-table .schedule-col-session {
