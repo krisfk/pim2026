@@ -36,6 +36,9 @@ get_header(); ?>
   .middle-container a {
     color: #300353 !important;
   }
+  .tour-title{
+    font-weight:bold;
+  }
 </style>
 
 <style>
