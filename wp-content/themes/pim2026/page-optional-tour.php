@@ -38,6 +38,91 @@ get_header(); ?>
   }
 </style>
 
+<style>
+		.schedule-programme-table {
+			width: 100%;
+			border-collapse: collapse;
+			background: #fff;
+			box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+		}
+		.schedule-programme-table th,
+		.schedule-programme-table td {
+			border: 1px solid #adb5bd;
+			padding: 12px 16px;
+			vertical-align: middle;
+			font-size: 1rem;
+		}
+		.schedule-programme-table th {
+			background-color: #f2f2f2;
+			font-weight: 700;
+			color: #282828;
+		}
+		.schedule-programme-table .schedule-col-time,
+		.schedule-programme-table .schedule-col-session {
+			text-align: center;
+		}
+		.schedule-programme-table .schedule-col-theme {
+			text-align: left;
+		}
+		.schedule-programme-table .schedule-col-venue,
+		.schedule-programme-table .schedule-col-logistics {
+			text-align: center;
+		}
+		.schedule-programme-table.schedule-day-thursday .schedule-col-theme,
+		.schedule-programme-table.schedule-day-friday .schedule-col-theme {
+			text-align: center;
+		}
+		.schedule-friday-merged-title {
+			text-align: center;
+			vertical-align: middle;
+		}
+		.schedule-cell-cyan {
+			background-color: #cff4fc !important;
+		}
+		.schedule-programme-title {
+			color: #0d47a1;
+			font-size: 1.75rem;
+			font-weight: 700;
+			margin-top: 2rem;
+			margin-bottom: 0.5rem;
+		}
+		.schedule-programme-focus {
+			font-weight: 700;
+			margin-bottom: 1rem;
+		}
+		.schedule-programme-note {
+			border: 1px solid #ced4da;
+			background: #f8f9fa;
+			padding: 1rem 1.25rem;
+			text-align: left;
+			margin-bottom: 1.5rem;
+			max-width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.schedule-highlight-grey {
+			background-color: #e9ecef;
+			font-style: italic;
+			padding: 2px 4px;
+			display: inline;
+		}
+		.schedule-highlight-yellow {
+			background-color: #fff3cd;
+			font-weight: 700;
+		}
+		.schedule-highlight-cyan {
+			background-color: #cff4fc;
+			font-weight: 700;
+			font-style: italic;
+		}
+		@media (max-width: 767.98px) {
+			.schedule-programme-table th,
+			.schedule-programme-table td {
+				padding: 8px 6px;
+				font-size: 0.92rem;
+			}
+		}
+	</style>
 <div class="container text-center middle-container">
 
 	<h1 class="mt-5 mb-3 fw-bold">Optional Tour</h1>
