@@ -165,6 +165,14 @@ font-weight:bold;
                         <div class="tour-title">1. Old Town Central Walking Tour</div> <br>
                         <div class="tour-tagline">“Best for first-time visitors & cultural immersion”</div> <br>
                         <div class="tour-duration">Duration: 2 hours</div>
+
+
+                        <div class="tour-photos">
+
+                        <img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o1.png" alt=""> <br>
+                        <img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o2.png" alt=""><br>
+                        <img class="w-100" src="https://2026cuhkpim.com/wp-content/uploads/2026/06/o3.png" alt=""><br>
+                        </div>
                     </td>
                     <td class="schedule-col-session">
                         Min. 17<br>
