@@ -52,7 +52,7 @@ get_header(); ?>
 		.schedule-programme-table td {
 			border: 1px solid #adb5bd;
 			padding: 12px 16px;
-			vertical-align: middle;
+			/* vertical-align: middle; */
 			font-size: 1rem;
 		}
 		.schedule-programme-table th {
