@@ -52,99 +52,88 @@ get_header(); ?>
 
     
     <div class="table-responsive my-4 text-start">
-		<table class="table table-bordered schedule-programme-table mb-0 align-middle text-start">
-			<thead>
-				<tr>
-					<th style="width:18%" scope="col">Tour option</th>
-					<th style="width:7%" scope="col">Capacity</th>
-					<th style="width:15%" scope="col">Estimated Cost</th>
-					<th style="width:35%" scope="col">Overview</th>
-					<th style="width:25%" scope="col">Remarks</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<!-- Old Town Central Walking Tour -->
-					<td>
-						<strong>1. Old Town Central Walking Tour</strong>
-						<br>
-						<span class="small fst-italic">Hong Kong’s creative culture &amp; colonial encounters</span>
-						<br>
-						<span class="small"><strong>Duration:</strong> 2 hours</span>
-					</td>
-					<td>
-						Min.: 17<br>
-						Max.: 40
-					</td>
-					<td>
-						HKD420<br>
-						(~USD53)
-					</td>
-					<td>
-						Get a feel for the contrasts of Hong Kong through this guided walking tour of Central and Sheung Wan. Participants will discover both well-known icons and hidden heritage stories influencing the city’s vibrancy: historical temples, contemporary architectural symbols, local crafts, graffiti artworks, and unique tea experiences. 
-						<br>
-						<strong>Highlights:</strong>
-						<ul class="mb-1 mt-2 small" style="padding-left:18px;">
-							<li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-central-market.html" target="_blank" rel="noopener">Central Market</a></li>
-							<li><a href="https://www.manmo.org/" target="_blank" rel="noopener">Man Mo Temple</a></li>
-							<li><a href="https://www.centralmarket.hk/en/about-us" target="_blank" rel="noopener">Central Market Revamp</a></li>
-							<li><a href="https://www.tai-kwun.hk/en" target="_blank" rel="noopener">Tai Kwun</a></li>
-							<li><a href="https://www.stauntons.com.hk/" target="_blank" rel="noopener">Staunton Street</a></li>
-							<li>Kung Wah Printing Company <span class="fst-italic">(Chinese Letterpress Workshop)</span></li>
-						</ul>
-					</td>
-					<td>
-						<ul class="mb-1 small" style="padding-left:16px;">
-							<li><strong>Assembly Time:</strong> 10:00am (TBC)</li>
-							<li><strong>Assembly Point:</strong> Central MTR Station</li>
-							<li><strong>Destination Must-See:</strong> Man Mo Temple</li>
-							<li>Participants are required to arrange their own transportation to the assembly point.</li>
-						</ul>
-					</td>
-				</tr>
-				<tr>
-					<!-- Lantau Monastery & Tai O Tour -->
-					<td>
-						<strong>2. Lantau Monastery & Tai O Tour</strong>
-						<br>
-						<span class="small fst-italic">Hong Kong’s serene &amp; rustic side. Away from the hustle.</span>
-						<br>
-						<span class="small"><strong>Duration:</strong> 5 hours</span>
-					</td>
-					<td>
-						Min.: 12<br>
-						Max.: 22
-					</td>
-					<td>
-						HKD850<br>
-						(~USD109)
-					</td>
-					<td>
-						Experience the serenity and heritage of Lantau Island: enjoy panoramic views on the Ngong Ping 360 cable car*, visit the iconic Tian Tan Buddha and Po Lin Monastery, and take a scenic boat ride plus a cultural stroll at Tai O fishing village. Lunch is included. 
-						<br>
-						<strong>Highlights:</strong>
-						<ul class="mb-1 mt-2 small" style="padding-left:18px;">
-							<li><a href="https://www.np360.com.hk/en/" target="_blank" rel="noopener">Ngong Ping 360 Cable Car</a></li>
-							<li><a href="https://www.plm.org.hk/eng/home.php" target="_blank" rel="noopener">Po Lin Monastery</a></li>
-							<li><a href="https://www.bigbuddha.org.hk/en/index.html" target="_blank" rel="noopener">Tian Tan Buddha</a></li>
-							<li><a href="https://www.discoverhongkong.com/eng/explore/neighbourhoods/tai-o.html" target="_blank" rel="noopener">Tai O Village</a></li>
-						</ul>
-					</td>
-					<td>
-						<ul class="mb-1 small" style="padding-left:16px;">
-							<li><strong>Assembly Time:</strong> 09:00am (TBC)</li>
-							<li>
-								<strong>Assembly Point:</strong> Disneyland Resort MTR — Hong Kong Hotel at 
-								<a href="https://www.hyatt.com/en-US/hotel/china/hyatt-regency-hong-kong-shatin/shahr" target="_blank" rel="noopener">Hyatt Regency Shatin</a>
-							</li>
-							<li>Lunch included</li>
-							<li>An English-speaking guide is included.<br>
-							Cost includes all admission fees, cable car, boat trip, guided tour, and transportation to the assembly point.</li>
-						</ul>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 18%;">Tour option</th>
+                <th style="width: 8%;">Capacity</th>
+                <th style="width: 12%;">Estimated Cost</th>
+                <th style="width: 37%;">Overview</th>
+                <th style="width: 25%;">Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="tour-title">1. Old Town Central Walking Tour</div>
+                    <div class="tour-tagline">“Best for first-time visitors & cultural immersion”</div>
+                    <div class="tour-duration">Duration: 2 hours</div>
+                </td>
+                <td>
+                    Min. 17<br>
+                    Max. 40
+                </td>
+                <td>
+                    HKD470<br>
+                    (~USD60)
+                </td>
+                <td>
+                    <p style="margin-top: 0;">Explore the rich contrasts of Hong Kong through this guided walking tour of Central and Sheung Wan. This experience takes you through a dynamic urban landscape where heritage buildings, traditional trades, and historic temples coexist with contemporary architecture and modern city life. Discover stories and local perspectives beyond typical guidebooks, offering an authentic introduction to Hong Kong’s cultural and social fabric.</p>
+                    <div class="highlights-title">Highlights:</div>
+                    <ul>
+                        <li><a href="#">Central Market</a></li>
+                        <li><a href="#">Central to Mid-Levels Escalator</a></li>
+                        <li><a href="#">Tai Kwun</a></li>
+                        <li><a href="#">Hollywood Road</a></li>
+                        <li><a href="#">Man Mo Temple</a></li>
+                        <li><a href="#">Kwong Wah Printing Company</a> (1-hour Letterpress Workshop)</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong>Assembly Time:</strong> 10:00am (TBC)</li>
+                        <li><strong>Assembly Point:</strong> Central Market</li>
+                        <li><strong>Dismissal Point:</strong> Man Mo Temple</li>
+                        <li>Participants are required to arrange their own transportation</li>
+                    </ul>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="tour-title">2. Lantau Monastery & Tai O Tour</div>
+                    <div class="tour-tagline">“Best for scenic + iconic Hong Kong landmarks”</div>
+                    <div class="tour-duration">Duration: 5 hours</div>
+                </td>
+                <td>
+                    Min. 12<br>
+                    Max. 22
+                </td>
+                <td>
+                    HKD980<br>
+                    (~USD126)
+                </td>
+                <td>
+                    <p style="margin-top: 0;">Take in the natural scenery and cultural heritage of Lantau Island on this half-day tour. Begin with a scenic 5.7 km Ngong Ping Cable Car ride offering panoramic views of mountains and coastline. Visit the tranquil Po Lin Monastery and the iconic Tian Tan Buddha. The tour concludes at Tai O Fishing Village, known for its stilt houses, local shops, and traditional way of life.</p>
+                    <div class="highlights-title">Highlights:</div>
+                    <ul>
+                        <li><a href="#">Ngong Ping Cable Car</a> (include 1 way standard cabin cable car ticket)</li>
+                        <li><a href="#">Po Lin Monastery</a></li>
+                        <li><a href="#">Tian Tan Buddha</a></li>
+                        <li><a href="#">Tai O Village</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong>Assembly Time:</strong> 09:00am (TBC)</li>
+                        <li><strong>Assembly & Dismissal Point:</strong> Sheraton Hong Kong Hotel & Towers Lobby (Location&gt;&gt; <a href="https://maps.app.goo.gl/y2MMW92n6YBARvsu7" target="_blank">https://maps.app.goo.gl/y2MMW92n6YBARvsu7</a>)</li>
+                        <li>Air-conditioned coach transport throughout the tour</li>
+                        <li><strong>Participants are required to arrange their own transportation to the assembly point</strong></li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 	</div>
 
 
