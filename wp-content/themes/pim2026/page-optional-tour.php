@@ -101,7 +101,7 @@ font-weight:bold;
   @media (max-width: 767.98px) {
     .lightbox-img { max-width: 98vw; max-height: 98vh; }
     .lightbox-close-btn { top: 12px; right: 10px; font-size: 1.7rem;
-    position: relative;
+    /* position: relative; */
     top:3rem;
     }
   }
