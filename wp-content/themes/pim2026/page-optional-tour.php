@@ -59,22 +59,22 @@ get_header(); ?>
 		}
 		.schedule-programme-table .schedule-col-time,
 		.schedule-programme-table .schedule-col-session {
-			text-align: center;
+			/* text-align: center; */
 		}
 		.schedule-programme-table .schedule-col-theme {
-			text-align: left;
+			/* text-align: left; */
 		}
 		.schedule-programme-table .schedule-col-venue,
 		.schedule-programme-table .schedule-col-logistics {
-			text-align: center;
+			/* text-align: center; */
 		}
 		.schedule-programme-table.schedule-day-thursday .schedule-col-theme,
 		.schedule-programme-table.schedule-day-friday .schedule-col-theme {
-			text-align: center;
+			/* text-align: center; */
 		}
 		.schedule-friday-merged-title {
-			text-align: center;
-			vertical-align: middle;
+			/* text-align: center; */
+			/* vertical-align: middle; */
 		}
 		.schedule-cell-cyan {
 			background-color: #cff4fc !important;
