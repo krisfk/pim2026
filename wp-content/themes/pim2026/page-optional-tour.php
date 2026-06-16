@@ -52,83 +52,88 @@ get_header(); ?>
 
     
     <div class="table-responsive my-4 text-start">
-		<table class="table table-bordered schedule-programme-table mb-0">
+		<table class="table table-bordered schedule-programme-table mb-0 align-middle text-start">
 			<thead>
 				<tr>
-					<th class="schedule-col-time" scope="col">Time</th>
-					<th class="schedule-col-session" scope="col">Session</th>
-					<th class="schedule-col-theme" scope="col">Theme / Speaker</th>
-					<th class="schedule-col-venue" scope="col">Venue</th>
+					<th style="width:18%" scope="col">Tour option</th>
+					<th style="width:7%" scope="col">Capacity</th>
+					<th style="width:15%" scope="col">Estimated Cost</th>
+					<th style="width:35%" scope="col">Overview</th>
+					<th style="width:25%" scope="col">Remarks</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td class="schedule-col-time">10:30–12:00</td>
-					<td class="schedule-col-session"></td>
-					<td class="schedule-col-theme">Registration opens</td>
-					<td class="schedule-col-venue">Registration counter (Ballroom entrance)</td>
-				</tr>
-				<tr>
-					<td class="schedule-col-time">11:00–11:30</td>
-					<td class="schedule-col-session">Newcomer Session</td>
-					<td class="schedule-col-theme">Welcome for PIM Newcomers (hosted by PIM Current Member Committee)</td>
-					<td class="schedule-col-venue" rowspan="8">Ballroom (L/F), Hyatt Regency Shatin</td>
-				</tr>
-				<tr>
-					<td class="schedule-col-time">11:30–12:15</td>
-					<td class="schedule-col-session">Opening Session</td>
-					<td class="schedule-col-theme">
-						<strong>Welcome and Institutional Perspective — Dean Zhou Lin</strong><br>
-						Conversation and Reflections: CUHK Business School’s approach to global education and East–West collaboration<br>
-						<strong><em>Yenn-Ru Chen, Peter Feher, Alex Markman</em></strong><br>
-						PIM Chairs
+					<!-- Old Town Central Walking Tour -->
+					<td>
+						<strong>1. Old Town Central Walking Tour</strong>
+						<br>
+						<span class="small fst-italic">“Hong Kong's creative culture & colonial encounters”</span>
+						<br>
+						<span class="small"><strong>Duration:</strong> 2 hours</span>
+					</td>
+					<td>
+						Min.: 17<br>
+						Max.: 40
+					</td>
+					<td>
+						HKD420<br>
+						(~USD53)
+					</td>
+					<td>
+						Explore the rich contrasts of Hong Kong through this guided walking tour of Central and Sheung Wan. Participants will discover the well-known and hidden heritage stories that have influenced modern Hong Kong, from heritage temples and iconic tea experiences, to contemporary architectural symbols, graffiti artworks, and local businesses presenting special crafts. Guided by expert storytellers (included: “admission to Hong Kong’s colonial and walk trails.”)
+						<ul class="mb-1 mt-2 small" style="padding-left:18px;">
+							<li><a href="https://www.discoverhongkong.com/eng/explore/neighbourhoods/old-town-central.html" target="_blank" rel="noopener">Central Market</a></li>
+							<li><a href="https://www.manmo.org/" target="_blank" rel="noopener">Man Mo Temple</a></li>
+							<li><a href="https://www.centralmarket.hk/en/about-us" target="_blank" rel="noopener">Central Market Revamp</a></li>
+							<li><a href="https://www.tai-kwun.hk/en" target="_blank" rel="noopener">Tai Kwun</a></li>
+							<li><a href="https://www.stauntons.com.hk/" target="_blank" rel="noopener">Staunton Street</a></li>
+							<li>Kung Wah Printing Company (Chinese letterpress Workshop)</li>
+						</ul>
+					</td>
+					<td>
+						<ul class="mb-1 small" style="padding-left:16px;">
+							<li><strong>Assembly Time:</strong> 10:00am (TBC)</li>
+							<li><strong>Assembly Point:</strong> Central MTR station</li>
+							<li><strong>Destination Must-See:</strong> Man Mo Temple</li>
+							<li>Participants are required to arrange their own transportation to the assembly point.</li>
+						</ul>
 					</td>
 				</tr>
 				<tr>
-					<td class="schedule-col-time">12:15–13:15</td>
-					<td class="schedule-col-session">Lunch</td>
-					<td class="schedule-col-theme">Lunch</td>
-				</tr>
-				<tr>
-					<td class="schedule-col-time">13:15–14:30</td>
-					<td class="schedule-col-session">Session 1</td>
-					<td class="schedule-col-theme">
-						<strong>Panel Discussion on Global mobility in business education: Value, Challenges and Opportunities</strong><br>
-						<span class="">Moderated by Prof. Yenn-Ru Chen</span>
+					<!-- Lantau Monastery & Tai O Tour -->
+					<td>
+						<strong>2. Lantau Monastery & Tai O Tour</strong>
+						<br>
+						<span class="small fst-italic">“Hong Kong’s serene & rustic story. Away from the hustle.”</span>
+						<br>
+						<span class="small"><strong>Duration:</strong> 5 hours</span>
 					</td>
-				</tr>
-				<tr>
-					<td class="schedule-col-time">14:30–15:00</td>
-					<td class="schedule-col-session">Coffee Break</td>
-					<td class="schedule-col-theme">—</td>
-				</tr>
-				<tr>
-					<td class="schedule-col-time">15:00–15:45</td>
-					<td class="schedule-col-session">Session 2</td>
-					<td class="schedule-col-theme">
-						<strong>Panel Discussion on Building Future-Ready Business Leaders Through Global Collaboration</strong><br>
-						<em>Moderated by Alex Markman</em><br>
-						<em>Speakers: CUHK, and <span class="">2 PIM members</span></em>
+					<td>
+						Min.: 12<br>
+						Max.: 22
 					</td>
-				</tr>
-				<tr>
-					<td class="schedule-col-time">15:45–16:30</td>
-					<td class="schedule-col-session">Session 3</td>
-					<td class="schedule-col-theme">
-						<strong>CUHK Student Case Competition Group Presentation</strong><br>
-						(<span class="">CUHK students and alumni</span>; facilitated by Dr. Rosette Leung)
+					<td>
+						HKD850<br>
+						(~USD109)
 					</td>
-				</tr>
-				<tr>
-					<td class="schedule-col-time">17:00</td>
-					<td class="schedule-col-session"></td>
-					<td class="schedule-col-theme">Departure from Hyatt to dinner venue</td>
-				</tr>
-				<tr>
-					<td class="schedule-col-time">18:00–21:00</td>
-					<td class="schedule-col-session">Dinner</td>
-					<td class="schedule-col-theme">Reunion Dinner</td>
-					<td class="schedule-col-venue">TBC</td>
+					<td>
+						This is the most amazing way to unwind at heritage Lantau Island! Enjoy scenic views on the Ngong Ping 360 cable car* before visiting the iconic Tian Tan Buddha and Po Lin Monastery. Then, take the fun historic boat trip and cultural stroll at the Tai O fishing village. Lunch is included.
+						<ul class="mb-1 mt-2 small" style="padding-left:18px;">
+							<li><a href="https://www.np360.com.hk/en/" target="_blank" rel="noopener">Ngong Ping 360 cable car</a></li>
+							<li><a href="https://www.plm.org.hk/eng/home.php" target="_blank" rel="noopener">Po Lin Monastery</a></li>
+							<li><a href="https://www.discoverhongkong.com/eng/explore/neighbourhoods/tai-o.html" target="_blank" rel="noopener">Tai O Fishing Village</a></li>
+							<li><a href="https://www.bigbuddha.org.hk/en/index.html" target="_blank" rel="noopener">Tian Tan Buddha</a></li>
+						</ul>
+					</td>
+					<td>
+						<ul class="mb-1 small" style="padding-left:16px;">
+							<li><strong>Assembly Time:</strong> 09:00am (TBC)</li>
+							<li><strong>Assembly Point:</strong> Disneyland Resort MTR Hong Kong Hotel at <a href="https://www.hyatt.com/en-US/hotel/china/hyatt-regency-hong-kong-shatin/shahr" target="_blank" rel="noopener">Hyatt Regency Shatin</a></li>
+							<li>Lunch included</li>
+							<li>An English-speaking guide is included; cost includes all admission fees, cable car, boat trip, guided tour, and transportation to the assembly point</li>
+						</ul>
+					</td>
 				</tr>
 			</tbody>
 		</table>
