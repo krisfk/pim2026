@@ -305,7 +305,19 @@ get_header(); ?>
 					<td class="schedule-col-time">18:20&ndash;20:30</td>
 					<td class="schedule-col-session">Welcome Dinner</td>
 					<td class="schedule-col-theme">Connecting with broader CUHK guests. Hosted by Dean Zhou Lin: Institutional welcome and peer-level networking.</td>
-					<td class="schedule-col-logistics">TBC</td>
+					<td class="schedule-col-logistics">
+						
+
+					King Lung Heen <br><br>
+
+<b>Address:</b> <br>
+4/F, Hong Kong Palace Museum, 8 Museum Drive, West Kowloon Cultural District, Kowloon, Hong Kong <br><br>
+
+<a href="https://maps.app.goo.gl/4hyXpWaugqWwUF7V7" target="_blank">Google Map Location</a> 
+
+
+
+					</td>
 				</tr>
 			</tbody>
 		</table>
@@ -367,7 +379,20 @@ get_header(); ?>
 					<td class="schedule-col-session">Closing Dinner</td>
 					<!-- <td class="schedule-col-theme">&ldquo;Sea&rdquo; Hong Kong Cruise Dinner</td>
 					<td class="schedule-col-logistics">Harbour Cruise</td> -->
-					<td class="schedule-col-theme" colspan="2">To be announced</td>
+					<td class="schedule-col-theme" colspan="2">
+
+
+
+					8/F, Oasis & Concord Room, Renaissance Harbour View Hotel Hong Kong <br><br>
+
+<b>Address:</b> <br>
+1 Harbour Road, Wan Chai, Hong Kong, China <br><br>
+
+<a href="https://maps.app.goo.gl/efsSaLDUdR32YUGAA" target="_blank">Google Map Location</a> 
+
+
+
+					</td>
 
 				</tr>
 			</tbody>
