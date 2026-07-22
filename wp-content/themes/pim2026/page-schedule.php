@@ -369,10 +369,11 @@ get_header(); ?>
 					<td class="schedule-col-theme"></td>
 				</tr>
 				<tr>
-					<td class="schedule-col-time ">17:30</td>
+					<!-- <td class="schedule-col-time ">17:30</td>
 					<td class="schedule-col-session "></td>
 					<td class="schedule-col-theme ">Assemble and depart from Harbour Cruise Terminal</td>
-					<td class="schedule-col-logistics ">Individual arrangement to departure location</td>
+					 -->
+					<td class="schedule-col-logistics " colspan="3">Individual arrangement to departure location</td>
 				</tr>
 				<tr>
 					<td class="schedule-col-time">19:00&ndash;21:30</td>
