@@ -214,7 +214,17 @@ get_header(); ?>
 					<td class="schedule-col-time">18:00&ndash;21:00</td>
 					<td class="schedule-col-session">Dinner</td>
 					<td class="schedule-col-theme">Reunion Dinner</td>
-					<td class="schedule-col-venue">TBC</td>
+					<td class="schedule-col-venue">
+						
+					Lin Heung Lau (Tsim Sha Tsui) <br><br>
+
+					<b>Address:</b> <br>
+					1/F-2/F, Cheung Lee Commercial Building, 25 Kimberley Road, Tsim Sha Tsui <br><br>
+
+					<a href="https://maps.app.goo.gl/8rnqYABy84z4J524A" target="_blank">Google Map Location</a> 
+
+
+					</td>
 				</tr>
 			</tbody>
 		</table>
