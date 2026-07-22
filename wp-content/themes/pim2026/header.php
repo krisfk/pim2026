@@ -238,7 +238,33 @@
 				<div class="col-md-4 col-lg-4 ">
 					<h6>Getting there!</h6>
 					<table>
+						
+					<tr>
+							<td class="align-top pe-2">
+							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+							</td><td>
+						
+						<a href="<?php echo home_url('/cuhk-highlights'); ?>">
+								<span class="fw-bold">CUHK Highlights</span> <br>
+								<!-- Secure your place at the conference -->
+							</a>
+						</td>
+						</tr>
+
 						<tr>
+							<td class="align-top pe-2">
+							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
+							</td><td>
+						
+						<a href="<?php echo home_url('/schedule'); ?>">
+								<span class="fw-bold">The Programme</span> <br>
+								<!-- Secure your place at the conference -->
+							</a>
+						</td>
+						</tr>
+
+
+					<tr>
 							<td class="align-top pe-2">
 							<img class="cube" src="<?php echo get_template_directory_uri();?>/assets/images/cube.jpg" alt="">
 							</td><td>
