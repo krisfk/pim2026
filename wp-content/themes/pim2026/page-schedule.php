@@ -373,7 +373,7 @@ get_header(); ?>
 					<td class="schedule-col-session "></td>
 					<td class="schedule-col-theme ">Assemble and depart from Harbour Cruise Terminal</td>
 					 -->
-					<td class="schedule-col-logistics " colspan="4">Individual arrangement to departure location</td>
+					<td class="schedule-col-logistics " colspan="4">Individual arrangement to dinner venue</td>
 				</tr>
 				<tr>
 					<td class="schedule-col-time">19:00&ndash;21:30</td>
