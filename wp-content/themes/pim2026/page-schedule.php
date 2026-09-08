@@ -271,7 +271,18 @@ Dr. Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Ass
 					<td class="schedule-col-session">Session 2</td>
 					<td class="schedule-col-theme">
 						<strong>Panel discussion on Redefining business education through industry-led experiential learning</strong><br>
-						<span class="">Moderated by Prof Seen-Meng Chew 3 PIM members with industrial involvement</span>
+						<!-- <span class="">Moderated by Prof Seen-Meng Chew 3 PIM members with industrial involvement</span> -->
+						<br>
+						Moderated by Prof Seen-Meng Chew, Associate Professor of Practice in Finance, CUHK Business School
+						<br><br>
+Beatrix Dart, Academic Director, Global and Experiential Leaning, Rotman School of Management, University of Toronto
+<br><br>
+Catherine da Silvera. Associate Dean for International Affairs and Partnerships, NOVA School of Business and Economics 
+<br><br>
+Ashley Roberts, Assistant Dean for Internationalization, Warwick Business School, University of Warwick 
+<br><br>
+Goh Kim Huat, Professor of Information Systems Associate Dean, Graduate Studies, Nanyang Business School, Nanyang Technological University 
+			
 					</td>
 				</tr>
 				<tr>
