@@ -193,8 +193,16 @@ get_header(); ?>
 					<td class="schedule-col-session">Session 2</td>
 					<td class="schedule-col-theme">
 						<strong>Panel Discussion on Building Future-Ready Business Leaders Through Global Collaboration</strong><br>
-						<em>Moderated by Alex Markman</em><br>
-						<em>Speakers: CUHK, and <span class="">2 PIM members</span></em>
+						<!-- <em>Moderated by Alex Markman</em><br>
+						<em>Speakers: CUHK, and <span class="">2 PIM members</span></em> -->
+<br>
+						Moderated by Alex Markman, Director, International Programs, PIM Chair (Americas), Universidad Torcuato Di Tella
+						<br><br>
+Deborah Kraus, Senior Director, Global Experience, Kellogg School of Management, Northwestern University 
+<br><br>
+Eric Saranovitz, Director, Global Engagement Office, Coller School of Management, University of Tel Aviv
+<br><br>
+Dr. Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Associate Director, Intergraded BBA Program, CUHK Business School
 					</td>
 				</tr>
 				<tr>
