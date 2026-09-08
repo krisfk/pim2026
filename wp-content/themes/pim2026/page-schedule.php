@@ -77,7 +77,7 @@ get_header(); ?>
 		}
 		.schedule-programme-table.schedule-day-thursday .schedule-col-theme,
 		.schedule-programme-table.schedule-day-friday .schedule-col-theme {
-			text-align: center;
+			text-align: left;
 		}
 		.schedule-friday-merged-title {
 			text-align: center;
