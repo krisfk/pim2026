@@ -180,7 +180,7 @@ get_header(); ?>
 					<td class="schedule-col-session">Session 1</td>
 					<td class="schedule-col-theme">
 						<strong>Panel Discussion on Global mobility in business education: Value, Challenges and Opportunities</strong><br>
-						<span class="">Moderated by Prof. Yenn-Ru Chen</span>
+						<span class="">Moderated by Prof. Yenn-Ru Chen, Associate Dean for International Affairs Director, Sustainable Finance Center PIM Chair (Asia and Asia Pacific), National Chengchi University</span>
 					</td>
 				</tr>
 				<tr>
@@ -210,7 +210,7 @@ Dr. Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Ass
 					<td class="schedule-col-session">Session 3</td>
 					<td class="schedule-col-theme">
 						<strong>CUHK Student Case Competition Group Presentation</strong><br>
-						(<span class="">CUHK students and alumni</span>; facilitated by Dr. Rosette Leung)
+						(<span class="">CUHK students and alumni</span>; facilitated by Dr. Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Associate Director, Integrated BBA Programme, CUHK Business School)
 					</td>
 				</tr>
 				<tr>
@@ -257,7 +257,15 @@ Dr. Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Ass
 					<td class="schedule-col-session">Session 1</td>
 					<td class="schedule-col-theme">
 						<strong>How experiential learning and co-op models build globally competitive graduates</strong><br>
-						<span class="">Dr. John Lai (CUHK Co-op Director) and industry partners/student representatives</span>
+						<span class="">
+							
+						
+						<!-- Dr. John Lai (CUHK Co-op Director) and industry partners/student representatives -->
+
+
+						Dr. John Lai, Assistant Dean (Undergraduate Studies) Director, Integrated BBA Dual Degree Programme Director, Office of Co-operative Education Programme (OCEP), CUHK Business School
+
+						</span>
 					</td>
 					<td class="schedule-col-logistics" rowspan="7">Ballroom (L/F), Hyatt Regency Shatin</td>
 				</tr>
