@@ -325,7 +325,7 @@ Goh Kim Huat, Professor of Information Systems Associate Dean, Graduate Studies,
 				<tr>
 					<td class="schedule-col-time">17:00&ndash;18:00</td>
 					<!-- <td class="schedule-col-session">Museum Tour</td> -->
-					<td class="schedule-col-theme" colspan="2">Guided tour</td>
+					<td class="schedule-col-session" colspan="2">Guided tour</td>
 					<td class="schedule-col-logistics">HK Palace Museum</td>
 				</tr>
 				<tr>
