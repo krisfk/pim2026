@@ -375,8 +375,8 @@ Goh Kim Huat, Professor of Information Systems Associate Dean, Graduate Studies,
 				</tr>
 				<tr>
 					<td class="schedule-col-time">10:20&ndash;10:30</td>
-					<td class="schedule-col-session">Brief Closing</td>
-					<td class="schedule-col-theme"></td>
+					<td class="schedule-col-session" colspan="2">Brief Closing</td>
+					<!-- <td class="schedule-col-theme"></td> -->
 					<td class="schedule-col-logistics" rowspan="5">Ballroom (L/F), Hyatt Regency Shatin</td>
 				</tr>
 				<tr>
@@ -386,8 +386,8 @@ Goh Kim Huat, Professor of Information Systems Associate Dean, Graduate Studies,
 				</tr>
 				<tr>
 					<td class="schedule-col-time">12:00&ndash;13:00</td>
-					<td class="schedule-col-session">Lunch</td>
-					<td class="schedule-col-theme">&mdash;</td>
+					<td class="schedule-col-session" colspan="2">Networking lunch in buffet style</td>
+					<!-- <td class="schedule-col-theme">&mdash;</td> -->
 				</tr>
 				<tr>
 					<td class="schedule-col-time">13:00&ndash;14:30</td>
@@ -395,9 +395,9 @@ Goh Kim Huat, Professor of Information Systems Associate Dean, Graduate Studies,
 					<td class="schedule-col-theme"><strong>Annual updates, announcements</strong></td>
 				</tr>
 				<tr>
-					<td class="schedule-col-time"></td>
-					<td class="schedule-col-session">Free Time</td>
-					<td class="schedule-col-theme"></td>
+					<td class="schedule-col-time">From 14:30</td>
+					<td class="schedule-col-session" colspan="2">Free Time</td>
+					<!-- <td class="schedule-col-theme"></td> -->
 				</tr>
 				<tr>
 					<!-- <td class="schedule-col-time ">17:30</td>
