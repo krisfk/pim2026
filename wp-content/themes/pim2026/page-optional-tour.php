@@ -223,7 +223,7 @@ font-weight:bold;
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <!-- <tr>
                     <td class="schedule-col-time">
                         <div class="tour-title">1. Old Town Central Walking Tour</div> <br>
                         <div class="tour-tagline">“Best for first-time visitors & cultural immersion”</div> <br>
@@ -273,11 +273,11 @@ font-weight:bold;
                             <li>Participants are required to arrange their own transportation</li>
                         </ul>
                     </td>
-                </tr>
+                </tr> -->
                 
                 <tr>
                     <td class="schedule-col-time">
-                        <div class="tour-title">2. Lantau Monastery & Tai O Tour</div> <br>
+                        <div class="tour-title">Lantau Monastery & Tai O Tour</div> <br>
                         <div class="tour-tagline">“Best for scenic + iconic Hong Kong landmarks”</div> <br>
                         <div class="tour-duration">Duration: 5 hours</div>
 
