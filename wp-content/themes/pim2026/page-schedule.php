@@ -271,8 +271,8 @@ Dr. Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Ass
 				</tr>
 				<tr>
 					<td class="schedule-col-time">10:15&ndash;10:45</td>
-					<td class="schedule-col-session">Coffee Break</td>
-					<td class="schedule-col-theme">&mdash;</td>
+					<td class="schedule-col-session" colspan="2">Coffee Break</td>
+					<!-- <td class="schedule-col-theme">&mdash;</td> -->
 				</tr>
 				<tr>
 					<td class="schedule-col-time">10:45&ndash;12:00</td>
