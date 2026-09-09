@@ -326,7 +326,7 @@ font-weight:bold;
 
     <!-- Mobile/card view -->
     <div class="d-block d-md-none">
-        <div class="card mb-4">
+        <!-- <div class="card mb-4">
             <div class="card-body">
                 <h5 class="card-title mb-1">1. Old Town Central Walking Tour</h5>
                 <div class="mb-2 text-muted">Best for first-time visitors & cultural immersion</div>
@@ -376,10 +376,10 @@ font-weight:bold;
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="card mb-4">
             <div class="card-body">
-                <h5 class="card-title mb-1">2. Lantau Monastery & Tai O Tour</h5>
+                <h5 class="card-title mb-1">Lantau Monastery & Tai O Tour</h5>
                 <div class="mb-2 text-muted">Best for scenic + iconic Hong Kong landmarks</div>
                 <div class="mb-2"><strong>Duration:</strong> 5 hours</div>
                 <div class="mb-2">
