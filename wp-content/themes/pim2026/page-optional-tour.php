@@ -208,7 +208,10 @@ font-weight:bold;
 
 The registration and payment link will be available on <u>15 September 2026, 8 pm (HKT)</u>. <br><br>
 
-The organiser will send a voucher containing all necessary details to participants who have registered and paid the fee.
+The organiser will send a voucher containing all necessary details to participants who have registered and paid the fee.  <br><br>
+
+
+<!-- <a href="">Registration</a> -->
 
   <!-- We are offering two optional tour experiences for participants. Each tour is subject to a minimum number of participants. If the minimum is not met or no preference is indicated, the tour may not proceed.
 <br>
