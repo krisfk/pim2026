@@ -203,7 +203,7 @@ get_header(); ?>
 <br>
 						<!-- Moderated by Alex Markman, Director, International Programs, PIM Chair (Americas), Universidad Torcuato Di Tella -->
 					
-						Moderated by Alex Markman  <br><br>
+						Moderated by Alex Markman  <br>
 
 PIM Chair (Americas); Director, International Programs, Universidad Torcuato Di Tella
 					
