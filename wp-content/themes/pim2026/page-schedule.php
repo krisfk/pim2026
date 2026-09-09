@@ -150,7 +150,7 @@ get_header(); ?>
 			<tbody>
 				<tr>
 					<td class="schedule-col-time">10:30&ndash;12:00</td>
-					<td colspan="2" class="schedule-col-session"></td>
+					<td colspan="2" class="schedule-col-session">Registration opens</td>
 					<!-- <td class="schedule-col-theme">Registration opens</td> -->
 					<td class="schedule-col-venue">Registration counter (Ballroom entrance)</td>
 				</tr>
