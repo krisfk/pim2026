@@ -201,7 +201,13 @@ get_header(); ?>
 						<!-- <em>Moderated by Alex Markman</em><br>
 						<em>Speakers: CUHK, and <span class="">2 PIM members</span></em> -->
 <br>
-						Moderated by Alex Markman, Director, International Programs, PIM Chair (Americas), Universidad Torcuato Di Tella
+						<!-- Moderated by Alex Markman, Director, International Programs, PIM Chair (Americas), Universidad Torcuato Di Tella -->
+					
+						Moderated by Alex Markman  <br><br>
+
+PIM Chair (Americas); Director, International Programs, Universidad Torcuato Di Tella
+					
+					
 						<br><br>
 Deborah Kraus, Senior Director, Global Experience, Kellogg School of Management, Northwestern University 
 <br><br>
