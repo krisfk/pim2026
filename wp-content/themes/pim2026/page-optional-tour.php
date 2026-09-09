@@ -319,6 +319,7 @@ The organiser will send a voucher containing all necessary details to participan
                             <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-po-lin-monastery.html" target="_blank">Po Lin Monastery</a></li>
                             <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-the-big-buddha.html" target="_blank">Tian Tan Buddha</a></li>
                             <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-tai-o-village.html" target="_blank">Tai O Village</a></li>
+                            <li>Tai O Boat Ride</li>
                         </ul>
                     </td>
                     <td class="schedule-col-venue">
@@ -412,6 +413,7 @@ The organiser will send a voucher containing all necessary details to participan
                         <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-po-lin-monastery.html" target="_blank">Po Lin Monastery</a></li>
                         <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-the-big-buddha.html" target="_blank">Tian Tan Buddha</a></li>
                         <li><a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-tai-o-village.html" target="_blank">Tai O Village</a></li>
+                        <li>Tai O Boat Ride</li>
                     </ul>
                 </div>
                 <div class="mb-2">
