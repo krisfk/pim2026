@@ -302,8 +302,9 @@ The organiser will send a voucher containing all necessary details to participan
                         </ul>
                     </td>
                     <td class="schedule-col-session">
-                        Min. 12<br>
-                        Max. 22
+                        <!-- Min. 12<br>
+                        Max. 22 -->
+                        20
                     </td>
                     <td class="schedule-col-theme">
                         HKD980<br>
@@ -391,7 +392,7 @@ The organiser will send a voucher containing all necessary details to participan
                 <div class="mb-2 text-muted">Best for scenic + iconic Hong Kong landmarks</div>
                 <div class="mb-2"><strong>Duration:</strong> 5 hours</div>
                 <div class="mb-2">
-                    <strong>Capacity:</strong> Min. 12, Max. 22
+                    <strong>Capacity:</strong> <!-- Min. 12, Max. 22 --> 20
                 </div>
                 <div class="mb-2">
                     <strong>Estimated Cost:</strong> HKD980 (~USD126)
