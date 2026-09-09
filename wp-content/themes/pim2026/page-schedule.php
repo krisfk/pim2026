@@ -213,7 +213,7 @@ Deborah Kraus, Senior Director, Global Experience, Kellogg School of Management,
 <br><br>
 Eric Saranovitz, Director, Global Engagement Office, Coller School of Management, University of Tel Aviv
 <br><br>
-Dr. Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Associate Director, Intergraded BBA Program, CUHK Business School
+Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Associate Director, Intergraded BBA Program, CUHK Business School
 					</td>
 				</tr>
 				<tr>
