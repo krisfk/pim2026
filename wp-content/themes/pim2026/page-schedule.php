@@ -216,7 +216,7 @@ Dr. Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Ass
 				<tr>
 					<td class="schedule-col-time">17:00</td>
 					<!-- <td class="schedule-col-session"></td> -->
-					<td class="schedule-col-theme" colspan="2">Departure from Hyatt to dinner venue</td>
+					<td class="schedule-col-session" colspan="2">Departure from Hyatt to dinner venue</td>
 				</tr>
 				<tr>
 					<td class="schedule-col-time">18:00&ndash;21:00</td>
