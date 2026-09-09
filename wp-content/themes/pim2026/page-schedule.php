@@ -325,7 +325,10 @@ Goh Kim Huat, Professor of Information Systems Associate Dean, Graduate Studies,
 					<td class="schedule-col-theme">
 						<strong>Strategy Task Force Report / Activity</strong><br>
 						<em>Moderated by Peter Feher <br>
-							Associate Professor, Corvinus University of Budapest, PIM Chair EMEA;
+
+						PIM Chair EMEA; Associate Professor, Corvinus University of Budapest
+
+							<!-- Associate Professor, Corvinus University of Budapest, PIM Chair EMEA; -->
 						</em>
 					</td>
 				</tr>
