@@ -200,13 +200,13 @@ font-weight:bold;
 
 	<h1 class="mt-5 mb-3 fw-bold">Optional Tour</h1>
 
-  <div>
+  <div class="text-center">
 
 
 
-  Based on the responses we received, we are pleased to offer the Lantau Monastery & Tai O Tour.
+  Based on the responses we received, we are pleased to offer the Lantau Monastery & Tai O Tour. <br><br>
 
-The registration and payment link will be available on <u>15 September 2026, 8 pm (HKT)</u>. 
+The registration and payment link will be available on <u>15 September 2026, 8 pm (HKT)</u>. <br><br>
 
 The organiser will send a voucher containing all necessary details to participants who have registered and paid the fee.
 
