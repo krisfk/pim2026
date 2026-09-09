@@ -202,6 +202,14 @@ font-weight:bold;
 
   <div>
 
+
+
+  Based on the responses we received, we are pleased to offer the Lantau Monastery & Tai O Tour.
+
+The registration and payment link will be available on <u>15 September 2026, 8 pm (HKT)</u>. 
+
+The organiser will send a voucher containing all necessary details to participants who have registered and paid the fee.
+
   <!-- We are offering two optional tour experiences for participants. Each tour is subject to a minimum number of participants. If the minimum is not met or no preference is indicated, the tour may not proceed.
 <br>
   <br>
