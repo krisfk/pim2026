@@ -185,8 +185,8 @@ get_header(); ?>
 				</tr>
 				<tr>
 					<td class="schedule-col-time">14:30&ndash;15:00</td>
-					<td class="schedule-col-session">Coffee Break</td>
-					<td class="schedule-col-theme">&mdash;</td>
+					<td class="schedule-col-session" colspan="2">Coffee Break</td>
+					<!-- <td class="schedule-col-theme">&mdash;</td> -->
 				</tr>
 				<tr>
 					<td class="schedule-col-time">15:00&ndash;15:45</td>
