@@ -221,7 +221,7 @@ Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Associa
 					<td class="schedule-col-session">Session 3</td>
 					<td class="schedule-col-theme">
 						<strong>CUHK Student Case Competition Group Presentation</strong><br>
-						(<span class="">CUHK students and alumni</span>; facilitated by Dr. Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Associate Director, Integrated BBA Programme, CUHK Business School)
+						(<span class="">CUHK students and alumni</span>; facilitated by Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Associate Director, Integrated BBA Programme, CUHK Business School)
 					</td>
 				</tr>
 				<tr>
