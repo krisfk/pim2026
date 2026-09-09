@@ -295,8 +295,8 @@ Goh Kim Huat, Professor of Information Systems Associate Dean, Graduate Studies,
 				</tr>
 				<tr>
 					<td class="schedule-col-time">12:00&ndash;13:00</td>
-					<td class="schedule-col-session">Lunch</td>
-					<td class="schedule-col-theme">&mdash;</td>
+					<td class="schedule-col-session"  colspan="2">Networking lunch in buffet style</td>
+					<!-- <td class="schedule-col-theme">&mdash;</td> -->
 				</tr>
 				<tr>
 					<td class="schedule-col-time">13:00&ndash;14:00</td>
@@ -305,8 +305,8 @@ Goh Kim Huat, Professor of Information Systems Associate Dean, Graduate Studies,
 				</tr>
 				<tr>
 					<td class="schedule-col-time">14:00&ndash;14:15</td>
-					<td class="schedule-col-session">Coffee Break</td>
-					<td class="schedule-col-theme">&mdash;</td>
+					<td class="schedule-col-session" colspan="2">Coffee Break</td>
+					<!-- <td class="schedule-col-theme">&mdash;</td> -->
 				</tr>
 				<tr>
 					<td class="schedule-col-time">14:15&ndash;15:30</td>
@@ -318,14 +318,14 @@ Goh Kim Huat, Professor of Information Systems Associate Dean, Graduate Studies,
 				</tr>
 				<tr>
 					<td class="schedule-col-time">16:00&ndash;16:45</td>
-					<td class="schedule-col-session">Transfer to HK Palace Museum</td>
-					<td class="schedule-col-theme"></td>
+					<td class="schedule-col-session" colspan="2">Transfer to HK Palace Museum</td>
+					<!-- <td class="schedule-col-theme"></td> -->
 					<td class="schedule-col-logistics">Coach departs from Hyatt</td>
 				</tr>
 				<tr>
 					<td class="schedule-col-time">17:00&ndash;18:00</td>
-					<td class="schedule-col-session">Museum Tour</td>
-					<td class="schedule-col-theme">Guided tour</td>
+					<!-- <td class="schedule-col-session">Museum Tour</td> -->
+					<td class="schedule-col-theme" colspan="2">Guided tour</td>
 					<td class="schedule-col-logistics">HK Palace Museum</td>
 				</tr>
 				<tr>
