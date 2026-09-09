@@ -404,7 +404,9 @@ Goh Kim Huat, Professor of Information Systems Associate Dean, Graduate Studies,
 					<td class="schedule-col-session "></td>
 					<td class="schedule-col-theme ">Assemble and depart from Harbour Cruise Terminal</td>
 					 -->
-					<td class="schedule-col-logistics " colspan="4">Individual arrangement to dinner venue</td>
+					<td class="schedule-col-logistics " colspan="4">
+					<span>Individual arrangement to dinner venue</span>	
+					</td>
 				</tr>
 				<tr>
 					<td class="schedule-col-time">19:00&ndash;21:30</td>
