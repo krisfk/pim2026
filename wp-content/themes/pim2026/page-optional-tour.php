@@ -307,8 +307,9 @@ The organiser will send a voucher containing all necessary details to participan
                         20
                     </td>
                     <td class="schedule-col-theme">
-                        HKD980<br>
-                        (~USD126)
+
+                        HKD930  <br>(~USD123)
+
                     </td>
                     <td class="schedule-col-venue">
                         <p style="margin-top: 0;">Take in the natural scenery and cultural heritage of Lantau Island on this half-day tour. Begin with a scenic 5.7 km Ngong Ping Cable Car ride offering panoramic views of mountains and coastline. Visit the tranquil Po Lin Monastery and the iconic Tian Tan Buddha. The tour concludes at Tai O Fishing Village, known for its stilt houses, local shops, and traditional way of life.</p>
@@ -392,10 +393,13 @@ The organiser will send a voucher containing all necessary details to participan
                 <div class="mb-2 text-muted">Best for scenic + iconic Hong Kong landmarks</div>
                 <div class="mb-2"><strong>Duration:</strong> 5 hours</div>
                 <div class="mb-2">
-                    <strong>Capacity:</strong> <!-- Min. 12, Max. 22 --> 20
+                    <strong>Capacity:</strong> Min. 12, Max. 22
                 </div>
                 <div class="mb-2">
-                    <strong>Estimated Cost:</strong> HKD980 (~USD126)
+                    <strong>Estimated Cost:</strong> 
+                    <!-- HKD980 (~USD126) -->
+
+                    HKD930 (~USD123)
                 </div>
                 <div class="mb-2">
                     <strong>Overview:</strong><br>
