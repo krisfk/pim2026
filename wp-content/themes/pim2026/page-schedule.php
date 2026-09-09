@@ -331,7 +331,11 @@ Goh Kim Huat, Professor of Information Systems Associate Dean, Graduate Studies,
 				<tr>
 					<td class="schedule-col-time">18:20&ndash;20:30</td>
 					<td class="schedule-col-session">Welcome Dinner</td>
-					<td class="schedule-col-theme">Connecting with broader CUHK guests. Hosted by Dean Zhou Lin: Institutional welcome and peer-level networking.</td>
+					<td class="schedule-col-theme">
+						
+					<!-- Connecting with broader CUHK guests. Hosted by Dean Zhou Lin:  -->
+						
+					Institutional welcome and peer-level networking.</td>
 					<td class="schedule-col-logistics">
 						
 
