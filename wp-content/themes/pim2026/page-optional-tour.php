@@ -324,10 +324,12 @@ The organiser will send a voucher containing all necessary details to participan
                     </td>
                     <td class="schedule-col-venue">
                         <ul>
-                            <li><strong>Assembly Time:</strong> 09:00am (TBC)</li>
-                            <li><strong>Assembly & Dismissal Point:</strong> Sheraton Hong Kong Hotel & Towers Lobby (<a href="https://maps.app.goo.gl/y2MMW92n6YBArvsu7" target="_blank">Location</a>)</li>
-                            <li>Air-conditioned coach transport throughout the tour</li>
-                            <li><strong>Participants are required to arrange their own transportation to the assembly point</strong></li>
+                        <li><strong>Assembly Time:</strong> 09:30am</li>
+                        <li><strong>Dismissal Time:</strong> 14:30pm</li>
+
+                        <li><strong>Assembly & Dismissal Point:</strong> Sheraton Hong Kong Hotel Lobby (<a href="https://www.google.com/maps/place/Sheraton+Hong+Kong+Hotel+&+Towers/@22.2951811,114.1702619,17z/data=!3m1!4b1!4m9!3m8!1s0x340400f243f00c85:0xecc0247db770859!5m2!4m1!1i2!8m2!3d22.2951811!4d114.1728422!16s/g/155rb6g2?entry=tts&g_ep=EgoyMDI2MDYxMC4wIPu8ASoASAFQAw==&skid=18693f5e-4f81-4722-852f-795c370f7ae9" target="_blank">Location</a>)</li>
+                        <li>Air-conditioned coach transport throughout the tour</li>
+                        <li><strong>Participants are required to arrange their own transportation to the assembly point</strong></li>
                         </ul>
                     </td>
                 </tr>
@@ -433,8 +435,10 @@ The organiser will send a voucher containing all necessary details to participan
                 <div>
                     <strong>Remarks:</strong>
                     <ul class="mb-2">
-                        <li><strong>Assembly Time:</strong> 09:00am (TBC)</li>
-                        <li><strong>Assembly & Dismissal Point:</strong> Sheraton Hong Kong Hotel & Towers Lobby (<a href="https://maps.app.goo.gl/y2MMW92n6YBArvsu7" target="_blank">Location</a>)</li>
+                        <li><strong>Assembly Time:</strong> 09:30am</li>
+                        <li><strong>Dismissal Time:</strong> 14:30pm</li>
+
+                        <li><strong>Assembly & Dismissal Point:</strong> Sheraton Hong Kong Hotel Lobby (<a href="https://www.google.com/maps/place/Sheraton+Hong+Kong+Hotel+&+Towers/@22.2951811,114.1702619,17z/data=!3m1!4b1!4m9!3m8!1s0x340400f243f00c85:0xecc0247db770859!5m2!4m1!1i2!8m2!3d22.2951811!4d114.1728422!16s/g/155rb6g2?entry=tts&g_ep=EgoyMDI2MDYxMC4wIPu8ASoASAFQAw==&skid=18693f5e-4f81-4722-852f-795c370f7ae9" target="_blank">Location</a>)</li>
                         <li>Air-conditioned coach transport throughout the tour</li>
                         <li><strong>Participants are required to arrange their own transportation to the assembly point</strong></li>
                     </ul>
