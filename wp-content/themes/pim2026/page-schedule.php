@@ -180,7 +180,12 @@ get_header(); ?>
 					<td class="schedule-col-session">Session 1</td>
 					<td class="schedule-col-theme">
 						<strong>Panel Discussion on Global mobility in business education: Value, Challenges and Opportunities</strong><br>
-						<span class="">Moderated by Prof. Yenn-Ru Chen, Associate Dean for International Affairs Director, Sustainable Finance Center PIM Chair (Asia and Asia Pacific), National Chengchi University</span>
+						<span class="">
+							<!-- Moderated by Prof. Yenn-Ru Chen, Associate Dean for International Affairs Director, Sustainable Finance Center PIM Chair (Asia and Asia Pacific), National Chengchi University -->
+							Moderated by Yenn-Ru Chen, PIM Chair (Asia and Asia Pacific); Professor of Finance, National Chengchi University
+							
+						
+						</span>
 					</td>
 				</tr>
 				<tr>
