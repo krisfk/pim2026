@@ -459,7 +459,8 @@ The organiser will send a voucher containing all necessary details to participan
 <li>Places are limited and will be allocated on a first-come, first-served basis.</li>
 <li>Additional or ad hoc tour requests cannot be accommodated due to weekend traffic conditions.</li>
 <li>All tours include an English-speaking guide.</li>
-Tour duration excludes participants’ travel time to and from the assembly/dismissal points.
+<li>Tour duration excludes participants’ travel time to and from the assembly/dismissal points.</li>
+<li>All tour details, including assembly and departure times, will be decided by the tour organiser and are final.</li>
 </ul>
 
 
