@@ -206,7 +206,10 @@ font-weight:bold;
 
   Based on the responses we received, we are pleased to offer the Lantau Monastery & Tai O Tour. <br><br>
 
-The registration and payment link will be available on <u>15 September 2026, 8 pm (HKT)</u>. <br><br>
+<!-- The registration and payment link will be available on <u>15 September 2026, 8 pm (HKT)</u>. <br><br> -->
+
+<a href="https://buy.stripe.com/14A7sLeGI5Vd9rg0sd0cs47" target="_blank">Registration</a> <br><br>
+
 
 The organiser will send a voucher containing all necessary details to participants who have registered and paid the fee.  <br><br>
 
@@ -311,7 +314,7 @@ The organiser will send a voucher containing all necessary details to participan
                     </td>
                     <td class="schedule-col-theme">
 
-                        HKD930  <br>(~USD123)
+                        HKD930 <br>(~USD123)
 
                     </td>
                     <td class="schedule-col-venue">
@@ -405,7 +408,7 @@ The organiser will send a voucher containing all necessary details to participan
                     <strong>Estimated Cost:</strong> 
                     <!-- HKD980 (~USD126) -->
 
-                    HKD930 (~USD123)
+                    HKD930(~USD123)
                 </div>
                 <div class="mb-2">
                     <strong>Overview:</strong><br>
