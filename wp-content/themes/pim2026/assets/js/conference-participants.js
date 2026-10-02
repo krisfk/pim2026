@@ -19,12 +19,22 @@
   var perPage = parseInt(config.perPage, 10) || 10;
 
   var grid = document.getElementById('cpParticipantGrid');
-  var pagination = document.getElementById('cpPagination');
+  var paginationTop = document.getElementById('cpPaginationTop');
+  var paginationBottom = document.getElementById('cpPaginationBottom');
+  var paginationHosts = [paginationTop, paginationBottom].filter(Boolean);
+  var contentRoot = document.querySelector('.conference-participants-content');
   var searchInput = document.getElementById('cpSearchInput');
   var institutionFilter = document.getElementById('cpInstitutionFilter');
   var sortOrder = document.getElementById('cpSortOrder');
 
-  if (!grid || !searchInput || !institutionFilter || !sortOrder || !pagination) {
+  if (
+    !grid ||
+    !searchInput ||
+    !institutionFilter ||
+    !sortOrder ||
+    paginationHosts.length === 0 ||
+    !contentRoot
+  ) {
     return;
   }
 
@@ -124,7 +134,9 @@
     currentPage = page;
 
     if (totalItems === 0) {
-      pagination.innerHTML = '';
+      paginationHosts.forEach(function (host) {
+        host.innerHTML = '';
+      });
       return;
     }
 
@@ -152,7 +164,9 @@
       (page >= totalPages ? 'disabled' : '') +
       '>Next <span class="cp-page-icon" aria-hidden="true">&gt;</span></button></div>';
 
-    pagination.innerHTML = html;
+    paginationHosts.forEach(function (host) {
+      host.innerHTML = html;
+    });
   }
 
   function renderCurrentView() {
@@ -240,7 +254,7 @@
       institutionFilter.appendChild(opt);
     });
 
-    pagination.addEventListener('click', handlePaginationClick);
+    contentRoot.addEventListener('click', handlePaginationClick);
     searchInput.addEventListener('input', handleFilterChange);
     institutionFilter.addEventListener('change', handleFilterChange);
     sortOrder.addEventListener('change', handleFilterChange);

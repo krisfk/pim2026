@@ -43,6 +43,7 @@ get_header(); ?>
         </select>
       </div>
     </div>
+    <nav id="cpPaginationTop" class="cp-pagination cp-pagination-top" aria-label="<?php esc_attr_e( 'Participants pagination', 'twentytwentyone' ); ?>"></nav>
     <div id="cpParticipantGrid" class="cp-grid" aria-live="polite">
       <?php
       $cp_participants = pim2026_get_conference_participants();
@@ -55,7 +56,7 @@ get_header(); ?>
       }
       ?>
     </div>
-    <nav id="cpPagination" class="cp-pagination" aria-label="<?php esc_attr_e( 'Participants pagination', 'twentytwentyone' ); ?>"></nav>
+    <nav id="cpPaginationBottom" class="cp-pagination cp-pagination-bottom" aria-label="<?php esc_attr_e( 'Participants pagination', 'twentytwentyone' ); ?>"></nav>
   </div>
 
   <script type="application/json" id="cpParticipantsData"><?php

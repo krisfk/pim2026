@@ -184,9 +184,16 @@
 }
 
 .conference-participants-content .cp-pagination {
-  margin-top: 2.5rem;
   padding-top: 0;
   border-top: none;
+}
+
+.conference-participants-content .cp-pagination-top {
+  margin: 1.25rem 0 1.5rem;
+}
+
+.conference-participants-content .cp-pagination-bottom {
+  margin-top: 2.5rem;
 }
 
 .conference-participants-content .cp-pagination-controls {
