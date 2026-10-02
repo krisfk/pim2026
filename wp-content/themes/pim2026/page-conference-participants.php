@@ -30,11 +30,14 @@ get_header(); ?>
     <div class="cp-controls">
       <div class="cp-search">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-        <input type="search" id="cpSearchInput" placeholder="Search by name, title, or institution..." aria-label="<?php esc_attr_e( 'Search delegates', 'twentytwentyone' ); ?>">
+        <input type="search" id="cpSearchInput" placeholder="Search by name, title, institution, or region..." aria-label="<?php esc_attr_e( 'Search delegates', 'twentytwentyone' ); ?>">
       </div>
       <div class="cp-filters">
         <select id="cpInstitutionFilter" aria-label="<?php esc_attr_e( 'Filter by institution', 'twentytwentyone' ); ?>">
           <option value="all"><?php esc_html_e( 'All Institutions', 'twentytwentyone' ); ?></option>
+        </select>
+        <select id="cpRegionFilter" aria-label="<?php esc_attr_e( 'Filter by region', 'twentytwentyone' ); ?>">
+          <option value="all"><?php esc_html_e( 'All Regions', 'twentytwentyone' ); ?></option>
         </select>
         <select id="cpSortOrder" aria-label="<?php esc_attr_e( 'Sort order', 'twentytwentyone' ); ?>">
           <option value="name-asc"><?php esc_html_e( 'Sort: A – Z', 'twentytwentyone' ); ?></option>

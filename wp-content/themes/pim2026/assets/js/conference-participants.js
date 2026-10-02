@@ -25,12 +25,14 @@
   var contentRoot = document.querySelector('.conference-participants-content');
   var searchInput = document.getElementById('cpSearchInput');
   var institutionFilter = document.getElementById('cpInstitutionFilter');
+  var regionFilter = document.getElementById('cpRegionFilter');
   var sortOrder = document.getElementById('cpSortOrder');
 
   if (
     !grid ||
     !searchInput ||
     !institutionFilter ||
+    !regionFilter ||
     !sortOrder ||
     paginationHosts.length === 0 ||
     !contentRoot
@@ -184,15 +186,20 @@
   function handleFilterChange() {
     var searchTerm = searchInput.value.toLowerCase();
     var instTerm = institutionFilter.value;
+    var regionTerm = regionFilter.value;
     var sortTerm = sortOrder.value;
 
     filteredList = participants.filter(function (p) {
+      var region = (p.region || '').toLowerCase();
       var matchesSearch =
         p.name.toLowerCase().indexOf(searchTerm) !== -1 ||
         p.title.toLowerCase().indexOf(searchTerm) !== -1 ||
-        p.institution.toLowerCase().indexOf(searchTerm) !== -1;
+        p.institution.toLowerCase().indexOf(searchTerm) !== -1 ||
+        region.indexOf(searchTerm) !== -1;
       var matchesInst = instTerm === 'all' || p.institution === instTerm;
-      return matchesSearch && matchesInst;
+      var matchesRegion =
+        regionTerm === 'all' || (p.region || '') === regionTerm;
+      return matchesSearch && matchesInst && matchesRegion;
     });
 
     if (sortTerm === 'name-asc') {
@@ -263,9 +270,28 @@
       institutionFilter.appendChild(opt);
     });
 
+    var regions = [];
+    participants.forEach(function (p) {
+      var region = (p.region || '').trim();
+      if (region && regions.indexOf(region) === -1) {
+        regions.push(region);
+      }
+    });
+    regions.sort(function (a, b) {
+      return a.localeCompare(b);
+    });
+
+    regions.forEach(function (region) {
+      var opt = document.createElement('option');
+      opt.value = region;
+      opt.textContent = region;
+      regionFilter.appendChild(opt);
+    });
+
     contentRoot.addEventListener('click', handlePaginationClick);
     searchInput.addEventListener('input', handleFilterChange);
     institutionFilter.addEventListener('change', handleFilterChange);
+    regionFilter.addEventListener('change', handleFilterChange);
     sortOrder.addEventListener('change', handleFilterChange);
 
     handleFilterChange();
