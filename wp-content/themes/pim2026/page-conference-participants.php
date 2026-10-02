@@ -46,13 +46,16 @@ get_header(); ?>
     <div id="cpParticipantGrid" class="cp-grid" aria-live="polite">
       <?php
       $cp_participants = pim2026_get_conference_participants();
+      $cp_per_page     = 10;
       if ( ! empty( $cp_participants ) ) {
-        foreach ( $cp_participants as $cp_participant ) {
+        $cp_page_slice = array_slice( $cp_participants, 0, $cp_per_page );
+        foreach ( $cp_page_slice as $cp_participant ) {
           pim2026_render_conference_participant_card( $cp_participant );
         }
       }
       ?>
     </div>
+    <nav id="cpPagination" class="cp-pagination" aria-label="<?php esc_attr_e( 'Participants pagination', 'twentytwentyone' ); ?>"></nav>
   </div>
 
   <script type="application/json" id="cpParticipantsData"><?php
@@ -60,6 +63,7 @@ get_header(); ?>
       array(
         'participants' => pim2026_get_conference_participants(),
         'avatarBase'   => 'https://ui-avatars.com/api/?name=',
+        'perPage'      => 10,
       )
     );
   ?></script>

@@ -16,15 +16,20 @@
 
   var participants = config.participants;
   var avatarBase = config.avatarBase || '';
+  var perPage = parseInt(config.perPage, 10) || 10;
 
   var grid = document.getElementById('cpParticipantGrid');
+  var pagination = document.getElementById('cpPagination');
   var searchInput = document.getElementById('cpSearchInput');
   var institutionFilter = document.getElementById('cpInstitutionFilter');
   var sortOrder = document.getElementById('cpSortOrder');
 
-  if (!grid || !searchInput || !institutionFilter || !sortOrder) {
+  if (!grid || !searchInput || !institutionFilter || !sortOrder || !pagination) {
     return;
   }
+
+  var currentPage = 1;
+  var filteredList = participants.slice();
 
   function escapeHtml(str) {
     return String(str)
@@ -42,12 +47,13 @@
     );
   }
 
-  function renderParticipants(data) {
+  function renderParticipantCards(data) {
     grid.innerHTML = '';
 
     if (data.length === 0) {
       grid.innerHTML =
         '<div class="cp-empty">No delegates found matching your criteria.</div>';
+      pagination.innerHTML = '';
       return;
     }
 
@@ -85,12 +91,76 @@
     });
   }
 
+  function renderPagination(totalItems, page) {
+    var totalPages = Math.max(1, Math.ceil(totalItems / perPage));
+    if (page > totalPages) {
+      page = totalPages;
+    }
+    if (page < 1) {
+      page = 1;
+    }
+    currentPage = page;
+
+    if (totalItems === 0) {
+      pagination.innerHTML = '';
+      return;
+    }
+
+    var start = (page - 1) * perPage + 1;
+    var end = Math.min(page * perPage, totalItems);
+
+    var html =
+      '<p class="cp-pagination-summary">Showing ' +
+      start +
+      '–' +
+      end +
+      ' of ' +
+      totalItems +
+      '</p>' +
+      '<div class="cp-pagination-controls">';
+
+    html +=
+      '<button type="button" class="cp-page-btn" data-page="prev" ' +
+      (page <= 1 ? 'disabled' : '') +
+      '>Previous</button>';
+
+    for (var i = 1; i <= totalPages; i++) {
+      html +=
+        '<button type="button" class="cp-page-btn' +
+        (i === page ? ' is-active' : '') +
+        '" data-page="' +
+        i +
+        '">' +
+        i +
+        '</button>';
+    }
+
+    html +=
+      '<button type="button" class="cp-page-btn" data-page="next" ' +
+      (page >= totalPages ? 'disabled' : '') +
+      '>Next</button></div>';
+
+    pagination.innerHTML = html;
+  }
+
+  function renderCurrentView() {
+    var total = filteredList.length;
+    var totalPages = Math.max(1, Math.ceil(total / perPage));
+    if (currentPage > totalPages) {
+      currentPage = totalPages;
+    }
+    var start = (currentPage - 1) * perPage;
+    var pageItems = filteredList.slice(start, start + perPage);
+    renderParticipantCards(pageItems);
+    renderPagination(total, currentPage);
+  }
+
   function handleFilterChange() {
     var searchTerm = searchInput.value.toLowerCase();
     var instTerm = institutionFilter.value;
     var sortTerm = sortOrder.value;
 
-    var filtered = participants.filter(function (p) {
+    filteredList = participants.filter(function (p) {
       var matchesSearch =
         p.name.toLowerCase().indexOf(searchTerm) !== -1 ||
         p.title.toLowerCase().indexOf(searchTerm) !== -1 ||
@@ -100,15 +170,15 @@
     });
 
     if (sortTerm === 'name-asc') {
-      filtered.sort(function (a, b) {
+      filteredList.sort(function (a, b) {
         return a.name.localeCompare(b.name);
       });
     } else if (sortTerm === 'name-desc') {
-      filtered.sort(function (a, b) {
+      filteredList.sort(function (a, b) {
         return b.name.localeCompare(a.name);
       });
     } else if (sortTerm === 'inst-asc') {
-      filtered.sort(function (a, b) {
+      filteredList.sort(function (a, b) {
         return (
           a.institution.localeCompare(b.institution) ||
           a.name.localeCompare(b.name)
@@ -116,7 +186,28 @@
       });
     }
 
-    renderParticipants(filtered);
+    currentPage = 1;
+    renderCurrentView();
+  }
+
+  function handlePaginationClick(event) {
+    var btn = event.target.closest('[data-page]');
+    if (!btn || btn.disabled) {
+      return;
+    }
+    var action = btn.getAttribute('data-page');
+    var totalPages = Math.max(1, Math.ceil(filteredList.length / perPage));
+
+    if (action === 'prev') {
+      currentPage = Math.max(1, currentPage - 1);
+    } else if (action === 'next') {
+      currentPage = Math.min(totalPages, currentPage + 1);
+    } else {
+      currentPage = parseInt(action, 10) || 1;
+    }
+
+    renderCurrentView();
+    grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   function init() {
@@ -137,10 +228,12 @@
       institutionFilter.appendChild(opt);
     });
 
-    renderParticipants(participants);
+    pagination.addEventListener('click', handlePaginationClick);
     searchInput.addEventListener('input', handleFilterChange);
     institutionFilter.addEventListener('change', handleFilterChange);
     sortOrder.addEventListener('change', handleFilterChange);
+
+    handleFilterChange();
   }
 
   if (document.readyState === 'loading') {

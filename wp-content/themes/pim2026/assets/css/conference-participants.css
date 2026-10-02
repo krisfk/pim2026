@@ -182,3 +182,53 @@
   color: var(--cp-midgray);
   font-size: 1.25rem;
 }
+
+.conference-participants-content .cp-pagination {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--cp-midgray);
+}
+
+.conference-participants-content .cp-pagination-summary {
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+  color: var(--cp-darkgray);
+  text-align: center;
+}
+
+.conference-participants-content .cp-pagination-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.conference-participants-content .cp-page-btn {
+  min-width: 2.5rem;
+  padding: 8px 12px;
+  font-size: 0.875rem;
+  font-family: inherit;
+  border: 1px solid var(--cp-midgray);
+  border-radius: 4px;
+  background: var(--cp-white);
+  color: var(--cp-black);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.conference-participants-content .cp-page-btn:hover:not(:disabled) {
+  border-color: var(--cp-black);
+}
+
+.conference-participants-content .cp-page-btn.is-active {
+  background: #300353;
+  border-color: #300353;
+  color: var(--cp-white);
+  font-weight: 600;
+}
+
+.conference-participants-content .cp-page-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

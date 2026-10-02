@@ -29,6 +29,7 @@ MANUAL_PHOTOS = {
     norm_key("Luisa Bastos Longo"): ("FGV-EAESP, Sao Paulo School of Business Administration", "19_luisa-longo.jpg"),
     norm_key("Julia von Maltzan Pacheco"): ("FGV-EAESP, Sao Paulo School of Business Administration", "162_juliavon-maltzan-pacheco.jpg"),
     norm_key("Başak Yalman"): ("Koc University", "164_basak-yalman.jpg"),
+    norm_key("Christy Poon"): ("CUHK Business School", "christy-poon.png"),
 }
 
 
