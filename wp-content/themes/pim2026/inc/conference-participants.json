@@ -1,0 +1,653 @@
+[
+  {
+    "name": "Sanna Huovinen-Kiuru",
+    "institution": "Aalto University, School of Business",
+    "title": "Exchange Program Manager",
+    "region": "Finland",
+    "photo": "photo-booklet/Aalto University, School of Business/112_Sanna Huovinen-Kiuru.jpg"
+  },
+  {
+    "name": "Saila Kurtbay",
+    "institution": "Aalto University, School of Business",
+    "title": "Head of International Affairs",
+    "region": "Finland",
+    "photo": "photo-booklet/Aalto University, School of Business/11_Saila Kurtbay.jpg"
+  },
+  {
+    "name": "Virpi Kristiina Tuunainen",
+    "institution": "Aalto University, School of Business",
+    "title": "Associate Dean of Research and International Cooperation",
+    "region": "Finland",
+    "photo": "photo-booklet/Aalto University, School of Business/29_Prof. Virpi Kristiina Tuunainen.jpg"
+  },
+  {
+    "name": "Tracey Love",
+    "institution": "AGSM, The University of New South Wales",
+    "title": "International Development Coordinator",
+    "region": "Australia",
+    "photo": "photo-booklet/AGSM, The University of New South Wales/25_Tracey Love.png"
+  },
+  {
+    "name": "Shai Danziger",
+    "institution": "Coller School of Management, University of Tel Aviv",
+    "title": "Assistant Dean of International Affairs",
+    "region": "Israel",
+    "photo": "photo-booklet/Coller School of Management, University of Tel Aviv/48,91,92_Prof. Shai Danziger.jpg"
+  },
+  {
+    "name": "Eric Saranovitz",
+    "institution": "Coller School of Management, University of Tel Aviv",
+    "title": "Director, Global Engagement Office",
+    "region": "Israel",
+    "photo": "photo-booklet/Coller School of Management, University of Tel Aviv/47_Dr Eric Saranovitz.JPG"
+  },
+  {
+    "name": "Mette Kloch",
+    "institution": "Copenhagen Business School",
+    "title": "Senior Advisor",
+    "region": "Denmark",
+    "photo": "photo-booklet/Copenhagen Business School/38_Mette Kloch.jpg"
+  },
+  {
+    "name": "Wilbert van der Meer",
+    "institution": "Copenhagen Business School",
+    "title": "International Office, CBS",
+    "region": "Denmark",
+    "photo": "photo-booklet/Copenhagen Business School/148_Wilbert van der Meer.jpeg"
+  },
+  {
+    "name": "Peter Feher",
+    "institution": "Corvinus University of Budapest",
+    "title": "PIM Chair (EMEA); Associate Professor, Corvinus University of Budapest",
+    "region": "Hungary",
+    "photo": "photo-booklet/Corvinus University of Budapest/7_Peter Feher.jpg"
+  },
+  {
+    "name": "Zita Kelemen",
+    "institution": "Corvinus University of Budapest",
+    "title": "Director of International Alliances",
+    "region": "Hungary",
+    "photo": "photo-booklet/Corvinus University of Budapest/Zita Kelemen.png"
+  },
+  {
+    "name": "Seen Meng Chew",
+    "institution": "CUHK Business School",
+    "title": "Associate Professor of Practice in Finance",
+    "region": "Hong Kong",
+    "photo": "photo-booklet/CUHK Business School/32_Prof. Seen Meng Chew.jpg"
+  },
+  {
+    "name": "Christy Poon",
+    "institution": "CUHK Business School",
+    "title": "Assistant Director, Head of International Relations Office",
+    "region": "Hong Kong",
+    "photo": ""
+  },
+  {
+    "name": "Rodrigo Osuna",
+    "institution": "EGADE Business School, Tec de Monterrey",
+    "title": "International Strategic Initiatives Coordinator",
+    "region": "Mexico",
+    "photo": "photo-booklet/EGADE Business School, Tec de Monterrey/27,28_Rodrigo Osuna.jpg"
+  },
+  {
+    "name": "Paula Niembro",
+    "institution": "ESADE Business School",
+    "title": "International Program Manager",
+    "region": "Spain",
+    "photo": "photo-booklet/ESADE Business School/22_Paula Niembro.jpg"
+  },
+  {
+    "name": "Armando Borda",
+    "institution": "ESAN, Graduate School of Business",
+    "title": "Director of International Affairs",
+    "region": "Peru",
+    "photo": "photo-booklet/ESAN, Graduate School of Business/155_Armando Borda.jpg"
+  },
+  {
+    "name": "Luisa Bastos Longo",
+    "institution": "FGV-EAESP, Sao Paulo School of Business Administration",
+    "title": "Incoming Exchange Coordinator",
+    "region": "Brazil",
+    "photo": "photo-booklet/FGV-EAESP, Sao Paulo School of Business Administration/19_Luisa Longo.jpg"
+  },
+  {
+    "name": "Julia von Maltzan Pacheco",
+    "institution": "FGV-EAESP, Sao Paulo School of Business Administration",
+    "title": "Associate Dean for Global Affairs",
+    "region": "Brazil",
+    "photo": "photo-booklet/FGV-EAESP, Sao Paulo School of Business Administration/162_Juliavon Maltzan Pacheco.jpg"
+  },
+  {
+    "name": "Harriet Ruskin",
+    "institution": "Goizueta Business School, Emory University",
+    "title": "Assistant Dean",
+    "region": "United States",
+    "photo": "photo-booklet/Goizueta Business School, Emory University/50_Harriet  Ruskin.jpg"
+  },
+  {
+    "name": "Weina Li (Venus)",
+    "institution": "Guanghua School of Management, Peking University",
+    "title": "Senior Manager of Global Affairs Office",
+    "region": "China",
+    "photo": "photo-booklet/Guanghua School of Management, Peking University/114,160_WEINA Li.jpg"
+  },
+  {
+    "name": "Yunting Liu (Poppy)",
+    "institution": "Guanghua School of Management, Peking University",
+    "title": "Program Manager",
+    "region": "China",
+    "photo": "photo-booklet/Guanghua School of Management, Peking University/122_Yunting Liu.jpg"
+  },
+  {
+    "name": "Cheng Qian (Tracy)",
+    "institution": "Guanghua School of Management, Peking University",
+    "title": "Program Manager",
+    "region": "China",
+    "photo": "photo-booklet/Guanghua School of Management, Peking University/123,161_CHENG QIAN.jpg"
+  },
+  {
+    "name": "Kristin YOUNG",
+    "institution": "HEC Paris",
+    "title": "Director, International Office",
+    "region": "France",
+    "photo": "photo-booklet/HEC Paris/93,94,95_Kristin Young.jpeg"
+  },
+  {
+    "name": "Kin Yan Ma (Emily)",
+    "institution": "HKUST Business School",
+    "title": "Senior Manager",
+    "region": "Hong Kong",
+    "photo": "photo-booklet/HKUST Business School/67,68_Emily Ma.jpg"
+  },
+  {
+    "name": "Amit Karna",
+    "institution": "IIMA, Indian Institute of Management Ahmedabad",
+    "title": "Dean (Alumni & External Relations)",
+    "region": "India",
+    "photo": "photo-booklet/IIMA, Indian Institute of Management Ahmedabad/73_Amit Karna.jpeg"
+  },
+  {
+    "name": "Travis Mager",
+    "institution": "Imperial College Business School",
+    "title": "Head of Global Experiences & Exchange",
+    "region": "United Kingdom",
+    "photo": "photo-booklet/Imperial College Business School/144_Travis Mager.jpg"
+  },
+  {
+    "name": "Abdul Aziz",
+    "institution": "ISB, Indian School of Business",
+    "title": "Associate Director",
+    "region": "India",
+    "photo": "photo-booklet/ISB, Indian School of Business/80_Abdul Aziz.jpg"
+  },
+  {
+    "name": "Gurpreet Kaur",
+    "institution": "ISB, Indian School of Business",
+    "title": "Senior Manager, Academic & Student Affairs (ASA)",
+    "region": "India",
+    "photo": "photo-booklet/ISB, Indian School of Business/79_Gurpreet Kaur.jpg"
+  },
+  {
+    "name": "ILEANA JINICH",
+    "institution": "ITAM, Instituto Tecnológico Autónomo de México",
+    "title": "Director International Office",
+    "region": "Mexico",
+    "photo": "photo-booklet/ITAM, Instituto Tecnológico Autónomo de México/85_ILEANA JINICH.jpg"
+  },
+  {
+    "name": "YoonJung Cho",
+    "institution": "Kaist College of Business",
+    "title": "Program Manager",
+    "region": "South Korea",
+    "photo": "photo-booklet/Kaist College of Business/105_Cho  YoonJung.png"
+  },
+  {
+    "name": "Ju-Young Park",
+    "institution": "Kaist College of Business",
+    "title": "Program Manager",
+    "region": "South Korea",
+    "photo": "photo-booklet/Kaist College of Business/97,98_Park Ju-Young.jpg"
+  },
+  {
+    "name": "Sachiko Yamao",
+    "institution": "Keio Business School, Keio University",
+    "title": "professor of International Management",
+    "region": "Japan",
+    "photo": "photo-booklet/Keio Business School, Keio University/76-78_Prof. Yamao Sachiko.jpg"
+  },
+  {
+    "name": "Emily Stern",
+    "institution": "Kelley School of Business, Indiana University",
+    "title": "PIM Coordinator",
+    "region": "United States",
+    "photo": "photo-booklet/Kelley School of Business, Indiana University/18_Emily Stern.jpg"
+  },
+  {
+    "name": "Deborah Kraus (Debbie)",
+    "institution": "Kellogg School of Management, Northwestern University",
+    "title": "Senior Director, Global Experience",
+    "region": "United States",
+    "photo": "photo-booklet/Kellogg School of Management, Northwestern University/152_Deborah Kraus.png"
+  },
+  {
+    "name": "Anne Reagan (Annie)",
+    "institution": "Kellogg School of Management, Northwestern University",
+    "title": "Associate Director, Global Academic Experience",
+    "region": "United States",
+    "photo": "photo-booklet/Kellogg School of Management, Northwestern University/131_Anne Reagan.jpg"
+  },
+  {
+    "name": "Başak Yalman",
+    "institution": "Koç University",
+    "title": "International Student Recruitment Director",
+    "region": "Turkey",
+    "photo": "photo-booklet/Koç University/164_Basak Yalman.jpg"
+  },
+  {
+    "name": "Christian Raffe",
+    "institution": "Melbourne Business School, The University of Melbourne",
+    "title": "Program Manager",
+    "region": "Australia",
+    "photo": "photo-booklet/Melbourne Business School, The University of Melbourne/20_Christian Raffe.jpeg"
+  },
+  {
+    "name": "Kyoko Hayakawa",
+    "institution": "Nagoya University of Commerce and Business",
+    "title": "Managing Director for International Development",
+    "region": "Japan",
+    "photo": "photo-booklet/Nagoya University of Commerce and Business/109_Kyoko Hayakawa.jpg"
+  },
+  {
+    "name": "Yumiko Minoura",
+    "institution": "Nagoya University of Commerce and Business",
+    "title": "Assistant Director for International Development",
+    "region": "Japan",
+    "photo": "photo-booklet/Nagoya University of Commerce and Business/110_Yumiko Minoura.png"
+  },
+  {
+    "name": "Kim Huat Goh",
+    "institution": "Nanyang Business School, Nanyang Technological University",
+    "title": "Professor of Information Systems, Associate Dean, Graduate Studies",
+    "region": "Singapore",
+    "photo": "photo-booklet/Nanyang Business School, Nanyang Technological University/00_Goh Kim Huat.jpg"
+  },
+  {
+    "name": "Elaine Tan",
+    "institution": "Nanyang Business School, Nanyang Technological University",
+    "title": "Assistant Director",
+    "region": "Singapore",
+    "photo": "photo-booklet/Nanyang Business School, Nanyang Technological University/55_Elaine Tan.jpeg"
+  },
+  {
+    "name": "Audrey Yuen",
+    "institution": "Nanyang Business School, Nanyang Technological University",
+    "title": "Senior Assistant Director",
+    "region": "Singapore",
+    "photo": "photo-booklet/Nanyang Business School, Nanyang Technological University/53_Audrey Yuen.jpg"
+  },
+  {
+    "name": "Yenn-Ru Chen",
+    "institution": "National Chengchi University",
+    "title": "PIM Chair (Asia and Asia Pacific); Professor of Finance",
+    "region": "Taiwan",
+    "photo": "photo-booklet/National Chengchi University/163_Yenn-Ru Chen.png"
+  },
+  {
+    "name": "Hong-Yi Chen",
+    "institution": "National Chengchi University",
+    "title": "Associate Dean for International Affairs",
+    "region": "Taiwan",
+    "photo": "photo-booklet/National Chengchi University/159_Prof. Hong-Yi Chen.jpg"
+  },
+  {
+    "name": "Jia-Chi Huang",
+    "institution": "National Chengchi University",
+    "title": "Dean",
+    "region": "Taiwan",
+    "photo": "photo-booklet/National Chengchi University/134_Jia-Chi Huang.jpg"
+  },
+  {
+    "name": "Cherry Huang",
+    "institution": "National Chengchi University",
+    "title": "Senior Manager",
+    "region": "Taiwan",
+    "photo": "photo-booklet/National Chengchi University/153_Cherry Huang.jpg"
+  },
+  {
+    "name": "Astrid Foldal",
+    "institution": "NHH Norwegian School of Economics",
+    "title": "Head of Section for International Relations",
+    "region": "Norway",
+    "photo": "photo-booklet/NHH Norwegian School of Economics/137_Astrid Foldal.jpg"
+  },
+  {
+    "name": "Catherine da Silveira",
+    "institution": "NOVA School of Business and Economics",
+    "title": "Associate Dean for International Affairs and Partnerships",
+    "region": "Portugal",
+    "photo": "photo-booklet/NOVA School of Business and Economics/75_Catherine da Silveira.jpg"
+  },
+  {
+    "name": "José Henriques",
+    "institution": "NOVA School of Business and Economics",
+    "title": "Data analyst",
+    "region": "Portugal",
+    "photo": "photo-booklet/NOVA School of Business and Economics/72_José Henriques.jpg"
+  },
+  {
+    "name": "Katarzyna Kozicz Fonseca",
+    "institution": "NOVA School of Business and Economics",
+    "title": "Executive Director",
+    "region": "Portugal",
+    "photo": "photo-booklet/NOVA School of Business and Economics/26_Katarzyna Kozicz Fonseca.jpg"
+  },
+  {
+    "name": "Hwee Bee Poh",
+    "institution": "NUS Business School, National University of Singapore",
+    "title": "Deputy Director",
+    "region": "Singapore",
+    "photo": "photo-booklet/NUS Business School, National University of Singapore/129_Hwee Bee.jpg"
+  },
+  {
+    "name": "Leah Watkins",
+    "institution": "Otago Business School, University of Otago",
+    "title": "Associate Professor",
+    "region": "New Zealand",
+    "photo": "photo-booklet/Otago Business School, University of Otago/41,42_Leah Watkins.jpg"
+  },
+  {
+    "name": "Monique Delaveau",
+    "institution": "Pontificia Universidad Católica de Chile, Faculty of Business & Administration",
+    "title": "International Global Manager, School of Business",
+    "region": "Chile",
+    "photo": "photo-booklet/Pontificia Universidad Católica de Chile, Faculty of Business & Administration/9,10_Monique Delaveau.jpeg"
+  },
+  {
+    "name": "Gabriela Böhmová",
+    "institution": "Prague University of Business and Economics, VSE",
+    "title": "Vice-Head of International Office",
+    "region": "Czech Republic",
+    "photo": "photo-booklet/Prague University of Business and Economics, VSE/23_Gabriela Böhmová.jpg"
+  },
+  {
+    "name": "Jason Chew",
+    "institution": "Richard Ivey School of Business, The University of Western Ontario",
+    "title": "Executive Director - Program Operations",
+    "region": "Canada",
+    "photo": "photo-booklet/Richard Ivey School of Business, The University of Western Ontario/100_Jason Chew.png"
+  },
+  {
+    "name": "Martha Maznevski",
+    "institution": "Richard Ivey School of Business, The University of Western Ontario",
+    "title": "Associate Dean, Programs",
+    "region": "Canada",
+    "photo": "photo-booklet/Richard Ivey School of Business, The University of Western Ontario/86_Martha Maznevski.jpg"
+  },
+  {
+    "name": "Jinyung Cha",
+    "institution": "Rotman School of Management, University of Toronto",
+    "title": "Program Manager, International",
+    "region": "Canada",
+    "photo": "photo-booklet/Rotman School of Management, University of Toronto/154_Jin Cha.jpg"
+  },
+  {
+    "name": "Beatrix Dart",
+    "institution": "Rotman School of Management, University of Toronto",
+    "title": "Professor and Academic Director",
+    "region": "Canada",
+    "photo": "photo-booklet/Rotman School of Management, University of Toronto/21_Beatrix Dart.jpg"
+  },
+  {
+    "name": "Renice Jones",
+    "institution": "Rotman School of Management, University of Toronto",
+    "title": "Director - Office of Student Engagement",
+    "region": "Canada",
+    "photo": "photo-booklet/Rotman School of Management, University of Toronto/150_Renice Jones.jpg"
+  },
+  {
+    "name": "Linda de Vries",
+    "institution": "Rotterdam School of Management, Erasmus University",
+    "title": "International Relations Manager",
+    "region": "Netherlands",
+    "photo": "photo-booklet/Rotterdam School of Management, Erasmus University/43_Linda de Vries.jpeg"
+  },
+  {
+    "name": "Carrie Li",
+    "institution": "Rotterdam School of Management, Erasmus University",
+    "title": "Programme Manager, International Full-time MBA",
+    "region": "Netherlands",
+    "photo": "photo-booklet/Rotterdam School of Management, Erasmus University/81_Carrie Li.jpg"
+  },
+  {
+    "name": "Ian Loumos",
+    "institution": "Rotterdam School of Management, Erasmus University",
+    "title": "Program Director International Full-time MBA Programme",
+    "region": "Netherlands",
+    "photo": "photo-booklet/Rotterdam School of Management, Erasmus University/82_Ian Loumos.jpeg"
+  },
+  {
+    "name": "Hai Huang (Harry)",
+    "institution": "School of Management, Fudan University",
+    "title": "Director of Student Mobility",
+    "region": "China",
+    "photo": "photo-booklet/School of Management, Fudan University/145_Harry Huang.jpg"
+  },
+  {
+    "name": "Luba Pan",
+    "institution": "Schulich School of Business, York University",
+    "title": "Executive Director, Student Services and International Relations",
+    "region": "Canada",
+    "photo": "photo-booklet/Schulich School of Business, York University/74,83,87_Luba Pan.jpg"
+  },
+  {
+    "name": "Ann Welsh",
+    "institution": "Schulich School of Business, York University",
+    "title": "Director, International Relations",
+    "region": "Canada",
+    "photo": "photo-booklet/Schulich School of Business, York University/113_Ann Welsh.jpg"
+  },
+  {
+    "name": "Grzegorz Augustyniak",
+    "institution": "SGH, Warsaw School of Economics",
+    "title": "Deputy Director, International Centre",
+    "region": "Poland",
+    "photo": "photo-booklet/SGH, Warsaw School of Economics/101_Greg Augustyniak.jpg"
+  },
+  {
+    "name": "Jacek Prokop",
+    "institution": "SGH, Warsaw School of Economics",
+    "title": "Vice-Rector for International Relations",
+    "region": "Poland",
+    "photo": "photo-booklet/SGH, Warsaw School of Economics/84_Prof. Jacek Prokop.jpg"
+  },
+  {
+    "name": "Angela James (Angie)",
+    "institution": "Smith School of Business, Queen’s University",
+    "title": "Director, International Office",
+    "region": "Canada",
+    "photo": "photo-booklet/Smith School of Business, Queen’s University/40_Angie James.jpg"
+  },
+  {
+    "name": "Gloria Saccon",
+    "institution": "Smith School of Business, Queen’s University",
+    "title": "Senior Director",
+    "region": "Canada",
+    "photo": "photo-booklet/Smith School of Business, Queen’s University/24_Gloria Saccon.png"
+  },
+  {
+    "name": "Louisa Kellman",
+    "institution": "Stockholm School of Economics",
+    "title": "Project Manager Global Initiatives",
+    "region": "Sweden",
+    "photo": "photo-booklet/Stockholm School of Economics/35_Louisa Kellman.jpg"
+  },
+  {
+    "name": "Madeleine Suzanne Tatjana Linde",
+    "institution": "Stockholm School of Economics",
+    "title": "Group Manager Global Initiatives",
+    "region": "Sweden",
+    "photo": "photo-booklet/Stockholm School of Economics/15,33,34_Madeleine Linde.jpg"
+  },
+  {
+    "name": "Lalita Damroungkunkamjorn",
+    "institution": "Thammasat Business School",
+    "title": "Head of Internationalization and Accreditation Unit",
+    "region": "Thailand",
+    "photo": "photo-booklet/Thammasat Business School/107_Lalita Damroungkunkamjorn.jpg"
+  },
+  {
+    "name": "Kevalin Setthakorn",
+    "institution": "Thammasat Business School",
+    "title": "Assistant Dean for Global Engagement",
+    "region": "Thailand",
+    "photo": "photo-booklet/Thammasat Business School/106_Kevalin Setthakorn.png"
+  },
+  {
+    "name": "Jing Wang (Jolin)",
+    "institution": "The Chinese University of Hongkong,Shenzhen",
+    "title": "Manager",
+    "region": "China",
+    "photo": "photo-booklet/The Chinese University of Hongkong,Shenzhen/88_Jolin Wang.jpg"
+  },
+  {
+    "name": "Han Jiang",
+    "institution": "The Chinese University of Hongkong,Shenzhen",
+    "title": "Assistant Dean (Education)",
+    "region": "China",
+    "photo": "photo-booklet/The Chinese University of Hongkong,Shenzhen/89,90_Prof. Jiang Han.jpg"
+  },
+  {
+    "name": "Wei SUN",
+    "institution": "Tsinghua University, School of Economics and Management",
+    "title": "Director of International Office",
+    "region": "China",
+    "photo": "photo-booklet/Tsinghua University, School of Economics and Management/157_Wei SUN.jpg"
+  },
+  {
+    "name": "Ziyue WEN (Wenzy)",
+    "institution": "Tsinghua University, School of Economics and Management",
+    "title": "Manager of International Office",
+    "region": "China",
+    "photo": "photo-booklet/Tsinghua University, School of Economics and Management/158_Ziyue WEN.jpg"
+  },
+  {
+    "name": "Jessica Lam",
+    "institution": "UBC Sauder School of Business",
+    "title": "Manager, Global Learning",
+    "region": "Canada",
+    "photo": "photo-booklet/UBC Sauder School of Business/44,45,46_Jessica Lam.jpg"
+  },
+  {
+    "name": "Alina Yukhymets",
+    "institution": "UBC Sauder School of Business",
+    "title": "Director, Global & Integrated Learning",
+    "region": "Canada",
+    "photo": "photo-booklet/UBC Sauder School of Business/49_Alina Yukhymets.jpg"
+  },
+  {
+    "name": "Christina Burke",
+    "institution": "UCD College of Business",
+    "title": "Senior Programme Manager",
+    "region": "Ireland",
+    "photo": "photo-booklet/UCD College of Business/30,51_Christina Burke.png"
+  },
+  {
+    "name": "Patricia Collins",
+    "institution": "UNC Kenan-Flagler Business School",
+    "title": "Associate Director",
+    "region": "United States",
+    "photo": "photo-booklet/UNC Kenan-Flagler Business School/17_Patricia Collins.jpg"
+  },
+  {
+    "name": "Michael Stepanek",
+    "institution": "UNC Kenan-Flagler Business School",
+    "title": "Associate Dean",
+    "region": "United States",
+    "photo": "photo-booklet/UNC Kenan-Flagler Business School/39_Michael Stepanek.jpg"
+  },
+  {
+    "name": "Alex Markman",
+    "institution": "Universidad Torcuato Di Tella",
+    "title": "PIM Chair (Americas); Director, International Programs",
+    "region": "Argentina",
+    "photo": "photo-booklet/Universidad Torcuato Di Tella/12,13,14_Alex Markman.png"
+  },
+  {
+    "name": "Sonia Albertazzi",
+    "institution": "Università Bocconi",
+    "title": "International Relations, Director",
+    "region": "Italy",
+    "photo": "photo-booklet/Università Bocconi/69_Sonia Albertazzi.jpg"
+  },
+  {
+    "name": "Angelo Attardo",
+    "institution": "Università Bocconi",
+    "title": "Head of Study Abroad",
+    "region": "Italy",
+    "photo": "photo-booklet/Università Bocconi/70_Angelo Attardo.png"
+  },
+  {
+    "name": "Felix Beideck",
+    "institution": "University of Cologne, Faculty of Management, Economics and Social Sciences",
+    "title": "Manager International Cooperation & Communication",
+    "region": "Germany",
+    "photo": "photo-booklet/University of Cologne, Faculty of Management, Economics and Social Sciences/64_Felix Beideck.jpg"
+  },
+  {
+    "name": "Diana Hehle",
+    "institution": "University of Cologne, Faculty of Management, Economics and Social Sciences",
+    "title": "Director International Relations",
+    "region": "Germany",
+    "photo": "photo-booklet/University of Cologne, Faculty of Management, Economics and Social Sciences/65,66_Diana Hehle.jpg"
+  },
+  {
+    "name": "Maria Christine Bader",
+    "institution": "University of St Gallen",
+    "title": "Programme Manager",
+    "region": "Switzerland",
+    "photo": "photo-booklet/University of St Gallen/147_Maria Christine Bader.jpg"
+  },
+  {
+    "name": "Peggy Gertruda Afra van der Wallen",
+    "institution": "University of St Gallen",
+    "title": "Head of the International Office",
+    "region": "Switzerland",
+    "photo": "photo-booklet/University of St Gallen/6_Peggy.jpg"
+  },
+  {
+    "name": "Ashley Roberts",
+    "institution": "Warwick Business School, University of Warwick",
+    "title": "Assistant Dean (Internationalisation)",
+    "region": "United Kingdom",
+    "photo": "photo-booklet/Warwick Business School, University of Warwick/Ashely Roberts.png"
+  },
+  {
+    "name": "Laura Youngman",
+    "institution": "Warwick Business School, University of Warwick",
+    "title": "Programmes Development Manager",
+    "region": "United Kingdom",
+    "photo": "photo-booklet/Warwick Business School, University of Warwick/102_Laura Youngman.jpg"
+  },
+  {
+    "name": "Milford Soko",
+    "institution": "WITS Business School, The University of the Witwatersrand",
+    "title": "Professor in International Business & Strategy and Director of Development and Partnerships",
+    "region": "South Africa",
+    "photo": "photo-booklet/WITS Business School, The University of the Witwatersrand/111_Prof. Milford SOKO.jpg"
+  },
+  {
+    "name": "Lukas Hefner",
+    "institution": "WU, Vienna University of Economics and Business",
+    "title": "Head International Office",
+    "region": "Austria",
+    "photo": "photo-booklet/WU, Vienna University of Economics and Business/125_Lukas Hefner.jpg"
+  },
+  {
+    "name": "Jonas Puck",
+    "institution": "WU, Vienna University of Economics and Business",
+    "title": "Dean for International Affairs",
+    "region": "Austria",
+    "photo": "photo-booklet/WU, Vienna University of Economics and Business/99_Prof. Jonas Puck.jpg"
+  }
+]

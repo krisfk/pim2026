@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Participant Directory | CUHK PIM 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Color Palette - Design 001 */
+      --c-black: #0A0A0A;
+      --c-white: #FFFFFF;
+      --c-offwhite: #F4F4F4;
+      --c-midgray: #D0D0D0;
+      --c-darkgray: #555555;
+      --c-card-dark: #111111;
+      --c-border-dark: #2A2A2A;
+
+      /* Fonts */
+      --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+      --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+      /* Type scale */
+      --fs-hero: clamp(3.5rem, 8vw, 6.5rem);
+      --fs-cover: clamp(2rem, 5vw, 3.5rem);
+      --fs-display: clamp(1.75rem, 3.5vw, 2.5rem);
+      --fs-h1: 2rem;
+      --fs-h2: 1.5rem;
+      --fs-h3: 1.125rem;
+      --fs-subhead: 1.25rem;
+      --fs-stat: clamp(2rem, 3.5vw, 3rem);
+      --fs-body: 1rem;
+      --fs-body-lg: 1.125rem;
+      --fs-small: 0.875rem;
+      --fs-caption: 0.75rem;
+      --fs-label: 0.6875rem;
+      --fs-footer: 0.75rem;
+
+      /* Spacing */
+      --space-xs: 4px;
+      --space-s: 8px;
+      --space-m: 16px;
+      --space-l: 24px;
+      --space-xl: 40px;
+      --space-2xl: 64px;
+
+      /* Layout */
+      --page-max: 1200px;
+      --gutter: clamp(1.5rem, 5vw, 4rem);
+      --card-gap: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; overflow-x: hidden; scroll-behavior: smooth; }
+    
+    body {
+      background: var(--c-offwhite);
+      color: var(--c-darkgray);
+      font: 400 var(--fs-body)/1.5 var(--font-body);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 { font-family: var(--font-display); color: var(--c-black); line-height: 1.1; margin: 0; }
+    p { margin: 0 0 var(--space-m); max-width: 72ch; }
+    a { color: inherit; text-decoration: none; transition: opacity 0.2s; }
+    a:hover { opacity: 0.7; }
+
+    .container {
+      max-width: var(--page-max);
+      margin-inline: auto;
+      padding-inline: var(--gutter);
+    }
+
+    /* Header & Navigation */
+    header {
+      background: var(--c-black);
+      color: var(--c-white);
+      padding-block: var(--space-xl);
+      border-bottom: 1px solid var(--c-border-dark);
+    }
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-s);
+    }
+
+    .brand-label {
+      font-family: var(--font-body);
+      font-size: var(--fs-label);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--c-midgray);
+    }
+
+    .page-title {
+      font-size: var(--fs-display);
+      color: var(--c-white);
+    }
+
+    /* Controls Section */
+    .controls-wrapper {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--c-white);
+      padding-block: var(--space-l);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+      border-bottom: 1px solid var(--c-midgray);
+    }
+
+    .controls-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-m);
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .search-input-group {
+      flex: 1;
+      min-width: min(100%, 300px);
+      position: relative;
+    }
+
+    .search-input-group input {
+      width: 100%;
+      padding: var(--space-m) var(--space-l);
+      padding-left: 48px;
+      font-family: var(--font-body);
+      font-size: var(--fs-body);
+      border: 1px solid var(--c-midgray);
+      background: var(--c-white);
+      border-radius: 4px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input-group input:focus {
+      border-color: var(--c-black);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--c-darkgray);
+    }
+
+    .filters-group {
+      display: flex;
+      gap: var(--space-s);
+      flex-wrap: wrap;
+    }
+
+    .filter-select {
+      padding: var(--space-m) var(--space-l);
+      font-family: var(--font-body);
+      font-size: var(--fs-small);
+      border: 1px solid var(--c-midgray);
+      background: var(--c-white);
+      border-radius: 4px;
+      cursor: pointer;
+      min-width: 160px;
+    }
+
+    /* Participant Grid */
+    .directory-section {
+      padding-block: var(--space-2xl);
+    }
+
+    .participant-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--card-gap);
+      margin-top: var(--space-xl);
+    }
+
+    @media (max-width: 1024px) {
+      .participant-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      .participant-grid { grid-template-columns: repeat(2, 1fr); }
+      .controls-container { flex-direction: column; align-items: stretch; }
+    }
+
+    @media (max-width: 480px) {
+      .participant-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Participant Card */
+    .participant-card {
+      background: var(--c-white);
+      border: 1px solid var(--c-midgray);
+      padding: var(--space-m);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+      animation: fadeIn 0.4s ease forwards;
+    }
+
+    .participant-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+      border-color: var(--c-black);
+    }
+
+    .photo-frame {
+      aspect-ratio: 1 / 1;
+      background: var(--c-offwhite);
+      margin-bottom: var(--space-m);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(20%);
+      transition: filter 0.3s ease;
+    }
+
+    .participant-card:hover img {
+      filter: grayscale(0%);
+    }
+
+    .info-content {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .p-name {
+      font-size: var(--fs-h3);
+      font-weight: 700;
+      margin-bottom: var(--space-xs);
+      color: var(--c-black);
+      font-family: var(--font-body);
+      overflow-wrap: anywhere;
+    }
+
+    .p-title {
+      font-size: var(--fs-small);
+      font-weight: 500;
+      color: var(--c-darkgray);
+      margin-bottom: var(--space-s);
+      line-height: 1.3;
+    }
+
+    .p-divider {
+      height: 1px;
+      background: var(--c-midgray);
+      margin-block: var(--space-s);
+      width: 100%;
+    }
+
+    .p-institution {
+      font-size: var(--fs-caption);
+      color: var(--c-darkgray);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-top: auto;
+    }
+
+    .p-region {
+      font-size: var(--fs-label);
+      color: var(--c-midgray);
+      margin-top: var(--space-xs);
+    }
+
+    /* Empty State */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: var(--space-2xl);
+      color: var(--c-midgray);
+      font-family: var(--font-display);
+      font-size: var(--fs-h2);
+    }
+
+    footer {
+      background: var(--c-white);
+      padding-block: var(--space-xl);
+      border-top: 1px solid var(--c-midgray);
+      margin-top: var(--space-2xl);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: var(--fs-footer);
+      color: var(--c-midgray);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <span class="brand-label">The Chinese University of Hong Kong</span>
+      <h1 class="page-title">Presidents’ Information Meeting 2026</h1>
+      <p class="accent" style="margin-top: 8px; color: var(--c-midgray);">Participant Directory & Delegate Photo Booklet</p>
+    </div>
+  </header>
+
+  <div class="controls-wrapper">
+    <div class="container controls-container">
+      <div class="search-input-group">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="searchInput" placeholder="Search by name, title, or institution..." aria-label="Search delegates">
+      </div>
+      
+      <div class="filters-group">
+        <select id="institutionFilter" class="filter-select" aria-label="Filter by Institution">
+          <option value="all">All Institutions</option>
+          <!-- Dynamic options -->
+        </select>
+        
+        <select id="sortOrder" class="filter-select" aria-label="Sort Order">
+          <option value="name-asc">Sort: A – Z</option>
+          <option value="name-desc">Sort: Z – A</option>
+          <option value="inst-asc">Sort: Institution</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <main class="container directory-section">
+    <div id="participantGrid" class="participant-grid">
+      <!-- Participant cards will be rendered here -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 CUHK PIM. All rights reserved.</span>
+      <div style="display: flex; gap: var(--space-m);">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /**
+     * Mock Participant Data 
+     * In a real scenario, this would be populated from the SharePoint Excel/JSON export.
+     */
+    const participants = [
+      { id: 1, name: "Prof. Rocky S. Tuan", title: "Vice-Chancellor and President", institution: "CUHK", region: "Hong Kong SAR", photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&h=400&auto=format&fit=crop" },
+      { id: 2, name: "Prof. Alan M. Garber", title: "Interim President", institution: "Harvard University", region: "USA", photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&h=400&auto=format&fit=crop" },
+      { id: 3, name: "Prof. Irene Tracey", title: "Vice-Chancellor", institution: "University of Oxford", region: "UK", photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&h=400&auto=format&fit=crop" },
+      { id: 4, name: "Dr. L. Rafael Reif", title: "President Emeritus", institution: "MIT", region: "USA", photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&h=400&auto=format&fit=crop" },
+      { id: 5, name: "Prof. Tan Eng Chye", title: "President", institution: "NUS", region: "Singapore", photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&h=400&auto=format&fit=crop" },
+      { id: 6, name: "Prof. Xiang Zhang", title: "President and Vice-Chancellor", institution: "HKU", region: "Hong Kong SAR", photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&h=400&auto=format&fit=crop" },
+      { id: 7, name: "Dame Sally Mapstone", title: "Principal and Vice-Chancellor", institution: "University of St Andrews", region: "UK", photo: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=400&h=400&auto=format&fit=crop" },
+      { id: 8, name: "Prof. Meric Gertler", title: "President", institution: "University of Toronto", region: "Canada", photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&h=400&auto=format&fit=crop" },
+      { id: 9, name: "Prof. Deborah Terry", title: "Vice-Chancellor and President", institution: "University of Queensland", region: "Australia", photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&h=400&auto=format&fit=crop" },
+      { id: 10, name: "Prof. Subra Suresh", title: "Former President", institution: "NTU Singapore", region: "Singapore", photo: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=400&h=400&auto=format&fit=crop" },
+      { id: 11, name: "Dr. Michael V. Drake", title: "President", institution: "University of California", region: "USA", photo: "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=400&h=400&auto=format&fit=crop" },
+      { id: 12, name: "Prof. Kohei Itoh", title: "President", institution: "Keio University", region: "Japan", photo: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=400&h=400&auto=format&fit=crop" }
+    ];
+
+    const grid = document.getElementById('participantGrid');
+    const searchInput = document.getElementById('searchInput');
+    const institutionFilter = document.getElementById('institutionFilter');
+    const sortOrder = document.getElementById('sortOrder');
+
+    /**
+     * Initialization: Render dropdowns and initial grid
+     */
+    function init() {
+      // Unique institutions for filter
+      const institutions = [...new Set(participants.map(p => p.institution))].sort();
+      institutions.forEach(inst => {
+        const opt = document.createElement('option');
+        opt.value = inst;
+        opt.textContent = inst;
+        institutionFilter.appendChild(opt);
+      });
+
+      renderParticipants(participants);
+      
+      // Event Listeners
+      searchInput.addEventListener('input', handleFilterChange);
+      institutionFilter.addEventListener('change', handleFilterChange);
+      sortOrder.addEventListener('change', handleFilterChange);
+    }
+
+    /**
+     * Render the grid based on filtered array
+     */
+    function renderParticipants(data) {
+      grid.innerHTML = '';
+      
+      if (data.length === 0) {
+        grid.innerHTML = `<div class="empty-state">No delegates found matching your criteria.</div>`;
+        return;
+      }
+
+      data.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'participant-card';
+        card.innerHTML = `
+          <div class="photo-frame">
+            <img src="${p.photo}" alt="${p.name}" loading="lazy" 
+                 onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(p.name)}&background=f4f4f4&color=0a0a0a&size=400'">
+          </div>
+          <div class="info-content">
+            <div class="p-name">${p.name}</div>
+            <div class="p-title">${p.title}</div>
+            <div class="p-divider"></div>
+            <div class="p-institution">${p.institution}</div>
+            <div class="p-region">${p.region}</div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    /**
+     * Logic for search, filter, and sort
+     */
+    function handleFilterChange() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const instTerm = institutionFilter.value;
+      const sortTerm = sortOrder.value;
+
+      let filtered = participants.filter(p => {
+        const matchesSearch = 
+          p.name.toLowerCase().includes(searchTerm) || 
+          p.title.toLowerCase().includes(searchTerm) || 
+          p.institution.toLowerCase().includes(searchTerm);
+        
+        const matchesInst = instTerm === 'all' || p.institution === instTerm;
+
+        return matchesSearch && matchesInst;
+      });
+
+      // Sort
+      if (sortTerm === 'name-asc') {
+        filtered.sort((a, b) => a.name.localeCompare(b.name));
+      } else if (sortTerm === 'name-desc') {
+        filtered.sort((a, b) => b.name.localeCompare(a.name));
+      } else if (sortTerm === 'inst-asc') {
+        filtered.sort((a, b) => a.institution.localeCompare(b.institution));
+      }
+
+      renderParticipants(filtered);
+    }
+
+    // Run init on load
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

@@ -1,17 +1,9 @@
 <?php
 /**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * Template Name: Conference Participants
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
  */
 
 get_header(); ?>
@@ -24,45 +16,36 @@ get_header(); ?>
 
 <div class="subpage-banner-full">
   <img
-    src="<?php echo get_template_directory_uri(); ?>/assets/images/subpage-banner-1.jpg"
-    alt="CUHK Highlights Banner"
+    src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/subpage-banner-1.jpg' ); ?>"
+    alt="Conference Participants Banner"
     class="subpage-banner-img"
   >
 </div>
 
-
-
-
-
 <div class="container text-center middle-container">
 
-	<h1 class="mt-5 mb-3 fw-bold">Conference Participants  </h1>
+	<h1 class="mt-5 mb-3 fw-bold">Conference Participants</h1>
 
+  <div class="conference-participants-content">
+    <div class="cp-controls">
+      <div class="cp-search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="search" id="cpSearchInput" placeholder="Search by name, title, or institution..." aria-label="<?php esc_attr_e( 'Search delegates', 'twentytwentyone' ); ?>">
+      </div>
+      <div class="cp-filters">
+        <select id="cpInstitutionFilter" aria-label="<?php esc_attr_e( 'Filter by institution', 'twentytwentyone' ); ?>">
+          <option value="all"><?php esc_html_e( 'All Institutions', 'twentytwentyone' ); ?></option>
+        </select>
+        <select id="cpSortOrder" aria-label="<?php esc_attr_e( 'Sort order', 'twentytwentyone' ); ?>">
+          <option value="name-asc"><?php esc_html_e( 'Sort: A – Z', 'twentytwentyone' ); ?></option>
+          <option value="name-desc"><?php esc_html_e( 'Sort: Z – A', 'twentytwentyone' ); ?></option>
+          <option value="inst-asc"><?php esc_html_e( 'Sort: Institution', 'twentytwentyone' ); ?></option>
+        </select>
+      </div>
+    </div>
+    <div id="cpParticipantGrid" class="cp-grid" aria-live="polite"></div>
+  </div>
 
-  <div>fdsafdsafads</div>
-  
+</div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const btnGroup = document.getElementById('submenu-btn-group');
-    if (!btnGroup) return;
-    btnGroup.querySelectorAll('.submenu-btn').forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
-        btnGroup.querySelectorAll('.submenu-btn').forEach(function(b){b.classList.remove('active')});
-        this.classList.add('active');
-      });
-    });
-  });
-</script>
-</div>	
-
-
-
-
-
-
-
-<?php
-
-
-get_footer();
+<?php get_footer(); ?>

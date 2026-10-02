@@ -545,6 +545,9 @@ require get_template_directory() . '/inc/menu-functions.php';
 // Custom template tags for the theme.
 require get_template_directory() . '/inc/template-tags.php';
 
+// Conference participants directory (page template).
+require_once get_template_directory() . '/inc/conference-participants.php';
+
 // Customizer additions.
 require get_template_directory() . '/classes/class-twenty-twenty-one-customize.php';
 new Twenty_Twenty_One_Customize();
