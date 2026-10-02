@@ -38,93 +38,9 @@ get_header(); ?>
 
 	<h1 class="mt-5 mb-3 fw-bold">Conference Participants  </h1>
 
-<div class="cuhk-highlight-content">
-  <div id="university-rankings" class="my-5">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
-        <img 
-          src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-2.png" 
-          alt="University Rankings Icon" 
-          class="cuhk-highlight-icon"
-        >
-      </div>
-      <div class="col-12 col-md-9 text-md-start text-center">
-        <h4 class="fw-bold mb-3">CUHK Rankings        </h4>
-        <ul class="list-unstyled fs-5 mb-2">
-          <li class="mb-1">• QS World University Rankings 2026: <strong>#32</strong> globally</li>
-          <li class="mb-1">• Times Higher Education Rankings 2026: <strong>#41</strong> globally</li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
-  <div id="bs-accreditations" class="my-5">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
-        <img 
-          src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-1.png" 
-          alt="Business School Accreditations Icon" 
-          class="cuhk-highlight-icon"
-        >
-      </div>
-      <div class="col-12 col-md-9 text-md-start text-center">
-        <h4 class="fw-bold mb-3">Business School Accreditations &amp; Reputation</h4>
-        <ul class="list-unstyled fs-5 mb-2">
-          <li class="mb-1">• AACSB and AMBA accredited</li>
-          <li class="mb-1">• First in Hong Kong to offer BBA, MBA, and EMBA programs</li>
-          <li class="mb-1">• Leading research excellence <br>
-            <span class="fst-italic text-muted">(Ranked No. 1 in Asia, No. 13 globally – UT Dallas 2024)</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div id="programme-rankings" class="my-5">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
-        <img
-          src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-4.png"
-          alt="Programme Rankings Icon"
-          class="cuhk-highlight-icon"
-        >
-      </div>
-      <div class="col-12 col-md-9 text-md-start text-center">
-        <h4 class="fw-bold mb-3">Business Programme & Subject Rankings        </h4>
-        <ul class="list-unstyled fs-5 mb-2">
-          <li class="mb-1">• MSc Finance: <strong>#21</strong> (Financial Times 2025)</li>
-          <li class="mb-1">• EMBA Programme: <strong>#22</strong> (Financial Times 2025)</li>
-          <li class="mb-1">• MBA Programme: <strong>#65</strong> (Financial Times 2025)</li>
-          <li class="mb-1">• Accounting and Finance: <strong>#37</strong> (QS World University Rankings 2025)</li>
-          <li class="mb-1">• Marketing: <strong>#41</strong> (QS World University Rankings 2025)</li>
-          <li class="mb-1">• Business and Management Studies: <strong>#46</strong> (QS World University Rankings 2025)</li>
-          <li class="mb-1">• Hospitality and Leisure Management: <strong>#49</strong> (QS World University Rankings 2025)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <div>fdsafdsafads</div>
   
-  <div id="internationalisation" class="my-5">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
-        <img
-          src="<?php echo get_template_directory_uri(); ?>/assets/images/hl-icon-3.png"
-          alt="Internationalisation Icon"
-          class="cuhk-highlight-icon"
-        >
-      </div>
-      <div class="col-12 col-md-9 text-md-start text-center">
-        <h4 class="fw-bold mb-3">Our International Reach</h4>
-        <ul class="list-unstyled fs-5 mb-2">
-          <li class="mb-1">• 5,000+ students from 20+ countries/ regions</li>
-          <li class="mb-1">• 280+ exchange programmes with 80+ partners in 30+ countries/ regions</li>
-          <li class="mb-1">• 49,000+ alumni across 50 locations</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
