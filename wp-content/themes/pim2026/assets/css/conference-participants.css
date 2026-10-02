@@ -103,13 +103,32 @@
 @media (min-width: 769px) {
   .conference-participants-content .cp-controls {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(180px, 1.15fr) minmax(140px, 0.85fr) minmax(150px, 0.9fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      'search institution'
+      'region sort';
     gap: 12px;
     align-items: center;
   }
 
+  .conference-participants-content .cp-search {
+    grid-area: search;
+  }
+
   .conference-participants-content .cp-filters {
     display: contents;
+  }
+
+  .conference-participants-content #cpInstitutionFilter {
+    grid-area: institution;
+  }
+
+  .conference-participants-content #cpRegionFilter {
+    grid-area: region;
+  }
+
+  .conference-participants-content #cpSortOrder {
+    grid-area: sort;
   }
 
   .conference-participants-content .cp-search input,
