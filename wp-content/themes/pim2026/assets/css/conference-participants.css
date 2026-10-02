@@ -34,7 +34,7 @@
 }
 
 .conference-participants-content .cp-search {
-  flex: 1 1 280px;
+  flex: 1 1 auto;
   min-width: 0;
   max-width: 100%;
   position: relative;
@@ -70,10 +70,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  flex: 1 1 280px;
+  flex: 0 1 auto;
   min-width: 0;
   max-width: 100%;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .conference-participants-content .cp-filters select {
@@ -99,6 +100,29 @@
   gap: var(--cp-card-gap);
 }
 
+@media (min-width: 769px) {
+  .conference-participants-content .cp-controls {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 1.15fr) minmax(140px, 0.85fr) minmax(150px, 0.9fr);
+    gap: 12px;
+    align-items: center;
+  }
+
+  .conference-participants-content .cp-filters {
+    display: contents;
+  }
+
+  .conference-participants-content .cp-search input,
+  .conference-participants-content .cp-filters select {
+    min-height: 46px;
+  }
+
+  .conference-participants-content .cp-filters select {
+    width: 100%;
+    max-width: none;
+  }
+}
+
 @media (max-width: 1024px) {
   .conference-participants-content .cp-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -111,8 +135,14 @@
   }
 
   .conference-participants-content .cp-controls {
+    display: flex;
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .conference-participants-content .cp-filters {
+    display: flex;
+    width: 100%;
   }
 
   .conference-participants-content .cp-search,
