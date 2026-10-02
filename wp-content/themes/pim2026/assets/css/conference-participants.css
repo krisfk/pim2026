@@ -184,51 +184,64 @@
 }
 
 .conference-participants-content .cp-pagination {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--cp-midgray);
-}
-
-.conference-participants-content .cp-pagination-summary {
-  margin: 0 0 1rem;
-  font-size: 0.875rem;
-  color: var(--cp-darkgray);
-  text-align: center;
+  margin-top: 2.5rem;
+  padding-top: 0;
+  border-top: none;
 }
 
 .conference-participants-content .cp-pagination-controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 }
 
 .conference-participants-content .cp-page-btn {
-  min-width: 2.5rem;
-  padding: 8px 12px;
-  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 8px 14px;
+  font-size: 0.9375rem;
+  font-weight: 500;
   font-family: inherit;
-  border: 1px solid var(--cp-midgray);
-  border-radius: 4px;
+  line-height: 1.2;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
   background: var(--cp-white);
   color: var(--cp-black);
   cursor: pointer;
-  transition: border-color 0.2s, background 0.2s;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
 }
 
-.conference-participants-content .cp-page-btn:hover:not(:disabled) {
-  border-color: var(--cp-black);
+.conference-participants-content .cp-page-num {
+  min-width: 40px;
+  padding-inline: 12px;
+}
+
+.conference-participants-content .cp-page-nav {
+  padding-inline: 16px;
+}
+
+.conference-participants-content .cp-page-icon {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.conference-participants-content .cp-page-btn:hover:not(:disabled):not(.is-active) {
+  border-color: #999;
 }
 
 .conference-participants-content .cp-page-btn.is-active {
-  background: #300353;
-  border-color: #300353;
+  background: var(--cp-black);
+  border-color: var(--cp-black);
   color: var(--cp-white);
-  font-weight: 600;
 }
 
 .conference-participants-content .cp-page-btn:disabled {
-  opacity: 0.45;
+  opacity: 0.5;
   cursor: not-allowed;
 }

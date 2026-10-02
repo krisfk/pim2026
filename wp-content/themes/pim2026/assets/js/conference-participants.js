@@ -91,6 +91,28 @@
     });
   }
 
+  function getPageWindow(page, totalPages, windowSize) {
+    windowSize = windowSize || 5;
+    if (totalPages <= windowSize) {
+      var all = [];
+      for (var n = 1; n <= totalPages; n++) {
+        all.push(n);
+      }
+      return all;
+    }
+    var start = Math.max(1, page - Math.floor(windowSize / 2));
+    var end = start + windowSize - 1;
+    if (end > totalPages) {
+      end = totalPages;
+      start = end - windowSize + 1;
+    }
+    var pages = [];
+    for (var i = start; i <= end; i++) {
+      pages.push(i);
+    }
+    return pages;
+  }
+
   function renderPagination(totalItems, page) {
     var totalPages = Math.max(1, Math.ceil(totalItems / perPage));
     if (page > totalPages) {
@@ -106,39 +128,29 @@
       return;
     }
 
-    var start = (page - 1) * perPage + 1;
-    var end = Math.min(page * perPage, totalItems);
-
-    var html =
-      '<p class="cp-pagination-summary">Showing ' +
-      start +
-      '–' +
-      end +
-      ' of ' +
-      totalItems +
-      '</p>' +
-      '<div class="cp-pagination-controls">';
+    var pageNumbers = getPageWindow(page, totalPages, 5);
+    var html = '<div class="cp-pagination-controls">';
 
     html +=
-      '<button type="button" class="cp-page-btn" data-page="prev" ' +
+      '<button type="button" class="cp-page-btn cp-page-nav" data-page="prev" ' +
       (page <= 1 ? 'disabled' : '') +
-      '>Previous</button>';
+      '><span class="cp-page-icon" aria-hidden="true">&lt;</span> Back</button>';
 
-    for (var i = 1; i <= totalPages; i++) {
+    pageNumbers.forEach(function (num) {
       html +=
-        '<button type="button" class="cp-page-btn' +
-        (i === page ? ' is-active' : '') +
+        '<button type="button" class="cp-page-btn cp-page-num' +
+        (num === page ? ' is-active' : '') +
         '" data-page="' +
-        i +
+        num +
         '">' +
-        i +
+        num +
         '</button>';
-    }
+    });
 
     html +=
-      '<button type="button" class="cp-page-btn" data-page="next" ' +
+      '<button type="button" class="cp-page-btn cp-page-nav" data-page="next" ' +
       (page >= totalPages ? 'disabled' : '') +
-      '>Next</button></div>';
+      '>Next <span class="cp-page-icon" aria-hidden="true">&gt;</span></button></div>';
 
     pagination.innerHTML = html;
   }
