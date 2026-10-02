@@ -30,12 +30,48 @@ if ( ! function_exists( 'pim2026_photo_booklet_roots' ) ) {
 	 * @return array<int, string>
 	 */
 	function pim2026_photo_booklet_roots() {
-		$roots = array(
-			trailingslashit( get_template_directory() ) . 'assets/photo-booklet',
+		$candidates = array(
 			trailingslashit( ABSPATH ) . 'photo-booklet',
+			trailingslashit( get_template_directory() ) . 'assets/photo-booklet',
 		);
-		$roots = array_unique( array_filter( $roots, 'is_dir' ) );
+
+		$roots = array();
+		foreach ( $candidates as $candidate ) {
+			if ( ! is_dir( $candidate ) ) {
+				continue;
+			}
+			$key = wp_normalize_path( realpath( $candidate ) ?: $candidate );
+			if ( ! isset( $roots[ $key ] ) ) {
+				$roots[ $key ] = wp_normalize_path( $candidate );
+			}
+		}
+
 		return array_values( $roots );
+	}
+}
+
+if ( ! function_exists( 'pim2026_photo_booklet_subpath' ) ) {
+	/**
+	 * Path inside photo-booklet (Institution/file.jpg) for a resolved file.
+	 *
+	 * @param string $absolute_path Absolute path to an image file.
+	 * @return string
+	 */
+	function pim2026_photo_booklet_subpath( $absolute_path ) {
+		$absolute_path = wp_normalize_path( $absolute_path );
+		$resolved      = wp_normalize_path( realpath( $absolute_path ) ?: $absolute_path );
+
+		foreach ( pim2026_photo_booklet_roots() as $root ) {
+			$root_resolved = wp_normalize_path( realpath( $root ) ?: $root );
+			if ( ! $root_resolved ) {
+				continue;
+			}
+			if ( str_starts_with( $resolved, $root_resolved . '/' ) ) {
+				return ltrim( substr( $resolved, strlen( $root_resolved ) ), '/' );
+			}
+		}
+
+		return '';
 	}
 }
 
@@ -47,22 +83,22 @@ if ( ! function_exists( 'pim2026_path_to_public_url' ) ) {
 	 * @return string
 	 */
 	function pim2026_path_to_public_url( $absolute_path ) {
-		$absolute_path = wp_normalize_path( $absolute_path );
-		$theme_dir     = wp_normalize_path( get_template_directory() );
-		$root_dir      = wp_normalize_path( ABSPATH );
-
-		if ( str_starts_with( $absolute_path, $theme_dir . '/' ) || $absolute_path === $theme_dir ) {
-			$relative = ltrim( substr( $absolute_path, strlen( $theme_dir ) ), '/' );
-			$base     = trailingslashit( get_template_directory_uri() );
-		} elseif ( str_starts_with( $absolute_path, $root_dir . '/' ) || $absolute_path === $root_dir ) {
-			$relative = ltrim( substr( $absolute_path, strlen( $root_dir ) ), '/' );
-			$base     = trailingslashit( home_url() );
-		} else {
-			return '';
+		$booklet_subpath = pim2026_photo_booklet_subpath( $absolute_path );
+		if ( '' !== $booklet_subpath ) {
+			$segments = explode( '/', 'photo-booklet/' . $booklet_subpath );
+			return trailingslashit( home_url() ) . implode( '/', array_map( 'rawurlencode', $segments ) );
 		}
 
-		$segments = explode( '/', $relative );
-		return $base . implode( '/', array_map( 'rawurlencode', $segments ) );
+		$absolute_path = wp_normalize_path( $absolute_path );
+		$root_dir      = wp_normalize_path( ABSPATH );
+
+		if ( str_starts_with( $absolute_path, $root_dir . '/' ) ) {
+			$relative = ltrim( substr( $absolute_path, strlen( $root_dir ) ), '/' );
+			$segments = explode( '/', $relative );
+			return trailingslashit( home_url() ) . implode( '/', array_map( 'rawurlencode', $segments ) );
+		}
+
+		return '';
 	}
 }
 
@@ -79,10 +115,13 @@ if ( ! function_exists( 'pim2026_resolve_delegate_photo_file' ) ) {
 		}
 
 		$relative_path = ltrim( wp_normalize_path( $relative_path ), '/' );
-		$candidates    = array(
+		$candidates = array(
 			trailingslashit( ABSPATH ) . $relative_path,
-			trailingslashit( get_template_directory() ) . 'assets/' . preg_replace( '#^photo-booklet/#', 'photo-booklet/', $relative_path ),
 		);
+		$theme_path = trailingslashit( get_template_directory() ) . 'assets/' . $relative_path;
+		if ( ! in_array( $theme_path, $candidates, true ) ) {
+			$candidates[] = $theme_path;
+		}
 
 		foreach ( $candidates as $candidate ) {
 			if ( is_readable( $candidate ) ) {
