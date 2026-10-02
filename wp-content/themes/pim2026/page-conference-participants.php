@@ -36,14 +36,7 @@ get_header(); ?>
 
 <div class="container text-center middle-container">
 
-	<h1 class="mt-5 mb-3 fw-bold">Key Facts of CUHK & CUHK Business School  </h1>
-
-<!-- <div class="d-flex justify-content-center my-4" id="submenu-btn-group">
-  <a href="#university-rankings" class="submenu-btn mx-2 active">University Rankings</a>
-  <a href="#bs-accreditations" class="submenu-btn mx-2">Business School Accreditations</a>
-  <a href="#programme-rankings" class="submenu-btn mx-2">Programme Rankings</a>
-  <a href="#internationalisation" class="submenu-btn mx-2">Internationalisation</a>
-</div> -->
+	<h1 class="mt-5 mb-3 fw-bold">Conference Participants  </h1>
 
 <div class="cuhk-highlight-content">
   <div id="university-rankings" class="my-5">
