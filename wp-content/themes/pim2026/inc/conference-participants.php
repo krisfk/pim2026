@@ -57,12 +57,64 @@ if ( ! function_exists( 'pim2026_get_conference_participants' ) ) {
 	}
 }
 
+if ( ! function_exists( 'pim2026_is_conference_participants_page' ) ) {
+	/**
+	 * True when the conference participants template is active (assigned or page-{slug} hierarchy).
+	 */
+	function pim2026_is_conference_participants_page() {
+		if ( is_page_template( 'page-conference-participants.php' ) ) {
+			return true;
+		}
+		if ( ! is_singular( 'page' ) ) {
+			return false;
+		}
+		$template_path = get_page_template();
+		return $template_path && 'page-conference-participants.php' === basename( $template_path );
+	}
+}
+
+if ( ! function_exists( 'pim2026_render_conference_participant_card' ) ) {
+	/**
+	 * Output one participant card (used for SSR and consistent markup).
+	 *
+	 * @param array<string, string> $participant Participant row.
+	 */
+	function pim2026_render_conference_participant_card( $participant ) {
+		$name        = isset( $participant['name'] ) ? $participant['name'] : '';
+		$title       = isset( $participant['title'] ) ? $participant['title'] : '';
+		$institution = isset( $participant['institution'] ) ? $participant['institution'] : '';
+		$region      = isset( $participant['region'] ) ? $participant['region'] : '';
+		$photo       = isset( $participant['photo'] ) ? $participant['photo'] : '';
+		$avatar      = 'https://ui-avatars.com/api/?name=' . rawurlencode( $name ) . '&background=f4f4f4&color=300353&size=400';
+		$img_src     = $photo ? $photo : $avatar;
+		?>
+		<div class="participant-card">
+			<div class="photo-frame">
+				<img
+					src="<?php echo esc_url( $img_src ); ?>"
+					alt="<?php echo esc_attr( $name ); ?>"
+					loading="lazy"
+					onerror="this.onerror=null;this.src='<?php echo esc_js( $avatar ); ?>';"
+				>
+			</div>
+			<div class="info-content">
+				<div class="p-name"><?php echo esc_html( $name ); ?></div>
+				<div class="p-title"><?php echo esc_html( $title ); ?></div>
+				<div class="p-divider"></div>
+				<div class="p-institution"><?php echo esc_html( $institution ); ?></div>
+				<div class="p-region"><?php echo esc_html( $region ); ?></div>
+			</div>
+		</div>
+		<?php
+	}
+}
+
 if ( ! function_exists( 'pim2026_enqueue_conference_participants_assets' ) ) {
 	/**
 	 * Styles and script for the conference participants page template.
 	 */
 	function pim2026_enqueue_conference_participants_assets() {
-		if ( ! is_page_template( 'page-conference-participants.php' ) ) {
+		if ( ! pim2026_is_conference_participants_page() ) {
 			return;
 		}
 

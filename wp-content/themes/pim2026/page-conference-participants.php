@@ -43,8 +43,26 @@ get_header(); ?>
         </select>
       </div>
     </div>
-    <div id="cpParticipantGrid" class="cp-grid" aria-live="polite"></div>
+    <div id="cpParticipantGrid" class="cp-grid" aria-live="polite">
+      <?php
+      $cp_participants = pim2026_get_conference_participants();
+      if ( ! empty( $cp_participants ) ) {
+        foreach ( $cp_participants as $cp_participant ) {
+          pim2026_render_conference_participant_card( $cp_participant );
+        }
+      }
+      ?>
+    </div>
   </div>
+
+  <script type="application/json" id="cpParticipantsData"><?php
+    echo wp_json_encode(
+      array(
+        'participants' => pim2026_get_conference_participants(),
+        'avatarBase'   => 'https://ui-avatars.com/api/?name=',
+      )
+    );
+  ?></script>
 
 </div>
 

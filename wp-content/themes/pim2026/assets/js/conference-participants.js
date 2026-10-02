@@ -2,6 +2,14 @@
   'use strict';
 
   var config = window.pimConferenceParticipants;
+  var dataEl = document.getElementById('cpParticipantsData');
+  if ((!config || !Array.isArray(config.participants)) && dataEl) {
+    try {
+      config = JSON.parse(dataEl.textContent);
+    } catch (e) {
+      config = null;
+    }
+  }
   if (!config || !Array.isArray(config.participants)) {
     return;
   }
