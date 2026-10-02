@@ -236,8 +236,8 @@
 }
 
 .conference-participants-content .cp-page-btn.is-active {
-  background: var(--cp-black);
-  border-color: var(--cp-black);
+  background: #300353;
+  border-color: #300353;
   color: var(--cp-white);
 }
 
