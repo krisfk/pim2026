@@ -237,6 +237,95 @@ if ( ! function_exists( 'pim2026_resolve_delegate_photo_file' ) ) {
 	}
 }
 
+if ( ! function_exists( 'pim2026_get_optimized_delegate_photo_url' ) ) {
+	/**
+	 * Return a cached, resized JPEG URL for delegate photos (smaller downloads).
+	 *
+	 * @param string $absolute_path Absolute path to the source image.
+	 * @return string Public URL, or empty string on failure.
+	 */
+	function pim2026_get_optimized_delegate_photo_url( $absolute_path ) {
+		if ( empty( $absolute_path ) || ! is_readable( $absolute_path ) ) {
+			return '';
+		}
+
+		$upload_dir = wp_upload_dir();
+		if ( ! empty( $upload_dir['error'] ) ) {
+			return pim2026_path_to_public_url( $absolute_path );
+		}
+
+		$cache_dir = trailingslashit( $upload_dir['basedir'] ) . 'pim2026-participant-cache';
+		$cache_url = trailingslashit( $upload_dir['baseurl'] ) . 'pim2026-participant-cache';
+
+		if ( ! wp_mkdir_p( $cache_dir ) ) {
+			return pim2026_path_to_public_url( $absolute_path );
+		}
+
+		$mtime      = (int) filemtime( $absolute_path );
+		$cache_name = md5( wp_normalize_path( $absolute_path ) . '|' . $mtime ) . '.jpg';
+		$cache_file = trailingslashit( $cache_dir ) . $cache_name;
+		$public_url = trailingslashit( $cache_url ) . $cache_name;
+
+		if ( is_readable( $cache_file ) ) {
+			return $public_url;
+		}
+
+		if ( ! function_exists( 'wp_get_image_editor' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/image.php';
+		}
+
+		$editor = wp_get_image_editor( $absolute_path );
+		if ( is_wp_error( $editor ) ) {
+			return pim2026_path_to_public_url( $absolute_path );
+		}
+
+		$size = $editor->get_size();
+		if ( is_array( $size ) && ! empty( $size['width'] ) && $size['width'] > 480 ) {
+			$editor->resize( 480, null, false );
+		}
+
+		$editor->set_quality( 82 );
+		$saved = $editor->save( $cache_file, 'image/jpeg' );
+		if ( is_wp_error( $saved ) ) {
+			return pim2026_path_to_public_url( $absolute_path );
+		}
+
+		return $public_url;
+	}
+}
+
+if ( ! function_exists( 'pim2026_delegate_display_photo_url' ) ) {
+	/**
+	 * Resolve institution/name/path to an optimized public photo URL.
+	 *
+	 * @param string $institution Institution label.
+	 * @param string $name        Delegate name.
+	 * @param string $relative    Optional JSON relative path.
+	 * @return string
+	 */
+	function pim2026_delegate_display_photo_url( $institution, $name, $relative = '' ) {
+		$absolute = pim2026_find_delegate_photo_by_name( $institution, $name );
+		if ( ! $absolute && '' !== $relative ) {
+			$absolute = pim2026_resolve_delegate_photo_file( $relative );
+		}
+
+		if ( $absolute ) {
+			$optimized = pim2026_get_optimized_delegate_photo_url( $absolute );
+			if ( $optimized ) {
+				return $optimized;
+			}
+			return pim2026_path_to_public_url( $absolute );
+		}
+
+		if ( '' === $relative ) {
+			return '';
+		}
+
+		$segments = array_map( 'rawurlencode', explode( '/', ltrim( $relative, '/' ) ) );
+		return trailingslashit( home_url() ) . implode( '/', $segments );
+	}
+}
+
 if ( ! function_exists( 'pim2026_conference_participant_photo_url' ) ) {
 	/**
 	 * Build a public URL for a photo path relative to the WordPress root.
@@ -249,13 +338,7 @@ if ( ! function_exists( 'pim2026_conference_participant_photo_url' ) ) {
 			return '';
 		}
 
-		$absolute = pim2026_resolve_delegate_photo_file( $relative_path );
-		if ( $absolute ) {
-			return pim2026_path_to_public_url( $absolute );
-		}
-
-		$segments = array_map( 'rawurlencode', explode( '/', ltrim( $relative_path, '/' ) ) );
-		return trailingslashit( home_url() ) . implode( '/', $segments );
+		return pim2026_delegate_display_photo_url( '', '', $relative_path );
 	}
 }
 
@@ -288,17 +371,8 @@ if ( ! function_exists( 'pim2026_get_conference_participants' ) ) {
 			$name        = isset( $row['name'] ) ? $row['name'] : '';
 			$institution = isset( $row['institution'] ) ? $row['institution'] : '';
 			$relative    = isset( $row['photo'] ) ? $row['photo'] : '';
-			$photo_url   = '';
 
-			$by_name = pim2026_find_delegate_photo_by_name( $institution, $name );
-			if ( $by_name ) {
-				$photo_url = pim2026_path_to_public_url( $by_name );
-			}
-			if ( ! $photo_url && '' !== $relative ) {
-				$photo_url = pim2026_conference_participant_photo_url( $relative );
-			}
-
-			$data[ $index ]['photo'] = $photo_url;
+			$data[ $index ]['photo'] = pim2026_delegate_display_photo_url( $institution, $name, $relative );
 		}
 
 		$cached = $data;
@@ -340,10 +414,15 @@ if ( ! function_exists( 'pim2026_render_conference_participant_card' ) ) {
 		<div class="participant-card">
 			<div class="photo-frame">
 				<img
+					class="cp-participant-photo"
 					src="<?php echo esc_attr( $img_src ); ?>"
 					alt="<?php echo esc_attr( $name ); ?>"
+					width="480"
+					height="480"
 					loading="lazy"
-					onerror="this.onerror=null;this.src='<?php echo esc_js( $avatar ); ?>';"
+					decoding="async"
+					onload="this.closest('.photo-frame').classList.add('is-loaded')"
+					onerror="this.onerror=null;this.src='<?php echo esc_js( $avatar ); ?>';this.closest('.photo-frame').classList.add('is-loaded');"
 				>
 			</div>
 			<div class="info-content">

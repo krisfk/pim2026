@@ -59,6 +59,27 @@
     );
   }
 
+  function markPhotoFrameLoaded(img) {
+    var frame = img.closest('.photo-frame');
+    if (frame) {
+      frame.classList.add('is-loaded');
+    }
+  }
+
+  function initParticipantPhotoFrames(root) {
+    var photos = (root || grid).querySelectorAll('.cp-participant-photo');
+    photos.forEach(function (img) {
+      if (img.complete && img.naturalWidth > 0) {
+        markPhotoFrameLoaded(img);
+      } else {
+        img.addEventListener('load', function onPhotoLoad() {
+          markPhotoFrameLoaded(img);
+          img.removeEventListener('load', onPhotoLoad);
+        });
+      }
+    });
+  }
+
   function renderParticipantCards(data) {
     grid.innerHTML = '';
 
@@ -75,14 +96,14 @@
       var photo = p.photo || avatarUrl(p.name);
       card.innerHTML =
         '<div class="photo-frame">' +
-        '<img src="' +
+        '<img class="cp-participant-photo" src="' +
         escapeHtml(photo) +
         '" alt="' +
         escapeHtml(p.name) +
-        '" loading="lazy" ' +
+        '" width="480" height="480" loading="lazy" decoding="async" ' +
         'onerror="this.onerror=null;this.src=\'' +
         avatarUrl(p.name).replace(/'/g, "\\'") +
-        "';\">" +
+        '\';this.closest(\'.photo-frame\').classList.add(\'is-loaded\');">' +
         '</div>' +
         '<div class="info-content">' +
         '<div class="p-name">' +
@@ -101,6 +122,8 @@
         '</div>';
       grid.appendChild(card);
     });
+
+    initParticipantPhotoFrames(grid);
   }
 
   function getPageWindow(page, totalPages, windowSize) {
@@ -295,6 +318,7 @@
     sortOrder.addEventListener('change', handleFilterChange);
 
     handleFilterChange();
+    initParticipantPhotoFrames(grid);
   }
 
   if (document.readyState === 'loading') {
