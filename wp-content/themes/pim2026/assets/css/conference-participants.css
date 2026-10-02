@@ -11,6 +11,10 @@
   --cp-card-gap: 24px;
   text-align: left;
   margin-bottom: 4rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .conference-participants-content .cp-controls {
@@ -23,12 +27,18 @@
   padding: 1.25rem 0;
   border-top: 1px solid var(--cp-midgray);
   border-bottom: 1px solid var(--cp-midgray);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .conference-participants-content .cp-search {
-  flex: 1;
-  min-width: min(100%, 280px);
+  flex: 1 1 280px;
+  min-width: 0;
+  max-width: 100%;
   position: relative;
+  box-sizing: border-box;
 }
 
 .conference-participants-content .cp-search svg {
@@ -41,12 +51,15 @@
 }
 
 .conference-participants-content .cp-search input {
+  display: block;
   width: 100%;
+  max-width: 100%;
   padding: 12px 16px 12px 44px;
   font-size: 1rem;
   border: 1px solid var(--cp-midgray);
   border-radius: 4px;
   outline: none;
+  box-sizing: border-box;
 }
 
 .conference-participants-content .cp-search input:focus {
@@ -57,6 +70,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  flex: 1 1 280px;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .conference-participants-content .cp-filters select {
@@ -65,7 +82,9 @@
   border: 1px solid var(--cp-midgray);
   border-radius: 4px;
   background-color: var(--cp-white);
-  min-width: 160px;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
   cursor: pointer;
   appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%230a0a0a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
@@ -95,11 +114,31 @@
     flex-direction: column;
     align-items: stretch;
   }
+
+  .conference-participants-content .cp-search,
+  .conference-participants-content .cp-filters {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .conference-participants-content .cp-filters select {
+    flex: 1 1 calc(50% - 4px);
+    width: auto;
+  }
 }
 
 @media (max-width: 480px) {
   .conference-participants-content .cp-grid {
     grid-template-columns: 1fr;
+  }
+
+  .conference-participants-content .cp-filters {
+    flex-direction: column;
+  }
+
+  .conference-participants-content .cp-filters select {
+    flex: 1 1 auto;
+    width: 100%;
   }
 }
 
