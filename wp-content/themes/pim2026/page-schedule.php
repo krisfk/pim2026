@@ -213,7 +213,7 @@ Deborah Kraus, Senior Director, Global Experience, Kellogg School of Management,
 <br><br>
 Eric Saranovitz, Director, Global Engagement Office, Coller School of Management, University of Tel Aviv
 <br><br>
-Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Associate Director, Intergraded BBA Program, CUHK Business School
+Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Associate Director, Integrated BBA Programme, CUHK Business School
 					</td>
 				</tr>
 				<tr>
@@ -294,9 +294,9 @@ Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Associa
 						<br>
 						Moderated by Prof Seen-Meng Chew, Associate Professor of Practice in Finance, CUHK Business School
 						<br><br>
-Beatrix Dart, Academic Director, Global and Experiential Leaning, Rotman School of Management, University of Toronto
+Beatrix Dart, Academic Director, Global and Experiential Learning, Rotman School of Management, University of Toronto
 <br><br>
-Catherine da Silvera. Associate Dean for International Affairs and Partnerships, NOVA School of Business and Economics 
+Catherine da Silveira. Associate Dean for International Affairs and Partnerships, NOVA School of Business and Economics 
 <br><br>
 Ashley Roberts, Assistant Dean for Internationalization, Warwick Business School, University of Warwick 
 <br><br>
