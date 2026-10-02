@@ -216,9 +216,18 @@
     renderCurrentView();
   }
 
+  function scrollToPageTitle() {
+    var title = document.getElementById('cpPageTitle');
+    if (title) {
+      title.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      return;
+    }
+    grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   function handlePaginationClick(event) {
     var btn = event.target.closest('[data-page]');
-    if (!btn || btn.disabled) {
+    if (!btn || btn.disabled || !event.target.closest('.cp-pagination')) {
       return;
     }
     var action = btn.getAttribute('data-page');
@@ -233,7 +242,7 @@
     }
 
     renderCurrentView();
-    grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    scrollToPageTitle();
   }
 
   function init() {

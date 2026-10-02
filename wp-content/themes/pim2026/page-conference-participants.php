@@ -24,7 +24,7 @@ get_header(); ?>
 
 <div class="container text-center middle-container">
 
-	<h1 class="mt-5 mb-3 fw-bold">Conference Participants</h1>
+	<h1 id="cpPageTitle" class="mt-5 mb-3 fw-bold cp-page-title">Conference Participants</h1>
 
   <div class="conference-participants-content">
     <div class="cp-controls">

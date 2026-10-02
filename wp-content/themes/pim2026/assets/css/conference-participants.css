@@ -1,3 +1,7 @@
+.cp-page-title {
+  scroll-margin-top: 120px;
+}
+
 .conference-participants-content {
   --cp-black: #0a0a0a;
   --cp-white: #ffffff;
