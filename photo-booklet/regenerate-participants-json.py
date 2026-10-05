@@ -25,6 +25,10 @@ def norm_key(s: str) -> str:
     return re.sub(r"\s+", " ", s)
 
 
+EXCLUDED_NAMES = {
+    norm_key("Jason Chew"),
+}
+
 MANUAL_PHOTOS = {
     norm_key("Luisa Bastos Longo"): ("FGV-EAESP, Sao Paulo School of Business Administration", "19_luisa-longo.jpg"),
     norm_key("Julia von Maltzan Pacheco"): ("FGV-EAESP, Sao Paulo School of Business Administration", "162_juliavon-maltzan-pacheco.jpg"),
@@ -91,6 +95,8 @@ def main():
     out = []
 
     for p in people:
+        if norm_key(p["name"]) in EXCLUDED_NAMES:
+            continue
         inst_folder = None
         folder = None
         for fn, fp in folders.items():
