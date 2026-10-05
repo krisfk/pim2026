@@ -16,31 +16,17 @@
 
   var participants = config.participants;
   var avatarBase = config.avatarBase || '';
-  var perPage = parseInt(config.perPage, 10) || 10;
 
   var grid = document.getElementById('cpParticipantGrid');
-  var paginationTop = document.getElementById('cpPaginationTop');
-  var paginationBottom = document.getElementById('cpPaginationBottom');
-  var paginationHosts = [paginationTop, paginationBottom].filter(Boolean);
-  var contentRoot = document.querySelector('.conference-participants-content');
   var searchInput = document.getElementById('cpSearchInput');
   var institutionFilter = document.getElementById('cpInstitutionFilter');
   var regionFilter = document.getElementById('cpRegionFilter');
   var sortOrder = document.getElementById('cpSortOrder');
 
-  if (
-    !grid ||
-    !searchInput ||
-    !institutionFilter ||
-    !regionFilter ||
-    !sortOrder ||
-    paginationHosts.length === 0 ||
-    !contentRoot
-  ) {
+  if (!grid || !searchInput || !institutionFilter || !regionFilter || !sortOrder) {
     return;
   }
 
-  var currentPage = 1;
   var filteredList = participants.slice();
 
   function escapeHtml(str) {
@@ -86,7 +72,6 @@
     if (data.length === 0) {
       grid.innerHTML =
         '<div class="cp-empty">No delegates found matching your criteria.</div>';
-      pagination.innerHTML = '';
       return;
     }
 
@@ -126,84 +111,8 @@
     initParticipantPhotoFrames(grid);
   }
 
-  function getPageWindow(page, totalPages, windowSize) {
-    windowSize = windowSize || 5;
-    if (totalPages <= windowSize) {
-      var all = [];
-      for (var n = 1; n <= totalPages; n++) {
-        all.push(n);
-      }
-      return all;
-    }
-    var start = Math.max(1, page - Math.floor(windowSize / 2));
-    var end = start + windowSize - 1;
-    if (end > totalPages) {
-      end = totalPages;
-      start = end - windowSize + 1;
-    }
-    var pages = [];
-    for (var i = start; i <= end; i++) {
-      pages.push(i);
-    }
-    return pages;
-  }
-
-  function renderPagination(totalItems, page) {
-    var totalPages = Math.max(1, Math.ceil(totalItems / perPage));
-    if (page > totalPages) {
-      page = totalPages;
-    }
-    if (page < 1) {
-      page = 1;
-    }
-    currentPage = page;
-
-    if (totalItems === 0) {
-      paginationHosts.forEach(function (host) {
-        host.innerHTML = '';
-      });
-      return;
-    }
-
-    var pageNumbers = getPageWindow(page, totalPages, 5);
-    var html = '<div class="cp-pagination-controls">';
-
-    html +=
-      '<button type="button" class="cp-page-btn cp-page-nav" data-page="prev" ' +
-      (page <= 1 ? 'disabled' : '') +
-      '><span class="cp-page-icon" aria-hidden="true">&lt;</span> Back</button>';
-
-    pageNumbers.forEach(function (num) {
-      html +=
-        '<button type="button" class="cp-page-btn cp-page-num' +
-        (num === page ? ' is-active' : '') +
-        '" data-page="' +
-        num +
-        '">' +
-        num +
-        '</button>';
-    });
-
-    html +=
-      '<button type="button" class="cp-page-btn cp-page-nav" data-page="next" ' +
-      (page >= totalPages ? 'disabled' : '') +
-      '>Next <span class="cp-page-icon" aria-hidden="true">&gt;</span></button></div>';
-
-    paginationHosts.forEach(function (host) {
-      host.innerHTML = html;
-    });
-  }
-
   function renderCurrentView() {
-    var total = filteredList.length;
-    var totalPages = Math.max(1, Math.ceil(total / perPage));
-    if (currentPage > totalPages) {
-      currentPage = totalPages;
-    }
-    var start = (currentPage - 1) * perPage;
-    var pageItems = filteredList.slice(start, start + perPage);
-    renderParticipantCards(pageItems);
-    renderPagination(total, currentPage);
+    renderParticipantCards(filteredList);
   }
 
   function handleFilterChange() {
@@ -242,37 +151,7 @@
       });
     }
 
-    currentPage = 1;
     renderCurrentView();
-  }
-
-  function scrollToPageTitle() {
-    var title = document.getElementById('cpPageTitle');
-    if (title) {
-      title.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      return;
-    }
-    grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
-  function handlePaginationClick(event) {
-    var btn = event.target.closest('[data-page]');
-    if (!btn || btn.disabled || !event.target.closest('.cp-pagination')) {
-      return;
-    }
-    var action = btn.getAttribute('data-page');
-    var totalPages = Math.max(1, Math.ceil(filteredList.length / perPage));
-
-    if (action === 'prev') {
-      currentPage = Math.max(1, currentPage - 1);
-    } else if (action === 'next') {
-      currentPage = Math.min(totalPages, currentPage + 1);
-    } else {
-      currentPage = parseInt(action, 10) || 1;
-    }
-
-    renderCurrentView();
-    scrollToPageTitle();
   }
 
   function init() {
@@ -311,7 +190,6 @@
       regionFilter.appendChild(opt);
     });
 
-    contentRoot.addEventListener('click', handlePaginationClick);
     searchInput.addEventListener('input', handleFilterChange);
     institutionFilter.addEventListener('change', handleFilterChange);
     regionFilter.addEventListener('change', handleFilterChange);

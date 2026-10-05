@@ -469,7 +469,6 @@ if ( ! function_exists( 'pim2026_enqueue_conference_participants_assets' ) ) {
 			array(
 				'participants' => pim2026_get_conference_participants(),
 				'avatarBase'   => 'https://ui-avatars.com/api/?name=',
-				'perPage'      => 10,
 			)
 		);
 	}
