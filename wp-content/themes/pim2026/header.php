@@ -379,11 +379,11 @@
 							<span class="fw-bold">Conference Updates</span> <br>
 							👥 Who's Coming to PIM 2026? <br>
  Search the participant directory by name, institution, or country. <br>
- → <a style="color: #300353;" href="<?php echo home_url('/participant-directory'); ?>">View Directory</a>
+ → <a style="color: #300353 !important; font-weight: bold;" href="<?php echo home_url('/participant-directory'); ?>">View Directory</a>
 <br>
 📸 Conference Photos <br>
  Browse conference photos and highlights throughout the event. <br>
- → <a style="color: #300353;" href="<?php echo home_url('/photo'); ?>">View Photo Album</a> <br>
+ → <a style="color: #300353 !important; font-weight: bold;;" href="<?php echo home_url('/photo'); ?>">View Photo Album</a> <br>
 
 
 							<!-- <span class="fw-bold">Conference dates announce:  </span> 
