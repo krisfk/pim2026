@@ -215,17 +215,7 @@ font-weight:bold;
 	</div>
 
 
-  <h3 class="mt-5 mb-3 fw-bold text-start">Important Notes</h3>
-<ul class="text-start" style="padding-left:1rem;">
-<li>All tours are organised by third-party agencies and are subject to minimum participant numbers.</li>
-<li>Payment will be made directly by participants; detailed arrangements will be provided separately.</li>
-<li>Places are limited and will be allocated on a first-come, first-served basis.</li>
-<li>Additional or ad hoc tour requests cannot be accommodated due to weekend traffic conditions.</li>
-<li>All tours include an English-speaking guide.</li>
-<li>Tour duration excludes participants’ travel time to and from the assembly/dismissal points.</li>
-<li>All tour details, including assembly and departure times, will be decided by the tour organiser and are final.</li>
-</ul>
-
+  
 
 <!-- Lightbox Modal HTML - appears once per page -->
 <div id="tour-image-lightbox" class="lightbox-overlay">
