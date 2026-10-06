@@ -199,7 +199,21 @@ font-weight:bold;
 <div class="container text-center middle-container">
 
 
-  
+<?php
+$photo_album_url = 'https://photos.google.com/u/2/share/AF1QipMkD5nkW3xxdMTuWfaV1ACOE7futXSDAPlDrdn1CJVUCYmeky3NvDtqxO67L3FTJw?key=Y0dHaEJFYjRzNXNBUjNMUGJzalczMnZBUXZHLXlR';
+if ( ! headers_sent() ) {
+	wp_redirect( $photo_album_url, 302 );
+	exit;
+}
+?>
+<script>
+	window.location.replace(<?php echo json_encode( $photo_album_url ); ?>);
+</script>
+<noscript>
+	<meta http-equiv="refresh" content="0;url=<?php echo esc_url( $photo_album_url ); ?>">
+	<p><a href="<?php echo esc_url( $photo_album_url ); ?>">Continue to photo album</a></p>
+</noscript>
+<?php exit; ?>
 
 <!-- Lightbox Modal HTML - appears once per page -->
 <div id="tour-image-lightbox" class="lightbox-overlay">
