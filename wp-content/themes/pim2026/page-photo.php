@@ -198,22 +198,6 @@ font-weight:bold;
 	</style>
 <div class="container text-center middle-container">
 
-	<h1 class="mt-5 mb-3 fw-bold">Optional Tour</h1>
-
-  <div class="text-center">
-
-
-
-    
-    <div class="table-responsive my-4 text-start">
-    <!-- Desktop/table view -->
-    <div class="d-none d-md-block">
-      
-    </div>
-
-   
-	</div>
-
 
   
 
