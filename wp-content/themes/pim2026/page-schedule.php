@@ -180,10 +180,20 @@ get_header(); ?>
 					<td class="schedule-col-session">Session 1</td>
 					<td class="schedule-col-theme">
 						<strong>Panel Discussion on Global mobility in business education: Value, Challenges and Opportunities</strong><br>
+						<br>
 						<span class="">
 							<!-- Moderated by Prof. Yenn-Ru Chen, Associate Dean for International Affairs Director, Sustainable Finance Center PIM Chair (Asia and Asia Pacific), National Chengchi University -->
+						
+							<!-- Moderated by Yenn-Ru Chen, PIM Chair (Asia and Asia Pacific); Professor of Finance, National Chengchi University -->
 							Moderated by Yenn-Ru Chen, PIM Chair (Asia and Asia Pacific); Professor of Finance, National Chengchi University
-							
+ <br><br>
+Angela James, Smith School of Business, Queen’s University, Director, International Office
+
+<br><br>
+Audrey Yuen, Nanyang Business School, Nanyang Technological University, Senior Assistant Director
+<br><br>
+
+Saila Kurtbay, Aalto University, School of Business, Head of International Affairs
 						
 						</span>
 					</td>
