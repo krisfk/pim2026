@@ -374,11 +374,23 @@
 							</td> -->
 							<td>
 							<a href="<?php echo home_url(); ?>">
-								<span class="fw-bold">Conference dates announce:  </span> 
+						
+						
+							<span class="fw-bold">Conference Updates</span> <br>
+							👥 Who's Coming to PIM 2026? <br>
+ Search the participant directory by name, institution, or country. <br>
+ → <a href="<?php echo home_url('/participant-directory'); ?>">View Directory</a>
+<br>
+📸 Conference Photos <br>
+ Browse conference photos and highlights throughout the event. <br>
+ → <a href="<?php echo home_url('/photo'); ?>">View Photo Album</a> <br>
+
+
+							<!-- <span class="fw-bold">Conference dates announce:  </span> 
 								<br>
 								PIM Conference- CUHK, Hong Kong:  <br> 
 								21 – 23 October 2026 <br>
-Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026
+Pre-PIM Conference- Fudan University, China: <br> 18 – 19 October 2026 -->
 
 
 							</a>
