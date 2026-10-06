@@ -34,6 +34,10 @@ MANUAL_PHOTOS = {
     norm_key("Julia von Maltzan Pacheco"): ("FGV-EAESP, Sao Paulo School of Business Administration", "162_juliavon-maltzan-pacheco.jpg"),
     norm_key("Başak Yalman"): ("Koc University", "164_basak-yalman.jpg"),
     norm_key("Christy Poon"): ("CUHK Business School", "christy-poon.png"),
+    norm_key("Nikki Mitchell"): (
+        "Richard Ivey School of Business, The University of Western Ontario",
+        "Nikki-Mitchell.jpeg",
+    ),
 }
 
 
