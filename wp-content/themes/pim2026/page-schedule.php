@@ -304,7 +304,7 @@ Rosette Leung, Lecturer, Co-Director, Global Business Studies Programme, Associa
 						<br>
 						Moderated by Prof Seen-Meng Chew, Associate Professor of Practice in Finance, CUHK Business School
 						<br><br>
-						Beatrix Dart, Professor of Strategy, Academic Director, Global and Experiential Leaning, University of Toronto Rotman School of Management
+						Beatrix Dart, Professor of Strategy, Academic Director, Global and Experiential Learning, University of Toronto Rotman School of Management
 
 
 <br><br>
